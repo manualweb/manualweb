@@ -37,10 +37,8 @@ Podremos ver que por pantalla nos aparece algo así:
 
 Ya tendremos el kit de desarrollo de [Java][ManualJava] correctamente instalado.
 
- [ManualJava]: http://www.manualweb.net/tutorial-java/
- [JavaSDK]: https://java.com/en/download/ "Descargar Compilador Java"
-
-
+[ManualJava]: http://www.manualweb.net/tutorial-java/
+[JavaSDK]: https://java.com/en/download/ "Descargar Compilador Java"
 [InstalarJava]: {{site.baseurl}}/java/img/java-install.png
 [InstalarJavaProgreso]: {{site.baseurl}}/java/img/java-install-progress.png
 [InstalarJavaFinalizado]: {{site.baseurl}}/java/img/java-install-progress.png
