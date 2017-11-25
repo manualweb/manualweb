@@ -1,0 +1,7 @@
+- title: Introducción Flask
+  docs:
+  - que-es-flask
+
+- title: Rutas en Flask
+  docs:
+  - rutas-flask

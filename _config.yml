@@ -1,0 +1,99 @@
+# Site settings
+title: Manual Web
+email: web@manualweb.net
+description: >
+  Tutoriales de programación en español.
+
+baseurl: "" # the subpath of your site, e.g. /blog/
+url: http://www.manualweb.net # the base hostname & protocol for your site
+git_address: https://github.com/manualweb/manualweb
+git_edit_address: https://github.com/aksakalli/jekyll-doc-theme/blob/gh-pages
+
+# Social
+twitter: http://twitter.com/manual_web
+facebook: http://www.facebook.com/manualweb
+youtube: http://youtube.com/lineadecodigo
+
+# theme options from https://bootswatch.com/
+# comment out this to use default Bootstrap
+bootwatch: lumen #paper
+
+# Build settings
+markdown: kramdown
+highlighter: rouge
+gems:
+  - jekyll-feed
+  - jekyll-redirect-from
+  - jekyll-seo-tag
+  - jekyll-sitemap
+  - jekyll-time-to-read
+  - jekyll-analytics
+
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - .idea/
+  - .gitignore
+  - README.md
+timezone: Europe/Madrid
+defaults:
+- scope:
+    path: _posts
+    type: posts
+  values:
+    layout: post
+    sectionid: blog
+
+- scope:
+    path: _java
+    type: java
+  values:
+    layout: java
+    sectionid: java
+    seo:
+      type: "WebPage"
+
+- scope:
+    path: _javascript
+    type: javascript
+  values:
+    layout: javascript
+    sectionid: javascript
+    seo:
+      type: "WebPage"
+
+- scope:
+    path: _mongodb
+    type: mongodb
+  values:
+    layout: mongodb
+    sectionid: mongodb
+    seo:
+      type: "WebPage"
+
+- scope:
+    path: _flask
+    type: flask
+  values:
+    layout: flask
+    sectionid: flask
+    seo:
+      type: "WebPage"
+
+collections:
+  java:
+    permalink: /:collection/:path/
+    output: true
+  javascript:
+      output: true
+  mongodb:
+        output: true
+  flask:
+        output: true
+  posts:
+    permalink: /blog/:year/:month/:day/:title/
+    output: true
+
+jekyll_analytics:
+  GoogleAnalytics:
+    id: UA-449940-9

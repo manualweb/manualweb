@@ -1,0 +1,48 @@
+---
+layout: default
+---
+
+<div class="container">
+    <div class="row">
+
+
+      <div class="col-md-8 col-md-push-4">
+          <h1>{{ page.title }}</h1>
+          <img src="{{site.baseurl}}/img/mongodb.png" class="img-responsive pull-right">
+          <div id="markdown-content-container">{{ content }}</div>
+
+          <p class="text-center">
+            <br />
+            <a target="_blank" href="{{site.git_edit_address}}/{{ page.path }}" class="btn btn-default githubEditButton" role="button">
+              <i class="fa fa-pencil fa-lg"></i> Mejora esta página
+            </a>
+          </p>
+
+          {% include ads.html %}
+
+          <hr>
+          {% include section_nav.html items=site.data.mongodb name="mongodb" %}
+
+
+      </div>
+
+
+        <div class="col-md-4 col-md-pull-8">
+
+          {% include nav.html items=site.data.mongodb site=site.mongodb name="mongodb" %}
+
+          <h2>Descargar</h2>
+          <a href="https://gitprint.com/victorcuervo/manualweb/blob/master/java/pdf/tutorial-java-pdf.md"><img class="pull-right" src="{{site.baseurl}}/img/pdf.png"></a>
+          El manual se encuentra en continua revisión. Desde aquí puedes descargarte la última versión del <strong>Tutorial Java</strong>.
+
+          {% include ads.html %}
+
+          <h2>Vídeos MongoDB</h2>
+          <script src="https://apis.google.com/js/platform.js"></script>
+          <div class="g-ytsubscribe" data-channel="lineadecodigo" data-layout="default" data-count="default"></div><br/>
+          <iframe width="360" height="215" src="https://www.youtube.com/embed/videoseries?list=PLLVIhySQmrVbjCFPla5c0OIp6iNWfM-hq" frameborder="0" allowfullscreen></iframe>
+
+        </div>
+
+    </div>
+</div>

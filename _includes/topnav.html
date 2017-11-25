@@ -1,0 +1,39 @@
+<nav class="navbar navbar-default navbar-fixed-top">
+    <div class="container navbar-container">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+            <a class="navbar-brand" href="{{ site.baseurl }}/">
+                <span><img src="{{site.baseurl}}/img/curso.png"></span> {{ site.title }}
+            </a>
+        </div>
+        <div id="navbar" class="collapse navbar-collapse">
+            <ul class="nav navbar-nav">
+                <li {% if page.sectionid=='java' %} class="active" {% endif %}><a href="{{ "/java/" | prepend: site.baseurl }}">Java</a></li>
+                <li {% if page.sectionid=='html5' %} class="active" {% endif %}><a href="{{ "/html5/" | prepend: site.baseurl }}">HTML5</a></li>
+                <li {% if page.sectionid=='mongodb' %} class="active" {% endif %}><a href="{{ "/mongodb/" | prepend: site.baseurl }}">MongoDB</a></li>
+                <li {% if page.sectionid=='javascript' %} class="active" {% endif %}><a href="{{ "/javascript/" | prepend: site.baseurl }}">Javascript</a></li>
+                <li {% if page.sectionid=='tutoriales' %} class="active" {% endif %}><a href="{{ "/tutoriales/" | prepend: site.baseurl }}">Más...</a></li>
+            </ul>
+            <div class="navbar-right">
+                <form class="navbar-form navbar-left">
+                    <div class="form-group has-feedback">
+                        <input id="search-box" type="text" class="form-control" placeholder="Search...">
+                        <i class="fa fa-search form-control-feedback"></i>
+                    </div>
+                </form>
+                <ul class="nav navbar-nav">
+                    <li><a href="{{ site.git_address }}"><i class="fa fa-github" aria-hidden="true"></i></a></li>
+                    <li><a href="{{ site.twitter }}"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+                    <li><a href="{{ site.facebook }}"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+                    <li><a href="{{ site.youtube }}"><i class="fa fa-youtube" aria-hidden="true"></i></a></li>
+                    <li><a href="{{site.baseurl}}/feed.xml"><i class="fa fa-feed" aria-hidden="true"></i></a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</nav>

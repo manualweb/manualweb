@@ -1,0 +1,12 @@
+Dentro de este **Tutorial {{include.name | capitalize}}** podrás encontrar los siguientes contenidos:
+
+{% for section in include.items %}
+<strong>{{ section.title }}</strong>
+<ul>
+  {% for item in section.docs %}
+    {% assign item_url = item | prepend:"/" | prepend:include.name | prepend:"/" | append:"/" %}
+    {% assign p = include.site | where:"url", item_url | first %}
+    <li><a href="{{ p.url | prepend: site.baseurl }}">{{ p.title }}</a></li>
+  {% endfor %}
+</ul>
+{% endfor %}

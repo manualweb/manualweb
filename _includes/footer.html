@@ -1,0 +1,16 @@
+<footer class="footer">
+    <div class="container">
+
+      <span class="pull-right">
+        {{ site.title }} {{ site.time | date: '%Y' }}
+      </span>
+
+        <p class="text-center">
+            <a href="{{ site.posts.first.url | prepend: site.baseurl }}">Blog</a> |
+            <a href="{{site.baseurl}}/acerca-de/">Acerca de</a> |
+            <a href="{{site.baseurl}}/lista-de-correo/">Lista de Correo</a> |
+            <a href="{{ site.posts.first.url | prepend: site.baseurl }}">Contactar</a>
+        </p>
+
+  </div>
+</footer>

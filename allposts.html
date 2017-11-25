@@ -1,0 +1,17 @@
+---
+title: Blog
+layout: default
+sectionid: blog
+---
+
+
+<div class="container">
+    <div class="inner-content">
+        <h1>Todas las entradas</h1> {% for page in site.posts %}
+        <p>
+            <strong><a href="{{ page.url | prepend: site.baseurl }}">{{ page.title }}</a></strong>
+            <span>el {{ page.date | date: "%e %B, %Y" }} {% if page.author %} por {{ page.author }}{% endif %}</span>
+        </p>
+        {% endfor %}
+    </div>
+</div>
