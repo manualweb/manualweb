@@ -7,7 +7,7 @@ description: >
 baseurl: "" # the subpath of your site, e.g. /blog/
 url: http://www.manualweb.net # the base hostname & protocol for your site
 git_address: https://github.com/manualweb/manualweb
-git_edit_address: https://github.com/aksakalli/jekyll-doc-theme/blob/gh-pages
+git_edit_address: https://github.com/manualweb/manualweb/blob/gh-pages
 
 # Social
 twitter: http://twitter.com/manual_web
@@ -27,7 +27,6 @@ gems:
   - jekyll-seo-tag
   - jekyll-sitemap
   - jekyll-time-to-read
-  - jekyll-analytics
 
 exclude:
   - Gemfile
@@ -93,7 +92,3 @@ collections:
   posts:
     permalink: /blog/:year/:month/:day/:title/
     output: true
-
-jekyll_analytics:
-  GoogleAnalytics:
-    id: UA-449940-9
