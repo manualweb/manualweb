@@ -11,3 +11,12 @@
   - conceptos-basicos-java
   - variables-java
   - tipos-datos-primitivos-java
+  - literales-java
+
+- title: Operadores Java
+  docs:
+  - operadores-asignacion-aritmeticos-java
+  - operadores-unarios-java
+  - operadores-igualdad-relacionales-java
+  - operadores-condicionales-java
+  - operadores-bit-java
