@@ -19,6 +19,15 @@
 6. Conceptos básicos en Java
 7. Variables en Java
 8. Tipos de Datos Primitivos en Java
+9. Literales en Java
+10. Operadores en Java
+  1. Operadores de Asignación y Aritméticos
+  2. Operadores Unarios
+  3. Operadores de Igualdad y relacionales
+  4. Operadores Condicionales
+  5. Operadores de Bit
+11. Expresiones, sentencias y Bloques
+
 
 # Introducción a Java
 
@@ -201,7 +210,7 @@ Es la tecnología de [Java][ManualJava] que nos sirve para el desarrollo de apli
 
 Puedes [leer más sobre Java Cards][JavaCard] y las capacidades que ofrece.
 
-# Instalar Java9
+# Instalar Java
 Para instalarnos el compilador [Java][ManualJava] lo primero que deberemos de hacer es descargarlo de la web de Oracle. A día de hoy (*abril 2017*) podemos [bajarnos la versión **Java 8** del compilador desde la web de Oracle][JavaSDK].
 
 De ella nos podemos bajar el kit de desarrollo (**Java SE Development Kit**) y el entorno de ejecución (**Java SE Runtime Environment**).
@@ -787,7 +796,685 @@ El elemento [String][String] es un tipo de dato inmutable. Es decir, que una vez
 
 El [String][String] no es un tipo de dato primitivo del lenguaje [Java][ManualJava]. Pero su uso es igual de importante que el de los tipos de datos revisados aquí. Veremos más en detalle el uso del tipo [String][String].
 
+# Literales en Java
 
+## ¿Qué son los literales Java?
+
+Los valores literales son aquellos que podemos asignar a las variables. Dependiendo del tipo de variable podremos asignar unos valores u otros.
+
+## Literales de enteros
+
+Los enteros que podemos utilizar serán **byte**, **short**, **int** y **long**. Los literales que les asignemos siempre será un número entero.
+
+~~~java
+byte variableByte = 12;
+short variableShort = 12;
+int variableInt = 12;
+long variableLong = 12;
+~~~
+
+Si bien para el caso del tipo **long** podemos crear literales de enteros que acaben en L (mayúscula o minúscula, aunque por legilibilidad se recomienda la primera)
+
+~~~java
+long variableLong = 12D;
+~~~
+
+Hay otros valores que pueden ser manejados por los literales enteros, para cuando representemos el número en diferentes bases. Por ejemplo cuando los manejemos como binarios o hexadecimales. Para este caso habrá que manejar literales de enteros que tengan dicho formato.
+
+~~~java
+int variableBinaria = 011010;
+int variableHexadecimal = 0x1a;
+~~~
+
+## Literales de decimales
+
+Los dos tipos de datos de decimales que podemos manejar son **float** y **double**. Para estos casos la representación del literal de decimales serán con separación de un punto entre la parte entera y la parte decimal.
+
+~~~java
+float variableFloat = 12.2;
+double variableDouble = 12.2;
+~~~
+
+De igual manera podemos utilizar las letras F o f para el tipo de dato **float** y D o d para el tipo de dato **double**. Siempre, por legilibilidad se recomienda la letra en mayúsculas.
+
+~~~java
+float variableFloat = 12.2F;
+double variableDouble = 12.2D;
+~~~
+
+## Literales de caracteres y cadenas
+
+Tanto los caracteres del tipo de dato **char**, como las cadenas del tipo de datos **String** contienen caracteres Unicode UTF-16.
+
+Los caracteres UTF-16 se pueden escribir directamente en la cadena o si nuestro editor de textos no nos permite el manejo de esa codificación los podemos poner escapados en el formato.
+
+~~~java
+'uCODIGOUNICODE'
+~~~
+
+Por ejemplo la letra como la ñ se escaparía de la siguiente forma:
+
+~~~java
+'u00F1'
+~~~
+
+Para utilizarla en una cadena de texto “España” podríamos poner
+
+~~~java
+String pais = "Espau00F1a";
+~~~
+
+Para los caracteres utilizaremos comillas simples para delimitarlos, mientras que para las cadenas utilizaremos comillas dobles.
+
+~~~java
+char variableChar = 'a';
+String variableString = "cadena";
+~~~
+
+Además en las cadenas podemos utilizar una serie de secuencias de escape, las cuales empiezan por una barra invertida y siguen con un modificador:
+
+| Secuencia | Significado       |
+| --------- | ----------------- |
+| b         | retroceso         |
+| t         | tabular la cadena |
+| n         | salto de línea    |
+| f         | form feed         |
+| r         | retorno de carro  |
+| \'        | comilla simple    |
+| \"        | comilla doble     |
+| \\        | barra invertida   |
+
+## Literales subrayados
+
+A partir de la versión 1.7 de [Java][ManualJava] se puede utilizar el subrayado para realizar separaciones entre números para una mejor visualización.
+
+A todos los efectos el valor del número es como si no existiese el carácter de subrayado.
+
+~~~java
+long tarjetaCredito = 1234_5678_9012_3456L;
+long mascaraBinaria = 0b11010010_01101001_10010100_10010010;
+~~~
+
+No podremos utilizar el literal de subrayado al principio o final del número, alrededor de un punto decimal, ni entre el número y un literal de entero o decimal (D, F o L).
+
+# Operadores de Asignación y Aritméticos
+
+## Operador de Asignación
+
+El operador [Java][ManualJava] más sencillo es el **operador de asignación**. Mediante este operador se asigna un valor a una variable. El operador de asignación es el símbolo igual.
+
+La estructura del operador de asignación es:
+
+~~~java
+variable = valor;
+~~~
+
+Así podemos asignar valores a variables de tipo entero, cadena,...
+
+~~~java
+int numero = 3;
+String cadena = "Hola Mundo";
+double decimal = 4.5;
+boolean verdad = true;
+~~~
+
+## Operadores Aritméticos
+
+Los operadores aritméticos en [Java][ManualJava] son los operadores que nos permiten realizar operaciones matemáticas: ***suma, resta, multiplicación, división y resto***.
+
+Los operadores aritméticos en [Java][ManualJava] son:
+
+| Operador | Descripción                                                |
+| -------- | ---------------------------------------------------------- |
+| +        | Operador de Suma. Concatena cadenas para la suma de String |
+| -        | Operador de Resta                                          |
+| *        | Operador de Multiplicación                                 |
+| /        | Operador de División                                       |
+| %        | Operador de Resto                                          |
+
+Los operadores aritméticos en [Java][ManualJava] los utilizaremos entre dos literales o variables y el resultado, normalmente lo asignaremos a una variable o bien lo evaluamos.
+
+~~~java
+variable = (valor1|variable1) operador (valor2|variable2);
+~~~
+
+Así podemos tener los siguientes usos en el caso de que queramos asignar su valor.
+
+~~~java
+suma = 3 + 7;             // Retorna 10
+resta = 5 - 2;            // Retorna 3
+multiplicacion = 3 * 2;   // Retorna 6
+division = 4 / 2;         // Retorna 2
+resto = 5 % 3;            // Retorna 2
+~~~
+
+Ten en cuenta que pueden ser valores o variables:
+
+~~~java
+suma = vble1 + 3;   // Sumamos 3 al valor de la variable vble1
+resta = vble1 - 4;  // Restamos 4 al valor de la variable vble1
+...
+~~~~
+
+O podríamos utilizarlo en una condición
+
+~~~java
+if (variable > suma + 3) { ... }
+~~~
+
+En este caso no asignamos el resultado de la suma a una variable, solo lo evaluamos.
+
+# Operadores Unarios
+Los operadores unarios en [Java][ManualJava] son aquellos que solo requieren un operando para funcionar.
+
+Los **operadores** unitarios que tenemos en [Java][ManualJava] son:
+
+| Operador | Descripción                                                      |
+| -------- | ---------------------------------------------------------------- |
+| +        | Operador unario suma. Indica un número positivo.                 |
+| -        | Operador unario resta. Niega una expresión.                      |
+| ++       | Operador de incremento. Incrementa el valor en 1.                |
+| --       | Operador de decremento. Decrementa el valor en 1.                |
+| !        | Operador de complemento lógico. Invierte el valor de un booleano |
+
+## Operadores unarios suma o resta
+
+Los operadores unitarios de suma o resta son muy sencillos de utilizar. En el caso del operador unitario suma su uso es redundante. Con el operador unitario resta podemos invertir un valor.
+
+Por ejemplo podríamos tener el siguiente código:
+
+~~~java
+int valor = 2;
+System.out.println(-valor); // Imprimirá por pantalla un -2
+~~~
+
+## Operadores de incremento y decremento
+
+Los operadores de incremento se pueden aplicar como prefijo o como sufijo.
+
+~~~java
+++ variable;
+variable ++;
+-- variable;
+variable --;
+~~~
+
+En todos los casos el valor de la variable acabará con una unidad más (para el operador de incremento) o con una unidad menos (para el operador de decremento).
+
+Si bien si están participando en una asignación hay que tener cuidado en si utilizamos el operador como prefijo o como sufijo.
+
+En el caso de utilizarlo como prefijo el valor de asignación será el valor del operando más el incremento de la unidad. Y si lo utilizamos como sufijo se asignará el valor del operador y luego se incrementará la unidad sobre el operando.
+
+Es más sencillo verlo en código:
+
+~~~java
+suma = ++vble1;
+~~~
+
+Sería lo mismo que poner
+
+~~~java
+vble1 = vble1 + 1;
+suma = vble1;
+~~~
+
+Mientras que si escribimos:
+
+~~~java
+suma = vble1++;
+~~~
+
+Sería lo mismo que poner:
+
+~~~java
+suma = vble1;
+vble1 = vble1 + 1;
+~~~
+
+Exactamente lo mismo le sucede al operador de decremento, pero restando una unidad.
+
+## Operador de complemento lógico
+
+El operador de complemento lógico sirve para negar un valor lógico. Se suele utilizar delante de una operación de evaluación booleana. Normalmente en sentencias de decisión o bucles.
+
+La estructura es:
+
+~~~java
+! (expresion)
+~~~
+
+Si la expresión era un **true** la convierte en **false** y si era **false** la convierte en **true**.
+
+Podemos verlo en el siguiente ejemplo:
+
+~~~java
+int vble1 = 2;
+int vble2 = 3;
+
+if !(vble1 > vble2)
+    System.out.println("variable 1 es más pequeña que la variable 2");
+~~~
+
+# Operadores de Igualdad y Relacionales
+Los operadores de igualdad y relacionales en [Java][ManualJava] son aquellos que nos permiten comparar el contenido de una variable contra otra atendiendo a si son variables con un valor igual o distinto o bien si los valores son mayores o menores.
+
+El listado de operadores de igualdad y relacionales en [Java][ManualJava] es:
+
+| Operador | Descripción       |
+| -------- | ----------------- |
+| ==       | igual a           |
+| !=       | no igual a        |
+| >        | mayor que         |
+| >=       | mayor o igual que |
+| <        | menor que         |
+| <=       | menor o igual que |
+
+## Operadores de Igualdad
+
+Mediante los operadores de igualdad podemos comprobar si dos valores son iguales **(operador ==)** o diferentes **(operador !=)**.
+
+La estructura de los **operadores de igualdad** es la siguiente:
+
+~~~java
+vble1 == vble2
+vble1 != vble2
+~~~
+
+Podemos utilizar estos operadores de igualdad en [Java][ManualJava] de la siguiente forma:
+
+~~~java
+int vble1 = 5;
+int vble2 = 3;
+
+if (vble1 == vble2)
+  System.out.println("Las variables son iguales");
+
+if (vble1 != vble2)
+  System.out.println("Las variables son distintas");
+~~~
+
+## Operadores relacionales
+
+Permiten comprobar si un valor es mayor que **(operador >)**, menor que **(operador <)**, mayor o igual que **(>=)** y menor o igual que **(<=)**.
+
+Al final el operador lo valida entre dos valores o variables con la estructura:
+
+~~~java
+vble1 > vble2
+vble1 < vble2
+vble1 >= vble2
+vble1 <= vble2
+~~~
+
+De esta forma podemos tener un código fuente que nos ayude a realizar estas validaciones de relación:
+
+~~~java
+int vble1 = 5;
+int vble2 = 3;
+
+if (vble1 > vble2)
+  System.out.println("La variable 1 es mayor que la variable 2");
+
+if (vble1 < vble2)
+  System.out.println("La variable 1 es menor que la variable 2");
+
+if (vble1 >= vble2)
+  System.out.println("La variable 1 es mayor o igual que la variable 2");
+
+if (vble1 <= vble2)
+  System.out.println("La variable 1 es menor o igual que la variable 2");
+~~~
+
+# Operadores condicionales
+Los operadores condicionales en [Java][ManualJava] son aquellos que evalúan dos expresiones booleanas.
+
+Dentro de los operadores condicionales en [Java][ManualJava] tenemos:
+
+| Operador   | Descripción               |
+| ---------- | ------------------------- |
+| &&         | Operador condicional AND  |
+| &#124;&#124;| Operador condicional OR |
+| ?:         | Operador Ternario         |
+| instanceof | Operador instanceof       |
+
+## Operadores Condicionales
+
+La estructura de los operadores condicionales en [Java][ManualJava] es:
+
+~~~java
+(expresion_booleana1 && expresion_booleana2)
+(expresion_booleana1 || expresion_booleana2)
+~~~
+
+En el caso del **operador condicional AND** el resultado será **true** siempre y cuando las dos expresiones evaluadas sean **true**. Si una de las expresiones es **false** el resultado de la expresión condicional AND será **false**.
+
+Para el **operador condicional OR** el resultado será **true** siempre que alguna de las dos expresiones sea **true**.
+
+Los operadores booleanos funcionan mediante la ***evaluación por cortocircuito***. Es decir, que dependiendo del valor de la expresión 1 puede que no sea necesario evaluar la expresión 2.
+
+Para el caso del **operador condicional AND**, si la primera expresión es **false** ya devuelve **false** sin evaluar la segunda expresión. Y en el caso del **operador condicional OR** si la primera expresión es **true** ya devuelve **true** sin evaluar la segunda expresión.
+
+Podríamos ver el uso de los operadores condicionales en el siguiente código:
+
+~~~java
+int vble1 = 5;
+int vble2 = 3;
+
+if ((vble1 == 5) && (vble2 ==3))
+  System.out.println("Las dos variables mantienen sus valores iniciales");
+
+if ((vble1 == 5) || (vble2 ==3))
+  System.out.println("Al menos una variable mantiene su valor inicial");
+~~~
+
+## Operador Ternario
+
+El **operador ternario** es otro de los operadores condicionales. Es una forma reducida de escribir un **if-then-else**. El **operador ternario** es representado mediante el símbolo **?:**
+
+La estructura del operador ternario es:
+
+~~~java
+(expresion)?valor_true:valor_false;
+~~~
+
+En el caso de que la expresión tenga un valor de **true** se retorna el valor indicado después del cierre de interrogación (?) Y si la expresión tiene un valor de **false** se retorna el valor que esté después de los dos puntos (:).
+
+El **operador ternario** se suele utilizar para decidir que valor asignar. Un ejemplo de código del operador ternario sería:
+
+~~~java
+int vble1 = 5;
+int vble2 = 4;
+int mayor;
+
+mayor = (vble1 > vble2)?vble1:vble2;
+
+System.out.println("El mayor de los dos números es " + mayor);
+~~~
+
+Vemos que si la variable 1 es mayor que la variable 2 guardaremos el valor de la variable 1 en la variable mayor. En caso contrario se guardaría el valor de la variable 2, ya que en ese caso sería la mayor.
+
+## Operador instanceof
+
+El **operador instanceof** es un operador especial para los objetos. Mediante el **operador instanceof** podemos comprobar si un objeto es de una clase concreta.
+
+La estructura del **operador instanceof** es:
+
+~~~java
+objeto instanceof clase
+~~~
+
+El operador instanceof devolverá true siempre y cuando el objeto sea del tipo clase o de alguna de las clases de las que herede.
+
+Así podríamos definir una secuencia de clases:
+
+~~~java
+class Poligono {}
+interface Figura {}
+class Triangulo extends Poligono implements Figura {}
+~~~
+
+Ahora definimos un par de objetos:
+
+~~~java
+Poligono p = new Poligono();
+Triangulo t = new Triangulo();
+~~~
+
+Podemos, mediante el uso del **operador instanceof**, comprobar que t es instancia de tipo Triangulo, Poligono y Figura. Mientras que p es instancia de tipo Polígono, pero no de Triangulo, ni Figura.
+
+~~~java
+System.out.println("p es instancia de ");
+if (p instanceof Poligono)
+  System.out.println("Poligono");
+if (p instanceof Triangulo)
+    System.out.println("Triangulo");
+if (p instanceof Figura)
+    System.out.println("Figura");
+
+System.out.println("t es instancia de ");
+if (t instanceof Poligono)
+    System.out.println("Poligono");
+if (t instanceof Triangulo)
+    System.out.println("Triangulo");
+if (t instanceof Figura)
+    System.out.println("Figura");
+~~~
+
+# Operadores de Bit
+El **operador de bit AND** lo que hace es multiplicar los bits de las dos cadenas. Las multiplicaciones de bits dan como resultado que 1 x 1 siempre es 1 y que 1 x 0 y 0 x 0 siempre da 0. El tamaño de la cadena resultado siempre es el mismo al tamaño de las cadenas.
+
+Así de la siguiente operación:
+
+~~~java
+0101 & 0011
+~~~
+
+Tendremos que el resultado es:
+
+~~~java
+0101 AND    (decimal 5)
+0011        (decimal 3)
+--------
+0001        (decimal 1)
+~~~
+
+### Operador OR
+
+En el caso del **OR inclusivo (operador |)** lo que se hace es multiplicar los bits asumiendo que 1 multiplicado por 1 o por 0, siempre es 1. Mientras que la única multiplicación que da 0 es 0 x 0.
+
+Así la operación:
+
+~~~java
+(0101) | (0011)
+~~~
+
+Dará como resultado:
+
+~~~java
+0101 OR     (decimal 5)
+0011        (decimal 3)
+--------
+0111        (decimal 7)
+~~~
+
+### Operador XOR
+
+Para el caso del **OR exclusivo (operador ^) conocido como XOR**. La multiplicación de bits será 1 para los casos 1 x 0 y 0 x 1. Las multiplicaciones 1 x 1 y 0 x 0 siempre darán como resultado 0.
+
+De esta forma si tenemos la operación:
+
+~~~java
+(0101) ^ (0011)
+~~~
+
+El resultado que encontraremos será:
+
+~~~java
+0101 XOR    (decimal 5)
+0011        (decimal 3)
+--------
+0110        (decimal 6)
+~~~
+
+### Operador NOT
+
+El **operador de negación de bits** nos permite invertir el contenido de bits de una cadena. De tal manera que invierte los bits convirtiendo los 1 en 0 y los 0 en 1.
+
+En este caso la estructura será:
+
+~~~java
+~ (valor)
+~~~
+
+Así podríamos tener la sentencia:
+
+~~~java
+~ (0111)
+~~~
+
+La cual se traduciría en:
+
+~~~java
+0111 NOT    (decimal 7)
+--------
+1000        (decimal 8)
+~~~
+
+## Operadores de Desplazamiento de Bits
+
+Los **operadores de desplazamiento de bits** permiten mover los bits dentro de la cadena. La estructura de estos operadores es la siguiente:
+
+~~~java
+(valor_binario1) >> (valor_binario2)
+(valor_binario1) >> (valor_binario2)
+(valor_binario1) >>> (valor_binario2)
+~~~
+
+### Operador Desplazamiento a Izquierdas
+
+En el caso del desplazamiento a izquierdas, desplaza el valor_binario1 a izquierdas tantas veces como indique el valor_binario2. Los bits se mueven a la izquierda y se añaden tantos ceros como indique el valor_binario 2.
+
+De esta forma el código:
+
+~~~java
+(0011) << (0001) // Desplaza 0011 una vez dando 110
+(0011) << (0011) // Desplaza 0011 tres veces dando 11000
+~~~
+
+### Operador Desplazamiento a Derechas
+
+Es exactamente igual al operador de desplazamiento a izquierdas, pero con la diferencia que mete dígitos por la izquierda y va eliminado el último dígito.
+
+Si tiene que meter un 1 o tiene que meter un 0 dependerá del valor del bit del signo. Si el valor del bit de signo es positivo (0), lo que hace es insertar 0. Si el valor del bit de signo es negativo (1), lo que hace es insertar 1.
+
+Los ceros o unos a insertar los determinará el valor_binario2 y serán sobre el valor_binario1.
+
+De esta forma podemos ver los códigos
+
+~~~java
+(1100) >> (0001) // Desplaza 1100 una vez dando 0110
+(1000) >> (0011) // Desplaza 1100 tres veces dando 0001
+~~~
+
+Si manipulamos decimales lo que hacemos es dividir el número por 2 tantas veces como indique su desplazamiento.
+
+~~~java
+12 >> 1  // Sería 12 / 2 = 6
+12 >> 2  // Sería 12 / 2 = 6; 6/2 = 3
+~~~
+
+Si manejamos valores negativos. Por ejemplo de un elemento Byte (8 bits, con el primero como signo)
+
+~~~java
+1110 0011 >> 0011   // Desplaza tres a la izquierda dejando 1111 1100
+~~~
+
+### Operador Desplazamiento a Derechas sin signo
+
+Es como el operador desplazamiento a derechas pero no tiene en cuenta el signo. Por lo cual siempre mete ceros por la izquierda.
+
+Este operador sería más utilizado si manejamos valores binarios para ejecutar un desplazamiento de bits.
+
+Así podríamos ver el siguiente código:
+
+~~~java
+1110 0011 >>> 0011  // Desplaza tres a la izquierda dejando 0001 1100
+~~~
+
+# Expresiones, Sentencias y Bloques
+Un programa en [Java][ManualJava] se compone de un conjunto de sentencias que se ejecutan para resolver un problema. Las sentencias son el elemento básico de ejecución de los programa [Java][ManualJava].
+
+A parte de las sentencias, en un programa [Java][ManualJava] nos encontraremos con expresiones y bloques.
+
+## Expresiones
+
+Una expresión es un conjunto de variables, operadores e invocaciones de métodos que se construyen para poder ser evaluadas retornando un resultado.
+
+Ejemplos de expresiones son:
+
+~~~java
+int valor = 1;
+if (valor 1 > valor2) { ... }
+~~~
+
+Cuando tengamos expresiones de evaluación complejas es recomendable que utilicemos paréntesis para saber cual es el orden de ejecución de operaciones.
+
+Ya que si tenemos una expresión como
+
+~~~java
+2 + 10 / 5
+~~~
+
+No será la misma si ponemos
+
+~~~java
+(2 + 10) / 5
+~~~
+
+ó
+
+~~~java
+2 + (10 / 5)
+~~~
+
+En el caso de no utilizar paréntesis se ejecutará el orden de preferencia de operadores. En este caso la división tiene más preferencia que la suma.
+
+## Sentencias
+
+Una sentencia es la unidad mínima de ejecución de un programa. Un programa se compone de conjunto de sentencias que acaban resolviendo un problema. **Al final de cada una de las sentencias encontraremos un punto y coma (;)**.
+
+Tenemos los siguientes tipos de sentencias.
+
+### Sentencias de declaración
+
+~~~java
+int valor = 2;
+~~~
+
+### Sentencias de asignación
+
+~~~java
+valor = 2;
+~~~
+
+### Sentencias de incremento o decremento
+
+~~~java
+valor++;
+~~~
+
+### Invocaciones a métodos
+
+~~~java
+System.out.println("Hola Mundo");
+~~~
+
+### Creaciones de objetos
+
+~~~java
+Circulo miCirculo = new Circulo(2,3);
+~~~
+
+### Sentencias de control de flujo
+
+~~~java
+if (valor>1) { … }
+~~~
+
+## Bloques
+
+Un bloque es un conjunto de sentencias los cuales están delimitados por llaves.
+
+~~~java
+if (expresion) {
+    // Bloque 1
+} else {
+    // Bloque 2
+}
+~~~
+
+
+[GitJava]: https://github.com/manualweb/manual-java
 [ManualJava]: http://www.manualweb.net/tutorial-java/ "Manual Java"
 [ManualXML]: http://www.manualweb.net/tutorial-xml/ "Manual XML"
 [ManualXSLT]: http://www.manualweb.net/tutorial-xslt/ "Manual XSLT"
