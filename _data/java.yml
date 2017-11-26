@@ -12,6 +12,7 @@
   - variables-java
   - tipos-datos-primitivos-java
   - literales-java
+  - expresiones-sentencias-bloques-java
 
 - title: Operadores Java
   docs:
@@ -20,3 +21,11 @@
   - operadores-igualdad-relacionales-java
   - operadores-condicionales-java
   - operadores-bit-java
+
+- title: Sentencias de Control
+  docs:
+  - sentencias-control-java
+  - sentencias-decision-java
+  - sentencias-bucle-java
+  - sentencias-ramificacion-java
+  
