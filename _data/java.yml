@@ -28,4 +28,8 @@
   - sentencias-decision-java
   - sentencias-bucle-java
   - sentencias-ramificacion-java
-  
+
+- title: Clase String
+  docs:
+  - clase-string-representando-una-cadena
+  - funciones-basicas-con-cadenas
