@@ -1,0 +1,49 @@
+- title: Introducción HTML
+  docs:
+  - introduccion-world-wide-web
+  - introduccion-html
+  - historia-html-inicios
+  - historia-html-estandar
+
+- title: Documentos HTML
+  docs:
+  - tipos-documentos-html
+  - sintaxis-html
+  - documento-html
+  - mi-primera-pagina-html
+  - metatags-html
+
+- title: Texto HTML
+  docs:
+  - texto-basico-html
+  - texto-avanzado-html
+  - entidades-html
+
+- title: Colores e Imágenes HTML
+  docs:
+  - colores-html
+  - imagenes-html
+  - mapas-html
+
+- title: Enlaces HTML
+  docs:
+  - enlaces-html
+
+- title: Listas HTML
+  docs:
+  - listas-html
+
+- title: Agrupaciones HTML
+  docs:
+  - agrupaciones-html
+
+- title: Tablas HTML
+  docs:
+  - tablas-html
+  - tablas-basicas-html
+  - tablas-avanzadas-html
+
+- title: Formularios HTML
+  docs:
+  - formularios-html
+  - estructura-envio-formularios-html
