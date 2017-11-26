@@ -12,22 +12,31 @@
 
 ## Índice
 1. Introducción a Java
-2. Historia de Java
-3. Tecnologías Java
-4. Instalar Java
-5. Mi primera aplicación Java
-6. Conceptos básicos en Java
-7. Variables en Java
-8. Tipos de Datos Primitivos en Java
-9. Literales en Java
-10. Operadores en Java
+  1. Introducción a Java
+  2. Historia de Java
+  3. Tecnologías Java
+  4. Instalar Java
+  5. Mi primera aplicación Java
+2. Conceptos Básicos
+  1. Conceptos básicos en Java
+  2. Variables en Java
+  3. Tipos de Datos Primitivos en Java
+  4. Literales en Java
+  5. Expresiones, sentencias y Bloques
+3. Operadores en Java
   1. Operadores de Asignación y Aritméticos
   2. Operadores Unarios
   3. Operadores de Igualdad y relacionales
   4. Operadores Condicionales
   5. Operadores de Bit
-11. Expresiones, sentencias y Bloques
-
+4. Sentencias de control
+  1. Sentencias de control
+  2. Sentencias Decisión
+  3. Sentencias Bucle
+  4. Sentencias Ramificación
+5. Clase String
+  1. Representando una Cadenas
+  2. Funciones Básicas con Cadenas
 
 # Introducción a Java
 
@@ -560,7 +569,7 @@ Una definición de paquete podría ser:
 package net.manualweb.java.ejemplos;
 ~~~
 
-El lenguaje **[Java][ManualJava] nos proporciona un conjunto de paquetes por defecto** (conocido como **API Java**) en los que se pueden encontrar múltiples utilidades del lenguaje. Por ejemplo, la clase [Java][ManualJava] que nos ayuda a manipular las cadenas de texto es la clase [String][String]. La [clase String][String] la podemos encontrar en el paquete **java.lang**.
+El lenguaje **[Java][ManualJava] nos proporciona un conjunto de paquetes por defecto** (conocido como **API Java**) en los que se pueden encontrar múltiples utilidades del lenguaje. Por ejemplo, la clase [Java][ManualJava] que nos ayuda a manipular las cadenas de texto es la clase [String][ClaseString]. La [clase String][ClaseString] la podemos encontrar en el paquete **java.lang**.
 
 ## Herencia
 
@@ -790,11 +799,11 @@ En el caso de que definamos una variable y no le demos ningún valor, por defect
 | String (o cualquier objeto) | null              |
 | boolean                     | false             |
 
-Hay un tipo de dato [String][String] para el manejo de cadenas que no es en sí un tipo de dato primitivo. Con el tipo de dato String podemos manejar cadenas de caracteres separadas por dobles comillas.
+Hay un tipo de dato [String][ClaseString] para el manejo de cadenas que no es en sí un tipo de dato primitivo. Con el tipo de dato String podemos manejar cadenas de caracteres separadas por dobles comillas.
 
-El elemento [String][String] es un tipo de dato inmutable. Es decir, que una vez creado, su valor no puede ser cambiado.
+El elemento [String][ClaseString] es un tipo de dato inmutable. Es decir, que una vez creado, su valor no puede ser cambiado.
 
-El [String][String] no es un tipo de dato primitivo del lenguaje [Java][ManualJava]. Pero su uso es igual de importante que el de los tipos de datos revisados aquí. Veremos más en detalle el uso del tipo [String][String].
+El [String][ClaseString] no es un tipo de dato primitivo del lenguaje [Java][ManualJava]. Pero su uso es igual de importante que el de los tipos de datos revisados aquí. Veremos más en detalle el uso del tipo [String][ClaseString].
 
 # Literales en Java
 
@@ -896,6 +905,98 @@ long mascaraBinaria = 0b11010010_01101001_10010100_10010010;
 ~~~
 
 No podremos utilizar el literal de subrayado al principio o final del número, alrededor de un punto decimal, ni entre el número y un literal de entero o decimal (D, F o L).
+
+# Expresiones, Sentencias y Bloques
+Un programa en [Java][ManualJava] se compone de un conjunto de sentencias que se ejecutan para resolver un problema. Las sentencias son el elemento básico de ejecución de los programa [Java][ManualJava].
+
+A parte de las sentencias, en un programa [Java][ManualJava] nos encontraremos con expresiones y bloques.
+
+## Expresiones
+
+Una expresión es un conjunto de variables, operadores e invocaciones de métodos que se construyen para poder ser evaluadas retornando un resultado.
+
+Ejemplos de expresiones son:
+
+~~~java
+int valor = 1;
+if (valor 1 > valor2) { ... }
+~~~
+
+Cuando tengamos expresiones de evaluación complejas es recomendable que utilicemos paréntesis para saber cual es el orden de ejecución de operaciones.
+
+Ya que si tenemos una expresión como
+
+~~~java
+2 + 10 / 5
+~~~
+
+No será la misma si ponemos
+
+~~~java
+(2 + 10) / 5
+~~~
+
+ó
+
+~~~java
+2 + (10 / 5)
+~~~
+
+En el caso de no utilizar paréntesis se ejecutará el orden de preferencia de operadores. En este caso la división tiene más preferencia que la suma.
+
+## Sentencias
+
+Una sentencia es la unidad mínima de ejecución de un programa. Un programa se compone de conjunto de sentencias que acaban resolviendo un problema. **Al final de cada una de las sentencias encontraremos un punto y coma (;)**.
+
+Tenemos los siguientes tipos de sentencias.
+
+### Sentencias de declaración
+
+~~~java
+int valor = 2;
+~~~
+
+### Sentencias de asignación
+
+~~~java
+valor = 2;
+~~~
+
+### Sentencias de incremento o decremento
+
+~~~java
+valor++;
+~~~
+
+### Invocaciones a métodos
+
+~~~java
+System.out.println("Hola Mundo");
+~~~
+
+### Creaciones de objetos
+
+~~~java
+Circulo miCirculo = new Circulo(2,3);
+~~~
+
+### Sentencias de control de flujo
+
+~~~java
+if (valor>1) { … }
+~~~
+
+## Bloques
+
+Un bloque es un conjunto de sentencias los cuales están delimitados por llaves.
+
+~~~java
+if (expresion) {
+    // Bloque 1
+} else {
+    // Bloque 2
+}
+~~~
 
 # Operadores de Asignación y Aritméticos
 
@@ -1381,97 +1482,809 @@ Así podríamos ver el siguiente código:
 1110 0011 >>> 0011  // Desplaza tres a la izquierda dejando 0001 1100
 ~~~
 
-# Expresiones, Sentencias y Bloques
-Un programa en [Java][ManualJava] se compone de un conjunto de sentencias que se ejecutan para resolver un problema. Las sentencias son el elemento básico de ejecución de los programa [Java][ManualJava].
+# Sentencias de Control
+Un programa en [Java][ManualJava] se ejecuta en orden desde la primera sentencia hasta la última.
 
-A parte de las sentencias, en un programa [Java][ManualJava] nos encontraremos con expresiones y bloques.
+Si bien existen las **sentencias de control de flujo** las cuales permiten alterar el fujo de ejecución para tomar decisiones o repetir sentencias.
 
-## Expresiones
+Dentro de las **sentencias de control de flujo** tenemos las siguientes:
 
-Una expresión es un conjunto de variables, operadores e invocaciones de métodos que se construyen para poder ser evaluadas retornando un resultado.
+*   Sentencias de decisión
+*   Sentencias de bucle
+*   Sentencias de ramificación
 
-Ejemplos de expresiones son:
+## Sentencias de Decisión
+
+Son sentencias que nos permiten tomar una decisión para poder ejecutar un bloque de sentencias u otro.
+
+Las sentencias de decisión son: `if-then-else` y `switch`.
+
+Mediante `if-then-else` podremos evaluar una decisión y elegir por un bloque u otro.
 
 ~~~java
-int valor = 1;
-if (valor 1 > valor2) { ... }
+if (expresion) {
+  // Bloque then
+} else {
+  // Bloque else
+}
 ~~~
 
-Cuando tengamos expresiones de evaluación complejas es recomendable que utilicemos paréntesis para saber cual es el orden de ejecución de operaciones.
-
-Ya que si tenemos una expresión como
+Mientras que con `switch` podremos evaluar múltiples decisiones y ejecutar un bloque asociado a cada una de ellas.
 
 ~~~java
-2 + 10 / 5
+switch (expresion) {
+  case valor1:
+    bloque1;
+    break;
+  case valor2:
+    bloque2;
+    break;
+  case valor3:
+    bloque3;
+    break;
+  …
+  default:
+      bloque_por_defecto;
+}
 ~~~
 
-No será la misma si ponemos
+## Sentencias de Bucle
+
+Las **sentencias de bucle** nos van a permitir ejecutar un bloque de sentencias tantas veces como queramos, o tantas veces como se cumpla una condición.
+
+En el momento que se cumpla esta condición será cuando salgamos del bucle.
+
+Las sentencias de bucle en [Java][ManualJava] son: `while`, `do-while` y `for`.
+
+En el caso de la sentencia `while` tenemos un bucle que se ejecuta mientas se cumple la condición, pero puede que no se llegue a ejecutar nunca, si no se cumple la condición la primera vez.
 
 ~~~java
-(2 + 10) / 5
+while (expresion) {
+  bloque_sentencias;
+}
+~~~
+
+Por otro lado, si utilizamos `do-while`, lo que vamos a conseguir es que el bloque de sentencias se ejecute, al menos, una vez.
+
+~~~java
+do {
+  bloque_sentencias;
+} while (expresion)
+~~~
+
+La sentencia `for` nos permite escribir toda la estructura del bucle de una forma más acotada. Si bien, su cometido es el mismo.
+
+~~~java
+for (sentencias_inicio;expresion;incremento) {
+  bloque_sentencias;
+}
+~~~
+
+## Sentencias de ramificación
+
+Las **sentencias de ramificación** son aquellas que nos permiten romper con la ejecución lineal de un programa.
+
+El programa se va ejecutando de forma lineal, sentencia a sentencia. Si queremos romper esta linealidad tenemos las **sentencias de ramificación**.
+
+Las **sentencias de ramificación** en [Java][ManualJava] son: `break` y `continue`.
+
+En el caso de `break` nos sirve para salir de bloque de sentencias, mientras que `continue` sirve para ir directamente al siguiente bloque.
+
+# Sentencias Decisión
+Las **sentencias de decisión** son sentencias que nos permiten tomar una decisión para poder ejecutar un bloque de sentencias u otro.
+
+Las **sentencias de decisión** son: `if-then-else` y `switch`.
+
+## if-then-else
+
+La estructura de las sentencias `if-then-else es`:
+
+~~~java
+if (expresion) {
+  // Bloque then
+} else {
+  // Bloque else
+}
+~~~
+
+Se evalua la expresión indicada en la sentencia `if`. En el caso de que la expresión sea `true` se ejecutará el bloque de sentencias `then` y en el caso de que la expresión sea `false` se ejecutará el bloque de sentencias `else`.
+
+La parte del `else` no tiene por qué existir. En este caso tendríamos una sentencia `if-then`.
+
+~~~java
+if (expresion) {
+  // Bloque then
+}
+~~~
+
+De esta forma podríamos tener el siguiente código fuente:
+
+~~~java
+int valor = 4;
+
+if (valor < 10) {
+  System.out.println("El número es menor de 10");
+} else {
+  System.out.println("El número es mayor de 10");
+}
+~~~
+
+Las sentencias `if-then-else` pueden estar anidadas y así nos encontraríamos con una sentencia **if-then-elseif**, la cual tendría la siguiente estructura:
+
+~~~java
+if (expresion) {
+  // Bloque then
+} else if {
+  // Bloque else
+} else if {
+  // Bloque else
+} else if {
+  // Bloque else
+} ...
+~~~
+
+De esta forma podemos tener el siguiente código:
+
+~~~java
+int valor = 14;
+
+if (valor < 10) {
+  System.out.println("El valor es una unidad");
+} else if (valor < 100) {
+  System.out.println("El valor es una decena");
+} else if (valor < 1000) {
+  System.out.println("El valor es una centena");
+} else if (valor < 10000) {
+  System.out.println("El valor es un millar");
+} else {
+  System.out.println("Es un número grande");
+}
+~~~
+
+## switch
+
+Para los casos en los que se tienen muchas ramas o caminos de ejecución en una sentencia `if` tenemos la sentencia `switch`. La sentencia `switch` evalúa una expresión y ejecutará el bloque de sentencias que coincida con el valor de la expresión.
+
+El valor de la expresión tiene que ser numérico. Aunque a partir de *Java SE 7* ya se pueden utilizar expresiones cuya evaluación sean cadenas.
+
+La estructura de la sentencia switch es:
+
+~~~java
+switch (expresion) {
+  case valor1:
+    bloque1;
+    break;
+  case valor2:
+    bloque2;
+    break;
+  case valor3:
+    bloque3;
+    break;
+  ...
+  default:
+      bloque_por_defecto;
+}
+~~~
+
+Es importante ver que se utiliza la sentencia **break.** La sentencia `break` hace que se salga de la sentencia `switch` y por lo tanto no se evalúe el resto de sentencias. Por lo tanto su uso es obligatorio al final de cada uno de los bloques.
+
+Un ejemplo claro en el que podemos utilizar la sentencia `switch` es para evaluar el valor de un mes en numérico y convertirlo a cadena. Este código quedaría de la siguiente forma:
+
+~~~java
+int iMes = 3;
+String sMes;
+
+switch (iMes) {
+    case 1:
+        sMes = "Enero";
+        break;
+    case 2:
+        sMes = "Febrero";
+        break;
+    case 3:
+        sMes = "Marzo";
+        break;
+    case 4:
+        sMes = "Abril";
+        break;
+    case 5:
+        sMes = "Mayo";
+        break;
+    case 6:
+        sMes = "Junio";
+        break;
+    case 7:
+        sMes = "Julio";
+        break;
+    case 8:
+        sMes = "Agosto";
+        break;
+    case 9:
+        sMes = "Septiembre";
+        break;
+    case 10:
+        sMes = "Octubre";
+        break;
+    case 11:
+        sMes = "Noviembre";
+        break;
+    case 12:
+        sMes = "Diciembre";
+        break;
+    default:
+        sMes = "Mes incorrecto";
+}
+
+System.out.println(sMes);
+~~~
+
+Este mismo modelo lo podríamos haber implementado mediante una estructura `if-then-else`. Si bien, como podemos ver en el código queda más complejo
+
+~~~java
+if (iMes == 1){
+    sMes = "Enero";
+} else if (iMes == 2) {
+    sMes = "Febrero";
+} else if (iMes == 3) {
+    sMes = "Marzo";
+} else if (iMes == 4) {
+    sMes = "Abril";
+} else if (iMes == 5) {
+    sMes = "Mayo";
+} else if (iMes == 6) {
+    sMes = "Junio";
+} else if (iMes == 7) {
+    sMes = "Julio";
+} else if (iMes == 8) {
+    sMes = "Agosto";
+} else if (iMes == 9) {
+    sMes = "Septiembre";
+} else if (iMes == 10) {
+    sMes = "Octubre";
+} else if (iMes == 11) {
+    sMes = "Noviembre";
+} else if (iMes == 12) {
+    sMes = "Diciembre";
+} else {
+    sMes = "Mes incorrecto";
+}
+
+System.out.println(sMes);
+~~~
+
+Otra cosa que tenemos que saber de la sentencia `switch` es que las evaluaciones case pueden ser múltiples. La estructura en este caso sería:
+
+~~~java
+switch (expresion) {
+  case valor1: case valor2: case valor3:
+    bloque1;
+    break;
+  case valor4: case valor5: case valor6:
+    bloque2;
+    break;
+  ...
+  default:
+    bloque_por_defecto;
+}
+~~~
+
+Esto podemos utilizarlo para saber los días del mes. El código sería el siguiente:
+
+~~~java
+int iMes = 3;
+String sDias;
+
+switch (iMes) {
+    case 1: case 3: case 5: case 7: case 8: case 10: case 12:
+        sDias = "El mes tiene 31 días";
+        break;
+    case 4: case 6: case 9: case 11:
+        sDias = "El mes tiene 30 días";
+        break;
+    case 2:
+        sDias = "El mes tiene 28 días (o 29 días si es año bisiesto)";
+        break;          
+    default:
+        sDias = "Mes incorrecto";
+}
+~~~
+
+Como vemos tenemos diferentes evaluaciones con la sentencia `case`.
+
+# Sentencias Bucle
+Las **sentencias de bucle** nos van a permitir ejecutar un bloque de sentencias tantas veces como queramos, o tantas veces como se cumpla una condición.
+
+Las **sentencias de bucle** en [Java][ManualJava] son: `while`, `do-while` y `for`.
+
+## while
+
+La estructura repetitiva `while` realiza una primera evaluación antes de ejecutar el bloque. Si la expresión es `true` pasa a ejecutar de forma repetida el bloque de sentencias.
+
+Cada vez que termina de ejecutar el bloque de sentencias vuelve a evaluar la expresión. Si la expresión sigue siendo `true` vuelve a ejecutar el bloque. En el caso de que la expresión sea `false` se saldrá del bucle.
+
+Es por ello que dentro del bloque de sentencias *deberán de existir sentencias que modifiquen la evaluación de la expresión, ya que de no hacerse se podría entrar en un bucle infinito*.
+
+La estructura de la sentencia `while` es la siguiente:
+
+~~~java
+while (expresion) {
+  bloque_sentencias;
+}
+~~~
+
+Los casos de uso de una sentencia repetitiva `while` son variados, pero principalmente se utiliza para recorrer estructuras de datos o tener contadores.
+
+Por ejemplo podemos realizar un contador de 1 a 10 de la siguiente forma:
+
+~~~java
+int contador = 1;
+while (contador <= 10) {
+  System.out.println(contador);
+  contador++;
+}
+~~~
+
+## do-while
+
+En el caso de la estructura repetitiva `do-while` el funcionamiento es el mismo que el de `while`. Pero con una diferencia, primero se ejecuta el bloque de sentencias y luego se evalua la expresión. Por lo tanto siempre se ejecutará, al menos una vez, el bloque de sentencias.
+
+La estructura de la sentencia `do-while` es:
+
+~~~java
+do {
+  bloque_sentencias;
+} while (expresion)
+~~~
+
+Al igual que anteriormente, en el bloque de sentencias deberemos de modificar alguna de las condiciones de la expresión para poder salir del bucle.
+
+Un ejemplo claro del bucle `do-while` sería el ejemplo en el que le pedimos al usuario que introduzca números por teclado, los cuales mostraremos en forma de eco por pantalla, hasta que introduzca el cero. En ese caso saldremos del bucle.
+
+Utilizaremos la estructura `do-while` en vez de la `while` ya que al menos vamos a pedirle al usuario un número.
+
+El código sería el siguiente:
+
+~~~java
+Scanner reader = new Scanner(System.in);        
+int iNumero;
+
+do {
+    System.out.println("Introduce carácter por consola");
+    iNumero = reader.nextInt();
+    System.out.println(iNumero);
+} while (iNumero <> 0);
+~~~
+
+En el caso de haberlo realizado con un bucle `while` tendríamos que repetir la captura y salida de datos. Veamos como quedaría para que puedas ver las diferencias.
+
+~~~java
+Scanner reader = new Scanner(System.in);        
+int iNumero;
+
+System.out.println("Introduce carácter por consola");
+iNumero = reader.nextInt();
+System.out.println(iNumero);
+
+while (iNumero <> 0) {
+  System.out.println("Introduce carácter por consola");
+  iNumero = reader.nextInt();
+  System.out.println(iNumero);
+}
+~~~
+
+## for
+
+Otra de las sentencias repetitivas que tenemos, a parte de los bucles `while` y `do-while`, es la sentencia `for`.
+
+La sentencia `for` tiene la característica de que tiene bien definido el inicio del bloque, la evaluación de la expresión, el incremento de valor y el bloque de sentencias.
+
+La estructura del bucle `for` es:
+
+~~~java
+for (sentencias_inicio;expresion;incremento) {
+  bloque_sentencias;
+}
+~~~
+
+Tanto las sentencias_inicio, expresión como incremento son opcionales y pueden estar o no. Aunque normalmente aparecerán en la estructura.
+
+Esta estructura la podríamos reproducir mediante una sentencia while de la siguiente forma:
+
+~~~java
+sentencias_inicio;
+while (expresion) {
+  bloque_sentencias;
+  incremento;
+}
+~~~
+
+Las funcionalidades en las que utilizaremos la sentencia `for` serán las mismas que las sentencias `while` y `do-while`, que serán contadores, recorrer estructuras,...
+
+Si queremos definir un contador de 1 a 10 mediante una sentencia `for` utilizaremos el siguiente código:
+
+~~~java
+for (int x=1;x<=10;x++=) {
+  System.out.println("Valor del contador: " + x);
+}
+~~~
+
+En pantalla obtendremos el siguiente resultado:
+
+<pre><samp>Valor del contador: 1
+Valor del contador: 2
+Valor del contador: 3
+Valor del contador: 4
+Valor del contador: 5
+Valor del contador: 6
+Valor del contador: 7
+Valor del contador: 8
+Valor del contador: 9
+Valor del contador: 10</pre>
+
+# Sentencias Ramificación
+Las **sentencias de ramificación** son aquellas que nos permiten romper con la ejecución lineal de un programa.
+
+## break
+
+Ya vimos que en la sentencia selectiva `switch` se utilizaba la sentencia `break` para salir de las evaluaciones y así solo ejecutar el bloque de la opción correspondiente. Si bien podemos utilizar la sentencia `break` con las sentencias repetitivas `while`, `do-while` y `for`. Esta es la que se conoce como sentencia **break sin etiquetar**.
+
+Cuando utilicemos el `break` dentro de uno de estos bucles lo que se conseguirá es salirse de la ejecución del bucle hasta el siguiente bloque de sentencias. Mismo efecto que si la expresión de evaluación hubiese dado `false`.
+
+Así podremos encontrarnos códigos como el siguiente:
+
+~~~java
+while (expresion) {
+  sentencia(s);
+  break;
+  sentencias(s);
+}
+~~~
+
+Al ejecutar la sentencia `break` ya no ejecutaremos las sentencias que vayan después.
+
+El uso del `break` dentro de estructuras repetitivas suele aparecer cuando estamos realizando la búsqueda de un elemento por una estructura de datos y lo hemos encontrado.
+
+Por ejemplo, si tenemos un array y queremos buscar un número dentro del array podríamos tener el siguiente código:
+
+~~~java
+int[] numeros = {12,3,4,5,6,7,9,10};
+int posicion = 0;
+boolean encontrado = false;
+
+while (posicion < numeros.length) {
+  if (numeros[posicion] == 5) {
+        encontrado = true;
+        break;
+  }
+  posicion++;
+}
+
+if (encontrado) {
+    System.out.println("El número está en la posición: " + posicion);
+} else {
+    System.out.println("Número no encontrado");
+}
+~~~
+
+Las sentencias `break` se pueden cambiar por ***variables bandera***. Estas ***variables bandera*** actúan como cortocircuitos de las expresiones de validación y hacen que salgamos de los bucles.
+
+En este caso podríamos haber utilizado la variable “encontrado” como ***variable bandera***. Y podríamos reescribir el código de la siguiente forma:
+
+~~~java
+int[] numeros = {12,3,4,5,6,7,9,10};
+int posicion = -1;
+boolean encontrado = false;
+
+while ((!encontrado) && (posicion&lt;numeros.length)) {
+  posicion++;
+  if (numeros[posicion] == 5) {
+        encontrado = true;
+  }
+}
+
+if (encontrado) {
+    System.out.println("El número está en la posición: " + posicion);
+} else {
+    System.out.println("Número no encontrado");
+}
+~~~
+
+Como podéis ver el código es muy parecido y solo aparece la condición de la ***variable bandera***.
+
+Una de las cosas que tenemos que tener en cuenta a la hora de utilizar las sentencias **break sin etiquetar** es que estas generan que se rompa la secuencia de ejecución de sentencias hasta el primer bloque anidado.
+
+Pero, ¿qué sucedería si queremos salir de un conjunto de bucles anidados? Aunque podríamos utilizar múltiples `break` existe la posibilidad de utilizar sentencias **break etiquetadas**.
+
+Las sentencias **break etiquetadas** funcionan igual que las `break` pero al ejecutarse se salen a la siguiente sentencia después del bloque etiquetado.
+
+La sintaxis es:
+
+~~~java
+break nombre_etiqueta;
+~~~
+
+Veamos como podría ser una estructura de uso de las sentencias **break etiquetadas**.
+
+~~~java
+sentencia(s) iniciales;
+
+etiqueta:
+  while (expresion) {
+    sentencia(s) bloque1;
+    while (expresion) {
+      sentencia(s) bloque2;
+      break etiqueta;
+    }
+  }
+
+sentencias(s) finales;
+~~~
+
+Al ejecutarse se sale de todo el bloque etiquetado como etiqueta y ejecuta las sentencias finales.
+
+Esto podemos encontrarlo si estamos recorriendo una matriz para buscar un elemento. Ya que para recorrer una matriz vamos a necesitar dos bucles anidados.
+
+~~~java
+int[][] matriz = {
+  {1,2,3,4},
+  {5,6,7,8},
+  {9,10,11,12}
+};
+int numeroBuscado = 5;
+
+busqueda:
+for (int x=0; x &lt; matriz.length; x++) {
+  for (int y=0; y &lt; matriz[x].length; y++) {
+    if (matriz[x][y] = numeroBuscado) {
+      encontrado = true;
+      break busqueda;
+    }
+  }
+}
+
+if (encontrado) {
+  System.out.println(x + "," + y);
+} else {
+  System.out.println("No encontrado");
+}
+~~~
+
+## continue
+
+Otra sentencia que podemos utilizar en los bucles es la sentencia `continue`. A ejecutar una La sentencia `continue` dejaremos de ejecutar las sentencias que quedan para acabar el bloque dentro de un bucle para volver a evaluar una expresión.
+
+La estructura de unas sentencia `continue` sería:
+
+~~~java
+while (expresion) {
+  sentencia(s) iniciales;
+  continue;
+  sentencias(s) finales;
+}
+~~~
+
+Al ejecutarse la sentencia `continue` nunca se ejecutarán las sentencias finales.
+
+De igual manera que sucedía con la sentencia `break`, podemos realizar **continue etiquetados**. En este caso la sentencia `continue` nos llevará directamente a la primera condición de evaluación del bloque.
+
+La estructura en este caso sería la siguiente:
+
+~~~java
+etiqueta:
+  while (expresion) {
+    sentencia(s) iniciales;
+    while (expresion) {
+      sentencia(s) iniciales;
+      continue etiqueta;
+      sentencia(s) finales;
+    }
+    sentencia(s) finales;
+  }
+~~~
+
+# String: Representando una Cadena
+Una cadena de texto no deja de ser más que la sucesión de un conjunto de caracteres alfanuméricos, signos de puntuación y espacios en blanco con más o menos sentido.
+
+Podemos encontrarnos desde la archiconocida cadena “Hola Mundo” y la no menos “Mi primera cadena de texto”, pasando por las cadenas de texto personalizadas “Víctor”, “Víctor Cuervo”, las cadenas de depuración “¿Aquí?”, “Paso 1”, “Paso 2”,... hasta las inclasificables “asdf”.
+
+Todas ellas serán representadas en java con la clase [```String```][String] y [```StringBuffer```][StringBuffer]. Aunque de momento nos centraremos en la primera.
+
+Para encontrar la clase [```String```][String] dentro de las librerías de [Java][ManualJava] tendremos que ir a [```java.lang.String```][JavaLangString].
+
+## Creando una cadena
+Para crear una cadena tenemos dos opciones:
+
+*   Instanciamos la clase [```String```][String]. Que sería una creación explicita de la clase
+
+~~~java
+String sMiCadena = new String("Cadena de Texto");
+~~~
+
+*   Crear implícitamente la cadena de texto. Es decir, simplemente le asignamos el valor al objeto.
+
+~~~java
+String sMiCadena = "Cadena de Texto";
+~~~
+
+En este caso, [Java][ManualJava], creará un objeto [```String```][String] para tratar esta cadena.
+
+## Crear una cadena vacía
+Podemos tener la necesidad de crear una cadena vacía. Puede darse el caso que no siempre sepamos lo que vamos a poner de antemano en la cadena de texto. ¿A quién no le surgen dudas? ;-) ... Fuera de bromas, muchas veces la cadena de texto nos la proporcionará el usuario, otro sistema,....
+
+Para poder crear la cadena vacía nos bastará con asignarle el valor de "", o bien, utilizar el constructor vacío.
+
+~~~java
+String sMiCadena = "";
+String sMiCadena = new String();
+~~~
+
+## Constructores String
+Visto lo visto podemos resumir que tenemos dos tipos de constructores principales de la clase [```String```][String]:
+
+
+*   **String(),** <span style="font-weight: normal">q</span><span style="font-weight: normal">ue construirá un objeto [```String```][String] sin inicializar.</span>
+*   **String(String original),** <span style="font-weight: normal">construye una clase [```String```][String] con otra clase [```String```][String] que recibirá como argumento.</span>
+
+Aunque tenemos alguno más que iremos viendo....
+
+## Volcando una cadena de texto a la consola
+Solo nos quedará saber cómo volcar una cadena por pantalla. Esto lo haremos con la clase [```System.out.println```][SystemOutPrintln] que recibirá como parámetro el objeto [```String```][String].
+
+Por ejemplo:
+
+~~~java
+System.out.println("Mi Cadena de Texto");
 ~~~
 
 ó
 
 ~~~java
-2 + (10 / 5)
+String sMiCadena = new String("Mi Cadena de Texto");
+System.out.println(sMiCadena);
 ~~~
 
-En el caso de no utilizar paréntesis se ejecutará el orden de preferencia de operadores. En este caso la división tiene más preferencia que la suma.
+# Funciones Básicas con Cadenas
+Una vez que hemos visto [lo sencillo que es crear una cadena de texto][ClaseString] vamos a echar un vistazo a los métodos que nos permiten manipular la cadena de texto. Si tuviésemos que ordenar dichos métodos podríamos llegar a la siguiente división:
 
-## Sentencias
+*   Información básica de la cadena
+*   Comparación de Cadenas
+*   Búsqueda de caracteres
+*   Búsqueda de subcadenas
+*   Manejo de subcadenas
+*   Manejo de caracteres
+*   Conversión a String: valueOf()
 
-Una sentencia es la unidad mínima de ejecución de un programa. Un programa se compone de conjunto de sentencias que acaban resolviendo un problema. **Al final de cada una de las sentencias encontraremos un punto y coma (;)**.
+## Información básica de la cadena
 
-Tenemos los siguientes tipos de sentencias.
+**[.length()][StringLength]** Nos devuelve el tamaño que tiene la cadena.
 
-### Sentencias de declaración
+**[char charAt(int index)][StringCharAt]** Devuelve el carácter indicado como índice. El primer carácter de la cadena será el del índice 0. Junto con el método [```.length()```][StringLength] podemos recuperar todos los caracteres de la cadena de texto. Hay que tener cuidado. Ya que si intentamos acceder a un índice de carácter que no existe nos devolverá una excepción [```IndexOutOfBoundsException```][IndexOutOfBoundsException].
+
+## Comparación de Cadenas
+Los métodos de comparación nos sirven para comparar si dos cadenas de texto son iguales o no. Dentro de los métodos de comparación tenemos los siguientes:
+
+**[boolean equals(Object anObject)][StringEquals]** Nos permite comparar si dos cadenas de texto son iguales. En el caso de que sean iguales devolverá como valor "true". En caso contrario devolverá "false". Este método tiene en cuenta si los caracteres van en mayúsculas o en minúsculas. Si queremos omitir esta validación tenemos dos opciones. La primera es convertir las cadenas a mayúsculas o minúsculas con los métodos [```.toUpperCase()```][StringToUpperCase] y [```.toLowerCase()```][StringToLowerCase] respectivamente. Métodos que veremos más adelante. La segunda opción es utilizar el método [```.equalsIgnoreCase()```][StringEqualsIgnoreCase] que omite si el carácter está en mayúsculas o en minúsculas.
+
+**[boolean equalsIgnoreCase(String anotherString)][StringEqualsIgnoreCase]** Compara dos cadenas de caracteres omitiendo si los caracteres están en mayúsculas o en minúsculas.
+
+**[int compareTo(String anotherString)][StringCompareTo]** Este método es un poco más avanzado que el anterior, el cual, solo nos indicaba si las cadenas eran iguales o diferentes En este caso compara a las cadenas léxicamente. Para ello se basa en el valor Unicode de los caracteres. Se devuelve un entero menor de 0 si la cadena sobre la que se parte es léxicamente menor que la cadena pasada como argumento. Si las dos cadenas son iguales léxicamente se devuelve un 0. Si la cadena es mayor que la pasada como argumento se devuelve un número entero positivo. Pero que es esto de “mayor, menor o igual léxicamente”. Para describirlo lo veremos con un pequeño ejemplo.
 
 ~~~java
-int valor = 2;
+s1 = "Cuervo"
+s2 = "Cuenca"
+s1.compareTo(s2);
 ~~~
 
-### Sentencias de asignación
+Compararíamos las dos cadenas. Los tres primeros caracteres son iguales "Cue". Cuando el método llega al 4 carácter tiene que validar entre la r minúscula y la n minúscula. Si utiliza el código Unicode llegará a la siguiente conclusión.
 
 ~~~java
-valor = 2;
+r (114) > n(110)
 ~~~
 
-### Sentencias de incremento o decremento
+Y nos devolverá la resta de sus valores. En este caso un 4. Hay que tener cuidado, porque este método no tiene en cuenta las mayúsculas y minúsculas. Y dichos caracteres, aún siendo iguales, tienen diferentes código. Veamos la siguiente comparación
 
 ~~~java
-valor++;
+s1 = "CueRvo"
+s2 = "Cuervo"
+s1.compareTo(s2);
 ~~~
 
-### Invocaciones a métodos
+Nuevamente los tres caracteres iniciales son iguales. Pero el cuarto es distinto. Por un lado tenemos la r minúscula y por otro la r mayúscula. Así:
 
 ~~~java
-System.out.println("Hola Mundo");
+R(82) < r(114)
 ~~~
 
-### Creaciones de objetos
+¿Qué entero nos devolverá el método compareTo()? ¿-32?
+
+**[int compareToIgnoreCase(String str)][StringCompareIgnoreCase]** Este método se comportará igual que el anterior. Pero ignorando las mayúsculas. Todo un alivio por si se nos escapa algún carácter en mayúsculas ;-) Otros métodos para la comparación de cadenas son:
 
 ~~~java
-Circulo miCirculo = new Circulo(2,3);
+boolean regionMatch( int thisoffset,String s2,int s2offset,int len );
+boolean regionMatch( boolean ignoreCase,int thisoffset,String s2, int s2offset,int 1 );
 ~~~
 
-### Sentencias de control de flujo
+## Búsqueda de caracteres
+Tenemos un conjunto de métodos que nos permiten buscar caracteres dentro de cadenas de texto. Y es que no nos debemos de olvidar que la cadena de caracteres no es más que eso: una suma de caracteres.
+
+**[int indexOf(int ch][StringIndexOf])** Nos devuelve la posición de un carácter dentro de la cadena de texto. En el caso de que el carácter buscado no exista nos devolverá un -1. Si lo encuentra nos devuelve un número entero con la posición que ocupa en la cadena.
+
+**[int indexOf(int ch, int fromIndex)][StringIndexOf]** Realiza la misma operación que el anterior método, pero en vez de hacerlo a lo largo de toda la cadena lo hace desde el índice (fromIndex) que le indiquemos.
+
+**[int lastIndexOf(int ch)][StringLastIndexOf]** Nos indica cual es la última posición que ocupa un carácter dentro de una cadena. Si el carácter no está en la cadena devuelve un -1. **[int lastIndexOf(int ch, int fromIndex)][StringLastIndexOf]** Lo mismo que el anterior, pero a partir de una posición indicada como argumento.
+
+## Búsqueda de subcadenas
+Este conjunto de métodos son, probablemente, los más utilizados para el manejo de cadenas de caracteres. Ya que nos permiten buscar cadenas dentro de cadenas, así como saber la posición donde se encuentran en la cadena origen para poder acceder a la subcadena. Dentro de este conjunto encontramos:
+
+**[int indexOf(String str)][StringIndexOf]** Busca una cadena dentro de la cadena origen. Devuelve un entero con el índice a partir del cual está la cadena localizada. Si no encuentra la cadena devuelve un -1.
+
+**[int indexOf(String str, int fromIndex)][StringIndexOf]** Misma funcionalidad que [```indexOf(String str)```][StringIndexOf], pero a partir de un índice indicado como argumento del método.
+
+**[int lastIndexOf(String str)][StringLastIndexOf]** Si la cadena que buscamos se repite varias veces en la cadena origen podemos utilizar este método que nos indicará el índice donde empieza la última repetición de la cadena buscada.
+
+**[lastIndexOf(String str, int fromIndex)][StringLastIndexOf]** Lo mismo que el anterior, pero a partir de un índice pasado como argumento.
+
+**[boolean startsWith(String prefix)][StringStartsWith]** Probablemente mucha gente se haya encontrado con este problema. El de saber si una cadena de texto empieza con un texto específico. La verdad es que este método podía obviarse y utilizarse el [```indexOf()```][StringIndexOf], con el cual, en el caso de que nos devolviese un 0, sabríamos que es el inicio de la cadena.
+
+**[boolean startsWith(String prefix, int toffset)][StringStartsWith]** Más elaborado que el anterior, y quizás, y a mi entender con un poco menos de significado que el anterior.
+
+**[boolean endsWith(String suffix)][StringEndsWith]** Y si alguien se ha visto con la necesidad de saber si una cadena empieza por un determinado texto, no va a ser menos el que se haya preguntado si la cadena de texto acaba con otra. De igual manera que sucedía con el método [```.startsWith()```][StringStartsWith] podríamos utilizar una mezcla entre los métodos [```.indexOf()```][StringIndexOf] y [```.length()```][StringLength] para reproducir el comportamiento de [```.endsWith()```][StringEndsWith]. Pero las cosas, cuanto más sencillas, doblemente mejores.
+
+## Métodos con subcadenas
+Ahora que sabemos como localizar una cadena dentro de otra seguro que nos acucia la necesidad de saber como substraerla de donde está. Si es que no nos podemos estar quietos...
+
+**[String substring(int beginIndex)][StringSubstring]** Este método nos devolverá la cadena que se encuentra entre el índice pasado como argumento (beginIndex) hasta el final de la cadena origen. Así, si tenemos la siguiente cadena:
 
 ~~~java
-if (valor>1) { … }
+String s = "Víctor Cuervo";
 ~~~
 
-## Bloques
-
-Un bloque es un conjunto de sentencias los cuales están delimitados por llaves.
+El método…
 
 ~~~java
-if (expresion) {
-    // Bloque 1
-} else {
-    // Bloque 2
-}
+s.substring(7);
 ~~~
+
+Nos devolverá “Cuervo”.
+
+**[String substring(int beginIndex, int endIndex)][StringSubstring]** Si se da el caso que la cadena que queramos recuperar no llega hasta el final de la cadena origen, que será lo normal, podemos utilizar este método indicando el índice inicial y final del cual queremos obtener la cadena. Así, si partimos de la cadena...
+
+~~~java
+String s = "En un lugar de la mancha....";
+~~~
+
+El método...
+
+~~~java
+s.substring(6,11);
+~~~
+
+Nos devolverá la palabra “lugar”.
+
+> Hay que tener especial cuidado ya que es un error muy común el poner como índice final el índice del carácter último de la palabra a extraer. Cuando realmente es el índice + 1 de lo que queramos obtener.
+
+## Manejo de caracteres
+
+Otro conjunto de métodos que nos permite jugar con los caracteres de la cadena de texto. Para ponerles en mayúsculas, minúsculas, quitarles los espacios en blanco, reemplazar caracteres,....
+
+**[String toLowerCase();][StringToLowerCase]** Convierte todos los caracteres en minúsculas.
+
+**[String toUpperCase();][StringToUpperCase]** Convierte todos los caracteres a mayúsculas.
+
+**[String trim();][StringTrim]** Elimina los espacios en blanco de la cadena.
+
+**[String replace(char oldChar, char newChar)][StringReplace]** Este método lo utilizaremos cuando lo que queramos hacer sea el remplazar un carácter por otro. Se reemplazarán todos los caracteres encontrados.
+
+## Conversión a String: valueOf()
+
+Un potente conjunto de métodos de la clase [```String```][String] nos permite convertir a cadena cualquier tipo de dato básico: int, float, double,… Esto es especialmente útil cuando hablamos de números. Ya que en múltiples ocasiones querremos mostrarles como cadenas de texto y no en su representación normal de número. Así podemos utilizar los siguientes métodos:
+
+*   [String valueOf(boolean b);][StringValueOf]
+*   [String valueOf(int i);][StringValueOf]
+*   [String valueOf(long l);][StringValueOf]
+*   [String valueOf(float f);][StringValueOf]
+*   [String valueOf(double d);][StringValueOf]
+*   [String valueOf(Object obj);][StringValueOf]
 
 
 [GitJava]: https://github.com/manualweb/manual-java
@@ -1499,9 +2312,31 @@ if (expresion) {
 [NotePad2]: http://www.flos-freeware.ch/notepad2.html "NotePad2"
 
 [InstalarJava]: http://www.manualweb.net/java/instalar-java/
+[ClaseString]: http://www.manualweb.net/java/clase-string-representando-una-cadena/ "Clase String Java"
 
+
+[IndexOutOfBoundsException]: http://www.w3api.com/wiki/Java:IndexOutOfBoundsException
+[JavaLangString]: http://www.w3api.com/wiki/Categor%C3%ADa:Java_Lang
+[String]: http://www.w3api.com/wiki/Java:String "String"
+[StringBuffer]: http://www.w3api.com/wiki/Java:StringBuffer
+[StringCharAt]: http://www.w3api.com/wiki/Java:String.charAt() "charAt"
+[StringCompareTo]: http://www.w3api.com/wiki/Java:String.compareTo() ".compareTo"
+[StringCompareIgnoreCase]: http://www.w3api.com/wiki/Java:String.compareToIgnoreCase() "compareIgnoreCase()"
+[StringEndsWith]: http://www.w3api.com/wiki/Java:String.endsWith() "endsWith()"
+[StringEquals]: http://www.w3api.com/wiki/Java:String.equals() ".equals()"
+[StringEqualsIgnoreCase]: http://www.w3api.com/wiki/Java:String.equalsIgnoreCase() "equalsIgnoreCase"
+[StringIndexOf]: http://www.w3api.com/wiki/Java:String.indexOf() "indexOf()"
+[StringLastIndexOf]: http://www.w3api.com/wiki/Java:String.lastIndexOf() "lastIndexOf()"
+[StringLength]: http://www.w3api.com/wiki/Java:String.length() "length()"
+[StringStartsWith]: http://www.w3api.com/wiki/Java:String.startsWith() "startWith()"
+[StringSubstring]: http://www.w3api.com/wiki/Java:String.substring() "substring()"
+[StringToLowerCase]: http://www.w3api.com/wiki/Java:String.toLowerCase() "toLowerCase()"
+[StringToUpperCase]: http://www.w3api.com/wiki/Java:String.toUpperCase() "toUpperCase()"
+[StringTrim]: http://www.w3api.com/wiki/Java:String.trim() "trim()"
+[StringReplace]: http://www.w3api.com/wiki/Java:String.replace() "replace()"
+[StringValueOf]: http://www.w3api.com/wiki/Java:String.valueOf() "valueOf()"
 [SystemOut]: http://www.w3api.com/wiki/Java:System.out
-[String]: http://www.manualweb.net/java/clase-string-representando-una-cadena/ "Clase String Java"
+[SystemOutPrintln]: http://www.w3api.com/wiki/Java:System.out
 
 
 [InstalarJava]: {{site.baseurl}}/java/img/java-install.png
