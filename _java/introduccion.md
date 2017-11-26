@@ -1,6 +1,7 @@
 ---
 title: Introducción a Java
 permalink: /java/introduccion-java/
+author: victorcuervo
 ---
 
 [Java][ManualJava] es un lenguaje de programación de propósito general, tipado, orientado a objetos,... que permite el desarrollo desde aplicaciones básicas, pasando por aplicaciones empresariales hasta aplicaciones móviles.
