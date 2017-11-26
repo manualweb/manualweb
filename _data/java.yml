@@ -33,3 +33,11 @@
   docs:
   - clase-string-representando-una-cadena
   - funciones-basicas-con-cadenas
+
+- title: Arrays Java
+  docs:
+  - arrays-java
+
+- title: Applets Java
+  docs:
+  - applets-java
