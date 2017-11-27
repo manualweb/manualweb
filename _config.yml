@@ -79,6 +79,15 @@ defaults:
     seo:
       type: "WebPage"
 
+- scope:
+    path: _html
+    type: html
+  values:
+    layout: html4
+    sectionid: html
+    seo:
+      type: "WebPage"
+
 collections:
   java:
     permalink: /:collection/:path/
@@ -86,9 +95,12 @@ collections:
   javascript:
       output: true
   mongodb:
-        output: true
+      output: true
   flask:
-        output: true
+      output: true
+  html:
+      output: true
+      
   posts:
     permalink: /blog/:year/:month/:day/:title/
     output: true
