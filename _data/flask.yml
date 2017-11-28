@@ -1,7 +1,6 @@
 - title: Introducción Flask
   docs:
-  - que-es-flask
-
-- title: Rutas en Flask
-  docs:
-  - rutas-flask
+  - introduccion-flask
+  - instalar-flask
+  - mi-primer-programa-flask
+  - request-flask
