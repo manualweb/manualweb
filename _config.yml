@@ -7,7 +7,7 @@ description: >
 baseurl: "" # the subpath of your site, e.g. /blog/
 url: http://www.manualweb.net # the base hostname & protocol for your site
 git_address: https://github.com/manualweb/manualweb
-git_edit_address: https://github.com/manualweb/manualweb/blob/gh-pages
+git_edit_address: https://github.com/manualweb/manualweb/blob/master
 
 # Social
 twitter: http://twitter.com/manual_web
@@ -88,6 +88,24 @@ defaults:
     seo:
       type: "WebPage"
 
+- scope:
+    path: _html5
+    type: html5
+  values:
+    layout: html5
+    sectionid: html5
+    seo:
+      type: "WebPage"
+
+- scope:
+    path: _svg
+    type: svg
+  values:
+    layout: svg
+    sectionid: svg
+    seo:
+      type: "WebPage"
+
 collections:
   java:
     permalink: /:collection/:path/
@@ -100,7 +118,10 @@ collections:
       output: true
   html:
       output: true
-      
+  html5:
+      output: true
+  svg:
+      output: true
   posts:
     permalink: /blog/:year/:month/:day/:title/
     output: true
