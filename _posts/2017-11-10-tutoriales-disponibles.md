@@ -9,32 +9,32 @@ El listado de tutoriales disponibles que tenemos en esta nueva etapa son los sig
 
 <div class="row">
   <div class="col-md-4">
-    <a href="{{site.baseurl}}/java/"><img src="{{site.baseurl}}/img/java.png" class="img-thumbnail">
+    <a href="{{site.baseurl}}/java/"><img src="{{site.baseurl}}/img/logos/java.png" class="img-thumbnail">
     <p class="text-center">Tutorial Java</p></a>
   </div>
 
   <div class="col-md-4">
-    <a href="{{site.baseurl}}/html5/"><img src="{{site.baseurl}}/img/html5.png" class="img-thumbnail">
+    <a href="{{site.baseurl}}/html5/"><img src="{{site.baseurl}}/img/logos/html5.png" class="img-thumbnail">
     <p class="text-center">Tutorial HTML5</p></a>
   </div>
 
   <div class="col-md-4">
-    <a href="{{site.baseurl}}/emberjs/"><img src="{{site.baseurl}}/img/emberjs.png" class="img-thumbnail">
+    <a href="{{site.baseurl}}/emberjs/"><img src="{{site.baseurl}}/img/logos/emberjs.png" class="img-thumbnail">
     <p class="text-center">Tutorial EmberJS</p></a>
   </div>
 
   <div class="col-md-4">
-    <img src="{{site.baseurl}}/img/mongodb.png" class="img-thumbnail">
+    <img src="{{site.baseurl}}/img/logos/mongodb.png" class="img-thumbnail">
     <p class="text-center">Tutorial MongoDB</p>
   </div>
 
   <div class="col-md-4">
-    <img src="{{site.baseurl}}/img/javascript.png" class="img-thumbnail">
+    <img src="{{site.baseurl}}/img/logos/javascript.png" class="img-thumbnail">
     <p class="text-center">Tutorial Javascript</p>
   </div>
 
   <div class="col-md-4">
-    <img src="{{site.baseurl}}/img/bootstrap.png" class="img-thumbnail">
+    <img src="{{site.baseurl}}/img/logos/bootstrap.png" class="img-thumbnail">
     <p class="text-center">Tutorial Bootstrap</p>
   </div>
 
