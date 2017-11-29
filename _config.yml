@@ -106,6 +106,15 @@ defaults:
     seo:
       type: "WebPage"
 
+- scope:
+    path: _typescript
+    type: typescript
+  values:
+    layout: typescript
+    sectionid: typescript
+    seo:
+      type: "WebPage"
+
 collections:
   java:
     permalink: /:collection/:path/
@@ -121,6 +130,8 @@ collections:
   html5:
       output: true
   svg:
+      output: true
+  typescript:
       output: true
   posts:
     permalink: /blog/:year/:month/:day/:title/
