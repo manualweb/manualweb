@@ -44,6 +44,15 @@ defaults:
     sectionid: blog
 
 - scope:
+    path: _emberjs
+    type: emberjs
+  values:
+    layout: emberjs
+    sectionid: emberjs
+    seo:
+      type: "WebPage"
+
+- scope:
     path: _java
     type: java
   values:
@@ -132,6 +141,8 @@ collections:
   svg:
       output: true
   typescript:
+      output: true
+  emberjs:
       output: true
   posts:
     permalink: /blog/:year/:month/:day/:title/
