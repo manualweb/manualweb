@@ -62,6 +62,15 @@ defaults:
       type: "WebPage"
 
 - scope:
+    path: _javaee
+    type: javaee
+  values:
+    layout: javaee
+    sectionid: javaee
+    seo:
+      type: "WebPage"
+
+- scope:
     path: _javascript
     type: javascript
   values:
@@ -143,6 +152,8 @@ collections:
   typescript:
       output: true
   emberjs:
+      output: true
+  javaee:
       output: true
   posts:
     permalink: /blog/:year/:month/:day/:title/
