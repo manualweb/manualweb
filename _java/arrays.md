@@ -1,6 +1,7 @@
 ---
 title: Arrays Java
 permalink: /java/arrays-java/
+redirect_from: /java/arrays-en-java/
 ---
 
 ## ¿Qué es un array en Java?
