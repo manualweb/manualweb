@@ -82,8 +82,8 @@ Listado de todos los tutoriales:
         </div>
 
         <div class="col-md-2 col-sm-4 col-xs-6">
-          <img src="{{site.baseurl}}/img/logos/javaee.png" alt="Tutorial JavaEE" class="img-thumbnail">
-          <p class="text-center">Tutorial JavaEE</p>
+          <a href="{{site.baseurl}}/javaee/"><img src="{{site.baseurl}}/img/logos/javaee.png" alt="Tutorial JavaEE" class="img-thumbnail">
+          <p class="text-center">Tutorial JavaEE</p></a>
         </div>
 
         <div class="col-md-2 col-sm-4 col-xs-6">
