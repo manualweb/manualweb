@@ -1,6 +1,7 @@
 ---
 title: Modelado One-to-One
 permalink: /mongodb/modelado-one-to-one-mongodb/
+redirect_from: /mongodb/modelado-de-datos-en-mongodb/
 ---
 
 En este caso vamos a realizar un modelado one-to-one en [MongoDB][TutorialMongoDB], para ello vamos a utilizar las entidades Persona y Domicilio. Una persona tendrá asociado la dirección de un domicilio. Estas entidades las modelaríamos de la siguiente forma:
