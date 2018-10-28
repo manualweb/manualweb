@@ -4,21 +4,6 @@ permalink: /html5/semantica-html5/
 ---
 # Semántica en HTML5
 
-1. Análisis de la Semántica en HTML 4
-2. Nuevo modelo semántico en HTML5
-   1. Article
-   2. Section
-   3. Nav
-   4. Aside
-   5. Header
-   6. Footer
-3. Definir secciones en HTML 5
-4. Semántica y títulos de cabecera
-5. Secciones Implícitas
-6. Elementos con su propia estructura
-7. Address: Autor de un artículo
-
-
 ## Análisis de la Semántica en HTML 4
 
 Cuando se trabajaba con [HTML 4][HTML] la estructura de un documento se conseguía mediante capas `div` y elementos de cabecera `h1` a `h6`. Dependiendo de la anidación que utilizásemos con las cabeceras y capas, así se estructuraba nuestro documento.
