@@ -1,3 +1,10 @@
 - title: Introducción HTM5
   docs:
   - semantica-html5
+  - audio-html5
+  - video-html5
+  - media-formats
+
+- title: APIs HTML5
+  docs:
+  - fullscreen-api
