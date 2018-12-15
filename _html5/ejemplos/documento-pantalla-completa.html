@@ -42,9 +42,22 @@ function getFullscreen(element){
     }
 }
 
+function exitFullscreen() {
+  if(document.exitFullscreen) {
+    document.exitFullscreen();
+  } else if(document.mozCancelFullScreen) {
+    document.mozCancelFullScreen();
+  } else if(document.webkitExitFullscreen) {
+    document.webkitExitFullscreen();
+  }
+}
 
 document.getElementById("Entrar").addEventListener("click", function(e){
   getFullscreen(document.documentElement);
+},false);
+
+document.getElementById("Salir").addEventListener("click", function(e){
+  exitFullscreen();
 },false);
 
 </script>
