@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<title>Saber si el usuario pasa a pantalla completa</title>
+
+</head>
+<body>
+
+<h1>Saber si el usuario pasa a pantalla completa</h1>
+
+Prueba a poner el documento en pantalla completa mediante los menús del navegador o utilizando el botón que tienen abajo.
+
+<div id="valor"></div>
+
+<button id="Entrar" type="button" name="button">Documento Pantalla Completa</button>
+
+<script>
+
+function getFullscreen(element){
+  if(element.requestFullscreen) {
+      element.requestFullscreen();
+    } else if(element.mozRequestFullScreen) {
+      element.mozRequestFullScreen();
+    } else if(element.webkitRequestFullscreen) {
+      element.webkitRequestFullscreen();
+    } else if(element.msRequestFullscreen) {
+      element.msRequestFullscreen();
+    }
+}
+
+function cambioPantalla(event){
+  document.getElementById("valor").innerHTML = "Cambio en Pantalla Completa " + Date.now();
+}
+
+document.getElementById("Entrar").addEventListener("click", function(e){
+  getFullscreen(document.documentElement);
+},false);
+
+document.addEventListener("fullscreenchange",cambioPantalla,false);
+document.addEventListener("webkitfullscreenchange",cambioPantalla,false);
+document.addEventListener("mozfullscreenchange",cambioPantalla,false);
+document.addEventListener("MSFullscreenchange",cambioPantalla,false);
+
+</script>
+
+</body>
+</html>
