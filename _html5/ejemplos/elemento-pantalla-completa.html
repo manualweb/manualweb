@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<title>Saber qué elemento está a pantalla completa</title>
+
+</head>
+<body>
+
+<h1>Saber qué elemento está a pantalla completa</h1>
+
+
+<article>
+  <header>
+    <h2>Mi Artículo</h2>
+  </header>
+
+  <p>Contenido de mi artículo.</p>
+
+  <footer>
+    <p>
+      Publicado el
+      <time datetime="2018-10-23 15:00">23 octubre</time>
+      por Víctor.
+    </p>
+  </footer>
+</article>
+
+<button id="Entrar" type="button" name="button">Documento Pantalla Completa</button>
+<button id="Validar" type="button" name="button">Validar Pantalla Completa</button>
+
+<script>
+
+function getFullscreen(element){
+  if(element.requestFullscreen) {
+      element.requestFullscreen();
+    } else if(element.mozRequestFullScreen) {
+      element.mozRequestFullScreen();
+    } else if(element.webkitRequestFullscreen) {
+      element.webkitRequestFullscreen();
+    } else if(element.msRequestFullscreen) {
+      element.msRequestFullscreen();
+    }
+}
+
+document.getElementById("Entrar").addEventListener("click", function(e){
+  getFullscreen(document.documentElement);
+},false);
+
+document.getElementById("Validar").addEventListener("click", function(e){
+
+  var fullscreenElement = document.fullscreenElement || document.mozFullScreenElement || document.webkitFullscreenElement;
+  var fullscreenEnabled = document.fullscreenEnabled || document.mozFullScreenEnabled || document.webkitFullscreenEnabled;
+
+  console.log('enabled:' + fullscreenEnabled);
+  console.log('element:' + fullscreenElement);
+
+},false);
+
+</script>
+
+</body>
+</html>
