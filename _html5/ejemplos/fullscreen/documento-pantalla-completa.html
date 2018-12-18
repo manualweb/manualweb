@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<title>Documento Pantalla Completa con Fullscreen API</title>
+
+</head>
+<body>
+
+<h1>Documento Pantalla Completa con Fullscreen API</h1>
+
+<article>
+  <header>
+    <h2>Mi Artículo</h2>
+  </header>
+
+  <p>Contenido de mi artículo.</p>
+
+  <footer>
+    <p>
+      Publicado el
+      <time datetime="2018-10-23 15:00">23 octubre</time>
+      por Víctor.
+    </p>
+  </footer>
+</article>
+
+<button id="Entrar" type="button" name="button">Pantalla Completa</button>
+<button id="Salir" type="button" name="button">Salir Pantalla Completa</button>
+
+<script>
+
+function getFullscreen(element){
+  if(element.requestFullscreen) {
+      element.requestFullscreen();
+    } else if(element.mozRequestFullScreen) {
+      element.mozRequestFullScreen();
+    } else if(element.webkitRequestFullscreen) {
+      element.webkitRequestFullscreen();
+    } else if(element.msRequestFullscreen) {
+      element.msRequestFullscreen();
+    }
+}
+
+function exitFullscreen() {
+  if(document.exitFullscreen) {
+    document.exitFullscreen();
+  } else if(document.mozCancelFullScreen) {
+    document.mozCancelFullScreen();
+  } else if(document.webkitExitFullscreen) {
+    document.webkitExitFullscreen();
+  }
+}
+
+document.getElementById("Entrar").addEventListener("click", function(e){
+  getFullscreen(document.documentElement);
+},false);
+
+document.getElementById("Salir").addEventListener("click", function(e){
+  exitFullscreen();
+},false);
+
+</script>
+
+
+</body>
+</html>
