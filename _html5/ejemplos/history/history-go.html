@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<title>Ir a una posición del History API</title>
+
+</head>
+<body>
+
+<h1>Ir a una posición del History API</h1>
+
+<article>
+  <p>Ejemplo para manipular el History API</p>
+  <p>Visualiza en la consola del navegador el efeecto (F12)</p>
+</article>
+
+
+
+<script>
+
+  window.onpopstate = function(event) {
+      console.log("Entro");
+      console.log("Estado: " + JSON.stringify(event.state));
+  };
+
+
+  // Vamos a crear estados en el historial
+
+  history.pushState({ pagina: "1" }, "Titulo 1", "history-go.html#p1");
+  history.pushState({ pagina: "2" }, "Titulo 2", "history-go.html#p2");
+  history.pushState({ pagina: "3" }, "Titulo 3", "history-go.html#p3");
+  history.pushState({ pagina: "4" }, "Titulo 4", "history-go.html#p4");
+  history.pushState({ pagina: "5" }, "Titulo 5", "history-go.html#p5");
+  history.pushState({ pagina: "6" }, "Titulo 6", "history-go.html#p6");
+  history.pushState({ pagina: "7" }, "Titulo 7", "history-go.html#p7");
+
+
+  console.log("El número de estados es de " + history.length);
+
+  // Empezamos a movernos
+  window.history.go(-2);
+  window.history.go(1);
+  window.history.go(-2);
+
+</script>
+
+
+</body>
+</html>

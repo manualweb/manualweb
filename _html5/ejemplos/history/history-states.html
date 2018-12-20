@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<title>Crear Estados History API</title>
+
+</head>
+<body>
+
+<h1>Crear Estados History API</h1>
+
+<article>
+  <p>Ejemplo para manipular el History API. <br/>
+  Abre la consola del navegador para ver los datos. (F12)</p>
+</article>
+
+
+<script>
+  history.pushState({ pagina: "1" }, "Titulo 1", "history-states.html#p1");
+  console.log( JSON.stringify(history.state));
+
+  history.pushState({ pagina: "2" }, "Titulo 2", "history-states.html#p2");
+  console.log( JSON.stringify(history.state));
+
+  console.log("El número de estados es de " + history.length);
+</script>
+
+
+</body>
+</html>

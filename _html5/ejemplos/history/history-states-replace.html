@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<title>Reemplazar Estados History API</title>
+
+</head>
+<body>
+
+<h1>Reemplazar Estados History API</h1>
+
+<article>
+  <p>Ejemplo para manipular el History API</p>
+</article>
+
+
+
+<script>
+
+ // El estado inicial es null. Lo vamos a asignar un valor de estado
+  history.replaceState({ pagina: "1" }, "Titulo 1", "history-states-replace.html#p1");
+  console.log( JSON.stringify(history.state));
+
+  console.log("El número de estados es de " + history.length);
+
+</script>
+
+
+</body>
+</html>

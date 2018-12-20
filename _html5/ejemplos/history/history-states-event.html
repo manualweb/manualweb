@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<title>Evento Estados History API</title>
+
+</head>
+<body>
+
+<h1>Evento Estados History API</h1>
+
+<article>
+  <p>Ejemplo para manipular el History API.</p>
+  <p>Muevete por el historial y en la consola del navegador (F12) podrás ver la actividad.</p>
+</article>
+
+
+
+<script>
+
+
+  window.onpopstate = function(event) {
+      console.log("Location: " + document.location + ", state: " + JSON.stringify(event.state));
+    };
+
+
+  history.pushState({ pagina: "1" }, "Titulo 1", "history-states-event.html#p1");
+  console.log( JSON.stringify(history.state));
+
+  history.pushState({ pagina: "2" }, "Titulo 2", "history-states-event.html#p2");
+  console.log( JSON.stringify(history.state));
+
+  console.log("El número de estados es de " + history.length);
+
+</script>
+
+
+</body>
+</html>
