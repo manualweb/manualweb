@@ -8,6 +8,7 @@
 - title: APIs HTML5
   docs:
   - fullscreen-api
+  - history-api
 
 - title: Acceso al Dispositivo
   docs:
