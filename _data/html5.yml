@@ -1,4 +1,4 @@
-- title: Introducción HTM5
+- title: Básicos de HTM5
   docs:
   - semantica-html5
   - audio-html5
@@ -8,3 +8,13 @@
 - title: APIs HTML5
   docs:
   - fullscreen-api
+
+- title: Acceso al Dispositivo
+  docs:
+  - camera-api
+  - touch-events
+  - orientacion-dispositivo
+
+- title: Almacenamiento & Storage
+  docs:
+  - indexedDB
