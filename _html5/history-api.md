@@ -89,7 +89,7 @@ Si queremos modificar los estados dentro del **History API** tenemos dos método
 El método que nos permite añadir un nuevo estado es `pushState()`. La estructura de `pushState()` es la siguiente:
 
 ~~~javascript
-history.pushState(objeto_estado, título, URL);
+history.pushState(objeto_estado, titulo, url);
 ~~~
 
 Dónde ***objeto_estado*** es un objeto [Javascript][Javascript] que representa la información del estado que queremos guardar. Cuando navegemos hacía este estado, el evento que gestiona un cambio en el historial disponibilizará esta información. Así en este objeto deberemos de guardar todo aquello que necesitemos para poder recuperar mediante técnicas [AJAX][AJAX] la representación visual asociada al estado.
