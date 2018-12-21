@@ -1,13 +1,81 @@
 ---
-title: Formularios Web 2.0
-permalink: /html5/formularios-web/
+title: Formularios HTML5
+permalink: /html5/formularios-html5/
 ---
 
 # Formularios Web
 
 Esquema
 1. Input y sus tipos
+2. DataList
+3. Rangos
+4. PlaceHolder
+5. Autocompletar
+6. Slider ¿o es input? -> es el tipo range y que está asociado con el DataList
+7. Patrones
+8. Autofoco
+9. Elementos requeridos
+10. API de validación restringida -> controles específicos. Validación formulario
+	* patrones
+	* api
+	* formnovalidate para evitar validaciones
+	* required
+	https://developer.mozilla.org/en-US/docs/Learn/HTML/Forms/Form_validation
 
+11. objeto formdata
+12. formularios y css
+	* pseudoclases
+	:required { }
+:optional { }
+:valid { }
+:invalid { }
+:default { }
+:in-range { }
+:out-of-range { }
+:not()
+
+* atribute selectors
+[autofocus] { }
+[autocomplete] { }
+[list] { }
+[placeholder] { }
+[type=range] { and other types  }
+[multiple]
+
+* Nuevos elementos
+ * DataList
+ * Output
+* En los input
+ * color
+ * date
+ * datetime
+ * datetime-local
+ * email
+ * month
+ * number
+ * range
+ * search
+ * tel
+ * time
+ * url
+ * week
+
+* Otros atributos
+ * autocomplete
+ * autofocus
+ * cformaction
+ * formenctype
+ * formmethod
+ * formnovalidate
+ * formtarget
+ * height and width
+ * list
+ * min and max
+ * multiple
+ * pattern (regexp)
+ * placeholder
+ * required
+ * step
 
 
 
@@ -15,12 +83,14 @@ Si hay un punto sobre el que se ha incrementado más su funcionalidad de [HTML 4
 
 ## Nuevos Tipos Input
 
-El elemento que más ha crecido ha sido el `input`. Y es que en [HTML5][HTML5] contamos con nuevos tipos de elementos `input`. Hasta [HTML 4.01][HTML] podíamos definir un elemento `input` como: *text*, *radio*, *checkbox*, *password*, *file*, *hidden* y *submit*.
+Una de las cosas que nos encontramos en [HTML5][HTML5] son nuevos tipos de elemento de entrada de datos en los formularios. Lo que viene a ser el atributo `type` del elemento `input`.
+
+Hasta [HTML 4.01][HTML] podíamos definir un elemento `input` como: *text*, *radio*, *checkbox*, *password*, *file*, *hidden* y *submit*.
 
 Recordamos que la estructura de un elemento input es:
 
 ~~~html
-<input type=”tipoElemento” />
+<input type="tipo" id="identificador" size="tamaño" name="nombre" value="texto por defecto"/>
 ~~~
 
 Ahora contamos con nuevos tipos de elementos input como son: *search*, *email*, *url*, *phone*, *range*, *number*, *date* y *color*.
@@ -69,7 +139,7 @@ Eso sí, sigue sin estar implementado por todos los navegadores. Si bien podemos
 
 
 ### Input Phone
-El tipo Phone va a la par que el tipo email y el tipo URL. En este caso se validará que el contenido introducido sea un teléfono. Si bien la especificación de HTML5 no va más allá en la definición del contenido en sí mismo.
+El tipo Phone va a la par que el tipo email y el tipo URL. En este caso se validará que el contenido introducido sea un teléfono. Si bien la especificación de [HTML5][HTML5] no va más allá en la definición del contenido en sí mismo.
 
 De momento no hemos visto que ningún navegador esté realizando alguna validación en este tipo de campos.
 
@@ -77,10 +147,20 @@ Teclados Virtuales y los elementos Email, URL y Phone
 
 
 
+### Color
+Si lo que queremos es que un usuario nos indique un color de una paleta de colores utilizaremos el elemento `input` con un tipo `color`.
 
-Autofoco sobre un elemento
-PlaceHolders
-Elementos requeridos
+~~~html
+<input type="color" name="colorfavorito" value="#ff0000">
+~~~
+
+Mediante el atributo `value` podemos indicar en formato **RGB** un color que será el que muestre la paleta por defecto.
+
+De esta manera, en el navegador, podremos ver algo parecido a lo siguiente:
+
+![Imagen de un Input tipo Color][ImagenInputColor]{:class="img-responsive"}
+
+
 
 
 ## Ejemplos
@@ -96,9 +176,15 @@ Elementos requeridos
 * PlaceHolder
 
 
+1. Input para emails
+2. Input para Colores
+3. Input para búsquedas
+4. ¿dar estilo a un placeholder???
+
 
 
 [HTML]: http://www.manualweb.net/html/
 [HTML5]: http://www.manualweb.net/html5/
 
 [ImagenInputEmail]: {{site.baseurl}}/html5/img/input-email.jpg
+[ImagenInputColor]: {{site.baseurl}}/html5/img/input-color.jpg
