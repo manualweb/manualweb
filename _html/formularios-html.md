@@ -37,7 +37,7 @@ El elemento que representa los campos de entrada de datos es [input][INPUT]. La 
 
 ~~~html
 <input type="tipo" id="identificador" size="tamaño"
-  name="nombre value=texto por defecto"/>
+  name="nombre" value="texto por defecto"/>
 ~~~
 
 Si vemos los atributos que tiene el elemento input nos encontramos los siguientes:
