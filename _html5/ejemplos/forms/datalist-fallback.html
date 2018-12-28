@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<title>DataList Fallback</title>
+
+</head>
+<body>
+
+<h1>DataList Fallback</h1>
+<p>Ejemplo de uso de un Fallback DataList.</p>
+
+<form action="#">
+  <label for="misurl">Dinos tu URL:</label>
+  <input type="url" id="misurl" list="listaurls" />
+  <datalist id="listaurls">
+    <label for="elemento">O eligela de la siguiente lista:</label>
+    <select id="elementos" name="elementos">
+      <option value="http://lineadecodigo.com" label="Línea de Código">
+       <option value="http://www.manualweb.net" label="Manual Web">
+       <option value="http://www.dudasprogramacion.com" label="Dudas de Programación">
+       <option value="http://www.w3api.com" label="W3Api">
+     </select>
+  </datalist>
+  <input type="submit" value="Enviar">
+</form>
+
+</body>
+</html>
