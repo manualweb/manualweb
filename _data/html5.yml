@@ -8,9 +8,9 @@
 - title: Formularios en HTM5
   docs:
   - formularios-html5
-  - formularios-html5-input
-  - formularios-html5-datalist
-  - barras-progreso
+  - formularios-elementos-input
+  - formularios-datalist
+  - formularios-barras-progreso
 
 - title: APIs HTML5
   docs:

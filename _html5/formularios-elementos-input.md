@@ -1,6 +1,6 @@
 ---
-title: Elementos Input HTML5
-permalink: /html5/formularios-html5-input/
+title: Elementos Input
+permalink: /html5/formularios-elementos-input/
 ---
 
 Una de las cosas que nos encontramos en [HTML5][HTML5] son nuevos tipos de elemento de entrada de datos en los formularios. Lo que viene a ser el atributo `type` del elemento `input`.
