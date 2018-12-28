@@ -4,9 +4,13 @@
   - audio-html5
   - video-html5
   - media-formats
+
+- title: Formularios en HTM5
+  docs:
   - formularios-html5
   - input-formularios-html5
-
+  - formualarios-html5-datalist
+  
 - title: APIs HTML5
   docs:
   - fullscreen-api
