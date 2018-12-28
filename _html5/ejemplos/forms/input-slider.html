@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<title>Input Slider</title>
+
+</head>
+<body>
+
+<h1>Input Slider</h1>
+
+<form action="#" method="get">
+	<label for="anio">¿Cuál es tu año par favorito del siglo XXI?</label><br/>
+	<input type="range" id="anio" name="anio" min="2000" max="2018" step="2"/>
+	<span id="salida"></span><br/>
+	<input type="submit" value="Enviar"/>
+</form>
+
+<script>
+var anio = document.getElementById("anio");
+var salida = document.getElementById("salida");
+
+salida.textContent = anio.value;
+
+anio.oninput = function() {
+  salida.textContent = anio.value;
+}
+</script>
+
+</body>
+</html>
