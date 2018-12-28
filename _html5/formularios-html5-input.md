@@ -213,6 +213,40 @@ De esta manera, en el navegador, podremos ver algo parecido a lo siguiente:
 
 ![Imagen de un Input tipo Color][ImagenInputColor]{:class="img-responsive"}
 
+# Input File
+En [HTML 4.01][HTML4] ya existía un campo de texto `input` en que podíamos subir ficheros. Este era el tipo `file`. En [HTML5][HTML5] sigue existiendo dicho campo, si bien se ha añadido una serie de atributos adicionales para su manejo.
+
+La estructura de un tipo `file` es la siguiente:
+
+~~~html
+<input id="ficheros" type="file" name="file" id="file"><br/>
+~~~
+
+Uno de los atributos específicos del tipo `file` que ya existía era el filtrado de tipos de ficheros a aceptar. Esto lo indicamos con el atributo `accept` el cual recibirá una extensión de fichero o un mime-type de los ficheros que aceptamos subir **separados por comas**.
+
+Si queremos hacerlo por extesiones:
+
+~~~html
+<input id="ficheros" type="file" name="file" id="file" accept=".jpg,.gif,.png"><br/>
+~~~
+
+O por mimetypes:
+
+~~~html
+<input id="ficheros" type="file" name="file" id="file" accept="image/*,audio/*"><br/>
+~~~
+
+En el caso de que queramos subir más de un fichero deberemos de recurrir al atributo `multiple`.
+
+~~~html
+<input id="ficheros" type="file" name="file" id="file" accept="image/*" multiple><br/>
+~~~
+
+Por último nos encontramos con el atributo `capture` el cual nos sirve para indicar que el origen del fichero podrá ser la cámara o micrófono del dispositivo. Los valores del atributo `capture` pueden ser ***user*** para la cámara frontal o ***enviroment*** para la cámara trasea.
+
+~~~html
+<input id="ficheros" type="file" name="file" id="file" accept="image/*" multiple><br/>
+~~~
 
 [HTML]: http://www.manualweb.net/html/
 [HTML5]: http://www.manualweb.net/html5/
