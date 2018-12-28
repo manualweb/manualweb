@@ -245,7 +245,7 @@ En el caso de que queramos subir más de un fichero deberemos de recurrir al atr
 Por último nos encontramos con el atributo `capture` el cual nos sirve para indicar que el origen del fichero podrá ser la cámara o micrófono del dispositivo. Los valores del atributo `capture` pueden ser ***user*** para la cámara frontal o ***enviroment*** para la cámara trasea.
 
 ~~~html
-<input id="ficheros" type="file" name="file" id="file" accept="image/*" multiple><br/>
+<input id="ficheros" type="file" name="file" id="file" accept="image/*" capture="user"><br/>
 ~~~
 
 [HTML]: http://www.manualweb.net/html/
