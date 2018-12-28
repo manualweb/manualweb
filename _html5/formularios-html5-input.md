@@ -214,7 +214,7 @@ De esta manera, en el navegador, podremos ver algo parecido a lo siguiente:
 ![Imagen de un Input tipo Color][ImagenInputColor]{:class="img-responsive"}
 
 # Input File
-En [HTML 4.01][HTML4] ya existía un campo de texto `input` en que podíamos subir ficheros. Este era el tipo `file`. En [HTML5][HTML5] sigue existiendo dicho campo, si bien se ha añadido una serie de atributos adicionales para su manejo.
+En [HTML 4.01][HTML] ya existía un campo de texto `input` en que podíamos subir ficheros. Este era el tipo `file`. En [HTML5][HTML5] sigue existiendo dicho campo, si bien se ha añadido una serie de atributos adicionales para su manejo.
 
 La estructura de un tipo `file` es la siguiente:
 
