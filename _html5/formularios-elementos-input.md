@@ -15,7 +15,7 @@ Recordamos que la estructura de un elemento `input` es:
 
 Ahora contamos con nuevos tipos de elementos input como son: *search*, *email*, *url*, *tel*, *range*, *number*, *date* y *color*.
 
-## Input Search
+## Input Search[![Input Number][Marker]{:class="marca"}](#input-search)
 El tipo `search` de los elementos `input` nos sirven para definir campos de entrada para búsquedas. Es decir, si añadimos un buscador dentro de nuestra web, el campo sobre el cual el usuario podrá introducir el texto de la búsqueda será de tipo `search`.
 
 ~~~html
@@ -24,7 +24,7 @@ El tipo `search` de los elementos `input` nos sirven para definir campos de entr
 
 Vemos que simplemente hemos especificado el valor `search` dentro del atributo `type` del elemento `input`. Al contrario que lo que sucede en otros tipos de elementos `input` en el caso de las búsquedas no hay una visualización específica dentro de los diferentes navegadores.
 
-## Input Email
+## Input Email[![Input Number][Marker]{:class="marca"}](#input-email)
 Uno de los datos de contacto más solicitados en Internet es, obviamente, el email. Hasta la versión de [HTML5][HTMl5] cuando estamos creando un formulario y queremos que un campo fuese de tipo email lo que hacíamos era declararlo de tipo texto y crearnos unos [códigos javascript de validación de emails][JavascriptValidaEmail].
 
 Con la aparición del tipo email, deberemos de marcar el elemento `input` como un elemento del tipo `email`.
@@ -41,7 +41,7 @@ Visualmente, en *Google Chrome* tenemos el siguiente efecto visual en la validac
 
 De igual manera las opciones que nos ofrece del texto a rellenar serán emails y no cualquier otro tipo de texto. Al menos textos que cuadren con la expresión regular del email.
 
-## Input URL
+## Input URL[![Input Number][Marker]{:class="marca"}](#input-url)
 El comportamiento del tipo `url` es parecido al del tipo email. La única diferencia es que en este caso **se valida que el contenido insertado coincida con una URL**. Es decir, tenga su protocolo especificado (http://), el servidor, el dominio,... con lo cual evitaremos el tener que utilizar, como sucedía anteriormente, validadores de URL.
 
 ~~~html
@@ -52,7 +52,7 @@ Si utilizamos un tipo `url` dentro de un elemento `input` y no insertamos un tex
 
 ![Imagen de un Input tipo URL][ImagenInputURL]{:class="img-responsive"}
 
-## Input Tel
+## Input Tel[![Input Number][Marker]{:class="marca"}](#input-tel)
 El tipo `tel` nos servirá para indicar que el campo es un número de teléfono. Dada la gran cantidad de formatos de números de telfóno que hay en el mundo, no se realizará ninguna validación de formato sobre el campo.
 
 Si bien, la semántica que damos indicando que irá un número te teléfono hace que los campos de tipo `tel` para algunos dispositivos móviles muestre un teclado numérico.
@@ -63,7 +63,8 @@ Podremos insertar un campo que gestione un número de teléfono mediante el tipo
 <input type="tel" id="telefono" name="telefono">
 ~~~
 
-## Input Number
+## Input Number[![Input Number][Marker]{:class="marca"}](#input-number)
+
 Los elementos `input` de tipo `number` nos van a valer para poder introducir números. Para crear un elemento `input` de tipo `number` simplemente tendremos que crear la siguiente estructura:
 
 ~~~html
@@ -98,7 +99,7 @@ Los campos `input` de tipo `number` nos forzarán a que el valor introducido sea
 
 ![Imagen de un Input tipo Number][ImagenInputNumber]{:class="img-responsive"}
 
-## Input Range
+## Input Range[![Input Number][Marker]{:class="marca"}](#input-range)
 Otra forma de elegir un valor numérico es mediante un *slider*. Para poder poner estas barras de selección tenemos el tipos `range` dentro de los elementos `input`.
 
 ~~~html
@@ -151,10 +152,10 @@ anio.oninput = function() {
 
 Este código [Javascript][Javascript] simplemente vuelca el valor del elemento `input` sobre un elemento `span`.
 
-## Input Datetime
+## Input Datetime[![Input Number][Marker]{:class="marca"}](#input-datetime)
 Otra de las opciones que han incoporado los elementos de texto `input` en los formularios [HTML5][HTML5] es el manejo de fechas. Para ello contamos con 4 tipos de elementos `input`, que son: `datetime-local`, `month`, `time` y `week`.
 
-### Input Datetime-local
+### Input Datetime-local[![Input Number][Marker]{:class="marca"}](#input-datetime-local)
 Este tipo de elemento nos permite escoger una fecha y hora, sin especificar la zona horaria en la que se encuentra. El valor del tipo `input` será `datetime-local`.
 
 ~~~html
@@ -165,7 +166,7 @@ La representación visual de un tipo `datetime-local` será:
 
 ![Imagen de un Input tipo Datetime][ImagenInputDatetime]{:class="img-responsive"}
 
-### Input Month
+### Input Month[![Input Number][Marker]{:class="marca"}](#input-month)
 En este caso se creará un selector de meses del año. El valor del tipo `input` para los meses en `month`.
 
 ~~~html
@@ -176,7 +177,7 @@ La representción visual para los campos de texto de tipo mes es:
 
 ![Imagen de un Input tipo Month][ImagenInputMonth]{:class="img-responsive"}
 
-### Input Time
+### Input Time[![Input Number][Marker]{:class="marca"}](#input-time)
 Para poder indicar una hora en formato horas y minutos *(hh:mm)* disponemos del tipo `time` para los elementos de texto de un formualario. La estructura para un elemento `input` de tipo `time` es:
 
 ~~~html
@@ -189,7 +190,7 @@ Y su representación visual:
 
 Podemos comprobar que se le da el formato *hh:mm** dentro de la caja de texto.
 
-### Input Week
+### Input Week[![Input Number][Marker]{:class="marca"}](#input-week)
 El último elemento para el manejo de fechas es el tipo `week`. En este caso el elemento `week` nos permite seleccionar una semana dentro del año.
 
 ~~~html
@@ -200,7 +201,7 @@ Vemos que la representación visual cambia y nos muestra las semanas del año de
 
 ![Imagen de un Input tipo Week][ImagenInputWeek]{:class="img-responsive"}
 
-## Input Color
+## Input Color[![Input Number][Marker]{:class="marca"}](#input-color)
 Si lo que queremos es que un usuario nos indique un color de una paleta de colores utilizaremos el elemento `input` con un tipo `color`.
 
 ~~~html
@@ -213,7 +214,7 @@ De esta manera, en el navegador, podremos ver algo parecido a lo siguiente:
 
 ![Imagen de un Input tipo Color][ImagenInputColor]{:class="img-responsive"}
 
-# Input File
+# Input File[![Input Number][Marker]{:class="marca"}](#input-file)
 En [HTML 4.01][HTML] ya existía un campo de texto `input` en que podíamos subir ficheros. Este era el tipo `file`. En [HTML5][HTML5] sigue existiendo dicho campo, si bien se ha añadido una serie de atributos adicionales para su manejo.
 
 La estructura de un tipo `file` es la siguiente:
@@ -248,9 +249,10 @@ Por último nos encontramos con el atributo `capture` el cual nos sirve para ind
 <input id="ficheros" type="file" name="file" id="file" accept="image/*" capture="user"><br/>
 ~~~
 
+[Marker]: {{site.baseurl}}/img/marker.png
 [HTML]: http://www.manualweb.net/html/
 [HTML5]: http://www.manualweb.net/html5/
-[HTML5]: http://www.manualweb.net/javascript/
+[Javascript]: http://www.manualweb.net/javascript/
 [JavascriptValidaEmail]: http://lineadecodigo.com/javascript/validar-el-email-con-javascript/
 [ImagenInputEmail]: {{site.baseurl}}/html5/img/input-email.png
 [ImagenInputColor]: {{site.baseurl}}/html5/img/input-color.png
