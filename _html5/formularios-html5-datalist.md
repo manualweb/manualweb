@@ -51,7 +51,7 @@ Y posteriomente asociadala a un campo de texto:
 <input type="text" name="castillaleon" id="castillaleon" list="ciudades">
 ~~~
 
-## Datalist con texto y valor
+## DataList con texto y valor
 Ya hemos visto el uso básico de un **DataList** ahora vamos a ver cómo podemos hacer algo más avanzado. En este caso vamos a vr cómo podemos crear una lista de elementos dónde haya dos partes, por un lado el texto que inserta o elige el usuario y por otro el valor que tiene dicho elemento.
 
 Para poder hacer esto, dentro de los elementos `option` deberemos de utilizar los atrobutos `value` para poder dar el valor y `label` para darle la etiqueta de texto que se mostrará.
