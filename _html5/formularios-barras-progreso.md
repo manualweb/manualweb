@@ -1,6 +1,6 @@
 ---
 title: Barras de Progreso
-permalink: /html5/barras-progreso/
+permalink: /html5/formularios-barras-progreso/
 ---
 
 

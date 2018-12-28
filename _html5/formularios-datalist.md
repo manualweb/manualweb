@@ -1,6 +1,6 @@
 ---
 title: DataList
-permalink: /html5/formularios-html5-datalist/
+permalink: /html5/formularios-datalist/
 ---
 
 ## Listas de datos
