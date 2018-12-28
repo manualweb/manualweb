@@ -6,15 +6,31 @@ permalink: /html5/formularios-html5/
 # Formularios Web
 
 
+Si hay un punto sobre el que se ha incrementado más su funcionalidad de [HTML 4.01][HTML] a [HTML5][HTML5] ese es los formularios. Y es que se ha mantenido la misma filosofía de desarrollo, pero se ha dotado de nuevas funcionalidades a los formularios pasando a tener unos formularios con muchas más posibilidades
+
+Esquema final
+1. Nuevo Input
+2. DataList
+
+
+
+# File
+En [HTML 4.01][HTML4] ya existía un campo de texto `input` en que podíamos subir ficheros. Este era el tipo `file`. En [HTML5][HTML5] sigue existiendo dicho campo, si bien se ha añadido una serie de atributos adicionales para su manejo.
+
+
+La estructura de un tipo `file` es:
+
+~~~html
+
+
+~~~
+
+
+
 Esquema
 
-1. Input y sus tipos - https://developer.mozilla.org/en-US/docs/Learn/HTML/Forms/The_native_form_widgets
- * number
- * range (slider)
- * date and time
- * color
+
  * file picker???
-2. DataList
 3. Progress bar & Meter?
 3. Validación de datos
  * Required
@@ -23,13 +39,7 @@ Esquema
  * Constraint Validation API
  		* Cambio del mensaje de error personalizado
 
-
-
-
 Esquema
-1. Input y sus tipos
-2. DataList
-3. Rangos
 4. PlaceHolder
 5. Autocompletar
 6. Slider ¿o es input? -> es el tipo range y que está asociado con el DataList
@@ -101,28 +111,8 @@ Esquema
 
 
 
-## Ejemplos
-
-(Ya hechos)
-* Patrones en formularios con HTML5 pattern
-* Autocompletar formularios con HTML5
-* Modificando propiedades CSS con un Slider
-* Autofoco a un campo con HTML5
-* Controlar volumen de vídeo HTML5 con un Slider
-* DataList en HTML5
-* Elemento rango en formularios HTML5
-* PlaceHolder
-
-
-1. Input para emails
-2. Input para Colores
-3. Input para búsquedas
-4. ¿dar estilo a un placeholder???
 
 
 
 [HTML]: http://www.manualweb.net/html/
 [HTML5]: http://www.manualweb.net/html5/
-
-[ImagenInputEmail]: {{site.baseurl}}/html5/img/input-email.jpg
-[ImagenInputColor]: {{site.baseurl}}/html5/img/input-color.jpg
