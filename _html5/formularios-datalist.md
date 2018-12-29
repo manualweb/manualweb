@@ -2,8 +2,6 @@
 title: DataList
 permalink: /html5/formularios-datalist/
 ---
-
-## Listas de datos
 Una de las mejoras que aparece en los formularios [HTML5][HTML5] es la posibilidad de incluir opciones de selección mediante un nuevo elemento denominado `datalist`.
 
 La idea es que mediante el elemento `datalist` podamos **definir una lista de valores**. Esta lista de valores será posteriormente asociada a otro elemento del formulario mediant el atributo `list`.
