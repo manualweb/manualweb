@@ -1,9 +1,6 @@
 - title: Básicos de HTM5
   docs:
   - semantica-html5
-  - audio-html5
-  - video-html5
-  - media-formats
 
 - title: Formularios en HTM5
   docs:
@@ -11,6 +8,13 @@
   - formularios-elementos-input
   - formularios-datalist
   - formularios-barras-progreso
+  - formularios-validacion
+
+- title: Multimedia en HTM5
+  docs:
+  - audio-html5
+  - video-html5
+  - media-formats
 
 - title: APIs HTML5
   docs:
