@@ -23,6 +23,7 @@
 
 - title: Almacenamiento & Offline
   docs:
+  - offline
   - webstorage
   - indexedDB
   - file-api
