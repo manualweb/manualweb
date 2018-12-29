@@ -20,7 +20,7 @@
 - title: Gráficos en HTM5
   docs:
   - canvas-html5
-  
+
 - title: APIs HTML5
   docs:
   - fullscreen-api
@@ -36,3 +36,7 @@
 - title: Almacenamiento & Storage
   docs:
   - indexedDB
+
+- title: Contenido de Apoyo
+  docs:
+  - urls-html
