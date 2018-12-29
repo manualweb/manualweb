@@ -9,7 +9,7 @@ En los formularios de [HTMl5][HTML5] encontramos un par de elementos que nos per
 
 Los dos elementos que tenemos en [HTMl5][HTML5] para poder construir una barra de progreso son: `progress` y `meter`.
 
-## Progress
+## Progress[![Input Number][Marker]{:class="marca"}](#progress)
 El elemento `progress` nos permite especificar el grado de avance atendiendo a un valor mínimo y un valor máximo. Para ello cuenta con el atributo `max` que indicar el valor máximo de progreso y el atributo `value` que indica el valor actual del progreso.
 
 ~~~html
@@ -24,7 +24,7 @@ Podemos crear una barra de progreso con un avance del 25% de la siguiente forma:
 <progress max="100" value="25">25/100</progress>
 ~~~
 
-## Meter
+## Meter[![Input Number][Marker]{:class="marca"}](#meter)
 En el caso del elemento `meter` podremos crear barras de progreso delimitadas por un valor mínimo y un valor máximo, para ello utilizaremos los valores `min` y `max` respectivamente.
 
 ~~~html
@@ -77,8 +77,6 @@ Así, podremos pintar una barra con un valor de progreso 80/100 como avance ópt
 <meter min="0" max="100" value="80" low="25" high="75" optimum="90">80/100</meter>
 ~~~
 
-
-
-
+[Marker]: {{site.baseurl}}/img/marker.png
 [HTML5]: http://www.manualweb.net/html5/
 [ImagenMeter]: {{site.baseurl}}/html5/img/meter.png
