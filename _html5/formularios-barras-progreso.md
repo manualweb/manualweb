@@ -3,8 +3,6 @@ title: Barras de Progreso
 permalink: /html5/formularios-barras-progreso/
 ---
 
-
-
 En los formularios de [HTMl5][HTML5] encontramos un par de elementos que nos permiten definir una barra de progreso. Las barras de progreso nos permiten notificar al usuario el grado de avance que existe en alguna acción determinada.
 
 Los dos elementos que tenemos en [HTMl5][HTML5] para poder construir una barra de progreso son: `progress` y `meter`.
