@@ -17,6 +17,10 @@
   - video-html5
   - media-formats
 
+- title: Gráficos en HTM5
+  docs:
+  - canvas-html5
+  
 - title: APIs HTML5
   docs:
   - fullscreen-api
