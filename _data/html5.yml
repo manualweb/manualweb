@@ -21,21 +21,15 @@
   docs:
   - canvas-html5
 
-- title: APIs HTML5
+- title: Almacenamiento & Offline
+  docs:
+  - indexedDB
+  - file-api
+
+- title: Rendimiento & Integración
   docs:
   - fullscreen-api
   - history-api
-  - file-api
-
-- title: Acceso al Dispositivo
-  docs:
-  - camera-api
-  - touch-events
-  - orientacion-dispositivo
-
-- title: Almacenamiento & Storage
-  docs:
-  - indexedDB
 
 - title: Contenido de Apoyo
   docs:
