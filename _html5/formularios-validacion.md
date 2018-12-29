@@ -16,9 +16,9 @@ Dentro de [HTML5][HTML5] encontramos dos formas de hacer validaciones de formula
 * **Validaciones propias del [HTML5][HTML5]**, son las que nos ofrece el propio lenguaje, son validaciones básicas que no podremos personalizar, pero que nos serán de gran ayuda.
 * **Validaciones utilizando [Javascript][Javascript]**, nos permite utilizar la potencia del lenguaje [Javascript][Javascript] junto con un API de Validación para personalizar al máximo nuestras validaciones de formularios.
 
-## Validaciones HTML5[![Input Number][Marker]{:class="marca"}](#validaciones-html5)
+## Validaciones HTML5[![Validaciones HTML5][Marker]{:class="marca"}](#validaciones-html5)
 
-### Atributo Required[![Input Number][Marker]{:class="marca"}](#atributo-required)
+### Atributo Required[![Atributo Required][Marker]{:class="marca"}](#atributo-required)
 El primer atributo que nos vamos a encontrar dentro de un formulario es el atributo `required`. Mediante el atributo `required` podremos indicar que el campo sobre el que se aplica es obligatorio.
 
 ~~~html
@@ -29,7 +29,7 @@ Si intentamos procesar el formulario y el campo que hemos marcado como `required
 
 ![Imagen de un Input Obligatorio][ImagenInputRequired]{:class="img-responsive"}
 
-### Expresiones Regulares[![Input Number][Marker]{:class="marca"}](#expresiones-regulares)
+### Expresiones Regulares[![Expresiones Regulares][Marker]{:class="marca"}](#expresiones-regulares)
 Otra posibilidad es validar el contenido utilizando una expresión regular. Si queremos definir una expresión regular deberemos de utilizar el atributo `pattern`.  El atributo `pattern` recibirá [una expresión regular Javascript][JavascriptRegExp].
 
 ~~~html
@@ -87,7 +87,7 @@ Veremos que lo que se muestra por pantalla incluye la información adicional.
 
 ![Imagen de un Mensaje Error de Patrón con Información Adicional][ImagenErrorPatternTitle]{:class="img-responsive"}
 
-### Limitar Tamaños[![Input Number][Marker]{:class="marca"}](#limitar-tamaños)
+### Limitar Tamaños[![Limitar Tamaños][Marker]{:class="marca"}](#limitar-tamaños)
 Si queremos limitar el tamaño de un campo `input` o de un `textarea`, ya sea limitándolo a tener un número mínimo o un número máximo de caracteres, podemos recurrir a los atributos `minlength` y `maxlength`.
 
 ~~~html
@@ -106,7 +106,7 @@ Si no insertamos el número suficiente de caracteres, el navegador nos avisará 
 
 En el caso de que el [campo sea de tipo `number`][InputNumber], los propios atributos `min` y `max` establecen este tipo de validación.
 
-## Validaciones Javascript[![Input Number][Marker]{:class="marca"}](#validaciones-javascript)
+## Validaciones Javascript[![Validaciones Javascript][Marker]{:class="marca"}](#validaciones-javascript)
 
 Ya hemos visto como [HTML5][HTML5] nos permite de forma sencilla realizar validaciones de datos. Si bien estas se nos pueden quedar cortas a la hora de realizar validaciones o de personalizar los mensajes de error asociados al formulario.
 
@@ -122,7 +122,7 @@ Métodos:
 * *HTMLFormElement.reportValidity()*
 * *setCustomValidity(message)*
 
-### Interface ValidityState[![Input Number][Marker]{:class="marca"}](#interface-validitystate)
+### Interface ValidityState[![Interface ValidityState][Marker]{:class="marca"}](#interface-validitystate)
 El interface `ValiditySate` describe el estado de validación de un elemento. De esta manera sobre este estado podremos ver si hay un problema de rango `.rangeOverflow` o si el valor del campo es demasiado largo `.tooLong` o si el tipo de dato introducido no es correcto `.typeMismatch` o ...
 
 Dentro del **API de Validación de Formularios** es el objeto `validity` el que implementa dicho interface. Este objeto está asociado a los campos de un formulario.
@@ -135,7 +135,7 @@ if (email.validity.typeMismatch) {
 }
 ~~~
 
-### validationMessage[![Input Number][Marker]{:class="marca"}](#validationmessage)
+### validationMessage[![validationMessage][Marker]{:class="marca"}](#validationmessage)
 Una vez que sabemos cómo acceder al objeto `validity` que contiene el estado de validación de un campo de formulario. Pero si lo que queremos saber es qué mensaje va a mostrar el navegador, deberemos de acceder a la propiedad `validationMessage`.
 
 ~~~javascript
@@ -146,10 +146,10 @@ if (email.validity.typeMismatch) {
 }
 ~~~
 
-### willValidate[![Input Number][Marker]{:class="marca"}](#willvalidate)
+### willValidate[![willValidate][Marker]{:class="marca"}](#willvalidate)
 Si queremos saber si el elemento del formulario va a ser evaluado en el envío, lo que deberemos de hacer es consultar la propiedad `willValidate`. La cual devolerá `true` si el campo se validará en el envío o `false` si no se le va a hacer una validación.
 
-### checkValidity[![Input Number][Marker]{:class="marca"}](#checkvalidity)
+### checkValidity[![checkValidity][Marker]{:class="marca"}](#checkvalidity)
 El método `checkValidity()` nos permite comprobar si el elemento tiene problemas de validación. Devuelve `true` en el caso de que el elemento no tenga problemas de validación y `false` si el elemento tiene problemas de validación.
 
 ~~~javascript
@@ -162,7 +162,7 @@ if (!email.checkValidity())
 }
 ~~~
 
-### reportValidity[![Input Number][Marker]{:class="marca"}](#reportvalidity)
+### reportValidity[![reportValidity][Marker]{:class="marca"}](#reportvalidity)
 En este caso el método `reportValidity` realiza una **comprobación de la validación a nivel del elemento de formulario**. Es por eso que su sintaxis en `HTMLFormElement.reportValidity()`. Es decir, comprueba si todos los elementos que hay en un formulario pasan la validación de formato o hay campos con error.
 
 ~~~javascript
@@ -177,7 +177,7 @@ webform.onchange = function(event) {
 }
 ~~~
 
-### setCustomValidity[![Input Number][Marker]{:class="marca"}](#setcustomvalidity)
+### setCustomValidity[![setCustomValidity][Marker]{:class="marca"}](#setcustomvalidity)
 El último método que vemos es el más interesante, ya que mediante `setCustomValidity` vamos a poder **personalizar el mensaje de error que se le muestra al usuario** cuando el formulario contiene errores de validación.
 
 El método `setCustomValidity` **recibe como parámetro el mensaje que queremos personalizar** y es aplicado sobre el elemento que estamos validando y por lo tanto adaptamos el mensaje a dicho tipo de elemento.
@@ -195,6 +195,19 @@ email.addEventListener("input", function (event) {
 ~~~
 
 Aquí podemos ver que lanzamos el cambio de mensaje cada vez que se produce una modificación sobre el campo `input`. Si bien podemos hacerlo en cualquier momento.
+
+## Deshabilitar Validaciones[![Deshabilitar Validaciones][Marker]{:class="marca"}](#deshabilitar-validaciones)
+Ya hemos visto cómo aprovecharnos al máximo de las validaciones automáticas de [HTML5][HTML5] y de cómo podemos personalizarlas mediante el **API de Validaciones de Formularios**. Si bien puede darse el caso de que no nos interese que estas validaciones se ejecuten. En este caso podemos deshabilitar las validaciones del formulario mediante el atributo `novalidate` a nivel de formulario.
+
+~~~html
+<form action="#" novalidate>
+  <label for="nombre">¿Cómo te llamas?:</label>
+  <input type="text" name="nombre" id="nombre" required/>
+  <input type="submit" value="Enviar">
+</form>
+~~~
+
+El atributo `novalidate` dentro del elemento `form` deshabilitara todos los controles del formulario.
 
 
 [Marker]: {{site.baseurl}}/img/marker.png
