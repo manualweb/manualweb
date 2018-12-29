@@ -27,6 +27,8 @@ La lista la asociaremos a los elementos de tipo `input` con el valor dado en el 
 <input type="text" name="lista" id="lista" list="miLista">
 ~~~
 
+> Al asociar un DataList a un elemento de tipo `input` conseguiremos el efecto de **autocompletado**. Es decir, el navegador irá dando opciones de completado al usuario atendiendo a los elementos que haya en el DataList.
+
 De esta manera podríamos definir una lista de ciudades:
 
 ~~~html
