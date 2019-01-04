@@ -25,5 +25,4 @@ Aunque las técnicas de colores, bordes y opacidad son genéricas para todas las
 
 Por defecto el valor de `stroke-width` es 1.
 
-
 [SVG]: http://www.manualweb.net/svg/
