@@ -1,7 +1,12 @@
-- title: Introducción SVG
-  docs:
-  - introduccion-svg
-
 - title: Formas Básicas
   docs:
+  - rectangulos-svg
   - circulos-svg
+  - elipses-svg
+  - lineas-svg
+  - poligonos-svg
+
+- title: Gradientes
+  docs:
+  - gradientes-svg
+  - gradiente-lineal-svg
