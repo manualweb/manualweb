@@ -25,8 +25,12 @@
   docs:
   - modo-offline
   - webstorage
-  - indexedDB
   - file-api
+
+- title: IndexedDB
+  docs:
+  - introduccion-indexedDB
+  - operaciones-basicas-indexedDB
 
 - title: Rendimiento & Integración
   docs:
