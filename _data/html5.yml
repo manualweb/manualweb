@@ -1,23 +1,38 @@
 - title: Básicos de HTM5
   docs:
   - semantica-html5
+
+- title: Formularios en HTM5
+  docs:
+  - formularios-html5
+  - formularios-elementos-input
+  - formularios-datalist
+  - formularios-barras-progreso
+  - formularios-output
+  - formularios-validacion
+
+- title: Multimedia en HTM5
+  docs:
   - audio-html5
   - video-html5
   - media-formats
-  - formularios-html5
-  - canvas
 
-- title: APIs HTML5
+- title: Gráficos en HTM5
+  docs:
+  - canvas-html5
+
+- title: Almacenamiento & Offline
+  docs:
+  - modo-offline
+  - webstorage
+  - indexedDB
+  - file-api
+
+- title: Rendimiento & Integración
   docs:
   - fullscreen-api
   - history-api
 
-- title: Acceso al Dispositivo
+- title: Contenido de Apoyo
   docs:
-  - camera-api
-  - touch-events
-  - orientacion-dispositivo
-
-- title: Almacenamiento & Storage
-  docs:
-  - indexedDB
+  - urls-html5

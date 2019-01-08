@@ -2,8 +2,6 @@
 title: Semántica en HTML5
 permalink: /html5/semantica-html5/
 ---
-# Semántica en HTML5
-
 ## Análisis de la Semántica en HTML 4
 
 Cuando se trabajaba con [HTML 4][HTML] la estructura de un documento se conseguía mediante capas `div` y elementos de cabecera `h1` a `h6`. Dependiendo de la anidación que utilizásemos con las cabeceras y capas, así se estructuraba nuestro documento.

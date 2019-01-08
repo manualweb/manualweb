@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<title>DataList</title>
+
+</head>
+<body>
+
+<h1>DataList</h1>
+<p>Ejemplo de uso de un DataList.</p>
+
+<form action="#">
+  <label for="casillaleon">Elige una ciudad de Castilla y León: </label>
+  <datalist id="ciudades">
+    <option>Ávila</option>
+    <option>Burgos</option>
+    <option>León</option>
+    <option>Palencia</option>
+    <option>Salamanca</option>
+    <option>Segovia</option>
+    <option>Soria</option>
+    <option>Valladolid</option>
+    <option>Zamora</option>
+  </datalist>
+  <input type="text" name="castillaleon" id="castillaleon" list="ciudades">
+  <input type="submit" value="Enviar">
+</form>
+
+</body>
+</html>
