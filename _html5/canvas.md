@@ -13,7 +13,6 @@ El elemento `canvas` no fue uno de los elementos que apareció nuevo en la espec
 
 Cierto es que siempre quedará en el aire el por qué se tomo esta decisión en vez de apostar por algo más acceible y existente como era la tecnología [SVG][SVG].
 
-
 ## Elemento Canvas
 Para crear un elemento `canvas` en nuestra página utilizaremos el elemento `canvas`. El código para crear este elemento será algo parecido a:
 
@@ -40,27 +39,38 @@ O bien una imagen que sea lo más cercana posible al contenido de nuestro canvas
 Si no insertamos nada dentro del `canvas`, lo que veremos será un espacio en blanco con el tamaño que le hayamos indicado al `canvas`. Si no le indicamos un tamaño, por defecto, el `canvas` se pintará en *300x150*.
 
 ## Manipular un Canvas
-Para manipular el elemento `canvas` vamos a tener que tirar de [Javascript][Javascript]. De esta forma lo primero será el obtener una referencia al elemento `canvas`. En concreto recuperaremos su contexto mediante el método `.getContext()`.
+Para manipular el elemento `canvas` vamos a tener que tirar de [Javascript][Javascript]. De esta forma lo primero será el **obtener una referencia al elemento `canvas`**. En concreto recuperaremos su contexto mediante el método `.getContext()`. Este método se ejecuta directamente sobre el elemento `canvas` es por ello que lo primero que haremos será acceder al elemento con un `getElementById()`.
 
 ~~~javascript
 var canvas = document.getElementById("micanvas");
 var context = canvas.getContext("2D");
 ~~~
 
-El contexto que recuperamos es el 2D. Ya que es el único contexto disponible en los CANVAS a día de hoy. Si bien los navegadores web ya están trabajando para ofrecer un contexto 3D.
+El contexto que recuperamos es el **2D**. Ya que es el único contexto disponible en los elementos `canvas` a día de hoy. Si bien los navegadores web ya están trabajando para ofrecer un contexto **3D** basado en WebGL.
 
-Una vez que tenemos el contexto del Canvas podemos empezar a interactuar con él. Añadirendo colores, imágenes, líneas, elementos gráficos, degradados,...
+Además el méteodo `getContext()` nos va a servir para poder comprobar si el navegador soporta al elemento `canvas` o no.
+
+~~~javascript
+var canvas = document.getElementById("micanvas");
+if (canvas.getContext) {
+  var context = canvas.getContext("2D");
+}
+~~~
+
+Una vez que tenemos el contexto del elemento `canvas` podemos empezar a interactuar con él. Añadirendo colores, imágenes, líneas, elementos gráficos, degradados,...
+
+## Dibujar Figuras
+Para poder insertar figuras dentro del `canvas` deberemos de conocer cómo funciona el sistema de coordenadas. Y es que para posicionar a un elemento en el `canvas` tendremos la esquina superior izquierda como la relativa a la posición (0,0) y la esquina inferior derecha como la posición (ancho,alto), dónde los valores de *ancho* y *alto* corresponden al tamaño que le hayamos dado al lienzo.
+
+### Rectángulos
+Para poder añadir un rectángulo al `canvas` vamos a utilizar el método `fillRect`. Ejecutaremos el método `fillRect`
 
 
-### Añadir Líneas
-
-
-### Añadir Figuras
 
 
 
 
-[HTML]: http://www.manualweb.net/html/
-[HTML5]: http://www.manualweb.net/html5/
-[SVG]: http://www.manualweb.net/svg/
-[Javascript]: http://www.manualweb.net/javascript/
+[HTML]: {{site.baseurl}}/html/
+[HTML5]: {{site.baseurl}}t/html5/
+[SVG]: {{site.baseurl}}/svg/
+[Javascript]: {{site.baseurl}}/javascript/
