@@ -63,8 +63,55 @@ Una vez que tenemos el contexto del elemento `canvas` podemos empezar a interact
 Para poder insertar figuras dentro del `canvas` deberemos de conocer cómo funciona el sistema de coordenadas. Y es que para posicionar a un elemento en el `canvas` tendremos la esquina superior izquierda como la relativa a la posición (0,0) y la esquina inferior derecha como la posición (ancho,alto), dónde los valores de *ancho* y *alto* corresponden al tamaño que le hayamos dado al lienzo.
 
 ### Rectángulos
-Para poder añadir un rectángulo al `canvas` vamos a utilizar el método `fillRect`. Ejecutaremos el método `fillRect`
+Para poder añadir un rectángulo al `canvas`  disponemos de tres métodos: `fillRect`, `strokeRect` y `clearRect`. Estos métodos los vamos a ejecutar sobre el contexto del `canvas`.
 
+El método `fillRect` nos sirve para **crear un rectángulo relleno**. La sintaxis del método `fillRect` es la siguiente:
+
+~~~javascript
+void ctx.fillRect(x, y, width, height);
+~~~
+
+Dónde `x` e `y` son las coordenadas de la esquina superior izquierda del rectángulo dentro del `canvas`, mientras que con `width` y `height` indicamos el ancho y alto del rectángulo respectivamente.
+
+Si no indicamos nada, el relleno del rectángulo será el color establecido por defecto, es decir, el negro.
+
+Con el método `strokeRect` generaremos un **rectángulo que solo tenga la línea exterior**. La sintáxis del método `strokeRect` es:
+
+~~~javascript
+void ctx.strokeRect(x, y, width, height);
+~~~
+
+Los parámetros son los mismos que utilizábamos con el método `fillRect`.
+
+El último método que gestiona rectángulos en [HTML5][HTML5] es `clearRect`. El método `clearRect` genera **un rectángulo que sea transparente** sobre la zona del rectángulo.
+
+~~~javascript
+void ctx.clearRect(x, y, width, height);
+~~~
+
+Al igual que los dos anteriores métodos, los parámetros son las coordenadas de origen `x` e `y` así como el ancho o `width`  y alto `height`.
+
+De esta manera podemos tener un rectángulo que tenga internamente otro transparente, utiliznado los métodos `fillRect` y `clearRect` de la siguiente forma:
+
+~~~javascript
+if (canvas.getContext) {
+  var ctx = canvas.getContext('2d');
+  ctx.fillStyle = 'green';
+  ctx.fillRect(10, 10, 200, 100);
+  ctx.clearRect(30, 30, 160, 60);
+}
+~~~
+
+### Paths
+A parte de los rectángulos tenemos otra figura que nos permite dibujar objetos dentro de un `canvas` es el **path**. Un **path** es una secuencia de puntos los cuales van unidos por líneas o curvas. Los **path** pueden ser abiertos o cerrados, siendo en este segundo caso el último punto coincidente con el primero.
+
+Para hacernos una idea es como si estuviésemos pintando con un lapiz sobre un lienzo. Lo primero es mover el lapíz a un punto y desde ese punto trazar una línea o curva hasta otro punto y así sucesivamente.
+
+Para crear un **path** deberemos de invocar al método `beginPath` sobre el contexto del canvas.
+
+~~~javascript
+void ctx.beginPath();
+~~~
 
 
 
