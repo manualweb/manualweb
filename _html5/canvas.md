@@ -113,6 +113,90 @@ Para crear un **path** deberemos de invocar al método `beginPath` sobre el cont
 void ctx.beginPath();
 ~~~
 
+Una vez que hemos creado el **path** podemos realizar una serie de operaciones, por ejemplo podemos movernos y crear una línea de la siguiente forma:
+
+~~~javascript
+ctx.beginPath();
+ctx.moveTo(75, 50);
+ctx.lineTo(100, 75);
+~~~
+
+Es importante que cuando realizamos operaciones en el **path** del `canvas` para que estas se visualicen, es decir, se reflejen en el `canvas` deberemos de llamar al método `stroke` o `fill`.
+
+Por un lado el  método `stroke` lo que hace es dibujar las líneas que hayamos trazado incluyéndolas en el `canvas`.
+
+~~~javascript
+void ctx.stroke();
+void ctx.stroke(path);
+~~~
+
+Por el otro el método `fill` lo que hace es rellenar el área que hemos delimitado mediante las líneas. Asumiendo que el último punto equivale al punto desde el que empezamos el subpath. Hay que tener en cuenta que cada vez que movemos el puntero creamos un nuevo subpath.
+
+~~~javascript
+void ctx.fill([fillRule]);
+void ctx.fill(path [, fillRule]);
+~~~
+
+Así, nuestro ejemplo para tener un **path** incluiría lo siguiente:
+
+~~~javascript
+ctx.beginPath();
+ctx.moveTo(75, 50);
+ctx.lineTo(100, 75);
+ctx.fill();
+~~~
+
+Para poder finalizar la gestión de un **path** tenemos el método `closePath`. Este método añade una línea desde la posición en la que nos encontremos hasta la posición inicial del **path**. El utilizar el método `closePath` no evita el que tengamos que forzar el pintado con `fill` o `stroke`.
+
+~~~javascript
+void ctx.closePath();
+~~~
+
+> En el caso de que utilicemos el método `fill` no será necesario que invoquemos al método `closePath` ya que el propio método `fill` traza una línea hasta el origen del subpath.
+
+#### Mover el puntero
+Para mover el puntero en el `canvas` dentro de un **path** tenemos el método `moveTo`.
+
+~~~javascript
+void ctx.moveTo(x, y);
+~~~
+
+Los parámetros `x` e `y` representan las coordenadas (x,y) del `canvas` a la cual queremos mover el cursor.
+Hay que tener en cuenta que cada vez que movamos el puntero crearemos un nuevo **sub-path** con un nuevo punto de origen.
+
+Por ejemplo podemos mover el puntero para crear dos líneas paralelas de la siguiente forma:
+
+~~~javascript
+ctx.beginPath();
+ctx.moveTo(10,10);
+ctx.lineTo(10,100);
+ctx.moveTo(20,10);
+ctx.lineTo(20,100);
+ctx.stroke();
+~~~
+
+#### Dibujar Líneas
+Para poder dibuajar líneas dentro de un `canvas` en [HTML5][HTML5] vamos a utilizar el método `lineTo`. La sintaxis del método `lineTo` es:
+
+~~~javascript
+ctx.lineTo(x, y);
+~~~
+
+Dónde las propiedades `x` e `y` representan la posición (x,y) del punto final de la línea. El punto de origen será el punto dónde esté el puntero del **path** dentro del `canvas`.
+
+Es decir, que si ejecutamos el siguiente código:
+
+~~~javascript
+ctx.moveTo(10,10);
+ctx.lineto(10,100);
+~~~
+
+Nos pintará una línea desde el punto *(10,10)* a el punto *(10,100)*.
+
+#### Dibujar un arco
+
+
+#### Dibujar una curva Bezier
 
 
 
