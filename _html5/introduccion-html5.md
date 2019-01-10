@@ -15,6 +15,11 @@ Se incorporan nuevos elementos que nos permiten dotar de mayor semántica a los 
 
 Así, en [HTML5][HTML5] encontramos elementos como `article`, `section`, `aside`, `header`, `footer`,...
 
+### Mejora de formularios
+Se han revisado los formularios proporcionando nuevos tipos de `input` así como incluyendo nuevos elementos para los formularios como `datalist` para la gestión de listas, `progress` y `meter` para las barras de progreso u `output` para las salidas de datos.
+
+Además se proporciona una valiosísimo API de validación de formularios así como validaciones explícitas en los propios campos.
+
 ### Multimedia
 Se incorporan nuevos elementos `audio` y `video` para poder gestionar de forma estándar los codecs y formatos multimedia para poder incluir contenido multimedia en los documentos. Los elementos `audio` y `video` incorporan unos potentes API para poder interactuar con sus funcionalidades.
 
