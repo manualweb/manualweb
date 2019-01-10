@@ -1,9 +1,10 @@
-- title: Básicos de HTM5
+- title: Introducción HTM5
   docs:
   - introduccion-html5
+  - documento-html5
   - semantica-html5
 
-- title: Formularios en HTM5
+- title: Formularios HTM5
   docs:
   - formularios-html5
   - formularios-elementos-input
@@ -12,13 +13,13 @@
   - formularios-output
   - formularios-validacion
 
-- title: Multimedia en HTM5
+- title: Multimedia HTM5
   docs:
   - audio-html5
   - video-html5
   - media-formats
 
-- title: Gráficos en HTM5
+- title: Gráficos HTM5
   docs:
   - canvas
 
