@@ -11,8 +11,8 @@ Aquí recojo una serie de URLs sobre [HTML5][HTML5] que pueden ser de interés.
 
 ## Especificación HTML5
 
-* [Especificación HTML 5.2][HTML5Spec] por la W3C. *(inglés-*
-* [Especificación HTML "viva"][LiveHTML5Spec] por Web Hypertext Application Technology Working Group (WHATWG). *(inglés)*
+* [Especificación HTML 5.2][HTML5Spec] por la W3C. *-inglés-*
+* [Especificación HTML "viva"][LiveHTML5Spec] por Web Hypertext Application Technology Working Group (WHATWG). *-inglés-*
 
 
 [HTML5]: http://www.manualweb.net/html5/
