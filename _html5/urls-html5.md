@@ -16,7 +16,7 @@ Aquí recojo una serie de URLs sobre [HTML5][HTML5] que pueden ser de interés.
 
 
 ## Canvas
-* [Explicación de Uso del ArcTo][ArcTo]
+* [Explicación de Uso del ArcTo][ArcTo] *-inglés-*
 
 
 [HTML5]: http://www.manualweb.net/html5/
