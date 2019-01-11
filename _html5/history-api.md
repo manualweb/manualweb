@@ -67,7 +67,7 @@ Una cosa importante a la hora de movernos por el historial mediante el **History
 window.history.length;
 ~~~
 
-### Gestionar Estados History API
+## Gestionar Estados History API
 Cuando se pensó inicialmente el objeto `history` se trabajaba con la hipótesis de que cada nueva navegación, y por lo tanto carga de página, iba a suponer un nuevo estado dentro del historial. Pero con la aparición de las técnicas [AJAX][AJAX] (Asynchronous Javascript and XML) llegaron las cargas parciales de las páginas o las modificaciones de los elementos del DOM para proporcionar una experiencia más rica de visualización al usuario.
 
 Es decir, el usuario estaba navegando, pero su historial de navgeación no cambiaba. Por lo cual, si el usuario, habituado a manipular los botones del navegador, realizaba alguna navegación, alteraba por completo la navegación de la aplicación que usaba patrones [AJAX][AJAX].
