@@ -50,24 +50,7 @@ Aquí puedes encontrar un listado de **ejemplos [HTML5][HTML5] explicados paso a
 * [Cargar un vídeo de diferentes formatos con HTML5](http://lineadecodigo.com/html5/cargar-un-video-de-diferentes-formatos-con-html5/)
 
 
-## Battery API
-* [Nivel de la batería con HTML5](http://lineadecodigo.com/html5/nivel-de-la-bateria-con-html5/)
-* [Saber si la batería está cargando con HTML5](http://lineadecodigo.com/html5/saber-si-la-bateria-esta-cargando-con-html5/)
 
-
-## History API
-* [Moverse por el API History](http://lineadecodigo.com/html5/moverse-por-el-api-history/)
-* [Cambio de estado en el Historial](http://lineadecodigo.com/html5/cambio-de-estado-en-el-historial/)
-* [Reemplazar un estado del History API](http://lineadecodigo.com/html5/reemplazar-un-estado-del-history-api/)
-* [Gestionar estados del Historial con HTML5](http://lineadecodigo.com/html5/gestionar-estados-del-historial-con-html5/)
-
-
-## Fullscreen API
-* [Documento a pantalla completa con HTML5](http://lineadecodigo.com/html5/documento-a-pantalla-completa-con-html5/)
-2. elemento pantalla completa
-3. imagen a pantalla completa
-4. saber si está la pantalla completa
-5. video a pantalla completa
 
 ## Formularios
 
@@ -77,69 +60,36 @@ Aquí puedes encontrar un listado de **ejemplos [HTML5][HTML5] explicados paso a
 * [Autofoco a un campo con HTML5](http://lineadecodigo.com/html5/autofoco-a-un-campo-con-html5/)
 * [Elemento rango en formularios HTML5](http://lineadecodigo.com/html5/elemento-rango-en-formularios-html5/)
 * [PlaceHolder: Marcadores de posición en HTML5](http://lineadecodigo.com/html5/placeholder-marcadores-de-posicion-en-html5/)
+* Input para emails
+* Input para Colores
+* Input para búsquedas
+* Input URL
+* Input teléfono
+* Input para fechas ¿varios?
+* Input de ficheros solo para imágenes
+* Input para múltiples ficheros
+* Input ficheros para captura... mirar dónde funciona
+* ¿dar estilo a un placeholder???
 
 ### DataList
 * [DataList en HTML5](http://lineadecodigo.com/html5/datalist-en-html5/)
+* Fallback de un datalist
 
 ### Barras de Progreso
+* Barra de Progreso -> progress
+* Barra de progresos con colores --> meter
 
 ### Output
+* Elemento output
 
 ### Validaciones
 * [Patrones en formularios con HTML5 pattern](http://lineadecodigo.com/html5/patrones-en-formularios-con-html5-pattern/)
-
-
-* Modificando propiedades CSS con un Slider
-* Autofoco a un campo con HTML5
-* Controlar volumen de vídeo HTML5 con un Slider
-* DataList en HTML5
-* Elemento rango en formularios HTML5
-* PlaceHolder
-
-
-
-
-1. Input para emails
-2. Input para Colores
-3. Input para búsquedas
-4. Input URL
-5. Input teléfono
-6. Input para fechas ¿varios?
-7. Input de ficheros solo para imágenes
-8. Input para múltiples ficheros
-9. Input ficheros para captura... mirar dónde funciona
-10. Barra de Progreso -> progress
-11. Barra de progresos con colores --> meter
-12. Campo obligatorio
-13. Longitud mínima de una password
-14. Longitud mínima y máxima de un textarea
-15. Mensaje personalizado con API Validación
-16. Validar si todo el formulario es correcto
-17. Deshabilitar las validaciones
-18. Elemento output
-19. Fallback de un datalist
-20. ¿dar estilo a un placeholder???
-
-## WebStorage & Offline
-* [¿Soporta mi navegador la caché local de HTML5?](http://lineadecodigo.com/html5/soporta-mi-navegador-la-cache-local-de-html5/)
-* [Acceder a la caché local del navegador con HTML5](http://lineadecodigo.com/html5/acceder-a-la-cache-local-del-navegador-con-html5/)
-* [Listar el contenido de Local Storage en HTML5](http://lineadecodigo.com/html5/listar-el-contenido-de-local-storage-en-html5/)
-* [Eliminar un elemento de Local Storage en HTML5](http://lineadecodigo.com/html5/eliminar-un-elemento-de-local-storage-en-html5/)
-* [Vaciar la Local Storage en HTML5](http://lineadecodigo.com/html5/vaciar-la-local-storage-en-html5/)
-1. Detectar cambio offline/online
-2. Detectar un cambio en la Storage
-
-
-## IndexedDB
-1. Abrir una BD
-2. Actualizar una BD
-3. Crear un Object Store
-4. Crear una clave autoincremental
-5. Crear un índice
-6. Crear un índice único
-7. Crear un índice múltiple ¿se podrá hacer con colores?
-8. Insertar datos en IndexedDB
-9. Carga masiva de datos
+* Campo obligatorio
+* Longitud mínima de una password
+* Longitud mínima y máxima de un textarea
+* Mensaje personalizado con API Validación
+* Validar si todo el formulario es correcto
+* Deshabilitar las validaciones
 
 ## Canvas
 * [Limpiar contenido de un Canvas en HTML5](http://lineadecodigo.com/html5/limpiar-contenido-de-un-canvas-en-html5/)
@@ -162,6 +112,44 @@ Aquí puedes encontrar un listado de **ejemplos [HTML5][HTML5] explicados paso a
 ### Texto
 * [Insertar texto en un Canvas de HTML5](http://lineadecodigo.com/html5/insertar-texto-en-un-canvas-de-html5/)
 
+
+## WebStorage & Offline
+* [¿Soporta mi navegador la caché local de HTML5?](http://lineadecodigo.com/html5/soporta-mi-navegador-la-cache-local-de-html5/)
+* [Acceder a la caché local del navegador con HTML5](http://lineadecodigo.com/html5/acceder-a-la-cache-local-del-navegador-con-html5/)
+* [Listar el contenido de Local Storage en HTML5](http://lineadecodigo.com/html5/listar-el-contenido-de-local-storage-en-html5/)
+* [Eliminar un elemento de Local Storage en HTML5](http://lineadecodigo.com/html5/eliminar-un-elemento-de-local-storage-en-html5/)
+* [Vaciar la Local Storage en HTML5](http://lineadecodigo.com/html5/vaciar-la-local-storage-en-html5/)
+* Detectar un cambio en la Storage
+
+
+## IndexedDB
+* Abrir una BD
+* Actualizar una BD
+* Crear un Object Store
+* Crear una clave autoincremental
+* Crear un índice
+* Crear un índice único
+* Crear un índice múltiple ¿se podrá hacer con colores?
+* Insertar datos en IndexedDB
+* Carga masiva de datos
+
+## History API
+* [Moverse por el API History](http://lineadecodigo.com/html5/moverse-por-el-api-history/)
+* [Cambio de estado en el Historial](http://lineadecodigo.com/html5/cambio-de-estado-en-el-historial/)
+* [Reemplazar un estado del History API](http://lineadecodigo.com/html5/reemplazar-un-estado-del-history-api/)
+* [Gestionar estados del Historial con HTML5](http://lineadecodigo.com/html5/gestionar-estados-del-historial-con-html5/)
+
+
+## Fullscreen API
+* [Documento a pantalla completa con HTML5](http://lineadecodigo.com/html5/documento-a-pantalla-completa-con-html5/)
+* elemento pantalla completa
+* imagen a pantalla completa
+* saber si está la pantalla completa
+* video a pantalla completa
+
+## Battery API
+* [Nivel de la batería con HTML5](http://lineadecodigo.com/html5/nivel-de-la-bateria-con-html5/)
+* [Saber si la batería está cargando con HTML5](http://lineadecodigo.com/html5/saber-si-la-bateria-esta-cargando-con-html5/)
 
 ## Geolocalización
 * [Geolocalizando a un usuario con HTML5](http://lineadecodigo.com/html5/geolocalizando-a-un-usuario-con-html5/)
