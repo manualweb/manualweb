@@ -142,10 +142,10 @@ Aquí puedes encontrar un listado de **ejemplos [HTML5][HTML5] explicados paso a
 
 ## Fullscreen API
 * [Documento a pantalla completa con HTML5](http://lineadecodigo.com/html5/documento-a-pantalla-completa-con-html5/)
+* [Vídeo a Pantalla Completa](http://lineadecodigo.com/html5/video-a-pantalla-completa/)
 * elemento pantalla completa
 * imagen a pantalla completa
 * saber si está la pantalla completa
-* video a pantalla completa
 
 ## Battery API
 * [Nivel de la batería con HTML5](http://lineadecodigo.com/html5/nivel-de-la-bateria-con-html5/)
