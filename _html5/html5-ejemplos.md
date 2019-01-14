@@ -49,9 +49,6 @@ Aquí puedes encontrar un listado de **ejemplos [HTML5][HTML5] explicados paso a
 * [Iniciar automáticamente un vídeo en HTML5](http://lineadecodigo.com/html5/iniciar-automaticamente-un-video-en-html5/)
 * [Cargar un vídeo de diferentes formatos con HTML5](http://lineadecodigo.com/html5/cargar-un-video-de-diferentes-formatos-con-html5/)
 
-
-
-
 ## Formularios
 
 ### Campos Input
@@ -92,17 +89,31 @@ Aquí puedes encontrar un listado de **ejemplos [HTML5][HTML5] explicados paso a
 * Deshabilitar las validaciones
 
 ## Canvas
-* [Limpiar contenido de un Canvas en HTML5](http://lineadecodigo.com/html5/limpiar-contenido-de-un-canvas-en-html5/)
 * [Detectar el soporte del Canvas de HTML5](http://lineadecodigo.com/html5/detectar-el-soporte-del-canvas-de-html5/)
 * [Crear un Canvas en HTML5](http://lineadecodigo.com/html5/crear-un-canvas-en-html5/)
+* [Limpiar contenido de un Canvas en HTML5](http://lineadecodigo.com/html5/limpiar-contenido-de-un-canvas-en-html5/)
 
 ### Figuras
-* [Dibujar líneas en Canvas con HTML5](http://lineadecodigo.com/html5/dibujar-lineas-en-canvas-con-html5/)
 * [Dibujar un rectángulo en un Canvas con HTML5](http://lineadecodigo.com/html5/dibujar-un-rectangulo-en-un-canvas-con-html5/)
+* Dibujar borde de un rectángulo
+* Utilizar un rectángulo vacío dentro de otro
 * [Crear un Path sobre un Canvas de HTML5](http://lineadecodigo.com/html5/crear-un-path-sobre-un-canvas-de-html5/)
+* Movernos a un sitio del Canvas
+* [Dibujar líneas en Canvas con HTML5](http://lineadecodigo.com/html5/dibujar-lineas-en-canvas-con-html5/)
+* [Crear una cuadrícula sobre un Canvas de HTML5](http://lineadecodigo.com/html5/crear-una-cuadricula-sobre-un-canvas-de-html5/)
+* Dibujar un triángulo
 * [Dibujar un círculo sobre el CANVAS de HTML5](Dibujar un círculo sobre el CANVAS de HTML5)
 * [Aros Olímpicos con Canvas y HTML5](http://lineadecodigo.com/html5/aros-olimpicos-con-canvas-y-html5/)
-* [Crear una cuadrícula sobre un Canvas de HTML5](http://lineadecodigo.com/html5/crear-una-cuadricula-sobre-un-canvas-de-html5/)
+* Smile con arcos
+* Círculo mediante tangentes
+* Rectángulo bordes redondeados
+* Curva Bézier
+* Corazón con Curva Bézier
+* Path2D
+* Path2D con SVG
+* Círculo de color rojo (colores)
+* Triangulo con borde verde (colores)
+
 
 ### Imagenes
 * [Insertar una imagen en un Canvas HTML5](http://lineadecodigo.com/html5/insertar-una-imagen-en-un-canvas-html5/)
@@ -111,7 +122,6 @@ Aquí puedes encontrar un listado de **ejemplos [HTML5][HTML5] explicados paso a
 
 ### Texto
 * [Insertar texto en un Canvas de HTML5](http://lineadecodigo.com/html5/insertar-texto-en-un-canvas-de-html5/)
-
 
 ## WebStorage & Offline
 * [¿Soporta mi navegador la caché local de HTML5?](http://lineadecodigo.com/html5/soporta-mi-navegador-la-cache-local-de-html5/)
