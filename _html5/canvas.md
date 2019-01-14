@@ -194,14 +194,217 @@ ctx.lineto(10,100);
 Nos pintará una línea desde el punto *(10,10)* a el punto *(10,100)*.
 
 #### Dibujar un arco
+Para poder dibujar un arco dentro de un `canvas` tenemos dos métodos `arc` y `arcTo`. Veamos su sintaxis en detalle.
 
+~~~Javascript
+arc(x, y, radius, startAngle, endAngle, anticlockwise)
+~~~
 
-#### Dibujar una curva Bezier
+En el caso de `arc` deberemos de indicar el centro del arco mediante los parámetros `x` e `y`. Lo siguiente es especificar el radio que va a tener el arco mediante el parámetro `radius`.
 
+Lo siguiente será indicar lel ángulo en el que empezamos `startAngle` en *radianes* y luego el ángulo sobre el que acabamos `endAngle` en *radianes*.
 
+> Recuerda que si quieres trabajar en grados, un grado es igual a &pi;/180 radianes
+
+El último parámetro, `anticlockwise` indica si el arco se traza en la dirección de las agujas del reloj que será un valor `false` (valor por defecto) o si queremos que sea como las agujas del reloj, lo cual será un valor de `true`.
+
+De esta forma podemos dibujar un círculo entero si escribimos lo siguiente:
+
+~~~javascript
+ctx.arc(100,100,50,0,2 * Math.PI);
+ctx.stroke();
+~~~
+
+El segundo método es `arcTo` y su sintaxis sería:
+
+~~~javascript
+void ctx.arcTo(x1, y1, x2, y2, radius);
+~~~
+
+En este caso se realiza un arco atendiendo a dos puntos de control, el primer punto de control es el demarcado por los parámetros `x1` e `y1` y el segundo es el demarcado por `x2` e `y2`. Lo siguiente que hay que indicar es el radio del arco mediante el parámetro `radius`. Que así dicho suena bastante complicado de entender.
+
+La idea de dibujar un arco mediante dos líneas tangenciales, para ello necesitaremos un primer punto para poder hacer las dos líneas. Este le conseguimos moviendo el puntero.
+
+~~~javascript
+void ctx.moveTo(x0,y0);
+void ctx.arcTo(x1, y1, x2, y2, radius);
+~~~
+
+Con el primer punto ya tendremos las dos líneas tangenciales. El arco se dibujará desde el punto inicial hasta el punto dónde el cículo de rádio `radius` toca con las líneas tangenciales y  hasta el segundo punto dónde el círculo toca con la otra línea tangencial.
+
+La imagen lo explica mucho mejor:
+
+![ArcTo][ArcTo]{:class="img-responsive"}
+
+Y, ¿por qué? esta complicación a la hora de dibujar arcos. La idea de este método `arcTo` es para poder redondear las esquinas de los rectángulos, tal y cómo vemos en el siguiente diagrama:
+
+![ArcToRectangulo][ArcToRectangulo]{:class="img-responsive"}
+
+#### Dibujar una curva Bézier
+Otra de las capacidades que tenemos en un **path** es la de poder crear una *curva de Bézier* para ello disponemos de los métodos `quadraticCurveTo` y `bezierCurveTo`.
+
+En el caso de `quadraticCurveTo` la sintaxis será:
+
+~~~javascript
+void ctx.quadraticCurveTo(cpx, cpy, x, y);
+~~~
+
+Crea una *curva de Bézier* utilizando un punto de control, demarcado por los parámetros `cpx` y `cpy` y el punto final demarcado por `x` e `y`. Hay que tener en cuenta que el punto de inicio será aquél en el que esté el puntero dentro del `canvas`. Por lo que normalmente encontraremos algo así como:
+
+~~~javascript
+void ctx.moveTo(x1,y1);
+void ctx.quadraticCurveTo(cpx, cpy, x2, y2);
+~~~
+
+El efecto de la **curva de Bézier** que genera el método `quadraticCurveTo` sería algo parecido a:
+
+![Curva Brezier con Punto Control][CurvaBezierPuntoControl]{:class="img-responsive"}
+
+Para el método `bezierCurveTo` tenemos la siguiente sintaxis:
+
+~~~javaScript
+void ctx.bezierCurveTo(cp1x, cp1y, cp2x, cp2y, x, y);
+~~~
+
+En este caso crea una *curva de Bézier* atendiendo a dos puntos de control, el primer punto de control sería `cp1x` y `cp1y`, mientras que el segundo punto de control es `cp2x` y `cp2y` y un punto de fin marcado con los parámtros `x` e `y`.
+
+Visualmente obtendríamos algo como:
+
+![Curva Brezier con Dos Puntos de Control][CurvaBezierDosPuntosControl]{:class="img-responsive"}
+
+### Rectángulos
+A parte de la figura que podemos dibujar de un rectángulo con el `canvas` también contamos con la posibilidad de añadir al **path** la figura de un rectángulo. Y para ello tenemos el método `rect`. La sintaxis del método `rect` es:
+
+~~~javascript
+void ctx.rect(x, y, width, height);
+~~~
+
+Este método nos dibujará un rectángulo que empiece en la posición `x` e `y` y que tenga un ancho y alto definido con los parámetros `width` y `height` respectivamente.
+
+Podemos crear un rectángulo de 200x100 de la siguiente manera:
+
+~~~javascript
+if (canvas.getContext) {
+  var ctx = canvas.getContext('2d');
+  ctx.rect(10,10,200,100);
+  ctx.fill();
+}
+~~~
+
+> Al contratario que otros métodos del **path** con `rect` no necesitamos realizar un `moveTo` al prinicipio ya que lo hace el propio método.
+
+### Objeto Path
+Uno de los objetos que podemos manejar en el `canvas` es el objeto `Path2D`. Este objeto lo que nos permite es almacenar un **path** y la secuencia de comandos que lleve asociada, para poder repetirlo lass veces que necesitemos.
+
+Podemos construir un objeto `Path2D` de varias formas:
+
+~~~javascript
+new Path2D();
+new Path2D(path);
+new Path2D(d);
+~~~
+
+Podemos copiar el **path** de uno existente y pasarlo como parámetro `path`. O bien puede ser un **path SVG** definido por una cadena.
+
+Definimos un **path** que almacene los comandos:
+
+~~~javascript
+let path1 = new Path2D();
+path1.rect(10, 10, 100,100);
+~~~
+
+Este Path lo que tiene es dibujar un rectángulo mediante el método `rect`.
+Ahora lo que podemos es crear un nuevo **path** a partir de este **path** existente:
+
+~~~javascript
+let path2 = new Path2D(path1);
+~~~
+
+Ahora podemos añadir más comandos al **path**:
+
+~~~javascript
+path2.moveTo(220, 60);
+path2.arc(170, 60, 50, 0, 2 * Math.PI);
+~~~
+
+Para volcar un **path** a un `canvas` lo que haremos será utilizar un método `stroke` o `fill` que reciba ese **path** como parámetro.
+
+~~~javascript
+ctx.stroke(path2);
+~~~
+
+#### Path2D SVG
+También podemos crear un **path** con un objeto `Path2D` que reciba como parámetro un **path svg**. Un ejemplo de **path SVG** sería:
+
+~~~javascript
+"M 10 10 h 80 v 80 h -80 Z"
+~~~
+
+Que lo que viene a decir es: *"ves al punto 10,10 (M 10 10), desplázate horizontalmente al 80 (h80), desplázate verticalmente al 80 (v 80), desplázate horizontalmente hacía la izquierda -80 puntos (h -80) y traza hacía el inicio".*
+
+Así crearíamos nuestro **path SVG** de la siguiente forma:
+
+~~~javascript
+// Cuadrado
+var pathsvg = new Path2D('M10 10 h 80 v 80 h -80 Z');
+ctx.fill(pathsvg);
+
+// triangulo
+var pathsvg2 = new Path2D('M100 10 l 80 80 h -80 Z');
+ctx.fill(pathsvg2);
+~~~
+
+## Estilos y Colores en el Canvas
+Hasta ahora hemos visto cómo podíamos crear nuestras figuras y paths dentro del canvas para que se visualicen. Algo hemos visto a la hora de darle estilos y colores ya que hemos visto que podíamos crear solo el contorno con el método `stroke` o rellenarlo con el método `fill`. Pero veamos algo más en detalle cómo darle estilo y color a nuestros diseños en el canvas.
+
+### Colores
+Hay dos propiedades que tenemos que controlar para poder dar los colores a los elementos de un `canvas`, estas son: `fillStyle` y `strokeStyle` las cuales darán el color al relleno de las figuras y al borde de las figuras respectivamente.
+
+Para asignarle un color a una de estas propiedades haremos lo siguiente:
+
+~~~javascript
+ctx.fillStyle = color;
+ctx.strokeStyle = color;
+~~~
+
+Dónde el color puede ser tres cosas diferentes:
+
+* **Color RGB**, en este caso podremos expresar el color mediante un nombre 'red', el código RGB `#ff0000` o mediante la función `rgb`, que para un color rojo sería `rgb(255,0,0);`.
+* **Objeto Gradiente**, para mostrar un degradado de colores.
+* **Patrón**,
+
+Así, podríamos rellenar un círculo de color rojo de la siguiente forma:
+
+~~~javascript
+ctx.beginPath();
+ctx.arc(100,100,50,0,2*Math.PI);
+ctx.fillStyle = 'red';
+ctx.fill();
+~~~
+
+O tener un triángulo con un borde que sea verde:
+
+~~~javascript
+ctx.beginPath();
+ctx.moveTo(50, 50);
+ctx.lineTo(100, 100);
+ctx.lineTo(50, 100);
+ctx.lineTo(50, 50);
+ctx.strokeStyle = 'green';
+ctx.stroke();
+~~~
+
+> En el caso de hacer un `fill` hay que recordar que el último trazo genera una línea hasta el origen del path. En el caso de utilizar `stroke` esto no sucede, por lo que hay que generar el último movimiento de línea `.lineTo(50, 50)`
+
+### Transparencias
+A la hora de manipular un Canvas podemos hacer que haya rellenos que sean transparentes (o traslúcidos). Para ello podemos utilizar la propiedad `globalAlpha` o indicar el *alpha* cuando asignemos un color.
 
 
 [HTML]: {{site.baseurl}}/html/
 [HTML5]: {{site.baseurl}}t/html5/
 [SVG]: {{site.baseurl}}/svg/
 [Javascript]: {{site.baseurl}}/javascript/
+[ArcTo]: {{site.baseurl}}/html5/img/arcTo.jpg
+[ArcToRectangulo]: {{site.baseurl}}/html5/img/arcToRectangulo.png
+[CurvaBezierPuntoControl]: {{site.baseurl}}/html5/img/bezier.gif
+[CurvaBezierDosPuntosControl]: {{site.baseurl}}/html5/img/bezier2.gif
