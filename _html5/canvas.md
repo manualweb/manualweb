@@ -397,7 +397,130 @@ ctx.stroke();
 > En el caso de hacer un `fill` hay que recordar que el último trazo genera una línea hasta el origen del path. En el caso de utilizar `stroke` esto no sucede, por lo que hay que generar el último movimiento de línea `.lineTo(50, 50)`
 
 ### Transparencias
-A la hora de manipular un Canvas podemos hacer que haya rellenos que sean transparentes (o traslúcidos). Para ello podemos utilizar la propiedad `globalAlpha` o indicar el *alpha* cuando asignemos un color.
+A la hora de manipular un Canvas podemos hacer que haya rellenos que sean transparentes (o traslúcidos). Para ello podemos utilizar la propiedad `globalAlpha` o indicar el *alpha* en la función `rgba()` cuando asignemos un color.
+
+El en caso de que manipulemos la propiedad `globalAlpha` utilizaremos el siguiente código:
+
+~~~javascript
+ctx.globalAlpha = valor;
+~~~
+
+El valor de la transparencia va desde 0.0 a 1.0 en decimales. Dónde 0.0 es totalmente transparente y 1.0 es totalmente opaco.
+
+La idea de utilizar la propiedad `globalAlpha` es cuando vas a utilizar la transparencia para mútiples figuras. De esta manera podemos crear un rectángulo que sea transparente de la siguiente forma:
+
+~~~javascript
+ctx.fillStyle = 'red';
+ctx.globalAlpha = 0.5;
+ctx.fillRect(80, 80, 200, 100);
+~~~
+
+La otra forma de crear una transparencia es establecer la transparencia en el valor del color RGB. Para ello utilizamos el cuatro parámetro de la función `rgba()` cuando demos el color mediante `fillStyle` o `strokeStyle`.
+
+La función `rgba()` tiene la siguiente sintaxis:
+
+~~~javascript
+rgba(rojo,verde,azul,transparencia);
+~~~
+
+Así, podemos volver a crear nuestro mismo rectángulo transparente de la siguiente forma:
+
+~~~javascript
+ctx.fillStyle = 'rgba(255,0,0,0.5)';
+ctx.fillRect(80, 80, 200, 100);
+~~~
+
+
+### Estilos de Líneas
+A las líneas que hemos dibujado en nuestro **path** también las podemos dar estilo.
+
+#### Ancho Línea
+Lo más básico que podemos hacer con una línea es establecer el ancho de la línea. Por defecto el ancho de la lína es de 1.0.
+
+Para poder modificar el ancho de la línea contamos con la propiedad `lineWidth`. La sintaxis de esta propiedad es la siguiente:
+
+~~~javascript
+ctx.lineWidth = tamaño;
+~~~
+
+Así podemos dibujar una línea modificando su tamaño de la siguiente forma:
+
+~~~javascript
+ctx.lineWidth = 8;
+ctx.moveTo(10,10);
+ctx.lineTo(10, 100);
+ctx.stroke();
+~~~
+
+#### Fin de Línea
+Otra parte visual que podemos modificar de una línea es su final, es decir la forma que tendrán los extremos. Para ello tenemos la propiedad `lineCap`. La sintaxis de la propiedad `lineCap` es:
+
+~~~javascript
+ctx.lineCap = butt|round|square;
+~~~
+
+Los valores que puede tener la propiedad `lineCap` son: `butt`, `round` y `square`.
+
+* `butt`, el borde es cuadrado con el tamaño de la línea.
+* `round`, el borde de la línea es redondeado.
+* `square`, se añade un pequeño cuadro al final de la línea, adicional a ella, con el mismo ancho que tiene la línea.
+
+De esta forma el código para tener una línea con los finales redondeados sería el siguiente:
+
+~~~javascript
+ctx.lineCap = 'round';
+ctx.lineWidth = 20;
+ctx.moveTo(50,50);
+ctx.lineTo(50,150);
+ctx.stroke();
+~~~
+
+#### Unión de Líneas
+Cuando estamos dibujando un conjunto de líneas (o arcos o curvas) tendremos un conjunto de uniones entre ellos. Dentro de los `canvas` de [HTML5][HTML5] podemos definir el estilo a darle a esta unión de líneas.
+
+Para ello disponemos de la propiedad `lineJoin`. La sintaxis de la propiedad `lineJoin` es:
+
+~~~javascript
+ctx.lineJoin = round|bevel|miter;
+~~~
+
+Los posibles valores que tiene la propiedad `lineJoin` son: `round`, `bevel` y `miter`.
+
+* `round`, redondea las uniones entre las líneas. Para ello utiliza un arco de radio igual al ancho de la línea.
+* `bevel`, las líneas son recortadas de forma rectangular entre los diferentes segmentos, como si fuese un bisel.
+* `miter`, se extiende el límite de la línea para conectarla con el siguiente segmento, es el valor por defecto de unión entre líneas.
+
+Si queremos ver cómo quedaría nuestra unión de líneas redondeadas podemos utilizar el siguiente código:
+
+~~~javascript
+ctx.lineWidth = 20;
+ctx.lineJoin = 'round';
+ctx.moveTo(50,50);
+ctx.lineTo(100,150);
+ctx.lineTo(150,50);
+ctx.lineTo(200,150);
+ctx.lineTo(250,50);
+ctx.stroke();
+~~~
+
+En el caso de haber utilizado el valor `miter` disponemos de la propiedad `miterLimit` para limitar cuánto se alargará el límite de la línea para unirlo con el siguiente segmento.
+
+En el caso  de que las líneas superen el valor establecido la unión cambiará de `miter` a un tipo `bevel`.
+
+Podemos establecer el `miterLimit` con el siguiente código:
+
+~~~javascript
+ctx.miterLimit = valor;
+~~~
+
+#### Líneas punteadas
+Podemos hacer que las líneas que creemos en el `canvas` sean a guiones. Para ello tenemos el método `setLineDash()` y la propiedad `lineDashOffset`.
+
+Mediante el método `setLineDash()` podemos establecer las distancias entre alternativas entre los puntos de las líneas.
+
+### Gradientes
+
+
 
 
 [HTML]: {{site.baseurl}}/html/
