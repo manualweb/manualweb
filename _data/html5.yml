@@ -22,6 +22,7 @@
 - title: Gráficos HTM5
   docs:
   - canvas
+  - canvas-texto
 
 - title: Almacenamiento & Offline
   docs:
@@ -43,5 +44,5 @@
 - title: Contenido de Apoyo
   docs:
   - ejemplos-html5
-  - videos-html5  
+  - videos-html5
   - urls-html5
