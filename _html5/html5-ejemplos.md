@@ -119,7 +119,10 @@ Aquí puedes encontrar un listado de **ejemplos [HTML5][HTML5] explicados paso a
 * Final de línea redondeado
 * Uniones de líneas redondeadas
 * Uniones de líneas bisel (o recortadas)
-
+* Líneas punteadas
+* Gradiente lineal
+* Gradiente lineal de tres colores
+* Gradiente radial
 
 ### Imagenes
 * [Insertar una imagen en un Canvas HTML5](http://lineadecodigo.com/html5/insertar-una-imagen-en-un-canvas-html5/)
