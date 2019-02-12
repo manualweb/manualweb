@@ -124,6 +124,10 @@ Aquí puedes encontrar un listado de **ejemplos [HTML5][HTML5] explicados paso a
 * Gradiente lineal de tres colores
 * Gradiente radial
 * Sombras
+* texto
+* texto sin rellenar
+* texto oblicuo
+
 
 ### Imagenes
 * [Insertar una imagen en un Canvas HTML5](http://lineadecodigo.com/html5/insertar-una-imagen-en-un-canvas-html5/)
