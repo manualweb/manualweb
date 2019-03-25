@@ -113,7 +113,17 @@ Aquí puedes encontrar un listado de **ejemplos [HTML5][HTML5] explicados paso a
 * Path2D con SVG
 * Círculo de color rojo (colores)
 * Triangulo con borde verde (colores)
-
+* Rectángulo transparente
+* Propiedad globalAlpha
+* Línea más ancha
+* Final de línea redondeado
+* Uniones de líneas redondeadas
+* Uniones de líneas bisel (o recortadas)
+* Líneas punteadas
+* Gradiente lineal
+* Gradiente lineal de tres colores
+* Gradiente radial
+* Sombras
 
 ### Imagenes
 * [Insertar una imagen en un Canvas HTML5](http://lineadecodigo.com/html5/insertar-una-imagen-en-un-canvas-html5/)

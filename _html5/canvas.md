@@ -397,7 +397,296 @@ ctx.stroke();
 > En el caso de hacer un `fill` hay que recordar que el último trazo genera una línea hasta el origen del path. En el caso de utilizar `stroke` esto no sucede, por lo que hay que generar el último movimiento de línea `.lineTo(50, 50)`
 
 ### Transparencias
-A la hora de manipular un Canvas podemos hacer que haya rellenos que sean transparentes (o traslúcidos). Para ello podemos utilizar la propiedad `globalAlpha` o indicar el *alpha* cuando asignemos un color.
+A la hora de manipular un Canvas podemos hacer que haya rellenos que sean transparentes (o traslúcidos). Para ello podemos utilizar la propiedad `globalAlpha` o indicar el *alpha* en la función `rgba()` cuando asignemos un color.
+
+El en caso de que manipulemos la propiedad `globalAlpha` utilizaremos el siguiente código:
+
+~~~javascript
+ctx.globalAlpha = valor;
+~~~
+
+El valor de la transparencia va desde 0.0 a 1.0 en decimales. Dónde 0.0 es totalmente transparente y 1.0 es totalmente opaco.
+
+La idea de utilizar la propiedad `globalAlpha` es cuando vas a utilizar la transparencia para mútiples figuras. De esta manera podemos crear un rectángulo que sea transparente de la siguiente forma:
+
+~~~javascript
+ctx.fillStyle = 'red';
+ctx.globalAlpha = 0.5;
+ctx.fillRect(80, 80, 200, 100);
+~~~
+
+La otra forma de crear una transparencia es establecer la transparencia en el valor del color RGB. Para ello utilizamos el cuatro parámetro de la función `rgba()` cuando demos el color mediante `fillStyle` o `strokeStyle`.
+
+La función `rgba()` tiene la siguiente sintaxis:
+
+~~~javascript
+rgba(rojo,verde,azul,transparencia);
+~~~
+
+Así, podemos volver a crear nuestro mismo rectángulo transparente de la siguiente forma:
+
+~~~javascript
+ctx.fillStyle = 'rgba(255,0,0,0.5)';
+ctx.fillRect(80, 80, 200, 100);
+~~~
+
+
+### Estilos de Líneas
+A las líneas que hemos dibujado en nuestro **path** también las podemos dar estilo.
+
+#### Ancho Línea
+Lo más básico que podemos hacer con una línea es establecer el ancho de la línea. Por defecto el ancho de la lína es de 1.0.
+
+Para poder modificar el ancho de la línea contamos con la propiedad `lineWidth`. La sintaxis de esta propiedad es la siguiente:
+
+~~~javascript
+ctx.lineWidth = tamaño;
+~~~
+
+Así podemos dibujar una línea modificando su tamaño de la siguiente forma:
+
+~~~javascript
+ctx.lineWidth = 8;
+ctx.moveTo(10,10);
+ctx.lineTo(10, 100);
+ctx.stroke();
+~~~
+
+#### Fin de Línea
+Otra parte visual que podemos modificar de una línea es su final, es decir la forma que tendrán los extremos. Para ello tenemos la propiedad `lineCap`. La sintaxis de la propiedad `lineCap` es:
+
+~~~javascript
+ctx.lineCap = butt|round|square;
+~~~
+
+Los valores que puede tener la propiedad `lineCap` son: `butt`, `round` y `square`.
+
+* `butt`, el borde es cuadrado con el tamaño de la línea.
+* `round`, el borde de la línea es redondeado.
+* `square`, se añade un pequeño cuadro al final de la línea, adicional a ella, con el mismo ancho que tiene la línea.
+
+De esta forma el código para tener una línea con los finales redondeados sería el siguiente:
+
+~~~javascript
+ctx.lineCap = 'round';
+ctx.lineWidth = 20;
+ctx.moveTo(50,50);
+ctx.lineTo(50,150);
+ctx.stroke();
+~~~
+
+#### Unión de Líneas
+Cuando estamos dibujando un conjunto de líneas (o arcos o curvas) tendremos un conjunto de uniones entre ellos. Dentro de los `canvas` de [HTML5][HTML5] podemos definir el estilo a darle a esta unión de líneas.
+
+Para ello disponemos de la propiedad `lineJoin`. La sintaxis de la propiedad `lineJoin` es:
+
+~~~javascript
+ctx.lineJoin = round|bevel|miter;
+~~~
+
+Los posibles valores que tiene la propiedad `lineJoin` son: `round`, `bevel` y `miter`.
+
+* `round`, redondea las uniones entre las líneas. Para ello utiliza un arco de radio igual al ancho de la línea.
+* `bevel`, las líneas son recortadas de forma rectangular entre los diferentes segmentos, como si fuese un bisel.
+* `miter`, se extiende el límite de la línea para conectarla con el siguiente segmento, es el valor por defecto de unión entre líneas.
+
+Si queremos ver cómo quedaría nuestra unión de líneas redondeadas podemos utilizar el siguiente código:
+
+~~~javascript
+ctx.lineWidth = 20;
+ctx.lineJoin = 'round';
+ctx.moveTo(50,50);
+ctx.lineTo(100,150);
+ctx.lineTo(150,50);
+ctx.lineTo(200,150);
+ctx.lineTo(250,50);
+ctx.stroke();
+~~~
+
+En el caso de haber utilizado el valor `miter` disponemos de la propiedad `miterLimit` para limitar cuánto se alargará el límite de la línea para unirlo con el siguiente segmento.
+
+En el caso  de que las líneas superen el valor establecido la unión cambiará de `miter` a un tipo `bevel`.
+
+Podemos establecer el `miterLimit` con el siguiente código:
+
+~~~javascript
+ctx.miterLimit = valor;
+~~~
+
+#### Líneas punteadas
+Podemos hacer que las líneas que creemos en el `canvas` sean a guiones. Para ello tenemos el método `setLineDash()` y la propiedad `lineDashOffset`.
+
+Mediante el método `setLineDash()` podemos establecer el tamaño de las líneas y el tamaño de los espacios en modo patrón que se irá aplicando a toda la línea.
+
+~~~javascript
+setLineDash([tamaño_linea1,tamaño_espacio1, tamaño_linea2, tamaño_espacio2,..., tamaño_lineaN,tamaño_espacioN]);
+~~~
+
+De esta manera podemos definir un rectángulo que tenga líneas de un tamaño 4 y espacios de un tamaño 2 de la siguiente forma:
+
+~~~javascript
+var canvas = document.getElementById('lienzo');
+if (canvas.getContext) {
+  var ctx = canvas.getContext('2d');
+  ctx.setLineDash([4,2]);
+  ctx.strokeStyle = 'green';
+  ctx.strokeRect(10, 10, 200, 100);
+}
+~~~
+
+Por otro lado podemos indicar el desplazamiento desde el inicio de la línea en el cual queremos aplicar el patrón de línea punteadas. Para esto tenemos la propiedad  `lineDashOffset`. Si por ejemplo queremos que haya un desplazamiento de 5 posiciones para que se empiece a aplicar el patrón escribiremos lo siguiente:
+
+~~~javascript
+ctx.lineDashOffset = 5;
+~~~
+
+### Gradientes
+Hasta ahora hemos visto cómo aplicar colores de relleno de las figuras mediante colores sólidos, o bien utilizar el atributo `globalAlpha` para aplicar transparencias. Otra opción que tenemos para los rellenos son los gradientes.
+
+Un gradiente es una transición de color desde un color origen a un color destino. O bien la transición de un color de inicio, a un segundo colo, de aquí a un tercer color,...
+
+Los gradientes pueden ser **gradientes lineales**, es decir que se ejecutan en la dirección de una línea o pueden ser **gradientes radiales**, en este caso se aplica la transición de color de forma circular.
+
+#### Gradiente Lineal
+Para crear un gradiente lineal utilizamos el método `.createLinearGradient()`. La sintaxis del método `.createLinearGradient()` es la siguiente:
+
+~~~javascript
+CanvasGradient ctx.createLinearGradient(x0, y0, x1, y1);
+~~~
+
+Dónde las coordenadas `x0` e `y0` nos sirven para indicar el inicio del gradiente y `x1` e `y1` nos sirven para indicar el final del gradiente.
+
+Por ejemplo podemos crear un gradiente que vaya en diagonal desde la posición (0,0) a la posición (150,150) de la siguiente forma:
+
+~~~javascript
+var lineargradient = ctx.createLinearGradient(0, 0, 150, 150);
+~~~
+
+Lo que nos devuelve el método `.createLinearGradient()` es un objeto `CanvasGradient`. Este objeto se lo podremos aplicar como valor a las propiedades `fillStyle` y `strokeStyle` que lo utilizarán como color para poder rellenar los objetos que correspondan.
+
+Podemos aplicar el gradiente lineal de la siguiente forma, para un `fillStyle`:
+
+~~~javascript
+ctx.fillStyle = lineargradient;
+~~~
+
+Pero, ¿qué colores se utilizan el el gradiente? Para poder indicar los colores tenemos el método `.addColorStop()`. La sintaxis del método `.addColorStop()` es la siguiente:
+
+~~~javascript
+void gradient.addColorStop(offset, color);
+~~~
+
+Podremos añadir tantos colores al gradiente como deseemos. Si bien los colores deben de estar situados en el `offset`. El valor del `offset` va de 0 a 1. Con el parámetro `color` indicaremos el color que se aplique en el gradiente.
+
+Entonces, si queremos que el gradiente empiece en un color blanco y acabe en un color verde podemos codificar lo siguiente:
+
+~~~javascript
+lineargradient.addColorStop(0, 'white');
+lineargradient.addColorStop(1, 'green');
+~~~
+
+En el caso de que queramos tres colores, dónde a los dos anteriores se pase por un color *rojo* entre medias, tendremos lo siguiente:
+
+~~~javascript
+lineargradient.addColorStop(0, 'white');
+lineargradient.addColorStop(.5, 'red');
+lineargradient.addColorStop(1, 'green');
+~~~
+
+El código completo para aplicar nuestro **gradiente lineal** sería:
+
+~~~javascript
+var ctx = canvas.getContext('2d');
+var lineargradient = ctx.createLinearGradient(0, 100, 150, 100);
+lineargradient.addColorStop(0, 'white');
+lineargradient.addColorStop(1, 'green');
+ctx.fillStyle = lineargradient;
+ctx.fillRect(10, 10, 160, 100);
+~~~
+
+En este caso hemos rellenado al figura de un rectángulo mediante el gradiente.
+
+#### Gradiente Radial
+Para los gradientes radiales tenemos el método `.createRadialGradient()`. La sintaxis del método `.createRadialGradient()` es:
+
+~~~javascript
+CanvasGradient ctx.createRadialGradient(x0, y0, r0, x1, y1, r1);
+~~~
+
+En este caso el origen del gradiente se indica mediante una posión `x0` e `y0`, pero con un radio especificado con `r0`. El final del gradiente lo especificamos mediante el punto `x1` e `y1` y su radio `r1`.
+
+Aunque estemos trabajando con círculos, el **gradiente radial** lo podemos aplicar a cualquier figura.
+
+El método `.addColorStop()` funciona de igual manera para el **gradiente radial**. Así podremos tener el siguiente ejemplo para crear un **gradiente radial**:
+
+~~~javascript
+var rg1 = ctx.createRadialGradient(45, 45, 10, 52, 50, 30);
+rg1.addColorStop(0, '#A7D30C');
+rg1.addColorStop(0.9, '#019F62');
+rg1.addColorStop(1, 'rgba(1, 159, 98, 0)');
+
+ctx.fillStyle = rg1;
+ctx.fillRect(0, 0, 300, 300);
+~~~
+
+## Patrones
+Una de las cosas que podemos hacer con la imágenes dentro de un `canvas` es crear patrones. Es decir, repetir la imagen tantas veces como queramos. Para ello tenemos el método `.createPattern()`.
+
+La sintaxis del método `.createPattern()` es la siguiente:
+
+~~~javascript
+CanvasPattern ctx.createPattern(image, repetition);
+~~~
+
+El parámtro `image` recibirá una referencia a un origen de imagen que se encuentre dentro del documento [HTML5][HTML5]. Esta imagen puede ser una imagen normal, un canvas, un vídeo, una imagen svg,...
+
+Para cargar una imagen podemos utilizar la clase `Image` que representa a un objeto [HTML5][HTML5] de imagen. Dicha imagen recibe una URI en su propiedad `src`con el path en el que esta la imagen.
+
+~~~javascript
+var imagen = new Image();
+imagen.src = 'imagen.jpg';
+~~~
+
+Es importante saber que cuando cargamos una imagen, esta no se carga automáticamente para que podamos utilizarla. Es por ello que nos debemos de apoyar en el evento `onload` de la imagen para poder utilizarla.
+
+~~~javascript
+img.onload = function() {
+  // Manipulamos la imagen
+};
+~~~
+
+El segundo parámetro del método `.createPattern()` es `repetition`, el cual nos sirve para indicar el modelo de repetición del patrón. Los modelos que existen son:
+
+* **repeat**, el patrón se repite en todas las direcciones, tanto en el eje x, como en el eje y.
+* **repeat-x**, el patrón solo se repite en el eje horizontal x.
+* **repeat-y**, el patrón solo se repite en el eje vertical y.
+* **no-repeat**, la imagen solo se utiliza una vez.
+
+El patrón nos devuelve un objeto `CanvasPattern`, el cual se puede aplicar a las propiedades `fillStyle` o `strokeStyle`.
+
+El código completo para poder crear un patrón de imagenes nos quedaría de la siguiente forma:
+
+~~~javascript
+var ctx = canvas.getContext('2d');
+var img = new Image();
+img.src = 'patron.jpg';
+img.onload = function() {
+  var pattern = ctx.createPattern(img, 'repeat');
+  ctx.fillStyle = pattern;
+  ctx.fillRect(0, 0, 300, 300);
+};
+~~~
+
+## Sombras
+Otro de los efectos que podemos realizar sobre los elementos de un `canvas` es generarles una sombra. Para poder dar sombras a un elemento disponemos de 4 propiedades sobre el contexto del `canvas`:
+
+* `shadowOffsetX`, recibe un valor numérico en formato `float` que será la distancia desde el elemento en horizontal dónde se posicionará la sombra.
+* `shadowOffsetY`, recibe un valor numérico en formato `float` que será la distancia desde el elemento en vertical dónde se posicionará la sombra.
+* `shadowBlur`, nos sirve para indicar el efecto borroso sobre la sombra. Los valores van desde el *0*, que es el valor por defecto.
+* `shadowColor`, indica el color que le queremos dar a la sombra. El color se puede asignar mediante el nombre del color, el formato RGB o la función `rgb()`.
+
+
+
 
 
 [HTML]: {{site.baseurl}}/html/
