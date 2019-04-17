@@ -57,7 +57,7 @@ Aquí puedes encontrar un listado de **ejemplos [HTML5][HTML5] explicados paso a
 * [Autofoco a un campo con HTML5](http://lineadecodigo.com/html5/autofoco-a-un-campo-con-html5/)
 * [Elemento rango en formularios HTML5](http://lineadecodigo.com/html5/elemento-rango-en-formularios-html5/)
 * [PlaceHolder: Marcadores de posición en HTML5](http://lineadecodigo.com/html5/placeholder-marcadores-de-posicion-en-html5/)
-* Input para emails
+* [Input para emails](http://lineadecodigo.com/html5/input-email-en-html5/)
 * Input para Colores
 * Input para búsquedas
 * Input URL
