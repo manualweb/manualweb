@@ -17,11 +17,10 @@ Aunque su mayor uso es dentro de los navegadores web, encontramos el uso de [Jav
 
 [JavaScript][JavaScript] puede ejecutarse en el cliente o en el servidor. En el caso de que el [JavaScript][JavaScript] se ejecute en el cliente, este se complementa con los objetos del **DOM** o **Document Object Model** que nos permiten manipular los elementos [HTML][HTML] del navegador: formularios, listas, enlaces,... en el caso de que el [JavaScript][JavaScript] se ejecute en el servidor se disponen de librerías que extienden la funcionalidad para acceder a las bases de datos, manejo de ficheros, realizar conexiones http,...
 
-
 ## ECMAScript
-El estándar que define el lenguaje [JavaScript][JavaScript] es [ECMAScript][ECMAScript] mediante las especificaciones **ECMA-262** y **ECMA-402**.
+El estándar que define el lenguaje [JavaScript][JavaScript] es [ECMAScript][ECMAScript] a través de **ECMA international** con las especificaciones **ECMA-262** y **ECMA-402**. Es estándar **ECMA-226** también es aprobado por la **ISO** mediante el estándar **ISO-16262**.
 
-La primera especificación del lenguaje **ECMAScript** se define mediante **ECMA-262** en *junio 1997*. Teniendo **ECMA-262 2ª Edición** en *agosto 1998*, que también corresponde con la **ISO 16262**.
+La primera especificación del lenguaje [ECMAScript][ECMAScript] se define mediante **ECMA-262** en *junio 1997*. Teniendo **ECMA-262 2ª Edición** en *agosto 1998*, que también corresponde con la **ISO 16262**.
 
 La versión **JavaScript 1.5** corresponde a **ECMA-262 3ª Edición** en *diciembre 1999*.
 
@@ -41,8 +40,6 @@ El estándar es sólamente una especificación del lenguaje, si bien existen lue
 * **Rhino**, un motor Javascript escrito en Java.
 * **Tamarin**, es la máquina virtual de *ActionScript* del *Adobe Flash*.
 * **Nashorn**, es un motor **JavaScript** utilizado por el *Java Developer Kit* de  *Oracle*.
-
-
 
 
 [MongoDB]: {{site.url}}/mongodb
