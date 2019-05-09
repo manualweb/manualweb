@@ -92,7 +92,34 @@ if (true) {
 console.log(minumero); // Será undefined
 ~~~
 
-## constantes
+
+
+## Hoisting de Variables
+Un comportamiento de las variables de [Javascript][Javascript] es que puedes utilizarlas en el código aunque no las hayamos declarado todavía.
+
+Es decir, el siguiente código funcionaría:
+
+~~~javascript
+console.log(variable); // Devuelve undefined
+var variable = 'Hola Mundo';
+~~~
+
+Esto es debido a que [Javascript][Javascript] funciona con un modelo de "Hoisting de Variables", las variables, independientemente de dónde estén definidas son llevadas a la cabecera del bloque que las contiene.
+
+Hasta que son definidas y asignadas un valor mantienen un valor de `undefined`.
+
+> Es importante saber que esto solo es aplicable para variables definidas mediante `var` y que no aplica a las variables definidas con `let`.
+
+El código presentado arriba sería para el interprete de [Javascript][Javascript] lo siguiente:
+
+~~~javascript
+var variable;
+console.log(variable);
+variable = 'Hola Mundo';
+~~~
+
+
+## Constantes
 Una constante es una variable con un valor de solo lectura, la cual declararemos mediante el operador de declaración `const`. Así podremos definir una constante de la siguiente forma:
 
 ~~~javascript
@@ -116,7 +143,7 @@ El ámbito de una constante en [JavaScript][JavaScript] será el mismo que el de
 
 Dentro de [JavaScript][JavaScript] podemos definir **7 tipos de datos a nuestras variables**:
 
-* **Boolean**, variables que puedan contener un valor de verdadero o falso. (true|false).
+* **Boolean**, variables que puedan contener un valor de verdadero o falso. (true o false).
 * **null**, en el caso de que la variable no tome ningún valor.
 * **undefined**, cuando la variable no ha sido inicializada tiene un valor indefinido.
 * **Number**, para los números enteros o decimales. (8 o 3.1416)
@@ -125,56 +152,155 @@ Dentro de [JavaScript][JavaScript] podemos definir **7 tipos de datos a nuestras
 * **Object**, para cuando la variable contiene un objeto.
 
 
+> El tipo de dato de la variable se calcula atendiendo al valor que le asignemos a dicha variable. El tipo de una variable puede cambiar a lo largo de la vida de un programa [JavaScript][JavaScript] atendiendo a los valores que se le vayan asignando.
 
-> El tipo de dato de la variable se calcula atendiendo al valor que le asignemos a dicha variable. El tipo de una variable puede cambiar a lo largo de la vida de un progama [JavaScript][JavaScript] atendiendo a los valores que se le vayan asignando.
+## Conversiones Dinámicas
+[JavaScript][JavaScript] es un lenguaje de tipado dinámico, es decir que no hace falta definir el tipo de una variable. Ya que la variable recibe el tipo en el momento que se le asigna un valor.
 
+~~~javascript
+let mivariable = 'Hola';
+~~~
 
+Es en este primer momento, cuando la variable recibe un valor, cuando se le asigna el tipo. En este caso, al asignarle una cadena la variable se convierte en el tipo `String`.
 
-Números, aquí entendemos por números a los enteros y a los reales. Por ejemplo 47 ó 1.18
-Cadenas de caracteres,  como por ejemplo “Hola mundo”.
-Booleanas, son las que toman dos valores (verdadero o falso). Son las que llamaríamos variables lógicas.
-Nulas, es cuando la variable no toma ningún valor, se define como null.
-Indefinidas, utilizaremos el valor undefined.
+Si asignamos a la variable un nuevo valor, la variable cambiará automáticamente de tipo.
 
+~~~javascript
+mivariable = 5;
+~~~
 
-
-Variables locales y globales
-Otra cosa que debemos dejar clara es como podemos definir las variables, es decir, como sabemos si una variable es local o es global. En Java Script para denotar una variable local la antepondremos la palabra var. Las variables locales se utilizaran dentro de funciones y su valor solo perdurara dentro de ellas. Si definimos una variable fuera de una función, esta será una variable global y su valor estará disponible desde cualquier parte de código JavaScript que haya en la página.
-
-El acceso a las variables no perdura cuando cambiamos de página. La solucción se basará en el paso de variables de unba página a otra.
-
-Un ejemplo de la utilización de las variables con Java Script es el siguiente :
-
-<HTML>
-  <HEAD>
-    <TITLE> Uso de variables en JavaScript </TITLE>
-  </HEAD>
-
-  <BODY>
-   <SCRIPT LANGUAGE="JavaScript">
-
-     <!-- Ocultación a antiguos navegadores
-      var saludo_esp = "Hola";
-      var saludo_ing = "Hello";
-      documment.write ( saludo_esp + " Mundo" + "<br>");
-      documment.write ( saludo_ing + " Wordl" );
-		// Fin de la ocultación -->
-
-    </SCRIPT>
-  </BODY>
-</HTML>
-Hacer referencia que al añadir <br> en la primera escritura, lo único que hacemos es generar un salto de línea.
+En este momento, al asignar un número, la variable se convierte en tipo `Number`.
 
 
-Conversiones entre tipos de datos
-JavaScript es un lenguaje de tipado dinámico. Eso significa que no tenemos que indicar el tipo de la variable. Si no que el tipo de la variable cambiará dependiendo del valor que la asignemos.
 
-var mivariable = 12;
-mivariable = "Texto";
+## Números y Cadenas
 
-Al instanciarla por primera vez mivariable será de tipo numérico y al asignarla el valor "Texto" pasará a ser de tipo cadena. Veamos como el tipo de la variable va cambiando mediante el siguiente código, el cual utiliza el método typeof.
+### Operador +
+El operador `+` se puede utilizar entre dos variables de tipo `String` realizando una **concatenación de cadenas**. De esta manera podríamos tener el siguiente código fuente en [Javascript][Javascript]
 
-** Ejemplo con el typeof
+~~~javascript
+let c1 = 'Hola ';
+let c2 = 'Mundo';
 
+console.log(c1 + c2);
+~~~
+
+De igual manera podemos utilizar el operador `+` entre un `String` y un `Number`. El resultado será el de concatenar las cadena y el número obteniendo una nuevo `String`.
+
+~~~javascript
+let cadena = '123';
+let numero = 4;
+
+console.log(cadena + numero); // '1234'
+~~~
+
+Si bien, esto solo funciona con el operador `+`, ya que si utilizamos otro operador matemático entre un `String` y un `Number` lo que obtendremos será la operación matemática.
+
+~~~javascript
+let cadena = '123';
+let numero = 4;
+
+console.log(cadena - numero); // 119
+~~~
+
+Así, podríamos sumar una `String` y un `Number` si lo que hacemos antes es una resta de un valor 0. Funciona, aunque sea algo rebuscado.
+
+~~~javascript
+let cadena = '123';
+let numero = 4;
+
+console.log(cadena - 0 + numero);
+~~~
+
+### Convertir cadenas a números: parseInt() y parseFloat()
+Al manejar cadenas, bien si es por definición de la variable, o bien si es por que le hemos pedido al usuario un valor por consola mediante `prompt()`, nos será muy útil el convertir dichas variables a números, si es que tenemos que operar con ellas.
+
+Para convertir una cadena a un número en [Javascript][Javascript] podemos apoyarnos en las funciones `parseInt()` y `parseFloat()`. Ya sea para convertirlo a un entero o a un decimal.
+
+~~~javascript
+let c1 = prompt('Dime el primer número?');
+let c2 = prompt('Dime el segundo número?');
+
+console.log(c1 + c2);
+console.log(parseInt(c1) + parseInt(c2));
+~~~
+
+Las funciones `parseInt()` y `parseFloat()` reciben un segundo valor que nos permite indicar la base del número al que vamos a convrtir. Es decir, si queremos que sea un binario, un hexadecimal o en base 10.
+
+La sintaxis de estos métodos es:
+
+~~~javascript
+parseInt(string, radix);
+parseFloat(string, radix);
+~~~
+
+Así podremos convertir una cadena de texto en un número binario de la siguiente forma:
+
+~~~javascript
+let cadena = '1100';
+console.log(parseInt(cadena,2));
+~~~
+
+### Convertir cadenas a números: operador unario +
+Otra forma de convertir una cadena a un número es mediante el operador unario `+`. Es decir, anteponiendo el operador `+` a la variable a la cual queremos convertir de `String` a `Number`.
+
+Así podríamos tener el siguiente código:
+
+~~~javascript
+let c1 = prompt('Dime el primer número?');
+let c2 = prompt('Dime el segundo número?');
+
+console.log(+c1 + +c2);
+~~~
+
+
+
+## Tipo de una variable???
+typeof
+
+
+## Literales
+Los literales son los valores que se les puede asignar a una variable en [Javascript][Javascript]. Dentro de [Javascript][Javascript] tenemos los siguientes tipos de literales:
+
+* Arrays
+* Booleanos
+* Números coma flotante
+* Enteros
+* Objetos
+* Expresiones Regulares
+* Cadenas
+
+### Literales Array
+
+### Literales Booleanos
+Los valores literales que se le pueden asignar a una variable de tipo `Boolean` son `true` para representar los casos verdaderos y `false` para representar los casos falsos.
+
+### Literales Numéricos
+Los números enteros se pueden representar en:
+
+* **Base 10**, en este caso el literal numérico es una secuencia de números que pueden o no empezar por 0.
+* **Hexadecimal (base 16)**, este literal empezará por *0x* o *0X*. Los siguientes caracteres podrán ser del *0* al *7* y las letras *A* a *F*.
+* **Octales (base 8)**, este literal empezará por *0o* o *0O* seguido de números del *0* al *7*.
+* **Binarios (base 2)**, estos literales empezarán por *0b* o *0B* seguido por una secucencia de números *0* o *1*.
+
+Así podríamos tener los siguientes ejemplos de literales numéricos:
+
+~~~javascript
+
+~~~
+
+## Literales coma flotante
+Son aquellos que se utilizan para representar decimales. Un literal coma flotante puede tener las siguientes partes:
+
+* Símbolo positivo (+) o negativo (-).
+* Punto como separador decimal (.)
+* Valor exponencial representado mediante una letra E.
+
+Así podríamos tener los siguiente literales coma flotante dentro de nuestro programa [Javascript][Javascript]
+
+~~~javascript
+
+
+~~~
 
 [Javascript]: [JavaScript]: {{site.url}}/javascript/
