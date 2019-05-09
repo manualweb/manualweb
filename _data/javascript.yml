@@ -4,5 +4,11 @@
   - historia-javascript
   - hola-mundo-javascript
   - conceptos-basicos-javascript
-  - javascript-vs-java
   - variables-javascript
+  - literales-javascript
+  - javascript-vs-java
+
+
+- title: Contenido de Apoyo
+  docs:
+  - urls-javascript
