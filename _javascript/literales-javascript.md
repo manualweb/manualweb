@@ -142,5 +142,29 @@ varias líneas`;
 console.log(cadena);
 ~~~
 
+Dentro de las cadenas de texto también podremos utilizar **caracteres especiales**. Para poder utilizar un **carácter especial** deberemos de anteponer la barra invertida (\).
+
+Por ejemplo podemos utilizar el **carácter especial** n para crear un salto de línea o la comilla doble para representarla y no confundirla con el delimitador de la cadena.
+
+~~~javascript
+let c1 = "Esto es una línea \ny esto otra";
+let c2 = "Esto es una comilla doble \"";
+~~~
+
+Los **caracteres especiales** que podemos utilizar son:
+
+|Caracter|Significado
+|--|--|
+|\0|Byte Nulo
+|\b|Backspace
+|\f|Form feed
+|\n|Nueva línea
+|\r|Retorno de carro
+|\t|Tabulador
+|\v|Tabulador vertical
+|\'|Comilla simple
+|\"|Comilla doble
+|\\|Barra Invertida
+
 
 [Javascript]: [JavaScript]: {{site.url}}/javascript/
