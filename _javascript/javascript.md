@@ -6,7 +6,16 @@ x. Características Javascript
 x. Versiones Javascript
 x. Aplicaciones Javascript
 3. Hola Mundo en Javascript
+4. Conceptos Básicos (Sentencias y Comentarios)
+
+
 4. Variables, Constantes, Literales y Comentarios
+  4.1. Variables
+  4.2. Tipos de Datos
+  4.3. Literales
+
+
+
 5. Estructuras Selectivas
 6. Estructuras Repetitivas
 7. Expresiones y Operadores
