@@ -259,48 +259,4 @@ console.log(+c1 + +c2);
 typeof
 
 
-## Literales
-Los literales son los valores que se les puede asignar a una variable en [Javascript][Javascript]. Dentro de [Javascript][Javascript] tenemos los siguientes tipos de literales:
-
-* Arrays
-* Booleanos
-* Números coma flotante
-* Enteros
-* Objetos
-* Expresiones Regulares
-* Cadenas
-
-### Literales Array
-
-### Literales Booleanos
-Los valores literales que se le pueden asignar a una variable de tipo `Boolean` son `true` para representar los casos verdaderos y `false` para representar los casos falsos.
-
-### Literales Numéricos
-Los números enteros se pueden representar en:
-
-* **Base 10**, en este caso el literal numérico es una secuencia de números que pueden o no empezar por 0.
-* **Hexadecimal (base 16)**, este literal empezará por *0x* o *0X*. Los siguientes caracteres podrán ser del *0* al *7* y las letras *A* a *F*.
-* **Octales (base 8)**, este literal empezará por *0o* o *0O* seguido de números del *0* al *7*.
-* **Binarios (base 2)**, estos literales empezarán por *0b* o *0B* seguido por una secucencia de números *0* o *1*.
-
-Así podríamos tener los siguientes ejemplos de literales numéricos:
-
-~~~javascript
-
-~~~
-
-## Literales coma flotante
-Son aquellos que se utilizan para representar decimales. Un literal coma flotante puede tener las siguientes partes:
-
-* Símbolo positivo (+) o negativo (-).
-* Punto como separador decimal (.)
-* Valor exponencial representado mediante una letra E.
-
-Así podríamos tener los siguiente literales coma flotante dentro de nuestro programa [Javascript][Javascript]
-
-~~~javascript
-
-
-~~~
-
 [Javascript]: [JavaScript]: {{site.url}}/javascript/
