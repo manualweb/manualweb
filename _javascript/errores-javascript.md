@@ -6,6 +6,9 @@ permalink: /javascript/errores-javascript/
 
 Si intentamos acceder a una variable sin definir obtendremos el error `ReferenceError`.
 
+Si intentamos acceder a un método que no existe
+`TypeError`
+
 ------
 
 Para poder gestionar errores (excepciones) en [Javascript][Javascript] tenemos dos elementos. Por un lado tenemos `throw` como sentencia que nos permite generar un error y `try-catch` como estructura para poder capturarlos y gestonar el error.
@@ -57,6 +60,8 @@ try {
 Como vemos mediante `try-catch` envolvemos el código a ejecutar susceptible de generar un error, y en la parte del `catch` se ejecutarán las sentencias una vez generado el error.
 
 Además se cuenta con otro bloque que será el `finally` el cual contendrá las sentencias que se ejecutarán antes de acabar el bloque `try-catch` y pasar al siguiente bloque.
+
+
 
 
 [Javascript]: {{site.url}}/javascript/
