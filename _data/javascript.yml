@@ -8,6 +8,13 @@
   - literales-javascript
   - javascript-vs-java
 
+- title: Sentencias de Control
+  docs:
+  - estructuras-selectivas-javascript
+  - estructuras-repetitivas-javascript
+
+- title: Otros
+  - errores-javascript
 
 - title: Contenido de Apoyo
   docs:
