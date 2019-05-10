@@ -3,7 +3,6 @@ title: Conceptos Básicos Javascript
 permalink: /javascript/conceptos-basicos-javascript/
 ---
 
-
 Lo primero que tienes que saber sobre [JavaScript][JavaScript] es que es un lenguaje **sensible a mayúsculas** y que soporta el **texto UNICODE**. Así tendremos diferentes variables si las llamamos de la siguiente forma:
 
 ~~~javascript
