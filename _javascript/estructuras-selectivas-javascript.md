@@ -32,6 +32,15 @@ else
   bloque_sentencias_Nl
 ~~~
 
+Los valores que son asumidos como `false` serán:
+
+* `false`
+* `undefined`
+* `null`
+* 0
+* `NaN`
+* Cadena vacía ''
+
 Por ejemplo podemos utilizar las estructuras selectivas para comprobar cual de dos números es mayor. El código sería el siguiente
 
 ~~~javascript
