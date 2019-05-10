@@ -29,6 +29,16 @@ Aquí puedes encontrar un listado de **ejemplos [Javascript][Javascript] explica
 * Concatenar cadenas
 * Interpolar cadenas
 
+## Estructuras Selectivas
+* Número mayor
+* Día de la semana
+
+## Errores
+* Crear un objeto Error
+* Crear una Excepción Funcional
+* Controla excepciones
+* Controlar diferentes tipos de error
+
 
 [LDC]: http://lineadecodigo.com
 [Javascript]: {{site.baseurl}}/javascript/
