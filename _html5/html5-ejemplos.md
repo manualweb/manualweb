@@ -58,7 +58,7 @@ Aquí puedes encontrar un listado de **ejemplos [HTML5][HTML5] explicados paso a
 * [Elemento rango en formularios HTML5](http://lineadecodigo.com/html5/elemento-rango-en-formularios-html5/)
 * [PlaceHolder: Marcadores de posición en HTML5](http://lineadecodigo.com/html5/placeholder-marcadores-de-posicion-en-html5/)
 * [Input para emails](http://lineadecodigo.com/html5/input-email-en-html5/)
-* Input para Colores
+* [Input para Colores](http://lineadecodigo.com/html5/input-color-en-html5/)
 * Input para búsquedas
 * Input URL
 * Input teléfono
@@ -124,10 +124,6 @@ Aquí puedes encontrar un listado de **ejemplos [HTML5][HTML5] explicados paso a
 * Gradiente lineal de tres colores
 * Gradiente radial
 * Sombras
-* texto
-* texto sin rellenar
-* texto oblicuo
-
 
 ### Imagenes
 * [Insertar una imagen en un Canvas HTML5](http://lineadecodigo.com/html5/insertar-una-imagen-en-un-canvas-html5/)
