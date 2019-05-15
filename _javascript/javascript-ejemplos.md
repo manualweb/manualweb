@@ -33,11 +33,25 @@ Aquí puedes encontrar un listado de **ejemplos [Javascript][Javascript] explica
 * Número mayor
 * Día de la semana
 
+## Estructuras Repetivas
+* Listar 10 números con for
+* Listar 10 números con while
+* Listar 10 números con do-while
+
 ## Errores
 * Crear un objeto Error
 * Crear una Excepción Funcional
 * Controla excepciones
 * Controlar diferentes tipos de error
+
+
+## SIN HACER
+* Recorrer un array
+* Buscar un elemento en un array
+* Sumatorio de un numero
+* Multiplicador de un número
+* Calcular la media
+
 
 
 [LDC]: http://lineadecodigo.com
