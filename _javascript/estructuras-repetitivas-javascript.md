@@ -8,7 +8,16 @@ Las estructuras repetitivas son **aquellas que nos permiten realizar una misma a
 Existen varias estructuras repetitivas en [Javascript][Javascript]:
 * for
 * while
-* do-while
+* do..while
+* for..in
+* for..of
+
+Y algunas sentencias que nos ayudan dentro de las estructuras repetitivas:
+
+* break
+* continue
+* etiquetas
+
 
 ## For
 La estructura repetitiva `for` sigue la siguiente estructura:
@@ -48,7 +57,7 @@ while (x<=10) {
 }
 ~~~
 
-## Do-While
+## Do..While
 La estructura repetitiva `do-while` **nos permite ejecutar, al menos, una vez el bloque de sentencias**. Ya que **la condición será evaluada al finalizar el bloque**.
 
 En el caso de que la condición sea `true` se iterará nuevamente en el bucle. Si la condición es `false` se saldrá de la ejecución del bucle.
