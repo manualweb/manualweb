@@ -16,3 +16,6 @@ La realización de cálculos en tiempo real.
 ...
 
 Aunque según pasa el tiempo sus aplicaciones se van incrementando.
+
+* Aplicaciones Servidor
+* Aplicaciones Cliente
