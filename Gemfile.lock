@@ -4,7 +4,7 @@ GEM
     addressable (2.5.2)
       public_suffix (>= 2.0.2, < 4.0)
     colorator (1.1.0)
-    ffi (1.9.18)
+    ffi (1.11.2)
     forwardable-extended (2.6.0)
     jekyll (3.4.3)
       addressable (~> 2.4)
@@ -17,7 +17,6 @@ GEM
       pathutil (~> 0.9)
       rouge (~> 1.7)
       safe_yaml (~> 1.0)
-    jekyll-analytics (0.1.5)
     jekyll-feed (0.9.2)
       jekyll (~> 3.3)
     jekyll-redirect-from (0.12.1)
@@ -56,8 +55,7 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
-  jekyll (= 3.4.3)
-  jekyll-analytics
+  jekyll (>= 3.4.3)
   jekyll-feed
   jekyll-redirect-from
   jekyll-seo-tag
