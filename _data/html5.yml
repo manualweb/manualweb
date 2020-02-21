@@ -15,7 +15,6 @@
 
 - title: Multimedia HTM5
   docs:
-  - audio-html5
   - video-html5
   - media-formats
 
@@ -28,13 +27,10 @@
   docs:
   - modo-offline
   - webstorage
-  - file-api
 
 - title: IndexedDB
   docs:
   - introduccion-indexedDB
-  - operaciones-basicas-indexedDB
-  - consultas-indexedDB
 
 - title: Rendimiento & Integración
   docs:
@@ -43,6 +39,4 @@
 
 - title: Contenido de Apoyo
   docs:
-  - ejemplos-html5
-  - videos-html5
   - urls-html5
