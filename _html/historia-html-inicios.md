@@ -62,7 +62,7 @@ En [HTML 3.2][HTML32] se pasaban a utilizar elementos que habían nacido fuera d
 
 Así podemos encontrar en [HTML 3.2][HTML32] la *capacidad de crear código script, capas, formularios, posibilidad de meter Applets de [Java][ManualJava], modificar el tamaño metiendo fuentes,..*
 
-Quizás la especificación [HTML 3.2][HTML32] quedó demasiado abierta y empezó una **“guerra entre navegadores”** en la que cada fabricante quería presionar porque se aceptasen sus elementos. Así Internet Explorer presionaba para tener el **elemento MARQUEE **y Netscape para tener el elemento **BLINK**.
+Quizás la especificación [HTML 3.2][HTML32] quedó demasiado abierta y empezó una **“guerra entre navegadores”** en la que cada fabricante quería presionar porque se aceptasen sus elementos. Así Internet Explorer presionaba para tener el **elemento MARQUEE** y Netscape para tener el elemento **BLINK**.
 
 [TimBerners]: http://www.w3.org/People/Berners-Lee/
 [ManualWeb]: http://www.manualweb.net/tutorial-html/
