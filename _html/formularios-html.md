@@ -29,7 +29,7 @@ Dentro de los **campos** que podemos incluir en formularios [HTML][ManualHTML] e
 * Áreas de texto
 * Combos de selección
 
-### Campos de entrada de datos
+### Campos de entrada de datos[![Campos de entrada de datos][Marker]{:class="marca"}](#campos-de-entrada-de-datos)
 
 Son los elementos básicos de un formulario ya que son los que nos permiten recuperar información del usuario de diferentes formas.
 
@@ -356,6 +356,7 @@ Dependiendo del tipo que asignamos al [atributo type][type] obtendremos un compo
 * **reset**, crea un botón para el borrado de datos del formulario.
 * **button**, crea un botón normal.
 
+[Marker]: {{site.baseurl}}/img/marker.png
 [ManualHTML]: http://www.manualweb.net/tutorial-html/
 [FORM]: http://www.w3api.com/wiki/HTML:FORM
 [INPUT]: http://www.w3api.com/wiki/HTML:INPUT

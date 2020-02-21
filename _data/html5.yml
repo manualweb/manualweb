@@ -1,3 +1,48 @@
 - title: Introducción HTM5
   docs:
+  - introduccion-html5
+  - documento-html5
   - semantica-html5
+
+- title: Formularios HTM5
+  docs:
+  - formularios-html5
+  - formularios-elementos-input
+  - formularios-datalist
+  - formularios-barras-progreso
+  - formularios-output
+  - formularios-validacion
+
+- title: Multimedia HTM5
+  docs:
+  - audio-html5
+  - video-html5
+  - media-formats
+
+- title: Gráficos HTM5
+  docs:
+  - canvas
+  - canvas-texto
+
+- title: Almacenamiento & Offline
+  docs:
+  - modo-offline
+  - webstorage
+  - file-api
+
+- title: IndexedDB
+  docs:
+  - introduccion-indexedDB
+  - operaciones-basicas-indexedDB
+  - consultas-indexedDB
+
+- title: Rendimiento & Integración
+  docs:
+  - fullscreen-api
+  - history-api
+
+- title: Contenido de Apoyo
+  docs:
+  - ejemplos-html5
+  - videos-html5
+  - urls-html5
