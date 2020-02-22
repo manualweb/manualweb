@@ -148,12 +148,12 @@ Listado de todos los tutoriales:
           <img src="{{site.baseurl}}/img/logos/rust.png" alt="Tutorial Rust" class="img-thumbnail">
           <p class="text-center">Tutorial Rust</p>
         </div>
-
+-->
         <div class="col-md-2 col-sm-4 col-xs-6">
-          <img src="{{site.baseurl}}/img/logos/spring.png" alt="Tutorial Spring" class="img-thumbnail">
-          <p class="text-center">Tutorial Spring</p>
+          <a href="{{site.baseurl}}/spring/"><img src="{{site.baseurl}}/img/logos/spring.png" alt="Tutorial Spring" class="img-thumbnail">
+          <p class="text-center">Tutorial Spring</p></a>
         </div>
-
+<!--
         <div class="col-md-2 col-sm-4 col-xs-6">
           <img src="{{site.baseurl}}/img/logos/sql.png" alt="Tutorial SQL" class="img-thumbnail">
           <p class="text-center">Tutorial SQL</p>
