@@ -72,13 +72,13 @@ layout: default
         </div>
 
         <div class="col-md-2 col-sm-4 col-xs-6">
-          <img src="{{site.baseurl}}/img/logos/mongodb.png" class="img-thumbnail">
-          <p class="text-center">Tutorial MongoDB</p>
+            <a href="{{site.baseurl}}/mongodb/"><img src="{{site.baseurl}}/img/logos/mongodb.png" class="img-thumbnail">
+          <p class="text-center">Tutorial MongoDB</p></a>
         </div>
 
         <div class="col-md-2 col-sm-4 col-xs-6">
-          <img src="{{site.baseurl}}/img/logos/javascript.png" class="img-thumbnail">
-          <p class="text-center">Tutorial Javascript</p>
+            <a href="{{site.baseurl}}/javascript/"><img src="{{site.baseurl}}/img/logos/javascript.png" class="img-thumbnail">
+          <p class="text-center">Tutorial Javascript</p></a>
         </div>
 
 
