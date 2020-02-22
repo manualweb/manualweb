@@ -133,6 +133,15 @@ defaults:
     seo:
       type: "WebPage"
 
+- scope:
+    path: _spring
+    type: spring
+  values:
+    layout: spring
+    sectionid: spring
+    seo:
+      type: "WebPage"
+
 collections:
   java:
     permalink: /:collection/:path/
