@@ -27,6 +27,6 @@ Todas las preguntas y dudas sobre HTML5 las puedes consultar en el [Foro sobre H
 
 <script id="github-bjs" src="https://buttons.github.io/buttons.js" async="" defer="defer"></script>
 
-[PDFHTML5]: https://gitprint.com/victorcuervo/manualweb/blob/master/html/pdf/tutorial-html-pdf.md
+[PDFHTML5]: https://gitprint.com/victorcuervo/manualweb/blob/master/html5/pdf/tutorial-html5-pdf.md
 [ForoHTML5]: http://dudasprogramacion.com/html/html5
-[EjemplosHTML5]: http://lineadecodigo.com/html5/
+[EjemplosHTML5]: http://lineadecodigo.com/categoria/html5/
