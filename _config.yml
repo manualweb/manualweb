@@ -158,6 +158,8 @@ collections:
       output: true
   svg:
       output: true
+  spring:
+      output: true
   typescript:
       output: true
   emberjs:
