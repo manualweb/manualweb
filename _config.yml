@@ -116,6 +116,15 @@ defaults:
       type: "WebPage"
 
 - scope:
+    path: _spring
+    type: spring
+  values:
+    layout: spring
+    sectionid: spring
+    seo:
+      type: "WebPage"
+
+- scope:
     path: _svg
     type: svg
   values:
@@ -130,15 +139,6 @@ defaults:
   values:
     layout: typescript
     sectionid: typescript
-    seo:
-      type: "WebPage"
-
-- scope:
-    path: _spring
-    type: spring
-  values:
-    layout: spring
-    sectionid: spring
     seo:
       type: "WebPage"
 
