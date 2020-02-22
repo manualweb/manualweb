@@ -138,12 +138,13 @@ Listado de todos los tutoriales:
           <img src="{{site.baseurl}}/img/logos/python.png" alt="Tutorial Python" class="img-thumbnail">
           <p class="text-center">Tutorial Python</p>
         </div>
-
+-->
         <div class="col-md-2 col-sm-4 col-xs-6">
-          <img src="{{site.baseurl}}/img/logos/reactjs.png" alt="Tutorial ReactJS" class="img-thumbnail">
-          <p class="text-center">Tutorial ReactJS</p>
+          <a href="{{site.baseurl}}/reactjs/"><img src="{{site.baseurl}}/img/logos/reactjs.png" alt="Tutorial ReactJS" class="img-thumbnail">
+          <p class="text-center">Tutorial ReactJS</p></a>
         </div>
 
+<!--
         <div class="col-md-2 col-sm-4 col-xs-6">
           <img src="{{site.baseurl}}/img/logos/rust.png" alt="Tutorial Rust" class="img-thumbnail">
           <p class="text-center">Tutorial Rust</p>

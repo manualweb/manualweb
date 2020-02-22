@@ -116,6 +116,15 @@ defaults:
       type: "WebPage"
 
 - scope:
+    path: _reactjs
+    type: reactjs
+  values:
+    layout: reactjs
+    sectionid: reactjs
+    seo:
+      type: "WebPage"
+
+- scope:
     path: _svg
     type: svg
   values:
@@ -146,6 +155,8 @@ collections:
   html:
       output: true
   html5:
+      output: true
+  reactjs:
       output: true
   svg:
       output: true

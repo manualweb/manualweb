@@ -20,6 +20,11 @@
       "title": "{{ p.title }}",
       "url": "{{ p.url | prepend: site.baseurl }}"
     },{% endfor %}{% endfor %}
+{% for section in site.data.reactjs %}{% for item in section.docs %}{% assign item_url = item | prepend:"/reactjs/" | append:"/" %}{% assign p = site.reactjs | where:"url", item_url | first %}
+        {
+          "title": "{{ p.title }}",
+          "url": "{{ p.url | prepend: site.baseurl }}"
+        },{% endfor %}{% endfor %}
 {% for section in site.data.svg %}{% for item in section.docs %}{% assign item_url = item | prepend:"/svg/" | append:"/" %}{% assign p = site.svg | where:"url", item_url | first %}
     {
       "title": "{{ p.title }}",
