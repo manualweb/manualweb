@@ -1,5 +1,6 @@
 - title: Introducción ReactJS
   docs:
   - introduccion-reactjs
-  - componentes-reactjs
+  - hola-mundo-reactjs
   - que-es-jsx
+  - componentes-reactjs
