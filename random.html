@@ -1,0 +1,24 @@
+---
+---
+<script>
+
+let server = "{{ site.url }}";
+
+let x = [{% for section in site.data.java %}{% for item in section.docs %}{% assign item_url = item | prepend:"/java/" | append:"/" %}{% assign p = site.java | where:"url", item_url | first %}
+    {
+      "title": "{{ p.title }}",
+      "url": "{{ p.url | prepend: site.baseurl }}"
+    },{% endfor %}{% endfor %}
+];
+
+  var random = Math.floor(Math.random() * x.length );
+  console.log(x[random].title);
+
+  var obj = {
+    "valor1": x[random].title,
+    "valor2": server + x[random].url
+  }
+
+  document.write(JSON.stringify(obj));
+
+</script>
