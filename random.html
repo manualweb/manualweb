@@ -2,7 +2,9 @@
 ---
 <script>
 
-let server = "{{ site.url }}";
+//let server = "{{ site.url }}";
+
+let server = "http://www.manualweb.net";
 
 let x = [{% for section in site.data.java %}{% for item in section.docs %}{% assign item_url = item | prepend:"/java/" | append:"/" %}{% assign p = site.java | where:"url", item_url | first %}
     {
@@ -12,13 +14,26 @@ let x = [{% for section in site.data.java %}{% for item in section.docs %}{% ass
 ];
 
   var random = Math.floor(Math.random() * x.length );
-  console.log(x[random].title);
 
-  var obj = {
-    "valor1": x[random].title,
-    "valor2": server + x[random].url
-  }
+  var obj = new Object();
+  obj.valor1 = x[random].title;
+  obj.valor2 =server + x[random].url;
 
   document.write(JSON.stringify(obj));
+
+  var xmlhttp = new XMLHttpRequest();
+  xmlhttp.onreadystatechange = function() {
+    if (xmlhttp.readyState == XMLHttpRequest.DONE) {
+        console.log(xmlhttp.responseText);
+    }
+  }
+
+  var url = new URL(window.location.href);
+  var key = url.searchParams.get("key");
+  console.log("Clave: " + key);
+
+  xmlhttp.open("POST", "https://maker.ifttt.com/trigger/manual/with/key/"+key);
+  xmlhttp.setRequestHeader("Content-Type", "application/json");
+  xmlhttp.send(JSON.stringify(obj));
 
 </script>
