@@ -32,7 +32,7 @@ let x = [{% for section in site.data.java %}{% for item in section.docs %}{% ass
   var key = url.searchParams.get("key");
   console.log("Clave: " + key);
 
-  xmlhttp.open("POST", "https://maker.ifttt.com/trigger/manual/with/key/"+key);
+  xmlhttp.open("POST", "https://maker.ifttt.com/trigger/manual/with/key/"+key,true);
   xmlhttp.setRequestHeader("Content-Type", "application/json");
   xmlhttp.send(JSON.stringify(obj));
 
