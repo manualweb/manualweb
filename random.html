@@ -6,7 +6,34 @@
 
 let server = "http://www.manualweb.net";
 
-let x = [{% for section in site.data.java %}{% for item in section.docs %}{% assign item_url = item | prepend:"/java/" | append:"/" %}{% assign p = site.java | where:"url", item_url | first %}
+let x = [
+
+  {% for section in site.data.java %}{% for item in section.docs %}{% assign item_url = item | prepend:"/java/" | append:"/" %}{% assign p = site.java | where:"url", item_url | first %}
+    {
+      "title": "{{ p.title }}",
+      "url": "{{ p.url | prepend: site.baseurl }}"
+  },{% endfor %}{% endfor %}
+  {% for section in site.data.html %}{% for item in section.docs %}{% assign item_url = item | prepend:"/html/" | append:"/" %}{% assign p = site.html | where:"url", item_url | first %}
+    {
+      "title": "{{ p.title }}",
+      "url": "{{ p.url | prepend: site.baseurl }}"
+    },{% endfor %}{% endfor %}
+  {% for section in site.data.html5 %}{% for item in section.docs %}{% assign item_url = item | prepend:"/html5/" | append:"/" %}{% assign p = site.html5 | where:"url", item_url | first %}
+    {
+      "title": "{{ p.title }}",
+      "url": "{{ p.url | prepend: site.baseurl }}"
+    },{% endfor %}{% endfor %}
+  {% for section in site.data.mongodb %}{% for item in section.docs %}{% assign item_url = item | prepend:"/mongodb/" | append:"/" %}{% assign p = site.mongodb | where:"url", item_url | first %}
+    {
+      "title": "{{ p.title }}",
+      "url": "{{ p.url | prepend: site.baseurl }}"
+    },{% endfor %}{% endfor %}
+  {% for section in site.data.svg %}{% for item in section.docs %}{% assign item_url = item | prepend:"/svg/" | append:"/" %}{% assign p = site.svg | where:"url", item_url | first %}
+    {
+      "title": "{{ p.title }}",
+      "url": "{{ p.url | prepend: site.baseurl }}"
+    },{% endfor %}{% endfor %}
+  {% for section in site.data.flask %}{% for item in section.docs %}{% assign item_url = item | prepend:"/flask/" | append:"/" %}{% assign p = site.flask | where:"url", item_url | first %}
     {
       "title": "{{ p.title }}",
       "url": "{{ p.url | prepend: site.baseurl }}"
@@ -33,7 +60,6 @@ let x = [{% for section in site.data.java %}{% for item in section.docs %}{% ass
   console.log("Clave: " + key);
 
   xmlhttp.open("POST", "https://maker.ifttt.com/trigger/manual/with/key/"+key,true);
-  xmlhttp.setRequestHeader("Content-Type", "application/json");
-  xmlhttp.send(JSON.stringify(obj));
+  xmlhttp.send({"value1":x[random].title,"value2":server + x[random].url});
 
 </script>
