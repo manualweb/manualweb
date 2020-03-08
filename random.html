@@ -1,42 +1,49 @@
 ---
 ---
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 <script>
 
 //let server = "{{ site.url }}";
 
-let server = "http://www.manualweb.net";
+let server = {{site.url}};
 
 let x = [
 
   {% for section in site.data.java %}{% for item in section.docs %}{% assign item_url = item | prepend:"/java/" | append:"/" %}{% assign p = site.java | where:"url", item_url | first %}
     {
       "title": "{{ p.title }}",
-      "url": "{{ p.url | prepend: site.baseurl }}"
+      "url": "{{ p.url | prepend: site.baseurl }}",
+      "category":"java"
   },{% endfor %}{% endfor %}
   {% for section in site.data.html %}{% for item in section.docs %}{% assign item_url = item | prepend:"/html/" | append:"/" %}{% assign p = site.html | where:"url", item_url | first %}
     {
       "title": "{{ p.title }}",
-      "url": "{{ p.url | prepend: site.baseurl }}"
+      "url": "{{ p.url | prepend: site.baseurl }}",
+      "category":"html"
     },{% endfor %}{% endfor %}
   {% for section in site.data.html5 %}{% for item in section.docs %}{% assign item_url = item | prepend:"/html5/" | append:"/" %}{% assign p = site.html5 | where:"url", item_url | first %}
     {
       "title": "{{ p.title }}",
-      "url": "{{ p.url | prepend: site.baseurl }}"
+      "url": "{{ p.url | prepend: site.baseurl }}",
+      "category":"html5"
     },{% endfor %}{% endfor %}
   {% for section in site.data.mongodb %}{% for item in section.docs %}{% assign item_url = item | prepend:"/mongodb/" | append:"/" %}{% assign p = site.mongodb | where:"url", item_url | first %}
     {
       "title": "{{ p.title }}",
-      "url": "{{ p.url | prepend: site.baseurl }}"
+      "url": "{{ p.url | prepend: site.baseurl }}",
+      "category":"mongodb"
     },{% endfor %}{% endfor %}
   {% for section in site.data.svg %}{% for item in section.docs %}{% assign item_url = item | prepend:"/svg/" | append:"/" %}{% assign p = site.svg | where:"url", item_url | first %}
     {
       "title": "{{ p.title }}",
-      "url": "{{ p.url | prepend: site.baseurl }}"
+      "url": "{{ p.url | prepend: site.baseurl }}",
+      "category":"svg"
     },{% endfor %}{% endfor %}
   {% for section in site.data.flask %}{% for item in section.docs %}{% assign item_url = item | prepend:"/flask/" | append:"/" %}{% assign p = site.flask | where:"url", item_url | first %}
     {
       "title": "{{ p.title }}",
-      "url": "{{ p.url | prepend: site.baseurl }}"
+      "url": "{{ p.url | prepend: site.baseurl }}",
+      "category":"flask"
     },{% endfor %}{% endfor %}
 ];
 
@@ -44,22 +51,20 @@ let x = [
 
   var obj = new Object();
   obj.valor1 = x[random].title;
-  obj.valor2 =server + x[random].url;
+  obj.valor2 = server + x[random].url;
+  obj.valor3 = x[random].category;
 
   document.write(JSON.stringify(obj));
-
-  var xmlhttp = new XMLHttpRequest();
-  xmlhttp.onreadystatechange = function() {
-    if (xmlhttp.readyState == XMLHttpRequest.DONE) {
-        console.log(xmlhttp.responseText);
-    }
-  }
 
   var url = new URL(window.location.href);
   var key = url.searchParams.get("key");
   console.log("Clave: " + key);
 
-  xmlhttp.open("POST", "https://maker.ifttt.com/trigger/manual/with/key/"+key,true);
-  xmlhttp.send({"value1":x[random].title,"value2":server + x[random].url});
+  $.ajax({
+    url: "https://maker.ifttt.com/trigger/manual/with/key/"+key,
+    type: "POST",
+    data: {"value1":x[random].title,"value2":server + x[random].url,"value3":x[random].category},
+    complete: function(){console.log("Enviado");}
+  });
 
 </script>
