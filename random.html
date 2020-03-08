@@ -64,11 +64,13 @@ let x = [
   var key = url.searchParams.get("key");
   console.log("Clave: " + key);
 
+$( document ).ready(function() {
   $.ajax({
     url: "https://maker.ifttt.com/trigger/manual/with/key/"+key,
     type: "POST",
     data: {"value1":x[random].title,"value2":server + x[random].url,"value3":x[random].category},
     complete: function(){console.log("Enviado");}
   });
+});
 
 </script>
