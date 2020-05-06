@@ -3,7 +3,10 @@ title: Introducción a ReactJS
 permalink: /reactjs/introduccion-reactjs/
 ---
 
-[ReactjS][ReactJS] es un framework [Javascript][Javascript] para la **construcción de interfaces de usuario**.
+[ReactjS][ReactJS] es una librería [Javascript][Javascript] desarrollada inicialmente por [Facebook][Facebook] para la **construcción de interfaces de usuario** tanto para **aplicaciones clientes SPA (Single Page Applications)** como **aplicaciones en el servidor**.
+
+La idea de [ReactJS][ReactJS] pretende arquitecturizar el código [JavaScript][Javascript] mediante el uso del componente y optimizar la manipulación del **DOM (Document Object Model)** mediante el uso de un **DOM Virtual**, es decir, los cambios se ejecutan sobre el **DOM Virtual** en vez de hacerlo sobre el **DOM**.
+
 
 ## Características ReactJS
 Algunas de las características de [ReactjS][ReactJS] son:
@@ -37,3 +40,4 @@ Es importante saber que estos elementos [HTML][HTML] no se crean en el DOM de la
 [HTML]: {{site.baseurl}}/html/
 [Javascript]: {{site.baseurl}}/javascript/
 [JSX]: {{site.baseurl}}/reactjs/que-es-jsx/
+[Facebook]: http://www.ayudaenlaweb.com/redes-sociales/que-es-facebook/
