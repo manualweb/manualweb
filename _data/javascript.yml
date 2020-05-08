@@ -13,6 +13,10 @@
   - estructuras-selectivas-javascript
   - estructuras-repetitivas-javascript
 
+-title: funciones
+ docs:
+ - funciones-javascript
+
 - title: Otros
   docs:
   - errores-javascript
