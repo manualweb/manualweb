@@ -37,6 +37,9 @@ Aquí puedes encontrar un listado de **ejemplos [Javascript][Javascript] explica
 * Listar 10 números con for
 * Listar 10 números con while
 * Listar 10 números con do-while
+* Recorrer un objeto con for..in
+* Recorrer un array con for..in
+* Recorrer un array con for..of
 * Sentencia Break
 * Break a etiqueta
 * Uso de continue para mostrar números impares
