@@ -39,7 +39,7 @@ for (let x=1;x<=10;x++) {
 ~~~
 
 ## While
-La estructura repetitiva `while` **ejecuta el bloque de setencias si la condición contiene un valor de `true`**. En caso de que el valor sea `false`, se sale del bucle.
+La estructura repetitiva `while` **ejecuta el bloque de sentencias si la condición contiene un valor de `true`**. En caso de que el valor sea `false`, se sale del bucle.
 
 ~~~javascript
 while (condición) {
@@ -179,9 +179,9 @@ Otra sentencia parecida a `break` que podemos ejecutar es `continue`. La estruct
 continue [etiqueta];
 ~~~
 
-Tal y como ocurría con el `break`, la sentencia `continue` puede utilizarse con y sin etiqueta. Cuando utilizamos la sentencia `continue` lo que estamos haciendo es acabar el bucle en el que estamos, pero no salta a la siguiente sentencia fuera del bucle, si no que salta a la siguiente iteracción.
+Tal y como ocurría con el `break`, la sentencia `continue` puede utilizarse con y sin etiqueta. Cuando utilizamos la sentencia `continue` lo que estamos haciendo es acabar el bucle en el que estamos, pero no salta a la siguiente sentencia fuera del bucle, si no que salta a la siguiente iteración.
 
-Por ejemplo podemos tener un bucle del 1 al 10 en el que solo nos muestre los núneros impares y para ello lo resolvamos con la setencia `continue`.
+Por ejemplo podemos tener un bucle del 1 al 10 en el que solo nos muestre los números impares y para ello lo resolvamos con la setencia `continue`.
 
 ~~~javascript
 let x = 0;
@@ -196,11 +196,11 @@ while (x<10) {
 }
 ~~~~
 
-Como podemos observar en el bucle lo que sucede es que cuando se ejecuta la sentencia `continue` el programa salta a la siguiente iteracción del bucle.
+Como podemos observar en el bucle lo que sucede es que cuando se ejecuta la sentencia `continue` el programa salta a la siguiente iteración del bucle.
 
-En el caso de que la sentencia `continue` esté seguida de una etiqueta lo que hace es salir hasta el bucle que esté etiquetado y ejecutar su siguiente iteracción.
+En el caso de que la sentencia `continue` esté seguida de una etiqueta lo que hace es salir hasta el bucle que esté etiquetado y ejecutar su siguiente iteración.
 
-Utilizamos el mismo código que con las etiquetas `break`, pero en este caso con una sentencia `continue`. Así lo que sucederá es que se saldrá desde el bucle interno hasta el externo, pero en vez de a la sentencia siguiente, realizará una nueva iteracción.
+Utilizamos el mismo código que con las etiquetas `break`, pero en este caso con una sentencia `continue`. Así lo que sucederá es que se saldrá desde el bucle interno hasta el externo, pero en vez de a la sentencia siguiente, realizará una nueva iteración.
 
 ~~~javascript
 inicio: while (x<10) {
@@ -233,19 +233,50 @@ En este caso, por consola veremos lo siguiente:
 </samp>
 
 ## For..In
+El bucle `for..in` nos permite recorrer las propiedades enumerables de un objeto. En cada una de las iteraciones podremos acceder a las propiedades del objeto.
 
-El bucle `for..in` nos permite recorrer las propiedades enumerables de un objeto
-
+La estructura del bucle `for..in` será la siguiente:
 
 ~~~javascript
 for (variable in objeto)
   sentencias;
 ~~~
 
+Como todavía no sabemos definir un objeto, algo que veremos en siguientes pasos, vamos a asumir que un **array** es un objeto iterable para [Javascript][Javascript]. Así que podemos utilizar la estructura `for..in` para recorrer los elementos de un array.
 
+Así podremos utilizar el siguiente código para recorrer el array:
 
-## Otros
-* For-in
-* With
+~~~javascript
+let letras = new Array('A','B','C','D','E','F');
+
+for (letra in letras)
+  console.log(letras[letra]);
+~~~
+
+Como podemos ver la estructura `for..in` nos da las propiedades del array y no sus valores
+
+> Hay que tener cuidado cuando utilicemos la estructura for..in con un Array ya que devuelve las propiedades y no el contenido del array, por lo que podría darnos respuestas no esperadas si hemos modificado la estructura añadiendo nuevas propiedades.
+
+## For..of
+Mediante el bucle `for..of` podremos recorrer de forma iterativa un elemento iterable que puede ser un **objeto**, **array**, **mapa**, **conjunto**,... y nos **devuelve los valores de sus propiedades**.
+
+La estructura del bucle `for..of` será la siguiente:
+
+~~~javascript
+for (varible of objeto)
+  sentencias;
+~~~
+
+Así, si volvemos al ejemplo anterior vemos cómo utilizar la iteración sobre el array para devolver los valores.
+
+~~~javascript
+let letras = new Array('A','B','C','D','E','F');
+
+for (letra in letras)
+  console.log(letra);
+~~~
+
+> Hay que diferenciar que el bucle `for..if` nos devuelve las propiedades del elemento, mientas que el bucle `for..of` nos devuelve los valores de las propiedades. Es por ello que este segundo es mejor para recorrer elementos iterables como Array, Mapas o Conjuntos.
+
 
 [Javascript]: {{site.url}}/javascript
