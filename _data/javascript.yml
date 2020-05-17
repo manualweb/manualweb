@@ -16,6 +16,8 @@
 - title: Funciones
   docs:
   - funciones-javascript
+  - parametros-funciones
+  - funciones-anonimas
 
 - title: Otros
   docs:

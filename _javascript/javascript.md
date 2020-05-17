@@ -14,10 +14,10 @@ x. Aplicaciones Javascript
   4.2. Tipos de Datos
   4.3. Literales
 
-
-
 5. Estructuras Selectivas
 6. Estructuras Repetitivas
+
+
 7. Expresiones y Operadores
 8. Funciones
 9. Funciones Predefinidas

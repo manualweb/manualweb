@@ -40,10 +40,15 @@ Aquí puedes encontrar un listado de **ejemplos [Javascript][Javascript] explica
 * Recorrer un objeto con for..in
 * Recorrer un array con for..in
 * Recorrer un array con for..of
+* No usar for..in con Array
 * Sentencia Break
 * Break a etiqueta
 * Uso de continue para mostrar números impares
 * Continue a etiqueta
+
+# Funciones
+* Definir una función en Javascript
+
 
 ## Errores
 * Crear un objeto Error
