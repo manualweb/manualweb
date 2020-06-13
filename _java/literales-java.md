@@ -21,7 +21,7 @@ long variableLong = 12;
 Si bien para el caso del tipo **long** podemos crear literales de enteros que acaben en L (mayúscula o minúscula, aunque por legilibilidad se recomienda la primera)
 
 ~~~java
-long variableLong = 12D;
+long variableLong = 12L;
 ~~~
 
 Hay otros valores que pueden ser manejados por los literales enteros, para cuando representemos el número en diferentes bases. Por ejemplo cuando los manejemos como binarios o hexadecimales. Para este caso habrá que manejar literales de enteros que tengan dicho formato.
