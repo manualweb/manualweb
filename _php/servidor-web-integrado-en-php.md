@@ -16,9 +16,9 @@ $ php -S localhost:8080
 Al ejecutarlo nos mostrará algo parecido a lo siguiente:
 
 <samp>
-PHP 7.3.11 Development Server started at Mon Jul 27 19:50:28 2020
-Listening on http://localhost:8080
-Document root is /Users/victor/Documents/WebServer/App1
+PHP 7.3.11 Development Server started at Mon Jul 27 19:50:28 2020<br>
+Listening on http://localhost:8080<br>
+Document root is /Users/victor/Documents/WebServer/App1<br>
 Press Ctrl-C to quit.
 </samp>
 
@@ -48,6 +48,12 @@ O podríamos arrancarlo en la IP de la máquina para que sea accesible en la red
 
 ~~~sh
 $ php -S 192.168.0.2:8080
+~~~
+
+Incluso podríamos pasarle un fichero de configuración `php.ini` mediante la opción `-c`.
+
+~~~sh
+php -S localhost:8080 -c php.ini
 ~~~
 
 Como se puede comprobar el uso del servidor web integrado en [PHP][PHP] es muy sencillo y útil para ir probando nuestro código.

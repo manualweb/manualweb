@@ -7,6 +7,7 @@
   docs:
   - instalar-php
   - instalar-php-en-macos
+  - servidor-web-integrado-en-php
   - configurar-php-en-apache
 
 - title: Primeros Pasos en PHP

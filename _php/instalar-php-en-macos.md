@@ -38,9 +38,9 @@ $ php --version
 Y nos mostrará algo parecido a lo siguiente:
 
 <samp>
-PHP 7.3.11 (cli) (built: Apr 17 2020 19:14:14) ( NTS )
-Copyright (c) 1997-2018 The PHP Group
-Zend Engine v3.3.11, Copyright (c) 1998-2018 Zend Technologies
+PHP 7.3.11 (cli) (built: Apr 17 2020 19:14:14) ( NTS )<br>
+Copyright (c) 1997-2018 The PHP Group<br>
+Zend Engine v3.3.11, Copyright (c) 1998-2018 Zend Technologies<br>
 </samp>
 
 
