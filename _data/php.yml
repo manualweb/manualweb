@@ -17,5 +17,6 @@
 
 - title: Contenido de Apoyo
   docs:
+  -ejemplos-php
   -urls-php
-  
+
