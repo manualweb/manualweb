@@ -14,9 +14,8 @@
   docs:
   - mi-primera-aplicacion-en-php
 
-
 - title: Contenido de Apoyo
   docs:
-  -ejemplos-php
-  -urls-php
+  - ejemplos-php
+  - urls-php
 
