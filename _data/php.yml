@@ -1,0 +1,14 @@
+- title: Introducción PHP
+  docs:
+  - introduccion-a-php
+  - historia-php
+
+- title: Instalar PHP
+  docs:
+  - instalar-php
+  - instalar-php-en-macos
+  - configurar-php-en-apache
+
+- title: Primeros Pasos en PHP
+  docs:
+  - mi-primera-aplicacion-en-php
