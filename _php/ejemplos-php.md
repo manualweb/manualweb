@@ -12,6 +12,7 @@ Aquí puedes encontrar un listado de **ejemplos [PHP][PHP] explicados paso a pas
 * [Definir variables en PHP](http://lineadecodigo.com/php/definir-variables-en-php/)
 * [Poner comentarios en PHP](http://lineadecodigo.com/php/poner-comentarios-en-php/)
 * Arrancar Servidor Web integrado en PHP
+* Etiqueta echo abreviada
 
 ## Cadenas
 * [Reemplazar caracteres en una cadena PHP](http://lineadecodigo.com/php/reemplazar-caracteres-en-una-cadena-php/)

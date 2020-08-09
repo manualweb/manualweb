@@ -12,6 +12,7 @@
 
 - title: Primeros Pasos en PHP
   docs:
+  - sintaxis-php
   - mi-primera-aplicacion-en-php
 
 - title: Contenido de Apoyo
