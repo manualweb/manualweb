@@ -14,6 +14,15 @@ Aquí puedes encontrar un listado de **ejemplos [PHP][PHP] explicados paso a pas
 * Arrancar Servidor Web integrado en PHP
 * Etiqueta echo abreviada
 
+## Tipos de Datos
+* Definir un tipo booleano
+* Forzar a que un tipo sea booleano
+* Definir un tipo entero
+* Mayor y menor valor entero
+
+## Variables y Constantes
+* Volcar el contenido y tipo de una variable
+
 ## Cadenas
 * [Reemplazar caracteres en una cadena PHP](http://lineadecodigo.com/php/reemplazar-caracteres-en-una-cadena-php/)
 * [Links temporales con PHP](http://lineadecodigo.com/php/links-temporales-php/)

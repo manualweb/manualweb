@@ -146,9 +146,9 @@ La tercera forma de generar comentarios [PHP][PHP] es con comentarios de varias 
     varias líneas
     */
 ?>
+~~~
 
 Los comentarios de varias líneas suelen explicar grandes bloques de códigos o descripciones de programas.
-~~~
 
 [PHP]: {{site.url}}/php/
 [HTML]: {{site.url}}/html/
