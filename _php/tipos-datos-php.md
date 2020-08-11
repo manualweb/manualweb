@@ -5,9 +5,9 @@ permalink: /php/tipos-de-datos-php/
 
 El lenguaje [PHP][PHP] nos ofrece 10 tipos de datos [PHP][PHP] primitivos que son:
 
-* boolean
-* integer
-* float
+* Boolean
+* Integer
+* Float
 * string
 * array
 * object
@@ -47,10 +47,21 @@ Los tipos de datos [PHP][PHP] integer representan un valor de un número entero 
 
 Los tipos de datos integer se pueden escribir en diferentes bases. En **base decimal (10)**, en **base hexadecimal (16)**, en **base octal (8)** y en **base binaria (2)**. Para poder identificar cada número entero deberemos de fijarnos en **la notación que se antepone al número**:
 
-* **Números decimales (10)**, sin notación. Así podremos tener el número `12`.
+* **Números Decimales (10)**, sin notación. Así podremos tener el número `12`.
 * **Números Hexadecimales (16)**, anteponiendo **0x**. Así podemos tener el número `0xC`.
 * **Números Octales (8)**, anteponiendo **0**. Así podemos tener el número `014`.
 * **Números Binarios (2)**, anteponiendo **0b**. Así podremos tener el número `0b1100`
+
+~~~php
+<?php
+
+$decimal = 12;
+$hexadecimal = 0xC;
+$octal = 014;
+$binario = 0b1100;
+
+?>
+~~~
 
 > Todos los valores anteriores representan el número 12.
 
@@ -76,6 +87,100 @@ echo 'Valor float '.intval($valor_float).'<br>';
 ?>
 ~~~
 
+## Float
+Los tipos de datos [PHP][PHP] float representan a los números que contienen decimales. Son conocidos como números en coma flotante (de ahí lo de `float`). Para definir un tipo de dato de tipo float simplemente tendremos que asignar a una variable un valor decimal.
+
+Podemos escribir un valor decimal de dos formas diferentes:
+
+* **Números decimales**, será un número y sus decimales separados mediante un punto.
+* **Forma exponencial**, será un número y un exponente para indicar para representar el desplazamiento de los decimales. Que puede ser positivo o negativo. El exponente se representa mediante la letra e.
+
+~~~php
+<?php
+
+$decimales = 1.234; 
+$exponencial = 1234e-3; 
+
+?>
+~~~
+
+Podemos forzar la conversión de cualquier valor a un tipo de datos `float` mediante una operación de casting `(float)` o utilizando la función `floatval()`.
+
+## String
+El tipos de dato [php][php] string nos sirve para representar las cadenas de texto. Podemos generar un tipo de dato `string` entrecomillando un conjunto de caracteres mediante comillas simples (') o comillas dobles (").
+
+Así podemos crear un tipo de dato string de la siguiente forma:
+
+~~~php
+<?php
+
+$cadena = "Hola Mundo";
+$nombre = 'Manual Web';
+
+echo $cadena;
+echo $nombre;
+
+?>
+~~~
+
+Además podemos crear cadenas de texto que ocupen varias líneas. Esto lo haremos de la siguiente manera:
+
+~~~php
+<?php
+
+$cadena_lineas = 'Esto es una cadena
+que ocupa
+varias líneas de código';
+
+echo $cadena_lineas;
+
+?>
+~~~
+
+Otro punto importante a la hora de manejar tipos de datos string con [php][php] es que podemos incluir el valor de una variable dentro de una cadena de texto simplemente indicando el nombre de la variable. Así podríamos escribir el siguiente código:
+
+~~~php
+<?php
+
+$nombre = "Manual Web";
+$saludo = "Hola, $nombre";
+
+echo $saludo;
+
+?>
+~~~
+
+> La sustitución de variables dentro de cadenas de texto string solo funcionan cuando definimos la cadena de texto mediante comillas dobles.
+
+### Secuencias de Escape
+
+Cuando creemos las cadenas de texto puede aparecernos la necesidad de incluir una comilla simple o compleja dentro del texto. Para ello deberemos de utilizar la secuencia de escape `/'` o `/"` de la siguiente forma:
+
+~~~php
+<?php
+
+$comilla_doble = "Este texto contiene una comilla doble \" ";
+$comilla_simple = 'Este texto contiene una comilla simple \'';
+
+?>
+~~~
+
+Tenenos otras secuencias de escape para caracteres que podemos incluir en una cadena de texto:
+
+* `\n`, avance de línea.
+* `\r`, retorno de carro.
+* `\t`, tabulador horizontal.
+* `\v`, tabulador vertical.
+* `\f`, avance de página.
+* `\\`, barra invertida.
+* `\$`, símbolo del dolar.
+* `\'`, comilla simple.
+* `\"`, comilla doble.
+
+> Las secuencias de escape solo funcionan si utilizamos cadenas de texto string con comillas dobles. En el caso de ser comillas simples se muestra directamente la secuencia de escape como texto. Exceptuando la de la barra invertida.
+
+### Heredoc
+Otra forma de crear un tipo de dato string en [php][php] es mediante la sintaxis **Heredoc**
 
 
 [PHP]: {{site.url}}/php/

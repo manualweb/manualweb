@@ -19,6 +19,11 @@ Aquí puedes encontrar un listado de **ejemplos [PHP][PHP] explicados paso a pas
 * Forzar a que un tipo sea booleano
 * Definir un tipo entero
 * Mayor y menor valor entero
+* Definir un tipo float
+* Definir una cadena de texto
+* Cadenas de texto con variables
+* Comillas simples y dobles en una cadena de texto
+* Secuencias de escape
 
 ## Variables y Constantes
 * Volcar el contenido y tipo de una variable
