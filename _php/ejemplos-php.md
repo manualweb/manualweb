@@ -24,6 +24,10 @@ Aquí puedes encontrar un listado de **ejemplos [PHP][PHP] explicados paso a pas
 * Cadenas de texto con variables
 * Comillas simples y dobles en una cadena de texto
 * Secuencias de escape
+* Formato Heredoc
+* Formato Nowdoc
+* Concatenar cadenas
+* Forzar a que un tipo sea cadena
 
 ## Variables y Constantes
 * Volcar el contenido y tipo de una variable
@@ -44,6 +48,10 @@ Aquí puedes encontrar un listado de **ejemplos [PHP][PHP] explicados paso a pas
 * [Sacar un naipe de la baraja con PHP](http://lineadecodigo.com/php/sacar-un-naipe-de-la-baraja-con-php/)
 
 ## Arrays
+* Crear un array
+* Acceder a un elemento de un array
+* Modificar el elemento de un array
+* Eliminar un elemento de un array
 * [Rotar un array en PHP](http://lineadecodigo.com/php/rotar-un-array-en-php/)
 * [Eliminar elementos duplicados de un array en PHP](http://lineadecodigo.com/php/eliminar-elementos-duplicados-de-un-array-en-php/)
 * [Recorrer un array en PHP](http://lineadecodigo.com/php/recorrer-un-array-en-php/)
