@@ -124,7 +124,7 @@ Dónde ***objeto_estado*** es el nuevo estado a aplicar, ***título*** el nuevo 
 Así, podríamos cambiar el estado actual ejecutando el método `replaceState()` de la siguiente forma:
 
 ~~~javascript
-history.pushState({ pagina: "2" }, "Título 2", "state.html#p2");
+history.replaceState({ pagina: "2" }, "Título 2", "state.html#p2");
 ~~~
 
 ### Gestionar eventos sobre el historial
