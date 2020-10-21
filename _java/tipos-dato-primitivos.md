@@ -30,11 +30,11 @@ Representa un tipo de dato de 16 bits con signo. De esta manera almacena valores
 
 ### int
 
-Es un tipo de dato de 32 bits con signo para almacenar valores numéricos. Cuyo valor mínimo es -231 y el valor máximo 231-1.
+Es un tipo de dato de 32 bits con signo para almacenar valores numéricos. Cuyo valor mínimo es -2<sup>31</sup> y el valor máximo 2<sup>31</sup>-1.
 
 ### long
 
-Es un tipo de dato de 64 bits con signo que almacena valores numéricos entre -263 a 263-1
+Es un tipo de dato de 64 bits con signo que almacena valores numéricos entre -2<sup>63</sup> a 2<sup>63</sup>-1
 
 ### float
 
