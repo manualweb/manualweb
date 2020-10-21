@@ -10,11 +10,9 @@ El lenguaje [PHP][PHP] nos ofrece 10 tipos de datos [PHP][PHP] primitivos que so
 * Float
 * String
 * Array
-* object
-* callable
-* iterable
-* resource
-* null
+* Object
+* Resource
+* NULL
 
 Veamos en detalle estos tipos de datos [PHP][PHP] y qué podemos hacer con ellos.
 
@@ -340,9 +338,6 @@ echo 'Valor entero '.strval($valor_entero).'<br>';
 Un array en [PHP][PHP] es un **mapa ordenado**, es decir, cada una de las posiciones tiene una clave asociada.
 De esta manera podemos utilizar un array en [PHP][PHP] como array, lista, tabla hash, diccionario, colección, pila, cola,...
 
-### Arrays multidimensionales
-Un elemento del array puede ser otro array. Así que podremos tener arrays multidimensionales.
-
 ### Crear un Array
 Para crear un array en [PHP][PHP] podemos utilizar el constructor `array()` de la siguiente manera:
 
@@ -479,9 +474,145 @@ echo $nombres[1];
 ?>
 ~~~
 
-### Eliminar un elemento de un array
+En el caso de que no especifiquemos el índice a la hora de hacer la asignación, se asumirá que el índice es igual al valor de índice más alto del array más 1.
 
-$unset
+De esta manera si realizamos la siguiente asignación:
+
+~~~php
+<?php
+
+$nombres = [
+    "Luis",
+    "Marta",
+    "Víctor"
+    ];
+
+$nombres[] = "Virginia";
+
+?>
+~~~
+
+Veremos que el índice asignado al valor *"Virgina"* es el índice 3.
+
+
+### Eliminar un elemento de un array
+Para poder eliminar un elemento de un array [PHP][PHP] disponemos de la función `unset()`. Esta función recibirá como parámetro la variable que queremos eliminar. En este caso la variable será el índice del array que queremos eliminar. La sintaxis es la siguiente:
+
+~~~php
+unset ( mixed $var [, mixed $... ] ) : void
+~~~
+
+> La función `unset()` nos permite eliminar cualquier tipo de variable.
+
+Por lo tanto, si tenemos el siguiente array:
+
+~~~php
+<?php
+
+$nombres = [
+    "Luis",
+    "Marta",
+    "Víctor"
+    ];
+?>
+~~~
+
+Podremos eliminar el índice 1 de la siguiente manera:
+
+~~~php
+<?php
+unset($nombres[1]);
+// Veremos que el índice 1 ya no existe
+echo $nombres[1];
+?>
+~~~
+
+Con la función `unset()` podemos eliminar tanto un índice del array como el array entero si le pasamos por parámetro.
+
+~~~php
+<?php
+unset($nombres);
+?>
+~~~
+
+### Comparación de arrays
+* array_diff
+
+### Array como Mapa Propiedades
+
+### Ordenar Array
+
+### Insertar elemento en array
+
+
+### Arrays multidimensionales o matrices
+Un elemento del array puede ser otro array. Así que podremos tener arrays multidimensionales.
+
+
+
+
+
+
+
+
+## Objetos
+Un tipo de dato puede ser un **objeto**. Un **objeto** es una instanciación de una determinada clase.
+Es decir, si definimos una clase `Cuadrado`.
+
+~~~php
+class Cuadrado {
+
+    private $lado;
+
+    public function __construct($lado) {
+        $this->lado = $lado;
+    }
+
+    public function area(){
+        return $this->lado*2;
+    }
+
+}
+~~~~
+
+Cada vez que la instanciemos mediante el operador `new` tendremos una variable cuyo tipo de dato será un objeto.
+
+~~~php
+$c1 = new Cuadrado($2);
+~~~~
+
+En este caso la variable `$c1` instancia la clase `Cuadrado` y por lo tanto tiene un objeto de tipo `Cuadrado`. 
+
+Podemos convertir una variable con otro tipo de dato a un tipo de dato **objeto** realizando un cast `(object)`.
+
+~~~php
+$objeto = (object)$variable;
+~~~
+
+De esta manera podemos convertir un array:
+
+~~~php
+$numeros = [12,34,54,19,72];
+$obj_numeros = (object)$numeros;
+echo $obj_numeros->{1};
+~~~
+
+En este caso tenemos que saber que las propiedades del objeto serán los nombres de los índices y que deberemos de indicarlos entre llaves {}.
+
+De igual manera podríamos convertir una cadena.
+
+~~~php
+$nombre = "Manual Web";
+$objeto_nombre = (object)$nombre;
+echo $objeto_nombre->scalar;
+~~~
+
+En este caso la propiedad del objeto se llamará `scalar` y será la que contenga el valor convertido.
+
+## Resource
+El tipo de dato **resource** es un tipo de dato que hace referencia a un recurso externo.
+
+## Null
 
 
 [PHP]: {{site.url}}/php/

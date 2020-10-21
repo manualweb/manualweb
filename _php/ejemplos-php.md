@@ -28,6 +28,9 @@ Aquí puedes encontrar un listado de **ejemplos [PHP][PHP] explicados paso a pas
 * Formato Nowdoc
 * Concatenar cadenas
 * Forzar a que un tipo sea cadena
+* Crear un tipo de dato array?
+* Crear un tipo objeto
+* Forzar conversión a objeto
 
 ## Variables y Constantes
 * Volcar el contenido y tipo de una variable
@@ -52,6 +55,14 @@ Aquí puedes encontrar un listado de **ejemplos [PHP][PHP] explicados paso a pas
 * Acceder a un elemento de un array
 * Modificar el elemento de un array
 * Eliminar un elemento de un array
+* Reindexar un array
+* Insertar elemento sin índice
+* Eliminar array completo
+* Comparar arrays
+* Array como mapa de propiedades
+* Crear un array vacío
+* Ordenar un array
+* Rellenar un array
 * [Rotar un array en PHP](http://lineadecodigo.com/php/rotar-un-array-en-php/)
 * [Eliminar elementos duplicados de un array en PHP](http://lineadecodigo.com/php/eliminar-elementos-duplicados-de-un-array-en-php/)
 * [Recorrer un array en PHP](http://lineadecodigo.com/php/recorrer-un-array-en-php/)
@@ -59,6 +70,10 @@ Aquí puedes encontrar un listado de **ejemplos [PHP][PHP] explicados paso a pas
 ## Fechas
 * [Escribir la fecha en PHP](http://lineadecodigo.com/php/escribir-la-fecha-en-php/)
 * [Día de la semana en PHP](http://lineadecodigo.com/php/dia-de-la-semana-en-php/)
+
+## Ficheros
+* Listar ficheros directorio
+* Rellenar array con ficheros directorio
 
 ## Formularios
 * [Recuperar datos de un formulario con PHP](http://lineadecodigo.com/php/recuperar-datos-de-un-formulario-con-php/)
