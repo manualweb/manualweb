@@ -133,6 +133,15 @@ defaults:
     seo:
       type: "WebPage"
 
+- scope:
+    path: _laravel
+    type: laravel
+  values:
+    layout: laravel
+    sectionid: laravel
+    seo:
+      type: "WebPage"
+
 collections:
   java:
     permalink: /:collection/:path/
@@ -154,6 +163,8 @@ collections:
   emberjs:
       output: true
   javaee:
+      output: true
+  laravel:
       output: true
   posts:
     permalink: /blog/:year/:month/:day/:title/

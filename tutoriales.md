@@ -114,6 +114,12 @@ Listado de todos los tutoriales:
           <p class="text-center">Tutorial JSP</p>
         </div>
 -->
+
+        <div class="col-md-2 col-sm-4 col-xs-6">
+          <img src="{{site.baseurl}}/img/logos/laravel.png" alt="Tutorial Laravel" class="img-thumbnail">
+          <p class="text-center">Tutorial Laravel</p>
+        </div>
+
         <div class="col-md-2 col-sm-4 col-xs-6">
           <a href="{{site.baseurl}}/mongodb/"><img src="{{site.baseurl}}/img/logos/mongodb.png" alt="Tutorial MongoDB" class="img-thumbnail">
           <p class="text-center">Tutorial MongoDB</p></a>
