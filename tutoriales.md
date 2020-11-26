@@ -116,8 +116,8 @@ Listado de todos los tutoriales:
 -->
 
         <div class="col-md-2 col-sm-4 col-xs-6">
-          <img src="{{site.baseurl}}/img/logos/laravel.png" alt="Tutorial Laravel" class="img-thumbnail">
-          <p class="text-center">Tutorial Laravel</p>
+          <a href="{{site.baseurl}}/laravel/"><img src="{{site.baseurl}}/img/logos/laravel.png" alt="Tutorial Laravel" class="img-thumbnail">
+          <p class="text-center">Tutorial Laravel</p></a>
         </div>
 
         <div class="col-md-2 col-sm-4 col-xs-6">
