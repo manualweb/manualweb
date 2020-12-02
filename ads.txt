@@ -1,3 +1,4 @@
+google.com, pub-1617825704006857, DIRECT, f08c47fec0942fa0
 vidoomy.com, 59473, DIRECT
 tremorhub.com, 4cywq-a04wk, RESELLER, 1a4e959a1b50034a
 advertising.com, 22762, RESELLER
