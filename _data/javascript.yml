@@ -21,6 +21,7 @@
 
 - title: Otros
   docs:
+  - fechas-javascript
   - errores-javascript
   - promesas-javascript
 

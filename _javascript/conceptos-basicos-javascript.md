@@ -21,7 +21,7 @@ var Straße;
 ## Sentencias y Bloques
 Cada una de las operaciones básicas que ejecutemos en nuestro programa [JavaScript][JavaScript] se denominará **sentencia** y al final de cada **sentencia** utilizaremos el punto y coma (;) para separarlas.
 
-~~~javscript
+~~~javascript
 sentencia;
 ~~~
 
