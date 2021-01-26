@@ -50,6 +50,29 @@ Aquí puedes encontrar un listado de **ejemplos [Javascript][Javascript] explica
 * Definir una función en Javascript
 
 
+# Números
+* Definir un número deciamal
+* Definir un número binario
+* Definir un número octal
+* Definir un número hexadecimal
+* Definir un número exponencial
+
+* Comprobar si es un número NaN
+* Comprobar si el número está en los límites
+* Convertir un número a exponencial
+* Convertir un número a entero
+* Convertir un número a decimal
+* Fijar el número de decimales
+* Ajustar la precisión de un número
+
+
+# Operadores
+* Operador de asignación
+* Asignación por desestructuración (Asignar valores de un array a variables)
+
+
+
+
 ## Errores
 * Crear un objeto Error
 * Crear una Excepción Funcional
