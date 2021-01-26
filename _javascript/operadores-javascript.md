@@ -109,6 +109,76 @@ De esta manera lo que habíamos hecho en tres líneas de código se consigue med
 var [n1,n2,n3] = valores;
 ~~~
 
+## Operadores de Comparación
+Los **operadores de comparación** son aquellos que permiten comparar dos operandos y devolver un valor lógico.
+
+En el caso de que los operandos sean de tipo diferente, [Javascript][Javascript] intenta convertirlos a un mismo tipo para poder compararlos.
+
+| Operador |  Significado 
+|---|---
+| x == y | Devuelve `true` si los operandos son iguales
+| x != y | Devuelve `true` si los operandos son diferentes
+| x === y | Devuelve `true` si los operandos son iguales y son del mismo tipo
+| x !== y | Devuelve `true` si los operandos son diferentes y son del mismo tipo
+| x > y | Devuelve `true` si el operando de la izquierda es mayor que el operando de la derecha.
+| x >= y | Devuelve `true` si el operando de la izquierda es mayor o igual que el operando de la derecha
+| x < y | Devuelve `true` si el operando de la izquierda es menor que el operando de la derecha.
+| x <= y | Devuelve `true` si el operando de la izquierda es menor o igual que el operando de la derecha.
+
+En el caso de las comparaciones estrictas vemos que las comparaciones no son solo del valor si no que también afectan al tipo de dato. Podemos verlo en el siguiente ejemplo cuando comparamos un mismo valor que en un caso es un tipo número y en otro caso es una cadena.
+
+~~~javascript
+let n1 = 1;
+let n2 = "1";
+
+n1 == n2;
+>> true
+
+n1 === n2;
+>> false
+~~~
+
+## Operadores Aritméticos
+Los **operadores artiméticos** son aquellos que toman dos operandos numéricos y ejecutan la operación del operador.
+
+
+| Operador |  Significado 
+|---|---
+| x + y | Suma los dos operandos.
+| x + y | Resta los dos operandos.
+| x * y | Multiplica los dos operandos.
+| x / y | Divide los dos operandos.
+| x % y | Ejecuta el módulos de los dos operandos. Es el resto de una división.
+| ++x | Incrementa en 1 el operando y devuelve el operando
+| x++ | Devuelve el operando e incrementa en 1 el operando.
+| --x | Decrementa el operando y devuelve el operando.
+| x-- | Devuelve el operando y decrementa en 1 el operando.
+| -x | Invierte el valor del operando.
+| +x | Convierte el operando en un número.
+| x ** y | Calcula el exponencial asumiento el operando de la izquierda como base y el operando de la derecha como el exponente. Sería un x <sup>y</sup>.
+
+## Operadores Binarios
+Los **operadores binarios** nos permiten manipular los operandos con operaciones bianrias. Tratando a los operands como cadenas de 32 bits.
+
+Tenemos los siguientes **operadores binarios**:
+
+
+| Operador |  Significado 
+|---|---
+| x & y | Realiza una operación AND binaria. Devuelve 1 en las posiciones de bit dónde las posiciones de los dos operadores tienen un 1.
+| x | y | Realiza una operación OR binaria. Devuelve un cero en las posiciones de bit dónde las posiciones de los dos operadores tienen un 0.
+| x ^ y | Realiza una operación XOR binaria. 
+| ~ x | Realiza una operación NOT binaria.
+| x << y | Realiza un desplazamiento de bits a la izquierda.
+| x >> y | Realiza un desplazamiento de bits a la derecha.
+| x >>> y | Realiza un desplazamiento de bits a la derecha rellenando con ceros.
+
+
+
+
+
+
+
 
 
 [Javascript]: {{site.url}}/javascript/
