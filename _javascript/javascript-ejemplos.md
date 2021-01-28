@@ -70,7 +70,22 @@ Aquí puedes encontrar un listado de **ejemplos [Javascript][Javascript] explica
 * Operador de asignación
 * Asignación por desestructuración (Asignar valores de un array a variables)
 
+* Operador igual estricto ===
+* Cálculo de un exponencial en Javascript ¿Sin Math?
+* ¿Sumar números? ¿Restar? Los que ya haya con Java. Calcular el resto
+* Operaciones binarias (lógicas y de desplazamiento)
+* Calcular potencias del 2 con Javascript
+http://lineadecodigo.com/java/potencias-del-dos-con-desplazamiento-de-bits/
+* ¿Operadors booleanos? Comparar cadenas
+* Concatenar cadenas en Java
+* Operador ternario en Java
+* Par o impar (con operador ternario)
+* Saber el tipo de una variable
+* Validar si una propiedad existe en un objeto. operador in
 
+
+# Cadenas
+* Recorrer caracteres de una cadena.
 
 
 ## Errores
