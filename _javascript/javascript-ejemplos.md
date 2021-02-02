@@ -86,7 +86,7 @@ http://lineadecodigo.com/java/potencias-del-dos-con-desplazamiento-de-bits/
 
 # Cadenas
 * Recorrer caracteres de una cadena.
-
+* Tamaño de una cadena
 
 ## Errores
 * Crear un objeto Error
