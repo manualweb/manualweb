@@ -140,28 +140,81 @@ console.log(frase);
 ~~~
 
 ### Dividir cadenas
+En el caso de que queramos dividir el contenido tenemos el método `.split()` del objeto `String`.
 
+* `split(separador)`, dada una cadena crea una división de los elementos atendiendo al separador pasado como parámetro. Nos devuelve un array con las cadenas de resultado.
 
+Así el uso de `split` es muy extendido cuando tenemos una cadena con elementos delimitados por un separador y queremos generar una lista. Por ejemplo podríamos tener la siguiente división de cadenas.
 
-split	Divide un objeto String en un arreglo de cadenas separando la cadena en subcadenas.
-slice	Extrae una sección de una cadena y devuelve una nueva cadena.
+~~~javascript
+let cadena='casa,arbol,jardín,pelota,columpio';
+let elementos = cadena.split(',');
+for (elemento in elementos)
+  console.log(elementos[elemento]);
+~~~
 
+### Extraer cadenas
+Para poder extraer cadenas para obtener nuevas cadenas tenemos varias alternativas:
 
-substring, substr	Devuelve el subconjunto especificado de la cadena, ya sea especificando los índices inicial y final o el índice inicial y una longitud.
+* `slice(inicio,fin)`, extrae una parte de la cadena y genera una nueva. Lo que hace es extraer de inicio a fin. Pero estos índices pueden ser negativos. En este caso el valor negativo es igual a la longitud de la cadena menos el número negativo.
+* `substring(indiceInicio,indiceFin)`, en este caso extrae la cadena desde el índice inicio hasta el índice final. Siendo siempre índices positivos.
 
+Así, si queremos extraer los 6 últimos caracteres, menos el último podríamos realizarlo de la siguiente forma mediante `slice()`:
+
+~~~javascript
+let cadena = 'Yo soy una frase.';
+console.log(cadena.slice(-6,-1));
+~~~
+
+Y si queremos los 6 primeros podemos utilizar `substring()`:
+~~~javascript
+let cadena = 'Yo soy una frase.';
+console.log(cadena.slice(0,6));
+~~~
 
 Además podemos combinar el método `.substring()` con el método `.indexOf()` para para poder calcular el número de ocurrencias de una palabra dentro de una frase.
 
 ~~~javascript
 let frase = "Todo pasa y todo queda, pero lo nuestro es pasar haciendo caminos, caminos sobre la mar";
 let palabra = "caminos";
-let contador = 
+let contador = 0;
 
+while (frase.indexOf(palabra)>0) {
+  contador++;
+  frase = frase.substring(frase.indexOf(palabra)+palabra.length);
+}
+
+console.log("La palabra " + palabra + " aparece " + contador + " veces.");
 ~~~
 
 
 ### Usar expresiones regulares
 match, matchAll, replace, replaceAll, search	Trabaja con expresiones regulares.
+
+
+* `match(expresion_regular)`, devuelve un array con todas las ocurrencias que esten en la cadena y que cuadren con la expresión regular.
+* `matchAll(expresion_regular)`, devuelve todas
+
+
+~~~javascript
+let cadena = "Alemania, Austria, España, Estonia, Italia, Irlanda, Uruguay, Uganda";
+elementos = cadena.match(/E[A-zñ]*/gm);
+console.log(elementos);
+for (elemento in elementos)
+  console.log(elementos[elemento]);
+~~~
+
+
+~~~javascript
+let cadena = "Alemania, Austria, España, Estonia, Italia, Irlanda, Uruguay, Uganda";
+elementos = cadena.matchAll(/E[A-zñ]*/gm);
+
+for (elemento in elementos)
+  console.log("Elemento " + elementos[elemento][0] + " en posición " + elementos[elemento][1]);
+
+~~~
+
+
 
 ### Convertir contenido de la cadena
 toLowerCase, toUpperCase	 Devuelve la cadena en minúsculas o mayúsculas, respectivamente.
