@@ -281,7 +281,6 @@ console.log(frase);
 
 
 ### Convertir contenido de la cadena
-
 El objeto `String` también nos da la capacidad de convertir el contenido de las cadenas de texto. Así nos ofrece una serie de métodos como:
 
 * `toLowerCase()`, que convierte la cadena a minúsculas.
@@ -290,6 +289,7 @@ El objeto `String` también nos da la capacidad de convertir el contenido de las
 * `repeat()`, repite la cadena tantas veces como indiquemos como parámetro al método.
 * `trim()`, elimina los espacios en blanco del principio y final de cadena.
 
+De esta manera podemos convertir una cadena a minúsculas mediante el método `.toLowerCase()` de la siguiente manera:
 
 ~~~javascript
 let cadena = "Soy una CADENA de TEXTO";
@@ -297,12 +297,15 @@ cadena = cadena.toLowerCase();
 console.log(cadena);
 ~~~
 
+O bien podemos convertirlo a mayúsculas, en este caso mediante el método `.toUpperCase()`, con las siguientes líneas de código:
 
 ~~~javascript
 let cadena = "Soy una CADENA de TEXTO";
 cadena = cadena.toUpperCase();
 console.log(cadena);
 ~~~
+
+Con una cosa que tenemos que tener cuidado es cuando utilizamos cadenas en Unicode. Ya que dos textos que al principio nos pueden parecer iguales no lo son. Así que es bueno que si trabajamos con cadenas en Unicode utilicemos el método `.normalize()`, sobre todo si intentamos compararlas.
 
 ~~~javascript
 let c1 = 'caf\u00E9';
@@ -328,10 +331,14 @@ else
   console.log("Son dos cadenas diferentes");
 ~~~
 
+Si queremos repetir el contenido de una cadena podemos acudiar al método `.repeat()` e indicar las veces que se debe de repetir la cadena:
+
 ~~~javascript
 let cadena = "Hola ";
 console.log(cadena.repeat(2));
 ~~~
+
+y en el caso de que haya que eliminar los espacios el método `.trim()` nos eliminará los espacios de principio y del final:
 
 ~~~javascript
 let cadena_con_espacios = "  soy una cadena con espacios al inicio y fin      ";
