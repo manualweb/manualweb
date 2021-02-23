@@ -6,10 +6,12 @@ permalink: /javascript/ejemplos-javascript/
 Aquí puedes encontrar un listado de **ejemplos [Javascript][Javascript] explicados paso a paso** desde nuestra web [Línea de Código][LDC]. Espero que os sean de gran utilidad.
 
 ## Básicos
-* Hola Mundo en Javascript
+* ![Hola Mundo en Javascript](http://lineadecodigo.com/javascript/hola-mundo-en-javascript/)
 * Definir una constante
 * Variable local
 * Variable global
+* ![Mostrar avisos en Javascript](http://lineadecodigo.com/javascript/mostrar-avisos-en-javascript/)
+* ![Confirmar datos en Javascript](http://lineadecodigo.com/javascript/confirmar-datos-en-javascript/)
 
 ## Literales
 * Literales Array

@@ -188,13 +188,13 @@ console.log("La palabra " + palabra + " aparece " + contador + " veces.");
 ~~~
 
 
-### Usar expresiones regulares
-match, matchAll, replace, replaceAll, search	Trabaja con expresiones regulares.
+### Búsquedas con expresiones regulares.
 
+* `match(expresion_regular)`, realiza una búsqueda de la expresión regular sobre la cadena y devuelve un array con todas las ocurrencias que esten en la cadena y que cuadren con la expresión regular.
+* `matchAll(expresion_regular)`, realiza una búsqueda de la expresión regular sobre la cadena y devuelve un iterador de expresiones regulares dónde cada elemento iterable contiene el valor encontrado, el índice dónde se encontró y la cadena sobre la que se ha buscado.
+* `search(expresion_regular)`, realizar una búsqueda de la expresión regular en la cadena y devuelve el primer índice en el que se encuentra la expresión regular. Vendría a ser como el método `indexof()` pero mediante una expresión regular.
 
-* `match(expresion_regular)`, devuelve un array con todas las ocurrencias que esten en la cadena y que cuadren con la expresión regular.
-* `matchAll(expresion_regular)`, devuelve todas
-
+De esta forma, una sencilla búsqueda mediante expresiones regulares la podríamos hacer de la siguiente forma con el método `match()`.
 
 ~~~javascript
 let cadena = "Alemania, Austria, España, Estonia, Italia, Irlanda, Uruguay, Uganda";
@@ -204,24 +204,141 @@ for (elemento in elementos)
   console.log(elementos[elemento]);
 ~~~
 
+Y en el caso de querer recibir más información podemos utilizar el método `matchAll()` y luego iterar sobre los elementos. Vemos que nos ayudamos de una estructura `for...of` para poder recorrer dichos elementos.
 
 ~~~javascript
 let cadena = "Alemania, Austria, España, Estonia, Italia, Irlanda, Uruguay, Uganda";
 elementos = cadena.matchAll(/E[A-zñ]*/gm);
 
-for (elemento in elementos)
-  console.log("Elemento " + elementos[elemento][0] + " en posición " + elementos[elemento][1]);
+for (elemento of elementos)
+  console.log("Elemento " + elemento[0] + " en posición " + elemento["index"]);
+~~~
 
+Podríamos realizar la implementación de un buscador de palabras mediante expresiones regulares mediante yna combinación del método `search()` y el método `substring`.
+
+~~~javascript
+let frase = "Alemania, Austria, España, Estonia, Italia, Irlanda, Uruguay, Uganda";
+let contador = 0;
+
+while (frase.search(/E[A-zñ]*/gm)>0) {
+  contador++;
+  frase = frase.substring(frase.search(/E[A-zñ]*/gm)+1);
+}
+
+console.log("La expresión \"/E[A-zñ]*/gm\" aparece " + contador + " veces.");
 ~~~
 
 
+## Reemplazar contenido
+El objeto `String` nos ofrece un par de métodos para poder reemplazar contenido de una cadena. En este caso la cadena de búsqueda puede ser una cadena normal o una expresión regular.
+
+* `replace(cadena|expresión,nueva_cadena)`, reemplaza **la primera coincidencia** de cadena o de la expresión regular por el valor nueva_cadena.
+* `replaceAll(cadena|expresión,nueva_cadena)`, reemplaza **todas las coincidencias** de cadena o de la expresión regular por el valor de nueva_cadena.
+
+
+Así podremos hacer una búsqueda y reemplazo de un elemento utilizando el método `replace()` con una cadena de texto.
+
+~~~javascript
+let frase = "Alemania, Austria, España, Estonia, Italia, Irlanda, Uruguay, Uganda";
+console.log(frase);
+
+frase = frase.replace("Estonia","Lituania");
+console.log(frase);
+~~~
+
+O utilizando el método `replace()` con una expresiín regular:
+
+~~~javascript
+let frase = "Alemania, Austria, España, Estonia, Italia, Irlanda, Uruguay, Uganda";
+console.log(frase);
+
+frase = frase.replace(/I[A-zñ]*/,"Descartado");
+console.log(frase);
+~~~
+
+Si queremos reemplazar todas la coincidencias utilizaremos el método `replaceAll()` mediante una cadena:
+
+~~~javascript
+let frase = "Todo pasa y todo queda, pero lo nuestro es pasar haciendo caminos, caminos sobre la mar";
+console.log(frase);
+
+frase = frase.replaceAll("caminos","puentes");
+console.log(frase);
+~~~
+
+O bien el método `replaceAll()` mediante una expresión regular:
+
+
+~~~javascript
+let frase = "Alemania, Austria, España, Estonia, Italia, Irlanda, Uruguay, Uganda";
+console.log(frase);
+
+frase = frase.replaceAll(/I[A-zñ]*/gm,"Descartado");
+console.log(frase);
+~~~
+
+> En el caso de que utilicemos `replaceAll()` mediante una expresión regular deberemos de incluir el modificador **g** que aplica la búsqueda global. Si utilizamos el modificador **g** en el método `replace()` funcionará igual que el método `replaceAll()`
+
 
 ### Convertir contenido de la cadena
-toLowerCase, toUpperCase	 Devuelve la cadena en minúsculas o mayúsculas, respectivamente.
-normalize	Devuelve la forma de normalización Unicode del valor de la cadena llamada.
-repeat	Devuelve una cadena que consta de los elementos del objeto repetidos las veces indicadas.
-trim	Recorta los espacios en blanco desde el principio y el final de la cadena
 
+El objeto `String` también nos da la capacidad de convertir el contenido de las cadenas de texto. Así nos ofrece una serie de métodos como:
+
+* `toLowerCase()`, que convierte la cadena a minúsculas.
+* `toUpperCase()`, que convierte la cadena a mayúsuculas
+* `normalize()`, devuelve normalizados los códigos Unicode de la cadena para que puedan ser analizadas.
+* `repeat()`, repite la cadena tantas veces como indiquemos como parámetro al método.
+* `trim()`, elimina los espacios en blanco del principio y final de cadena.
+
+
+~~~javascript
+let cadena = "Soy una CADENA de TEXTO";
+cadena = cadena.toLowerCase();
+console.log(cadena);
+~~~
+
+
+~~~javascript
+let cadena = "Soy una CADENA de TEXTO";
+cadena = cadena.toUpperCase();
+console.log(cadena);
+~~~
+
+~~~javascript
+let c1 = 'caf\u00E9';
+let c2 = 'cafe\u0301';
+
+console.log(c1);
+console.log(c2);
+
+if (c1==c2)
+  console.log("Son dos cadenas iguales");
+else
+  console.log("Son dos cadenas diferentes");
+
+c1 = c1.normalize();
+c2 = c2.normalize();
+
+console.log(c1);
+console.log(c2);
+
+if (c1==c2)
+  console.log("Son dos cadenas iguales");
+else
+  console.log("Son dos cadenas diferentes");
+~~~
+
+~~~javascript
+let cadena = "Hola ";
+console.log(cadena.repeat(2));
+~~~
+
+~~~javascript
+let cadena_con_espacios = "  soy una cadena con espacios al inicio y fin      ";
+console.log("La cadena tiene un tamaño de :" + cadena_con_espacios.length);
+let cadena_sin_espacios = cadena_con_espacios.trim();
+console.log("La cadena tiene un tamaño de :" + cadena_sin_espacios.length);
+~~~
 
 
 [Javacript]: {{site.url}}/javascript/
