@@ -220,15 +220,16 @@ Las hojas de estilos se almacenan en ficheros .css. Así que podemos utilizar el
 <link href="style.css" rel="style" type="text/css"/>
 ~~~
 
-[ManualHTML]: http://www.manualweb.net/tutorial-html/
-[A]: http://www.w3api.com/wiki/HTML:A[Href]: http://www.w3api.com/wiki/HTML:Href
-[Target]: http://www.w3api.com/wiki/HTML:Target
-[Title]: http://www.w3api.com/wiki/HTML:Title
-[Name]: http://www.w3api.com/wiki/HTML:Name
-[LINK]: http://www.w3api.com/wiki/HTML:LINK
-[HEAD]: http://www.w3api.com/wiki/HTML:HEAD
-[rel]: http://www.w3api.com/wiki/HTML:LINK.rel
-[Type]: http://www.w3api.com/wiki/HTML:Type
-[FRAMESET]: http://w3api.com/wiki/HTML:FRAMESET
-[FRAME]: http://w3api.com/wiki/HTML:FRAME
+[ManualHTML]: http://www.manualweb.net/html/
+[A]: http://www.w3api.com/HTML/a
 [Href]: http://www.w3api.com/HTML/a/href
+[Target]: http://www.w3api.com/HTML/a/target
+[Title]: http://www.w3api.com/wiki/title
+[Name]: http://www.w3api.com/wiki/a
+[LINK]: http://www.w3api.com/HTML/link
+[HEAD]: http://www.w3api.com/HTML/head
+[rel]: http://www.w3api.com/HTML/link/rel
+[Type]: http://www.w3api.com/HTML/link/type
+[FRAMESET]: http://w3api.com/HTML/frameset
+[FRAME]: http://w3api.com/HTML/frame
+
