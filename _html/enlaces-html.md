@@ -231,3 +231,4 @@ Las hojas de estilos se almacenan en ficheros .css. Así que podemos utilizar el
 [Type]: http://www.w3api.com/wiki/HTML:Type
 [FRAMESET]: http://w3api.com/wiki/HTML:FRAMESET
 [FRAME]: http://w3api.com/wiki/HTML:FRAME
+[Href]: http://www.w3api.com/HTML/a/href
