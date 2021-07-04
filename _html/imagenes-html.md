@@ -98,10 +98,10 @@ Otros formatos que también son aceptados:
 * **BMP**, son imágenes de mapas de bits. Se pueden encontrar con extensión .bmp y .dib
 * **BMP ICO y PNG ICO**, formato para representar iconos en el sistema operativo Windows. Los iconos suelen contener diferentes tamaños y densidad de pixels. De esta forma pueden ser escalados.
 
- [ManualHTML]: http://www.manualweb.net/tutorial-html/
- [ManualCSS]: http://www.manualweb.net/tutorial-css/
- [IMG]: http://w3api.com/wiki/HTML:IMG
- [Src]: http://www.w3api.com/wiki/HTML:Src
- [Width]: http://www.w3api.com/wiki/HTML:Width
- [Height]: http://www.w3api.com/wiki/HTML:Height
- [Alt]: http://www.w3api.com/wiki/HTML:Alt
+ [ManualHTML]: http://www.manualweb.net/html/
+ [ManualCSS]: http://www.manualweb.net/css/
+ [IMG]: http://w3api.com/HTML/img
+ [Src]: http://www.w3api.com/HTML/img/src
+ [Width]: http://www.w3api.com/HTML/img/width
+ [Height]: http://www.w3api.com/HTML/img/height
+ [Alt]: http://www.w3api.com/HTML/img/alt

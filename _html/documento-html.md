@@ -81,8 +81,8 @@ Con la estructura del documento [HTML][ManualHTML] que hemos visto podemos ver c
 </html>
 ~~~
 
-[ManualHTML]: http://www.manualweb.net/tutorial-html/
-[HTML]: http://www.w3api.com/wiki/HTML:HTML
-[HEAD]: http://www.w3api.com/wiki/HTML:HEAD
-[TITLE]: http://www.w3api.com/wiki/HTML:TITLE
-[BODY]: http://www.w3api.com/wiki/HTML:BODY
+[ManualHTML]: http://www.manualweb.net/html/
+[HTML]: http://www.w3api.com/HTML/html
+[HEAD]: http://www.w3api.com/HTML/head
+[TITLE]: http://www.w3api.com/HTML/title
+[BODY]: http://www.w3api.com/HTML/body

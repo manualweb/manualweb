@@ -58,14 +58,14 @@ Por ejemplo podríamos tener la siguiente agrupación en línea.
 
 Es muy normal que los agrupadores, ya sean o bien [div][DIV], o bien [span][SPAN] lleven el [atributo id][id] o [class][class], ya que a posteriori serán manipulados mediante [hojas de estilo CSS][ManualCSS] utilizando dichos identificadores.
 
-[ManualHTMl]: http://www.manualweb.net/tutorial-html/
-[P]: http://www.w3api.com/wiki/HTML:P
-[FORM]: http://www.w3api.com/wiki/HTML:FORM
-[H1]: http://www.w3api.com/wiki/HTML:H1
-[A]: http://www.w3api.com/wiki/HTML:A
-[IMG]: http://www.w3api.com/wiki/HTML:IMG
-[DIV]: http://www.w3api.com/wiki/HTML:DIV
-[SPAN]: http://www.w3api.com/wiki/HTML:SPAN
-[id]: http://www.w3api.com/wiki/HTML:Id
-[class]: http://www.w3api.com/wiki/HTML:Class
-[ManualCSS]: http://www.manualweb.net/tutorial-css/
+[ManualHTMl]: http://www.manualweb.net/html/
+[P]: http://www.w3api.com/HTML/p
+[FORM]: http://www.w3api.com/HTML/form
+[H1]: http://www.w3api.com/HTML:h1
+[A]: http://www.w3api.com/HTML/a
+[IMG]: http://www.w3api.com/HTML/img
+[DIV]: http://www.w3api.com/HTML/div
+[SPAN]: http://www.w3api.com/HTML/span
+[id]: http://www.w3api.com/HTML/id
+[class]: http://www.w3api.com/HTML/class
+[ManualCSS]: http://www.manualweb.net/css/

@@ -249,16 +249,16 @@ Cuervo
 Content-Disposition: form-data; name="fichero"; filename="fotografia.png"
 Content-Type: image/png</pre>
 
-[ManualHTML]: http://www.manualweb.net/tutorial-html/
-[LABEL]: http://www.w3api.com/wiki/HTML:LABEL
-[id]: http://www.w3api.com/wiki/HTML:Id
-[FIELDSET]: http://www.w3api.com/wiki/HTML:FIELDSET
-[LEGEND]: http://www.w3api.com/wiki/HTML:LEGEND
-[INPUT]: http://www.w3api.com/wiki/HTML:INPUT
-[TEXTAREA]: http://www.w3api.com/wiki/HTML:TEXTAREA
-[FORM]: http://www.w3api.com/wiki/HTML:FORM
-[action]: http://www.w3api.com/wiki/HTML:Action
-[ManualJava]: http://www.manualweb.net/tutorial-java/
-[ManualPHP]: http://www.manualweb.net/tutorial-php/
-[method]: http://www.w3api.com/wiki/HTML:Method
-[name]: http://www.w3api.com/wiki/HTML:Name
+[ManualHTML]: http://www.manualweb.net/html/
+[LABEL]: http://www.w3api.com/HTML/label
+[id]: http://www.w3api.com/HTML/id
+[FIELDSET]: http://www.w3api.com/HTML/fieldset
+[LEGEND]: http://www.w3api.com/HTML/legend
+[INPUT]: http://www.w3api.com/HTML/input
+[TEXTAREA]: http://www.w3api.com/HTML/textarea
+[FORM]: http://www.w3api.com/HTML/form
+[action]: http://www.w3api.com/HTML/form/action
+[ManualJava]: http://www.manualweb.net/java/
+[ManualPHP]: http://www.manualweb.net/php/
+[method]: http://www.w3api.com/wiki/HTML/form/method
+[name]: http://www.w3api.com/wiki/HTML/form/name

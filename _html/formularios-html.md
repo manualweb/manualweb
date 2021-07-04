@@ -357,19 +357,19 @@ Dependiendo del tipo que asignamos al [atributo type][type] obtendremos un compo
 * **button**, crea un botón normal.
 
 [Marker]: {{site.baseurl}}/img/marker.png
-[ManualHTML]: http://www.manualweb.net/tutorial-html/
-[FORM]: http://www.w3api.com/wiki/HTML:FORM
-[INPUT]: http://www.w3api.com/wiki/HTML:INPUT
-[checked]: http://www.w3api.com/wiki/HTML:INPUT.checked
-[name]: http://www.w3api.com/wiki/HTML:Name
-[src]: http://www.w3api.com/wiki/HTML:Src
-[alt]: http://www.w3api.com/wiki/HTML:Alt
-[TEXTAREA]: http://www.w3api.com/wiki/HTML:TEXTAREA
-[rows]: http://www.w3api.com/wiki/HTML:TEXTAREA.rows
-[cols]: http://www.w3api.com/wiki/HTML:TEXTAREA.cols
-[SELECT]: http://www.w3api.com/wiki/HTML:SELECT
-[OPTION]: http://www.w3api.com/wiki/HTML:OPTION
-[selected]: http://www.w3api.com/wiki/HTML:Selected
-[OPTGROUP]: http://www.w3api.com/wiki/HTML:OPTGROUP
-[BUTTON]: http://www.w3api.com/wiki/HTML:BUTTON
-[type]: http://www.w3api.com/wiki/HTML:Type
+[ManualHTML]: http://www.manualweb.net/html/
+[FORM]: http://www.w3api.com/HTML/form
+[INPUT]: http://www.w3api.com/HTML/input
+[checked]: http://www.w3api.com/HTML/input/checked
+[name]: http://www.w3api.com/HTML/name
+[src]: http://www.w3api.com/HTML/img/src
+[alt]: http://www.w3api.com/HTML/img/alt
+[TEXTAREA]: http://www.w3api.com/HTML/textarea
+[rows]: http://www.w3api.com/HTML/textarea/rows
+[cols]: http://www.w3api.com/HTML/textaera/cols
+[SELECT]: http://www.w3api.com/HTML/select
+[OPTION]: http://www.w3api.com/HTML/option
+[selected]: http://www.w3api.com/HTML/option/selected
+[OPTGROUP]: http://www.w3api.com/HTML/optgroup
+[BUTTON]: http://www.w3api.com/HTML/button
+[type]: http://www.w3api.com/HTML/input/type

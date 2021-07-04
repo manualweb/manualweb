@@ -1534,5 +1534,5 @@ A modo de apoyo aquí tenemos una guía de colores generales, sus valores hexade
 
 [ManualHTML]: http://www.manualweb.net/tutorial-html/
 [ManualCSS]: http://www.manualweb.net/tutorial-css/
-[STYLE]: http://www.w3api.com/wiki/HTML:Style
-[BackgroundColor]: http://www.w3api.com/wiki/CSS:Background-color
+[STYLE]: http://www.w3api.com/HTML/style
+[BackgroundColor]: http://www.w3api.com/CSS/background-color

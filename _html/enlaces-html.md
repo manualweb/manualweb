@@ -224,8 +224,8 @@ Las hojas de estilos se almacenan en ficheros .css. Así que podemos utilizar el
 [A]: http://www.w3api.com/HTML/a
 [Href]: http://www.w3api.com/HTML/a/href
 [Target]: http://www.w3api.com/HTML/a/target
-[Title]: http://www.w3api.com/wiki/title
-[Name]: http://www.w3api.com/wiki/a
+[Title]: http://www.w3api.com/HTML/title
+[Name]: http://www.w3api.com/HTML/a
 [LINK]: http://www.w3api.com/HTML/link
 [HEAD]: http://www.w3api.com/HTML/head
 [rel]: http://www.w3api.com/HTML/link/rel
