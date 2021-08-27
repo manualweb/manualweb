@@ -125,6 +125,15 @@ defaults:
       type: "WebPage"
 
 - scope:
+    path: _googlemaps
+    type: googlemaps
+  values:
+    layout: googlemaps
+    sectionid: googlemaps
+    seo:
+      type: "WebPage"
+
+- scope:
     path: _html
     type: html
   values:
@@ -185,6 +194,8 @@ collections:
   css:
       output: true
   emberjs:
+      output: true
+  googlemaps:
       output: true
   javaee:
       output: true

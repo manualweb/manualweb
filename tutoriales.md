@@ -55,8 +55,8 @@ Listado de todos los tutoriales:
         </div>
 -->
         <div class="col-md-2 col-sm-4 col-xs-6">
-          <img src="{{site.baseurl}}/img/logos/google-maps.png" alt="Tutorial Google Maps" class="img-thumbnail">
-          <p class="text-center">Tutorial Google Maps</p>
+          <a href="{{site.baseurl}}/google-maps/"><img src="{{site.baseurl}}/img/logos/google-maps.png" alt="Tutorial Google Maps" class="img-thumbnail">
+          <p class="text-center">Tutorial Google Maps</p></a>
         </div>
 
         <div class="col-md-2 col-sm-4 col-xs-6">
