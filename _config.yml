@@ -61,6 +61,14 @@ defaults:
     seo:
       type: "WebPage"
 
+- scope:
+    path: _css
+    type: css
+  values:
+    layout: css
+    sectionid: css
+    seo:
+      type: "WebPage"
 
 - scope:
     path: _emberjs
@@ -173,6 +181,8 @@ collections:
   asp:
       output: true
   bootstrap:
+      output: true
+  css:
       output: true
   emberjs:
       output: true

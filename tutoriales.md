@@ -34,8 +34,8 @@ Listado de todos los tutoriales:
         </div>
 
         <div class="col-md-2 col-sm-4 col-xs-6">
-          <img src="{{site.baseurl}}/img/logos/css.png" alt="Tutorial CSS" class="img-thumbnail">
-          <p class="text-center">Tutorial CSS</p>
+          <a href="{{site.baseurl}}/css"><img src="{{site.baseurl}}/img/logos/css.png" alt="Tutorial CSS" class="img-thumbnail">
+          <p class="text-center">Tutorial CSS</p></a>
         </div>
 
         <div class="col-md-2 col-sm-4 col-xs-6">
