@@ -4,7 +4,7 @@ permalink: /emberjs/
 redirect_from: /tutorial-emberjs/
 ---
 
-{% include contenido.html items=site.dataemberjs site=siteemberjs name="emberjs" %}
+{% include contenido.html items=site.data.emberjs site=site.emberjs name="emberjs" %}
 
 
 ### Descargar Manual EmberJS
