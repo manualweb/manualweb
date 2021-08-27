@@ -53,6 +53,16 @@ defaults:
       type: "WebPage"
 
 - scope:
+    path: _bootstrap
+    type: bootstrap
+  values:
+    layout: bootstrap
+    sectionid: bootstrap
+    seo:
+      type: "WebPage"
+
+
+- scope:
     path: _emberjs
     type: emberjs
   values:
@@ -161,6 +171,8 @@ collections:
   typescript:
       output: true
   asp:
+      output: true
+  bootstrap:
       output: true
   emberjs:
       output: true

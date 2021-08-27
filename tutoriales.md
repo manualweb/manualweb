@@ -29,8 +29,8 @@ Listado de todos los tutoriales:
         </div>
 
         <div class="col-md-2 col-sm-4 col-xs-6">
-          <img src="{{site.baseurl}}/img/logos/bootstrap.png" alt="Tutorial Bootstrap" class="img-thumbnail">
-          <p class="text-center">Tutorial Bootstrap</p>
+          <a href="{{site.baseurl}}/bootstrap"><img src="{{site.baseurl}}/img/logos/bootstrap.png" alt="Tutorial Bootstrap" class="img-thumbnail">
+          <p class="text-center">Tutorial Bootstrap</p></a>
         </div>
 
         <div class="col-md-2 col-sm-4 col-xs-6">
