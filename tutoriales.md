@@ -21,10 +21,11 @@ Listado de todos los tutoriales:
           <img src="{{site.baseurl}}/img/logos/angularjs.png" alt="Tutorial AngularJS" class="img-thumbnail">
           <p class="text-center">Tutorial AngularJS</p>
         </div>
+-->
 
         <div class="col-md-2 col-sm-4 col-xs-6">
-          <img src="{{site.baseurl}}/img/logos/asp.png" alt="Tutorial ASP" class="img-thumbnail">
-          <p class="text-center">Tutorial ASP</p>
+          <a href="{{site.baseurl}}/asp"><img src="{{site.baseurl}}/img/logos/asp.png" alt="Tutorial ASP" class="img-thumbnail">
+          <p class="text-center">Tutorial ASP</p></a>
         </div>
 
         <div class="col-md-2 col-sm-4 col-xs-6">
@@ -36,11 +37,9 @@ Listado de todos los tutoriales:
           <img src="{{site.baseurl}}/img/logos/css.png" alt="Tutorial CSS" class="img-thumbnail">
           <p class="text-center">Tutorial CSS</p>
         </div>
--->
-
 
         <div class="col-md-2 col-sm-4 col-xs-6">
-          <a href="{{site.baseurl}}/emberjs/"><img src="{{site.baseurl}}/img/logos/emberjs.png" alt="Tutorial EmberJS" class="img-thumbnail">
+          <a href="{{site.baseurl}}/emberjs"><img src="{{site.baseurl}}/img/logos/emberjs.png" alt="Tutorial EmberJS" class="img-thumbnail">
           <p class="text-center">Tutorial EmberJS</p></a>
         </div>
 
@@ -54,7 +53,7 @@ Listado de todos los tutoriales:
           <img src="{{site.baseurl}}/img/logos/golang.png" alt="Tutorial Go" class="img-thumbnail">
           <p class="text-center">Tutorial Go</p>
         </div>
-
+-->
         <div class="col-md-2 col-sm-4 col-xs-6">
           <img src="{{site.baseurl}}/img/logos/google-maps.png" alt="Tutorial Google Maps" class="img-thumbnail">
           <p class="text-center">Tutorial Google Maps</p>
@@ -64,7 +63,7 @@ Listado de todos los tutoriales:
           <img src="{{site.baseurl}}/img/logos/groovy.png" alt="Tutorial Groovy" class="img-thumbnail">
           <p class="text-center">Tutorial Groovy</p>
         </div>
--->
+
 
         <div class="col-md-2 col-sm-4 col-xs-6">
           <a href="{{site.baseurl}}/html/"><img src="{{site.baseurl}}/img/logos/html.png" alt="Tutorial HTML" class="img-thumbnail">
@@ -98,12 +97,12 @@ Listado de todos los tutoriales:
           <p class="text-center">Tutorial Javascript</p></a>
         </div>
 
-<!--
         <div class="col-md-2 col-sm-4 col-xs-6">
           <img src="{{site.baseurl}}/img/logos/jquery.png" alt="Tutorial jQuery" class="img-thumbnail">
           <p class="text-center">Tutorial jQuery</p>
         </div>
 
+<!--
         <div class="col-md-2 col-sm-4 col-xs-6">
           <img src="{{site.baseurl}}/img/logos/jquery-mobile.png" alt="Tutorial jQuery Mobile" class="img-thumbnail">
           <p class="text-center">Tutorial jQuery Mobile</p>
@@ -118,32 +117,38 @@ Listado de todos los tutoriales:
           <a href="{{site.baseurl}}/mongodb/"><img src="{{site.baseurl}}/img/logos/mongodb.png" alt="Tutorial MongoDB" class="img-thumbnail">
           <p class="text-center">Tutorial MongoDB</p></a>
         </div>
-<!--
+
         <div class="col-md-2 col-sm-4 col-xs-6">
           <img src="{{site.baseurl}}/img/logos/nodejs.png" alt="Tutorial NodeJS" class="img-thumbnail">
           <p class="text-center">Tutorial NodeJS</p>
         </div>
+
 
         <div class="col-md-2 col-sm-4 col-xs-6">
           <img src="{{site.baseurl}}/img/logos/php.png" alt="Tutorial PHP" class="img-thumbnail">
           <p class="text-center">Tutorial PHP</p>
         </div>
 
+<!--
+
         <div class="col-md-2 col-sm-4 col-xs-6">
           <img src="{{site.baseurl}}/img/logos/polymer.png" alt="Tutorial Polymer" class="img-thumbnail">
           <p class="text-center">Tutorial Polymer</p>
         </div>
+-->
 
         <div class="col-md-2 col-sm-4 col-xs-6">
           <img src="{{site.baseurl}}/img/logos/python.png" alt="Tutorial Python" class="img-thumbnail">
           <p class="text-center">Tutorial Python</p>
         </div>
 
+
         <div class="col-md-2 col-sm-4 col-xs-6">
           <img src="{{site.baseurl}}/img/logos/reactjs.png" alt="Tutorial ReactJS" class="img-thumbnail">
           <p class="text-center">Tutorial ReactJS</p>
         </div>
 
+<!--
         <div class="col-md-2 col-sm-4 col-xs-6">
           <img src="{{site.baseurl}}/img/logos/rust.png" alt="Tutorial Rust" class="img-thumbnail">
           <p class="text-center">Tutorial Rust</p>
@@ -154,11 +159,13 @@ Listado de todos los tutoriales:
           <p class="text-center">Tutorial Spring</p>
         </div>
 
+-->
+
         <div class="col-md-2 col-sm-4 col-xs-6">
           <img src="{{site.baseurl}}/img/logos/sql.png" alt="Tutorial SQL" class="img-thumbnail">
           <p class="text-center">Tutorial SQL</p>
         </div>
--->
+
         <div class="col-md-2 col-sm-4 col-xs-6">
           <a href="{{site.baseurl}}/svg/"><img src="{{site.baseurl}}/img/logos/svg.png" alt="Tutorial SVG" class="img-thumbnail">
           <p class="text-center">Tutorial SVG</p></a>
@@ -168,7 +175,7 @@ Listado de todos los tutoriales:
           <a href="{{site.baseurl}}/typescript/"><img src="{{site.baseurl}}/img/logos/typescript.png" alt="Tutorial TypeScript" class="img-thumbnail">
           <p class="text-center">Tutorial TypeScript</p></a>
         </div>
-<!--
+
         <div class="col-md-2 col-sm-4 col-xs-6">
           <img src="{{site.baseurl}}/img/logos/xml.png" alt="Tutorial XML" class="img-thumbnail">
           <p class="text-center">Tutorial XML</p>
@@ -178,6 +185,6 @@ Listado de todos los tutoriales:
           <img src="{{site.baseurl}}/img/logos/xslt.png" alt="Tutorial XSLT" class="img-thumbnail">
           <p class="text-center">Tutorial XSLT</p>
         </div>
--->
+
     </div>
 </div>

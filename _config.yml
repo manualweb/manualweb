@@ -44,6 +44,15 @@ defaults:
     sectionid: blog
 
 - scope:
+    path: _asp
+    type: asp
+  values:
+    layout: asp
+    sectionid: asp
+    seo:
+      type: "WebPage"
+
+- scope:
     path: _emberjs
     type: emberjs
   values:
@@ -150,6 +159,8 @@ collections:
   svg:
       output: true
   typescript:
+      output: true
+  asp:
       output: true
   emberjs:
       output: true
