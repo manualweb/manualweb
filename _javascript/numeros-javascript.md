@@ -104,4 +104,4 @@ Puedes [consultar todas las constantes  y métodos del objeto `Number` en W3APi]
 
 
 [Javascript]: {{site.url}}/javascript
-[NumberW3Api]: http://www.w3api.com/javascript/number
+[NumberW3Api]: http://www.w3api.com/Javascript/Number/
