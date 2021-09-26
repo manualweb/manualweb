@@ -3,7 +3,7 @@ title: Objeto Math
 permalink: /javascript/objeto-math/
 ---
 
-El lenguaje Javascript nos ofrece el objeto `Math` el cual nos permite realizar una serie de operaciones matemáticas con números de forma sencilla.
+El lenguaje Javascript nos ofrece el objeto [`Math`][ObjetoMath] el cual nos permite realizar una serie de operaciones matemáticas con números de forma sencilla. Para ello nos ofrece un conjunto de métodos y constantes que nos facilitan dichas operaciones.
 
 
 
@@ -60,4 +60,7 @@ sign()	The sign of a number, indicating whether the number is positive, negative
 clz32(),
 imul()	Number of leading zero bits in the 32-bit binary representation.
 The result of the C-like 32-bit multiplication of the two arguments.
+
+
+[ObjetoMath]: https://w3api.com/Javascript/Math/
 
