@@ -8,6 +8,7 @@
   - literales-javascript
   - javascript-vs-java
   - numeros-javascript
+  - fechas-javascript
 
 - title: Operadores Javascript
   docs:
@@ -41,7 +42,6 @@
   - errores-javascript
   - promesas-javascript
   - objeto-math
-  - objeto-date
 
 - title: Contenido de Apoyo
   docs:

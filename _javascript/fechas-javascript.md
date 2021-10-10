@@ -3,7 +3,7 @@ title: Fechas Javascript
 permalink: /javascript/fechas-javascript/
 ---
 
-Lo primero que tenemos que saber a la hora de manejar las fechas en [Javascript][Javascript] no es mediante un tipo de dato fecha dentro del lenguaje. Si no, que nos ofrece el objeto `Date` para poder gestionar las fechas. De esta forma si queremos obtener una fecha utilizaremos este objeto:
+Lo primero que tenemos que saber a la hora de manejar las fechas en [Javascript][Javascript] es que no hay un tipo de dato fecha dentro del lenguaje. Si no, que nos ofrece el objeto `Date` para poder gestionar las fechas. De esta forma si queremos obtener una fecha utilizaremos este objeto:
 
 ~~~javascript
 var fecha = new Date([<parámetros>])
@@ -33,11 +33,15 @@ new Date(cadenaFecha)
 new Date(año_num,mes_num,dia_num[,hor_num,min_num,seg_num,mils_num])
 ~~~
 
+
+
 ## Obtener tiempo actual
 
-Date.now() - hora actual en milisegundos.
-Se suele utilizar para medir tiempo
-> Los milisegundos se cuentan desde el 1 de enero de 1970, a la hora local 00:00:00.
+Además de poder crear el objeto `Date` con la fecha que queramos, este, nos ofrece una serie de *métodos estáticos* que nps dan información sobre la fecga actual.
+
+Así el primero que tenemos es el método `Date.now()` el cual nos devuelve la fecha actual en milisegundos. Los milisegundos corresponde a los segundos que han pasado desde el 1 de enero de 1970, a la hora local 00:00:00.
+
+Otro método que nos ayuda a obtener el tiempo actual en [Javascript][Javascript] es el método `Date.parse()`. En este caso, el método estático `Date.parse()`
 
 
 Date.parse() - transforma una cadena en milisegundos
