@@ -129,6 +129,6 @@ Valor del contador: 6
 Valor del contador: 7
 Valor del contador: 8
 Valor del contador: 9
-Valor del contador: 10</pre>
+Valor del contador: 10</samp></pre>
 
 [ManualJava]: http://www.manualweb.net/tutorial-java/
