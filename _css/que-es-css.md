@@ -22,7 +22,7 @@ Si bien, veremos que, en ocasiones, esa división no es tan evidente y existe c�
 Pero veámoslo paso a paso. Vamos a partir de un código [CSS][CSS] sencillo, que seguro que entendemos sin haber entrado en detalle de qué elementos componen [CSS][CSS] y cómo funcionan.
 
 ~~~css
-
+a
 ~~~
 
 
@@ -45,9 +45,14 @@ flexbox y grid layout
 
 Espero que este primer artículo te haya servidor para saber un poco más sobre ¿qué es CSS?, porqué nació este lenguaje y para qué nos puede servir dentro del desarrollo web.
 
+## ¿Quién gestiona CSS?
+El estándar [CSS][CSS] es gestionado por el [CSS Working Group][CSS Working Group]
+
 
 [HTML401]: {{site.url}}/html/historia-html-estandar/
 [CSS]: {{site.url}}/css
 [HTML]: {{site.url}}/html
 [table]: https://w3api.com/HTML/table/
 [blockquote]: https://w3api.com/HTML/blockquote/
+
+[CSS Working Group]: https://www.w3.org/Style/CSS/
