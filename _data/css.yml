@@ -3,3 +3,30 @@
   - que-es-css
   - sintaxis-css
   - primeros-pasos-en-css
+  - aplicar-estilos-css
+
+- title: Elementos CSS
+  docs:
+  - selectores-css
+  - cascada-y-herencia-css
+  - propiedades-css
+  - funciones-css
+  - reglas-arroba-css
+  - comentarios-css
+
+- title: Conceptos Básicos CSS
+  docs:
+  - modelo-cajas
+
+
+- title: Estilo de Texto
+  docs:
+  - estilos-basicos-texto
+  - estilos-listas
+
+
+- title: Layouts CSS
+  docs:
+  - normal-flow
+  - flex-box
+  - grids

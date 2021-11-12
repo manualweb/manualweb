@@ -14,3 +14,7 @@ permalink: /css/elementos-css/
 * Tipos - son los tipos de datos
 * Funciones
 * Comentarios
+
+
+
+
