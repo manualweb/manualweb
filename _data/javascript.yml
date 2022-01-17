@@ -3,6 +3,9 @@
   - introduccion-javascript
   - historia-javascript
   - hola-mundo-javascript
+
+- title: Conceptos Básicos
+  docs:
   - conceptos-basicos-javascript
   - variables-javascript
   - literales-javascript
@@ -19,6 +22,7 @@
   - operadores-binarios
   - operadores-logicos
   - otros-operadores
+  - precedencia-operadores
 
 - title: Sentencias de Control
   docs:

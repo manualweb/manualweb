@@ -1,5 +1,36 @@
 
 
+v_1.0
+1. Introducción a Javascript
+ _ * Características Javacript         <-
+2. Hola Mundo Javascript
+3. Conceptos Base
+_ 4. Variables
+5. Literales
+6. Números
+_ 7. Fechas Javascript         <-
+8. Operadores Javascript
+ * Asignación
+ * Comparación
+ * Aritméticos
+ * Binarios
+ * Lógicos
+ * Otros
+9. Sentencias de Control
+ * Estructuras Selectivas
+ * Estructuras Repetitivas
+10. Cadenas de Texto
+ * Cadenas de Texto
+ _ * Objeto String
+11. Funciones
+ * Funciones Javascript
+ _ * Parámetros Javascript
+ _ * Funciones Anónimas         <-
+12. Errores Javascript
+_ 13. Expresiones regulares       <-
+
+v_All
+
 1. ¿Qué es Javascript?
 2. Historia del Javascript
 x. Características Javascript
