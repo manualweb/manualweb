@@ -13,7 +13,7 @@ Si invocamos al objeto `Date` sin ningún parámetro lo que obtendremos por cons
 
 ~~~javascript
 console.log(new Date());
-~~~~
+~~~
 
 En consola se nos mostrará algo parecido a:
 
@@ -23,8 +23,7 @@ Thu Jan 07 2021 21:26:14 GMT+0100 (hora estándar de Europa central)
 
 
 ## Crear Fechas
-
-Ademá al objeto `Date` le podemos pasar una serie de parámetros para obtener otros valores de fechas. De esta forma tenemos los siguientes constructores del objeto `Date`.
+Además al objeto `Date` le podemos pasar una serie de parámetros para obtener otros valores de fechas. De esta forma tenemos los siguientes constructores del objeto `Date`.
 
 ~~~javascript
 new Date()
@@ -34,63 +33,128 @@ new Date(año_num,mes_num,dia_num[,hor_num,min_num,seg_num,mils_num])
 ~~~
 
 
+## Métodos estáticos del objeto Date
+Adicionalmente de tener la capacidad de poder crear el objeto `Date` con la fecha que queramos, este, nos ofrece una serie de *métodos estáticos* que nos dan información sobre la fecha actual o una fecha en concreto.
 
-## Obtener tiempo actual
+Así el primero que tenemos es el método `Date.now()` el cual nos devuelve la fecha actual en milisegundos. Los milisegundos corresponden a los segundos que han pasado desde el ***1 de enero de 1970, a la hora local 00:00:00***. Qué es la hora base que utilizan tanto el lenguaje [Javascript][Javascript] como el lenguaje [Java][Java].
 
-Además de poder crear el objeto `Date` con la fecha que queramos, este, nos ofrece una serie de *métodos estáticos* que nps dan información sobre la fecga actual.
+~~~javascript
+fecha_actual = Date.now();
+~~~
 
-Así el primero que tenemos es el método `Date.now()` el cual nos devuelve la fecha actual en milisegundos. Los milisegundos corresponde a los segundos que han pasado desde el 1 de enero de 1970, a la hora local 00:00:00.
+Otro método que nos ayuda a obtener una fecha concreta en [Javascript][Javascript] es el método `Date.parse()`. En este caso, el método estático `Date.parse()` recibe una cadena de texto con un formato de fecha y nos devolverá los milisegundos asociados a dicha fecha. Si bien, la especificación recomienda no apoyarse en este método debido a las inconsistencias entre los navegadores.
 
-Otro método que nos ayuda a obtener el tiempo actual en [Javascript][Javascript] es el método `Date.parse()`. En este caso, el método estático `Date.parse()`
+~~~javascript
+fecha_cadena = Date.parse('04 Dec 1995 00:12:00 GMT');
+~~~
 
+Por último tenemos el método `Date.UTC()` permite que le pasemos como parámetro el año, mes y dia, así como la hora, minuto y segundos correspondientes a una fecha y de igual manera que en los casos anteriores nos devuelve los milisegundos asociados a esta fecha,
 
-Date.parse() - transforma una cadena en milisegundos
-
-Date.UTC() - acepta todos los parámetros del date y devuelve en milisegundos
-
+~~~javascript
+fecha_utc = new Date(Date.UTC(1977,10,11,06,10,01));
+console.log(fecha_utc.toUTCString());                
+~~~
 
 ## Get y Set sosobre las fechas
+Mediante los métodos *set* y *get* podemos fijar u obtener los valores de un objeto `Date`. Así podemos utilizar los siguientes métodos get:
 
+### Manipulando los días, meses y años
+La primera parte que veremos será como manipular la parte de la fecha correspondiente solo a los días, meses y años. Dejando de lado la manipulación de la hora.
 
-Date.prototype.getDate()
-Date.prototype.getDay()
-Date.prototype.getFullYear()
-Date.prototype.getHours()
-Date.prototype.getMilliseconds()
-Date.prototype.getMinutes()
-Date.prototype.getMonth()
-Date.prototype.getSeconds()
-Date.prototype.getTime()
-Date.prototype.getTimezoneOffset() [Traducir]
-Date.prototype.getUTCDate() [Traducir]
-Date.prototype.getUTCDay() [Traducir]
-Date.prototype.getUTCFullYear()
-Date.prototype.getUTCHours()
-Date.prototype.getUTCMilliseconds() [Traducir]
-Date.prototype.getUTCMinutes() [Traducir]
-Date.prototype.getUTCMonth() [Traducir]
-Date.prototype.getUTCSeconds()
-Date.prototype.getYear()
+En primer lugar tenemos el método `getDate()`. Con el método `getDate()` se puede devolver el día del mes correspondiente a la fecha marcada. El valor será entre 1 y 31. De esta forma el código:
 
+~~~javascript
+fecha = new Date('2022','2','21');
+console.log(fecha.getDate());
+~~~
 
-Date.prototype.setDate() [Traducir]
-Date.prototype.setFullYear()
-Date.prototype.setHours() [Traducir]
-Date.prototype.setMilliseconds() [Traducir]
-Date.prototype.setMinutes() [Traducir]
-Date.prototype.setMonth() [Traducir]
-Date.prototype.setSeconds() [Traducir]
-Date.prototype.setTime() [Traducir]
-Date.prototype.setUTCDate() [Traducir]
-Date.prototype.setUTCFullYear() [Traducir]
-Date.prototype.setUTCHours() [Traducir]
-Date.prototype.setUTCMilliseconds() [Traducir]
-Date.prototype.setUTCMinutes() [Traducir]
-Date.prototype.setUTCMonth() [Traducir]
-Date.prototype.setUTCSeconds() [Traducir]
-Date.prototype.setYear() [Traducir]
+Nos devolverá el valor ***21*** que es el día del mes asociado a la fecha.
+
+Si mediante `getDate()` obteníamos el día del mes, con `getDay()` obtenemos el día de la semana correspondiente a la fecha. El valor de retorno será entre 0 y 6. Siendo el 0 correspondiente a los días que sea domingo y el 6 correspondiente a los días que caen en sábado.
+
+Si pasamos al código veremos que el código:
+
+~~~javascript
+fecha = new Date('2022','2','21');
+console.log(fecha.getDate());
+~~~
+
+Nos devuelve el valor de ***1*** ya que el 21 de feberero de 2022 fue lunes.
+
+Lo siguiente será poder obtener el valor del mes mediante el método `getMonth()`. Este método devuelve los valores 0 a 11. Siendo 0 el valor del mes de Enero y 11 el valor del mes de diciembre.
+
+De esta forma obtendremos el valor de *1* refiriendose al código que carga la siguente fecha del mes de febrero:
+
+~~~javascript
+fecha = new Date('2022','2','21');
+console.log(fecha.getMonth());
+~~~
+
+Para poder manipular el año tenemos dos opciones. Por un lado tenemos el método `getYear()` el cual devuelve el valor del año con 2 o 3 dígitos. Toma como referencia el año 1900 para indicar el año 0 y el valor del año es el número de años que pasaron desde esa fecha. Por el otro tenemos el método `getFullYear()`. El método `getFullYear()` nos devolverá el valor del año correspondiente con 4 digitos.
+
+~~~javascript
+fecha = new Date('2022','2','21');
+console.log(fecha.getFullYear());   // 2022
+console.log(fecha.getYear());       // 122
+~~~
+
+Así del siguiente código obtendremos el valor de ***2022*** para el método `getFullYear()` y el valor de ***122*** para el método `getYear()`.
+
+### Manipulando las horas
+Si nos fijamos en la parte referente a las horas, la cual está compuesta por horas, minutos, segundos, milisegundos y valor de la zona, tendremos los siguientes métodos.
+
+El primero sería `getHours()` que nos devuelve el valor de las horas con los valores de 0 a 23, luego tendríamos el método `getMinutes()` que nos devuelve los minutos de la hora con los valores 0 a 59, pasaríamos al método `.getSeconds()` que devuelve los segundos de la hora con los valores 0 a 59 y por último el método `.getMilliseconds()` que retornará un valor de 0 a 999.
+
+Así el siguiente código nos permitiría desgranar el valor de una hora en partes:
+
+~~~javascript
+fecha = new Date();
+console.log("Hora: " + fecha.getHours());
+console.log("Minutos: " + fecha.getMinutes());
+console.log("Segundos: " + fecha.getSeconds());
+console.log("Milisegundos: " + fecha.getMilliseconds());
+~~~
+
+También disponemos de los métodos `getTime()` que nos devuelve los milisegundos que han transcurrido desde el ***1 de enero de 1970, a la hora local 00:00:00***. Y `getTimeZoneOffset()` que nos devuelve en valor de minutos la zona en la que nos encontramos en el local que ejecutemos el código.
+
+En este caso, si estamos en una zona que sea **GMT+2** nos diría que al valor real hay que restarle 120 minutos para obtener el GMT. Por lo tanto el método `getTimeZoneOffset()` devolverá un valor de -120.
+
+Además podemos gestionar todos los métodos atendiendo al valor universal marcado por UTC mediante los métodos `getUTCDate()`, `getUTCDay()`, `getUTCFullYear()`, `getUTCHours()`, `getUTCMilliseconds()`, `getUTCMinutes()`, `getUTCMonth()` y `getUTCSeconds()`.
+
+El manejo de los método UTC lo podemos ver en el siguiente código:
+
+~~~javascript
+fecha = new Date('August 1, 2022 00:10:00 GMT+02:00');
+console.log(fecha.getDate());
+console.log(fecha.getUTCDate());
+console.log(fecha.getMonth());
+console.log(fecha.getUTCMonth());
+~~~
+
+Es el inicio del mes de agosto, día 1 a las 0:10 minutos de la madrugrada. Pero en un GMT+2. Para la zona local los valores de `getDate()` y `getMonth()` serán 1 y 7. Pero para el valor GMT estaremos todavía a 31 de julio, por lo que los métodos `.getUTCDate()` y `.getUTCMonth()` devolverán los valores 31 y 6.
+
+Aunque en la minupación de los valores de las fechas nos hemos centrado en los métodos GET, también disponemos de los método SET para poder cambiar los valores de la fecha. Así disponemos de los métodos: `.setDate()`, `.setFullYear()`, `.setHours()`, `.setMilliseconds()`, `.setMinutes()`, `.setMonth()`, `.setSeconds()`, `.setTime()`, `.setUTCDate()`, `.setUTCFullYear()`, `setUTCHours()`, `.setUTCMilliseconds()`, `.setUTCMinutes()`, `.setUTCMonth()`, `.setUTCSeconds()` y `.setYear()`.
+
+Aplicándolo a código podríamos crear una fecha de la siguiente manera:
+
+~~~javascript
+fecha = new Date();
+fecha.setDate(18);
+fecha.setMonth(10);
+fecha.setYear(1977);
+fecha.setHours(2);
+fecha.setMinutes(10);
+console.log(fecha.toString());
+~~~
+
+Que nos devolverá:
+
+<samp>
+'Fri Nov 18 1977 02:10:48 GMT+0100 (hora estándar de Europa central)'
+</samp>
 
 ## Conversiones de una fecha a otros tipos
+
 
 Date.prototype.toDateString()
 Date.prototype.toGMTString() [Traducir]
@@ -106,3 +170,5 @@ Date.prototype.toTimeString() [Traducir]
 Date.prototype.toUTCString()
 
 
+[Javascript]: {{site.url}}/javascript
+[Java]: {{site.url}}/java
