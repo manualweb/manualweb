@@ -153,22 +153,81 @@ Que nos devolverá:
 'Fri Nov 18 1977 02:10:48 GMT+0100 (hora estándar de Europa central)'
 </samp>
 
-## Conversiones de una fecha a otros tipos
+## Conversión de Date a String
+Otras capacidades que nos ofrece el objeto `Date` es la posibilidad de convertir una fecha a una cadenas de texto. Lo cual nos será útil si queremos escribir horas en ficheros o en trazas de log, así como si necesitamos enviar una fecha en formato JSON.
 
+De esta manera podemos utilizar el snecillo método `.toString()` para convertir la fecha en una cadena de texto. En este caso podemos crear el siguiente código:
 
-Date.prototype.toDateString()
-Date.prototype.toGMTString() [Traducir]
-Date.prototype.toISOString()
-Date.prototype.toJSON() [Traducir]
-Date.prototype.toLocaleDateString() [Traducir]
-Date.prototype.toLocaleFormat() [Traducir]
-Date.prototype.toLocaleString() [Traducir]
-Date.prototype.toLocaleTimeString() [Traducir]
-Date.prototype.toSource() [Traducir]
-Date.prototype.toString() [Traducir]
-Date.prototype.toTimeString() [Traducir]
-Date.prototype.toUTCString()
+~~~javascript
+let fecha = new Date(Date.UTC(1977,10,18,06,10,01));
+console.log(fecha.toString());
+~~~
 
+Que nos muestra por consola:
+
+<samp>'Fri Nov 18 1977 07:10:01 GMT+0100 (hora estándar de Europa central)'</samp>
+
+Podemos gestionar la conversión a cadenas de muchas otras formas. Por ejemplo el método `.toDateString()` nos permite que tenga un formato sencillo para poder ser entendido por un humano.
+
+Así, el siguiente código:
+
+~~~javascript
+let fecha = new Date(Date.UTC(1977,10,18,06,10,01));
+console.log(fecha.toDateString());
+~~~
+
+Nos devolverá por consola una información reducida sobre la fecha que hemos creado:
+
+<samp>
+'Fri Nov 18 1977'
+</samp>
+
+Si solo queremos las horas, podemos utilizar `.toTimeString()`. Quedánonos el siguiente código:
+
+~~~javascript
+let fecha = new Date(Date.UTC(1977,10,18,06,10,01));
+console.log(fecha.toTimeString());
+~~~
+
+Que permite ver en consola:
+
+<samp>
+'07:10:01 GMT+0100 (hora estándar de Europa central)'
+</samp>
+
+Si queremos tener en formato fecha un contenido más extenso podemos utilizar el método `.toGTMString()` o `.toUTCString()`. En estos casos el resultado por consola será:
+
+<samp>
+'Fri, 18 Nov 1977 06:10:01 GMT'
+</samp>
+
+Para poder ofrecer la hora en el formato local. Como habéis podido comprobar el formato hasta ahora es en inglés, podemos recurrir a los métodos `.toLocaleString()` que nos da la fecha y hora en formato del `Locale` en el que estemos funcionando. O bien si solo queremos la fecha podemos utilizar `.toLocaleDateString()` y la hora mediante `.toLocaleTimeString()`
+
+El código:
+
+~~~javascript
+let fecha = new Date(Date.UTC(1977,10,18,06,10,01));
+console.log(fecha.toLocaleString());
+~~~
+
+Nos ofrecerá la siguiente salida por la consola:
+
+<samp>
+'18/11/1977, 7:10:01'
+</samp>
+
+Por último podemos necesitar convertir la fecha para poder ser utilizara en un formato JSON. En este caso tenemos el método `.toJSON()`. En este caso se aplica un formato **ISO 8601 Extended Format**. Por lo que sería el mismo resultado que invocar el método `.toISOString()`
+
+Si lo vemos el código, recurriendo al mismo ejemplo de la fecha, tendríamos:
+
+~~~javascript
+let fecha = new Date(Date.UTC(1977,10,18,06,10,01));
+console.log(fecha.toJSON());
+~~~
+
+Y en consola veremos el siguiente resultado:
+
+<samp>'1977-11-18T06:10:01.000Z'</samp>
 
 [Javascript]: {{site.url}}/javascript
 [Java]: {{site.url}}/java
