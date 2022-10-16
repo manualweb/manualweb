@@ -13,9 +13,9 @@ Los tipos de listas en [HTML][ManualHTML] son los siguientes:
 
 ## Listas Ordenadas
 
-Las listas en [HTML][ManualHTML] ordenadas son aquellas que nos muestran los elementos de la lista en orden. Para representar el orden tendremos los elementos numerados. Es decir, cada uno de los elementos irá precedido de un número o letra que establezca su orden.
+Las listas ordenadas en [HTML][ManualHTML] son aquellas que nos muestran los elementos de la lista en orden. Para representar el orden tendremos los elementos numerados. Es decir, cada uno de los elementos irá precedido de un número o letra que establezca su orden.
 
-Las listas en [HTML][ManualHTML] ordenadas se representan mediante el [elemento OL][OL].
+Las listas ordenadas en [HTML][ManualHTML] se representan mediante el [elemento OL][OL].
 
 ~~~html
 <ol> ... </ol>
@@ -134,7 +134,7 @@ ol {
 </style>
 ~~~
 
-Lo cual hará que las listas en [HTML][ManualHTML] ordenadas se muestren en números romanos y en minúsculas.
+Lo cual hará que las listas ordenadas en [HTML][ManualHTML] se muestren en números romanos y en minúsculas.
 
 ### Listas en orden inverso: reversed
 
@@ -209,7 +209,7 @@ Lo que nos mostrará por pantalla:
 
 ### Tipos de lista desordenada
 
-En el caso de las listas en [HTML][ManualHTML] desordenadas en [HTML][ManualHTML] no podemos indicarle el tipo de lista mediante [HTML][ManualHTML]. En este caso tenemos que recurrir a [CSS][ManualCSS] para poder indicar el tipo de lista utilizando el [atributo list-style-type][list-style-type]
+En el caso de las listas desordenadas, no podemos indicarle el tipo de lista mediante [HTML][ManualHTML]. En este caso tenemos que recurrir a [CSS][ManualCSS] para poder indicar el tipo de lista utilizando el [atributo list-style-type][list-style-type]
 
 ~~~html
 <style type=”text/css”>
@@ -221,15 +221,15 @@ ul {
 
 ## Listas de Definiciones
 
-Las listas en [HTML][ManualHTML] de definiciones en [HTML][ManualHTML] nos sirven para montar listas en las que tenemos la estructura valor y definición. Suelen ser listas para definir términos, como si fuese un diccionario, si bien pueden ser cualquier par valor-definición.
+Las listas de definiciones en [HTML][ManualHTML] nos sirven para montar listas en las que tenemos la estructura valor y definición. Suelen ser listas para definir términos, como si fuese un diccionario, si bien pueden ser cualquier par valor-definición.
 
-Las listas en [HTML][ManualHTML] de definiciones en [HTML][ManualHTML] se construyen mediante el [elemento dl][DL].
+Las listas de definiciones en [HTML][ManualHTML] se construyen mediante el [elemento dl][DL].
 
 ~~~html
 <dl> ... </dl>
 ~~~
 
-En este caso, dentro de las listas en [HTML][ManualHTML] de definiciones tenemos dos elementos anidados, el que representa al valor [dt][DT] y el que representa a la definición [dd][DD]. De esta forma la estructura de las listas en [HTML][ManualHTML] de definiciones es la siguiente:
+En este caso, dentro de las listas de definiciones en [HTML][ManualHTML] tenemos dos elementos anidados: el que representa al valor [dt][DT] y el que representa a la definición [dd][DD]. De esta forma la estructura de las listas en [HTML][ManualHTML] de definiciones es la siguiente:
 
 ~~~html
 <dl>
