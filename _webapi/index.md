@@ -23,10 +23,10 @@ Si os gusta el contenido del material y los ejemplos os agradecemos si nos aport
 
 ### Más sobre el Manual WebAPI
 
-Todas las preguntas y dudas sobre WebAPI las puedes consultar en el [Foro sobre CSS][ForoWebAPI]. Y puedes echar un ojo a los [ejemplos sobre el lenguaje WebAPI][EjemplosWebAPI].
+Todas las preguntas y dudas sobre WebAPI las puedes consultar en el [Foro sobre WebAPI][ForoWebAPI]. Y puedes echar un ojo a los [ejemplos sobre el lenguaje WebAPI][EjemplosWebAPI].
 
 <script id="github-bjs" src="https://buttons.github.io/buttons.js" async="" defer="defer"></script>
 
 [PDFCSS]: #
-[ForoCSS]: https://dudasprogramacion.com/javascript
-[EjemplosCSS]: http://lineadecodigo.com/categoria/javascript/
+[ForoWebAPI: https://dudasprogramacion.com/javascript
+[EjemplosWebAPI]: http://lineadecodigo.com/categoria/javascript/
