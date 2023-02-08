@@ -80,7 +80,7 @@ tags: ${t}
         const md = n2m.toMarkdownString(mdblocks);
         
         // ensure directory exists
-	    const root = path.join('_', nav)
+	    const root = '_' + nav
 	    fs.mkdirSync(root, { recursive: true })
 
 		//writing to file
