@@ -169,6 +169,15 @@ defaults:
     seo:
       type: "WebPage"
 
+- scope:
+    path: _webapi
+    type: webapi
+  values:
+    layout: webapi
+    sectionid: webapi
+    seo:
+      type: "WebPage"
+
 collections:
   java:
     permalink: /:collection/:path/
@@ -198,6 +207,8 @@ collections:
   googlemaps:
       output: true
   javaee:
+      output: true
+  webapi:
       output: true
   posts:
     permalink: /blog/:year/:month/:day/:title/
