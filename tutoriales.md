@@ -177,6 +177,11 @@ Listado de todos los tutoriales:
         </div>
 
         <div class="col-md-2 col-sm-4 col-xs-6">
+          <img src="{{site.baseurl}}/img/logos/webapi.png" alt="Tutorial WebAPI" class="img-thumbnail">
+          <p class="text-center">Tutorial WebAPI</p>
+        </div>        
+
+        <div class="col-md-2 col-sm-4 col-xs-6">
           <img src="{{site.baseurl}}/img/logos/xml.png" alt="Tutorial XML" class="img-thumbnail">
           <p class="text-center">Tutorial XML</p>
         </div>
