@@ -10,7 +10,7 @@ Una vez que en la [introducción a las WebAPI](https://www.manualweb.net/webapi/
 Así podríamos decir que las especificaciones WebAPI se podrían agrupar de la siguientes forma:
 
 
-## **Manipular Documentos**
+## Manipular Documentos
 
 
 En este caso hablamos de las APIs que nos permiten modificar el documento que representa una página web, de tal manera que podamos modificar su estructura y contenido.
@@ -28,7 +28,7 @@ Las WebAPI que podemos encontrar para **manipular documentos** son:
 - Resize Observer API
 - Trusted Types API
 
-## **Capacidades del Navegador**
+## Capacidades del Navegador
 
 
 El agente de usuario o navegador en la que se ejecuta nuestra página puede ofrecer información interesante para nuestro desarrollo. Ya sea el concepto básico que es la Consola para poder mostrar información para la depuración del desarrollo o el acceso a los elementos del historial de navegación.
@@ -50,7 +50,7 @@ Las WebAPI que podemos encontrar para acceder a las **capacidades del navegador*
 - Channel Messaging API
 - URL API
 
-## **Obtener Datos Servidor**
+## Obtener Datos Servidor
 
 
 Son APIs que permiten recuperar información de forma asíncrona y cargar esa información online sobre la estructura de la página. Esto ayuda a la creación de SPA (Single Page Application) basadas en patrones **AJAX (Asynchronous JavaScript and XML)**.
@@ -66,7 +66,7 @@ Las WebAPI que podemos encontrar para **obtener datos del servidor** son:
 - Service Worker API
 - Streams API
 
-## **Crear y Modificar Gráficos**
+## Crear y Modificar Gráficos
 
 
 En este caso las APIs están ligadas sobre el elemento [`canvas`](https://w3api.com/HTML/canvas/) de [HTML5](https://www.manualweb.net/html5/) permitiendo crear escenas en 2D o 3D. Ya sea una escena 2d con círculos, rectángulos, degradados o filtros o bien una escena en 3D donde ya podamos incluir elementos de iluminación o texturas.
