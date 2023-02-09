@@ -170,6 +170,15 @@ defaults:
       type: "WebPage"
 
 - scope:
+    path: _xml
+    type: xml
+  values:
+    layout: xml
+    sectionid: xml
+    seo:
+      type: "WebPage"
+
+- scope:
     path: _webapi
     type: webapi
   values:
@@ -210,6 +219,8 @@ collections:
       output: true
   webapi:
       output: true
+  xml:
+      output: true    
   posts:
     permalink: /blog/:year/:month/:day/:title/
     output: true
