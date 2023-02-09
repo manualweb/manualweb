@@ -34,7 +34,7 @@ Cómo podemos comprobar en este fragmento hay una serie de elementos y atributos
 [XML](https://www.manualweb.net/xml/) nos ayuda a definir un esquema con los elementos, atributos y sus relaciones para poder validar el contenido de la información o bien nos permitirá definir información en formato [XML](https://www.manualweb.net/xml/), pero sin validarla. Si bien, esta explicación ya la revisaremos en posteriores capítulos.
 
 
-## Ventajas XML
+## Características XML
 
 
 Algunas de las ventajas de utilizar el lenguaje de marcas [XML](https://www.manualweb.net/xml/) son las siguientes:
