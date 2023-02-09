@@ -27,6 +27,6 @@ Todas las preguntas y dudas sobre WebAPI las puedes consultar en el [Foro sobre 
 
 <script id="github-bjs" src="https://buttons.github.io/buttons.js" async="" defer="defer"></script>
 
-[PDFCSS]: #
-[ForoWebAPI: https://dudasprogramacion.com/javascript
+[PDFWebAPI]: https://www.manualweb.net/WebAPI
+[ForoWebAPI]: https://dudasprogramacion.com/javascript
 [EjemplosWebAPI]: http://lineadecodigo.com/categoria/javascript/
