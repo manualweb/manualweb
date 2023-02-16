@@ -90,7 +90,8 @@ title: ${title}
 permalink: ${permalink}
 excerpt: ${excerpt}
 tags: ${t}
-feature: ${image}
+image:
+  path: ${image}
 ---
 `
 		const mdblocks = await n2m.pageToMarkdown(id);

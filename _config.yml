@@ -14,6 +14,10 @@ twitter: http://twitter.com/manual_web
 facebook: http://www.facebook.com/manualweb
 youtube: http://youtube.com/lineadecodigo
 
+# SEO
+author:
+  twitter: manual_web
+
 # theme options from https://bootswatch.com/
 # comment out this to use default Bootstrap
 bootwatch: lumen #paper
