@@ -5,7 +5,7 @@ description: >
   Tutoriales de programación en español.
 
 baseurl: "" # the subpath of your site, e.g. /blog/
-url: http://www.manualweb.net # the base hostname & protocol for your site
+url: https://www.manualweb.net # the base hostname & protocol for your site
 git_address: https://github.com/manualweb/manualweb
 git_edit_address: https://github.com/manualweb/manualweb/blob/master
 
