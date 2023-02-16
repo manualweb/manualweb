@@ -1,7 +1,7 @@
 ---
 title: Introducción al XML
 permalink: /xml/introduccion-al-xml/
-tags: []
+tags: [xml,elemento,atributo,relaciones,xhtml,svg,mathml,xforms]
 ---
 
 ## ¿Qué es XML?
