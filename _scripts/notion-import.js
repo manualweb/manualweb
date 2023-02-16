@@ -52,6 +52,21 @@ const n2m = new NotionToMarkdown({ notionClient: notion });
         let t = '[' + tags.toString() + ']'
 
 
+		// Excerpt
+		let excerpt = id
+		let pexcerpt = r.properties?.['Excerpt']?.['rich_text']
+		if (pexcerpt?.length > 0) {
+			excerpt = pexcerpt[0]?.['plain_text']
+		}
+
+		// image
+		let image= id
+		let pimage = r.properties?.['Image']?.['rich_text']
+		if (pimage?.length > 0) {
+			image = pimage[0]?.['plain_text']
+		}
+
+
         // Categoría
        let cat = ''
        let pcats = r.properties?.['Category']?.['multi_select']
@@ -73,7 +88,9 @@ const n2m = new NotionToMarkdown({ notionClient: notion });
 const fm = `---
 title: ${title}
 permalink: ${permalink}
+excerpt: ${excerpt}
 tags: ${t}
+feature: ${image}
 ---
 `
 		const mdblocks = await n2m.pageToMarkdown(id);
