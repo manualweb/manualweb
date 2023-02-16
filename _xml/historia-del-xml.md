@@ -3,7 +3,8 @@ title: Historia del XML
 permalink: /xml/historia-del-xml/
 excerpt: c2c38027-6be4-44cd-8cc7-e1efdfec25d0
 tags: []
-feature: c2c38027-6be4-44cd-8cc7-e1efdfec25d0
+image:
+  path: c2c38027-6be4-44cd-8cc7-e1efdfec25d0
 ---
 
 Profundicemos un poco por la historia del [XML](https://www.manualweb.net/xml/), desde sus orígenes ligados a [HTML](https://www.manualweb.net/html/) hasta su rápida evolución que desemboca en la creación de diversos estándares:
