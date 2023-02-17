@@ -40,6 +40,11 @@
       "title": "{{ p.title }}",
       "url": "{{ p.url | prepend: site.baseurl }}"
     },{% endfor %}{% endfor %}
+{% for section in site.data.webapi %}{% for item in section.docs %}{% assign item_url = item | prepend:"/webapi/" | append:"/" %}{% assign p = site.flask | where:"url", item_url | first %}
+    {
+      "title": "{{ p.title }}",
+      "url": "{{ p.url | prepend: site.baseurl }}"
+    },{% endfor %}{% endfor %}
 {% for post in site.posts %}
   {
   "title": "{{ post.title | escape }}",
