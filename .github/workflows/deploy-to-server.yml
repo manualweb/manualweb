@@ -6,7 +6,7 @@ on:
       - master
 
 jobs:
-  importer:
+  deploy-to-server:
     runs-on: ubuntu-latest
 
     steps:        
