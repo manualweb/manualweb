@@ -2,6 +2,10 @@
 title: Manual HTML5
 permalink: /html5/
 redirect_from: /tutorial-html5/
+excerpt: Manual HTML5 que nos cuenta las novedades de esta versión de HTML, desde los elementos semáticos, nuevos elementos formularios, audio y vídeo hasta las nuevas WebAPI.
+tags: [html5,form,datalist,video,audio,canvas,offline,webstorage]
+image:
+  path: /img/covers/html5-cover.jpg
 ---
 
 {% include contenido.html items=site.data.html5 site=site.html5 name="html5" %}
