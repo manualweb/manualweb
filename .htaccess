@@ -1,3 +1,4 @@
 RewriteEngine On
 RewriteCond %{SERVER_PORT} 80
 RewriteRule ^(.*)$ https://www.manualweb.net/$1 [R,L]
+ErrorDocument 404 /404.html
