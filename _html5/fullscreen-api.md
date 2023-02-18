@@ -159,4 +159,4 @@ De est forma tendrás que tener en cuenta los siguientes:
 ## Más ejemplos del API Fullscreen
 Puedes revisar [más artículos sobre el **Fullscreen API** en Línea de Código][FullscreenAPIenLDC].
 
-[FullscreenAPIenLDC]: http://lineadecodigo.com/tag/html5-fullscreen-api/
+[FullscreenAPIenLDC]: https://lineadecodigo.com/tag/html5-fullscreen/
