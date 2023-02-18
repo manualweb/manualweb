@@ -1,0 +1,45 @@
+name: Deploy to Server
+
+on: 
+  push:
+    branches:
+      - master
+
+jobs:
+  importer:
+    runs-on: ubuntu-latest
+
+    steps:        
+      - name: Checkout code
+        uses: actions/checkout@v3
+
+      - name: Setup Ruby and install gems
+        uses: ruby/setup-ruby@v1
+        with:
+          ruby-version: 2.7
+          bundler-cache: true
+
+      - name: Setup Node
+        uses: actions/setup-node@v2
+        with:
+          node-version: 17
+          cache: 'yarn'
+
+      - name: Install packages
+        run: yarn install
+
+      - name: Build Jekyll Site
+        env:
+          JEKYLL_ENV: production
+          NODE_ENV: production
+        run: bundle exec jekyll build
+
+      - name: Deploy
+        uses: SamKirkland/FTP-Deploy-Action@4.2.0
+        with:
+          server: ${{ secrets.FTP_SERVER }}
+          protocol: ftps
+          username: ${{ secrets.FTP_USER }}
+          password: ${{ secrets.FTP_PWD }}
+          local-dir: ./_site/
+          server-dir: ./
