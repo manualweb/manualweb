@@ -1,7 +1,7 @@
 ---
 title: Introducción Javascript
 permalink: /javascript/introduccion-javascript/
-excerpt: JavaScript es un lenguaje ligero interpretado o compilado. JavaScript funciona de 
+excerpt: JavaScript es un lenguaje ligero interpretado o compilado. JavaScript funciona de manera dinámica, por lo que podemos ir modificando dinámicamente los objetos y clases, ejecutando código script nuevo
 tags: [javascript,nodejs,chrome,ecma,ecmascript,dom,rhino,chrome v8,nashorn]
 image:
   path: /img/covers/javascript-cover.jpg
@@ -22,7 +22,7 @@ Se puede utilizar [JavaScript](https://www.manualweb.net/javascript/) de forma _
 Aunque su mayor uso es dentro de los navegadores web, encontramos el uso de [JavaScript](https://www.manualweb.net/javascript/) en lenguajes como [NodeJS](https://lineadecodigo.com/categoria/nodejs/) o bases de datos como [MongoDB](https://www.manualweb.net/mongodb/).
 
 
-[JavaScript](https://www.manualweb.net/javascript/) tiene una **librería core del lenguaje con las funcionalidades básicas** y luego se extiende mediante un conjunto de objetos: [`Array`](https://w3api.com/Javascript/Array/), [`Math`](https://w3api.com/Javascript/Math/), [`Date`](https://w3api.com/Javascript/Date/),…
+[JavaScript](https://www.manualweb.net/javascript/) tiene una **librería core del lenguaje con las funcionalidades básicas** y luego se extiende mediante un conjunto de objetos, entre los que podemos encontrar: [`Array`](https://w3api.com/Javascript/Array/), [`Math`](https://w3api.com/Javascript/Math/), [`Date`](https://w3api.com/Javascript/Date/),…
 
 
 El estándar **ECMA-262** o **ECMAScript** es el encargado de definir la estructura y evolución del lenguaje [JavaScript](https://www.manualweb.net/javascript/) en sus diferentes versiones.
