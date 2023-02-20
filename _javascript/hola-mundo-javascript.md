@@ -7,9 +7,6 @@ image:
   path: /img/covers/javascript-cover.jpg
 ---
 
-# Hola Mundo Javascript
-
-
 Para realizar nuestro primer programa **Hola Mundo JavaScript** necesitaremos de muy pocas cosas. Por necesitar no necesitamos ni de un editor de texto. Ya que podemos ejecutar nuestro código [JavaScript](https://www.manualweb.net/javascript/) directamente sobre un navegador web.
 
 
