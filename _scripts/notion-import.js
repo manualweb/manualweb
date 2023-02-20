@@ -88,7 +88,7 @@ const n2m = new NotionToMarkdown({ notionClient: notion });
 const fm = `---
 title: ${title}
 permalink: ${permalink}
-excerpt: ${excerpt}
+excerpt: "${excerpt}"
 tags: ${t}
 image:
   path: ${image}
