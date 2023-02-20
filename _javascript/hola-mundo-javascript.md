@@ -81,7 +81,8 @@ La función que utilizaremos para realizar el Hola Mundo [JavaScript](https://ww
   document.write("Hola Mundo");
 </script>
 
-</body></html>
+</body>
+</html>
 ```
 
 
@@ -132,6 +133,7 @@ Este mismo código utilizando [`console.log`](https://www.w3api.com/WebAPI/Conso
   console.log("Hola Mundo");
 </script>
 
-</body></html>
+</body>
+</html>
 ```
 
