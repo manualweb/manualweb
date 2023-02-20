@@ -26,7 +26,7 @@ jobs:
         run: bundle exec jekyll build
 
       - name: Deploy
-        uses: SamKirkland/FTP-Deploy-Action@4.2.0
+        uses: SamKirkland/FTP-Deploy-Action@4.3.3
         with:
           server: ${{ secrets.FTP_SERVER }}
           protocol: ftps
