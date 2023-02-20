@@ -1,7 +1,7 @@
 ---
 title: Historia del XML
 permalink: /xml/historia-del-xml/
-excerpt: c2c38027-6be4-44cd-8cc7-e1efdfec25d0
+excerpt: "c2c38027-6be4-44cd-8cc7-e1efdfec25d0"
 tags: []
 image:
   path: c2c38027-6be4-44cd-8cc7-e1efdfec25d0
