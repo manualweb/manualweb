@@ -89,7 +89,7 @@ La función que utilizaremos para realizar el Hola Mundo [JavaScript](https://ww
 Ya solo nos quedará salvar el fichero `HolaMundoConJavaScript.html` y abrirlo con un navegador: _Google Chrome_, _Firefox_, _Safari_ o _Internet Explorer_. Lo que visualizaremos en pantalla será lo siguiente…
 
 
-![](https://manualweb.net/javascript/img/hola-mundo-javascript.png)
+![Hola Mundo Javascript](https://manualweb.net/javascript/img/hola-mundo-javascript.png)
 
 
 > La función [`document.writeln`](https://www.w3api.com/DOM/Document/write/) nos ayuda a crear nuestro primer programa en [JavaScript](https://www.manualweb.net/javascript/), pero no es recomendado utilizarla en programas productivos.
@@ -104,7 +104,7 @@ En este caso vamos a ejecutar el código [JavaScript](https://www.manualweb.net/
 Veremos algo parecido a lo siguiente:
 
 
-![](https://manualweb.net/javascript/img/consola.png)
+![Consola Javascript](https://manualweb.net/javascript/img/consola.png)
 
 
 En la parte marcada como **Consola** podremos insertar el código [JavaScript](https://www.manualweb.net/javascript/). En este caso para el **Hola Mundo Javascript** utilizaremos el método [`console.log`](https://www.w3api.com/WebAPI/Console/log/) a la cual pasaremos el texto.
