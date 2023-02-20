@@ -1,7 +1,7 @@
 source "https://rubygems.org"
 
 gem "jekyll", "4.2.0"
-gem "ffi", "1.9.18"
+gem "ffi", "1.9.24"
 
 # to use GitHub Pages
 # gem "github-pages", group: :jekyll_plugins
