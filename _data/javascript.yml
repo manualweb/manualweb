@@ -4,9 +4,51 @@
   - historia-de-javascript
   - caracteristicas-javascript
   - hola-mundo-javascript
+
 - title: Conceptos Básicos Javascript
   docs:
   - conceptos-basicos-javascript
   - variables-javascript
   - tipos-variables-javascript
-  - litereales-javascript
+  - literales-javascript
+#  - numeros-javascript
+#  - fechas-javascript
+
+- title: Operadores Javascript
+  docs:
+  - operadores-javascript
+#  - operadores-asignacion
+#  - operadores-comparacion
+#  - operadores-aritmeticos
+#  - operadores-binarios
+#  - operadores-logicos
+#  - otros-operadores
+#  - precedencia-operadores
+
+#- title: Sentencias de Control
+#  docs:
+#  - estructuras-selectivas-javascript
+#  - estructuras-repetitivas-javascript
+
+#- title: Cadenas de Texto
+#  docs:
+#  - cadenas-texto-javascript
+#  - objeto-string
+
+#- title: Funciones
+#  docs:
+#  - funciones-javascript
+#  - parametros-funciones
+#  - funciones-anonimas
+
+#- title: Otros
+#  docs:
+#  - fechas-javascript
+#  - errores-javascript
+#  - promesas-javascript
+#  - objeto-math
+
+#- title: Contenido de Apoyo
+#  docs:
+#  - ejemplos-javascript
+#  - urls-javascript
