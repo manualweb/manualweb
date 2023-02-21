@@ -25,8 +25,7 @@ jobs:
 
       - uses: stefanzweifel/git-auto-commit-action@v4
         with:
-          token: ${{ secrets.PAT }}
-        with:
+          token: ${{ secrets.PAT }}        
           commit_message: Nuevos Elementos
           branch: master
           commit_user_name: importer-bot 🤖
