@@ -8,4 +8,5 @@
   docs:
   - conceptos-basicos-javascript
   - variables-javascript
-  
+  - tipos-variables-javascript
+  - litereales-javascript
