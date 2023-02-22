@@ -47,7 +47,7 @@ x++;
 Una vez que conocemos los tipos de operadores deberemos de conocer la clasificación de operadores que tenemos en [Javascript](https://www.manualweb.net/javascript/). Así en [Javascript](https://www.manualweb.net/javascript/) tenemos los siguientes tipos de operadores:
 
 - [Operadores de Asignación](https://www.manualweb.net/javascript/operadores-de-asignacion/)
-- Operadores de Comparación
+- [Operadores de Comparación](https://www.manualweb.net/javascript/operadores-de-comparacion/)
 - Operadores Aritméticos
 - Operadores sobre bits
 - Operadores Lógicos
