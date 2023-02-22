@@ -48,9 +48,9 @@ Una vez que conocemos los tipos de operadores deberemos de conocer la clasificac
 
 - [Operadores de Asignación](https://www.manualweb.net/javascript/operadores-de-asignacion/)
 - [Operadores de Comparación](https://www.manualweb.net/javascript/operadores-de-comparacion/)
-- Operadores Aritméticos
-- Operadores sobre bits
-- Operadores Lógicos
+- [Operadores Aritméticos](https://www.manualweb.net/javascript/operadores-aritmeticos/)
+- [Operadores sobre Bits](https://www.manualweb.net/javascript/operadores-aritmeticos/)
+- [Operadores Lógicos](https://www.manualweb.net/javascript/operadores-logicos/)
 - Operadores con cadenas de texto
 - Operador ternario
 - Operador coma
