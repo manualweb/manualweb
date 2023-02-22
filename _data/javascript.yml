@@ -17,11 +17,11 @@
 - title: Operadores Javascript
   docs:
   - operadores-javascript
-#  - operadores-asignacion
-#  - operadores-comparacion
-#  - operadores-aritmeticos
-#  - operadores-binarios
-#  - operadores-logicos
+  - operadores-de-asignacion
+  - operadores-de-comparacion
+  - operadores-aritmeticos
+  - operadores-sobre-bits
+  - operadores-logicos
 #  - otros-operadores
 #  - precedencia-operadores
 
