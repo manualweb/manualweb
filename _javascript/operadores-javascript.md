@@ -51,10 +51,11 @@ Una vez que conocemos los tipos de operadores deberemos de conocer la clasificac
 - [Operadores Aritméticos](https://www.manualweb.net/javascript/operadores-aritmeticos/)
 - [Operadores sobre Bits](https://www.manualweb.net/javascript/operadores-aritmeticos/)
 - [Operadores Lógicos](https://www.manualweb.net/javascript/operadores-logicos/)
-- Operadores con cadenas de texto
-- Operador ternario
-- Operador coma
-- Operador delete
-- Operador typeof
-- Operador void
-- Operador in
+- [Operadores con cadenas de texto](https://www.manualweb.net/javascript/otros-operadores-javascript/#operadores-de-cadenas)
+- [Operador ternario](https://www.manualweb.net/javascript/otros-operadores-javascript/#operador-ternario)
+- [Operador coma](https://www.manualweb.net/javascript/otros-operadores-javascript/#operador-coma)
+- [Operador delete](https://www.manualweb.net/javascript/otros-operadores-javascript/#operador-delete)
+- [Operador typeof](https://www.manualweb.net/javascript/otros-operadores-javascript/#operador-typeof)
+- [Operador void](https://www.manualweb.net/javascript/otros-operadores-javascript/#operador-void)
+- [Operador in](https://www.manualweb.net/javascript/otros-operadores-javascript/#operador-in)
+- [Operador instanceof](https://www.manualweb.net/javascript/otros-operadores-javascript/#operador-instanceof)
