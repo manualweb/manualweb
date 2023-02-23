@@ -22,12 +22,12 @@
   - operadores-aritmeticos
   - operadores-sobre-bits
   - operadores-logicos
-#  - otros-operadores
+  - otros-operadores
 #  - precedencia-operadores
 
-#- title: Sentencias de Control
-#  docs:
-#  - estructuras-selectivas-javascript
+- title: Sentencias de Control
+  docs:
+  - estructuras-selectivas-javascript
 #  - estructuras-repetitivas-javascript
 
 #- title: Cadenas de Texto
