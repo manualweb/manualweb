@@ -12,7 +12,7 @@ Descargate todos los tutoriales de Manual Web de forma Digital.
 
         <div class="col-md-2 col-sm-4 col-xs-6">
           <a href="{{site.baseurl}}/html5/descargar-manual-html5">
-          <img src="{{site.baseurl}}/img/logos/HTML5.png" alt="Descargar Manual HTML5" class="img-thumbnail img-descarga">          
+          <img src="{{site.baseurl}}/img/logos/html5.png" alt="Descargar Manual HTML5" class="img-thumbnail img-descarga">          
           <p class="text-center">Descargar Tutorial HTML5</p>
           </a>
         </div>
