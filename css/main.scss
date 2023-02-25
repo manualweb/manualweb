@@ -5,8 +5,6 @@
 
 // Import partials from `sass_dir` (defaults to `_sass`)
 
-
-
 @import
   {% if site.bootwatch %}
     "bootswatch/{{site.bootwatch | downcase}}/variables",
@@ -97,6 +95,20 @@ body {
   padding-left: 2px;
 }
 
-#logo-manual {
-  margin-left: 10px;
+@media (max-width: 768px) {
+  #logo-manual {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 70%;
+    margin-bottom: 10px;
+  }
 }
+
+@media (min-width: 769px) {
+  #logo-manual {
+    float: right;
+    margin-left: 10px;
+  }
+}
+
