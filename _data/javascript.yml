@@ -30,10 +30,10 @@
   - estructuras-selectivas-javascript
   - estructuras-repetitivas-javascript
 
-#- title: Cadenas de Texto
-#  docs:
+- title: Cadenas de Texto
+  docs:
+  - objeto-string
 #  - cadenas-texto-javascript
-#  - objeto-string
 
 #- title: Funciones
 #  docs:
