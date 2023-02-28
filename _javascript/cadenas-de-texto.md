@@ -52,7 +52,7 @@ adarga antigua, rocín flaco y galgo corredo";
 ```
 
 
-La segunda opción consiste en concatenar cadenas de texto como hemos visto en el apartado anterior. En este caso, nuestro código, quedaría de la siguiente forma:
+La segunda opción consiste en concatenar cadenas de texto [Javascript](https://www.manualweb.net/javascript/) como hemos visto en el apartado anterior. En este caso, nuestro código, quedaría de la siguiente forma:
 
 
 ```javascript
@@ -85,7 +85,7 @@ Es importante saber que en este caso los saltos de línea son guardados como tal
 ## Cadenas de Texto con Plantillas
 
 
-La definición de cadenas de texto mediante la comilla simple invertida nos da la posibilidad también de utilizar plantillas que inserten variables en mitad del texto. De esta manera podremos evitar el realizar concatenaciones del contenido de varias cadenas.
+La definición de cadenas de texto [Javascript](https://www.manualweb.net/javascript/) mediante la comilla simple invertida nos da la posibilidad también de utilizar plantillas que inserten variables en mitad del texto. De esta manera podremos evitar el realizar concatenaciones del contenido de varias cadenas.
 
 
 Las variables que queramos insertar dentro de la plantilla se reflejarán mediante la estructura `${variable}`.
