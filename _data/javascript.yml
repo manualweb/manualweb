@@ -32,8 +32,7 @@
 
 - title: Cadenas de Texto
   docs:
-  - objeto-string
-#  - cadenas-texto-javascript
+  - cadenas-de-texto-javascript
 
 #- title: Funciones
 #  docs:
