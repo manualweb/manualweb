@@ -5,7 +5,7 @@ date:   2020-02-21 10:00:00
 author: Víctor
 ---
 
-<img src="{{site.baseurl}}/img/logos/html5.png" id="logo-manual" class="img-responsive pull-right">
+<img src="{{site.baseurl}}/img/logos/html5.png" id="logo-manual" class="img-responsive">
 
 Hoy hemos publicado [nuevo contenido HTML5 dentro del Tutorial][HTML5].
 
