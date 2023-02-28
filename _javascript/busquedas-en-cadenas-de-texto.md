@@ -2,7 +2,7 @@
 title: Búsquedas en Cadenas de Texto
 permalink: /javascript/busquedas-en-cadenas-de-texto/
 excerpt: "Podemos realizar búsquedas en cadenas de texto Javascript buscando caracteres, sub-cadenas de texto, en el inicio y final de la cadena o bien mediante expresiones regulares."
-tags: [charat,charcodeat,codepointat,búsquedas,indexof,lastindexof,startswith,endswith,match,matchall,search]
+tags: [charat,charcodeat,codepointat,búsquedas,indexof,lastindexof,startswith,endswith,match,matchall,search,includes]
 image:
   path: /img/covers/javascript-cover.jpg
 ---
@@ -50,15 +50,16 @@ console.log(`En la posición 2 está el código unicode  ${emojis.codePointAt(2)
 > Ojo que el tamaño de los caracteres UNICODE es de 2, por lo que la anterior cadena tendría un tamaño de 6.
 
 
-### Buscar una sub-cadena en la cadena
+### Buscar una subcadena en la cadena
 
 
-Si en vez de buscar por posición queremos buscar una sub-cadena en [Javascript](https://www.manualweb.net/javascript/) dentro de la cadena tenemos un par de métodos en el objeto [`String`](https://www.w3api.com/Javascript/String/).
+Si en vez de buscar por posición queremos buscar una subcadena en [Javascript](https://www.manualweb.net/javascript/) dentro de la cadena tenemos tres métodos en el objeto [`String`](https://www.w3api.com/Javascript/String/).
 
 - [`indexOf(subcadena,[indiceDesde])`](https://www.w3api.com/Javascript/String/indexOf), busca la primera posición del carácter en la cadena y nos devuelve un número negativo si no se encuentra en la cadena. Podemos pasarle el índice desde el cual queremos empezar la búsqueda.
 - [`lastIndexOf(subcadena,[indiceDesde])`](https://www.w3api.com/Javascript/String/lastIndexOf), en este caso busca la última posición del carácter en la cadena y nos devuelve negativo si no lo encuentra en la cadena. Podemos pasarle el índice desde el cual queremos empezar la búsqueda.
+- [`includes(subcadena,[indiceDesde])`](https://www.w3api.com/Javascript/String/includes/), este método realiza la búsqueda de la subcadena dentro de la cadena. En el caso de que la encuentre devuelve un valor de `true` y en caso negativo devuelve `false`. En este caso no tendremos la posición dentro de la cadena.
 
-Así podemos tener el siguiente código que nos busque una sub-cadena dentro de una frase:
+Así podemos tener el siguiente código que nos busque una subcadena dentro de una frase:
 
 
 ```javascript
@@ -83,6 +84,16 @@ if (indice > 0)
   console.log(`La última vez que aparece la palabra "${palabra}" es en la posición ${indice}`);
 else
   console.log(`La palabra "${palabra}" no aparece en la frase`);
+```
+
+
+Para la búsqueda sencilla de la subcadena utilizamos el método [`includes()`](https://www.w3api.com/Javascript/String/includes/)
+
+
+```javascript
+let frase = "El perro de San Roque no tiene rabo";
+let palabra = "perro";
+console.log(`La palabra "${palabra}" ${frase.includes(palabra)?'si':'no'} aparece en la cadena de texto`);
 ```
 
 
