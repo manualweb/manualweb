@@ -2,7 +2,7 @@
 title: Búsquedas en Cadenas de Texto
 permalink: /javascript/busquedas-en-cadenas-de-texto/
 excerpt: "Podemos realizar búsquedas en cadenas de texto Javascript buscando caracteres, sub-cadenas de texto, en el inicio y final de la cadena o bien mediante expresiones regulares."
-tags: [charat,charcodeat,codepointat,búsquedas,indexof,lastindexof,startswith,endswith,match,matchall,search,includes]
+tags: [charat,charcodeat,codepointat,búsquedas,indexof,lastindexof,startswith,endswith,match,matchall,search,includes,string]
 image:
   path: /img/covers/javascript-cover.jpg
 ---
@@ -50,7 +50,7 @@ console.log(`En la posición 2 está el código unicode  ${emojis.codePointAt(2)
 > Ojo que el tamaño de los caracteres UNICODE es de 2, por lo que la anterior cadena tendría un tamaño de 6.
 
 
-### Buscar una subcadena en la cadena
+## Buscar una subcadena en la cadena
 
 
 Si en vez de buscar por posición queremos buscar una subcadena en [Javascript](https://www.manualweb.net/javascript/) dentro de la cadena tenemos tres métodos en el objeto [`String`](https://www.w3api.com/Javascript/String/).
@@ -97,7 +97,7 @@ console.log(`La palabra "${palabra}" ${frase.includes(palabra)?'si':'no'} aparec
 ```
 
 
-### Comprobar el inicio y fin de la cadena
+## Comprobar el inicio y fin de la cadena
 
 
 En el caso de querer comprobar si una cadena [Javascript](https://www.manualweb.net/javascript/) empieza o termina de una u otra forma tenemos los siguientes métodos en el objeto [`String`](https://www.w3api.com/Javascript/String/).
@@ -118,7 +118,7 @@ else
 ```
 
 
-### Búsquedas con expresiones regulares.
+## Búsquedas con expresiones regulares.
 
 
 Otra opción más avanzada que tenemos para realizar búsquedas en cadenas de texto dentro de [Javascript](https://www.manualweb.net/javascript/) son las búsquedas con expresiones regulares. Para ello el objeto [`String`](https://www.w3api.com/Javascript/String/) nos ofrece un conjunto de métodos:
