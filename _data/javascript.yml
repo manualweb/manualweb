@@ -37,6 +37,10 @@
   - manipular-cadenas-de-texto
   - convertir-cadenas-de-texto
 
+- title: Números
+  docs:
+  - numeros-javascript
+
 #- title: Funciones
 #  docs:
 #  - funciones-javascript
