@@ -1,10 +1,10 @@
 ---
 title: Historia del XML
 permalink: /xml/historia-del-xml/
-excerpt: "c2c38027-6be4-44cd-8cc7-e1efdfec25d0"
-tags: []
+excerpt: "En la historia del XML podemos ver cómo nace siendo una alternativa al SGML para definir un nuevo estándar XHTML, pasando por todas sus especificaciones, hasta el día de hoy."
+tags: [sgml,xhtml,html,xml_namespaces,whatwg,xsl_fo,xml_signature,xml_encryption,invisible_xml,xslt,xlink,xpath,xinclude]
 image:
-  path: c2c38027-6be4-44cd-8cc7-e1efdfec25d0
+  path: /img/covers/xml-cover.png
 ---
 
 Profundicemos un poco por la historia del [XML](https://www.manualweb.net/xml/), desde sus orígenes ligados a [HTML](https://www.manualweb.net/html/) hasta su rápida evolución que desemboca en la creación de diversos estándares:
@@ -64,7 +64,7 @@ Una vez que los documentos [XML](https://www.manualweb.net/xml/) empezaron a env
 ## XML en la actualidad
 
 
-Con el paso del tiempo y la aparición de otro tipo de estructuras de definición como **JSON** o **YAML**. Estructuras más flexibles y sin tanta rigidez como tiene [XML](https://www.manualweb.net/xml/), aunque no tan completas, han hecho que el uso del lenguaje XML haya bajado. Quizás llegando al final de la historia del [XML](https://www.manualweb.net/xml/).
+Con el paso del tiempo y la aparición de otro tipo de estructuras de definición como **JSON** o **YAML**. Estructuras más flexibles y sin tanta rigidez como tiene [XML](https://www.manualweb.net/xml/), aunque no tan completas, han hecho que el uso del lenguaje [XML](https://www.manualweb.net/xml/) haya bajado. Quizás llegando al final de la historia del [XML](https://www.manualweb.net/xml/).
 
 
 A día de hoy, el [XML Core Working Group del W3C](https://www.w3.org/XML/Core/) es **cerrado en 2016**. Por lo que no se prevén más avances en lo que al core del lenguaje XML se refiere. Aunque es cierto que está bastante completo en lo que a su definición se refiere.
