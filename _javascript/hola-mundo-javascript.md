@@ -63,7 +63,7 @@ Quedando de la siguiente forma:
 Aunque hemos situado el código [JavaScript](https://www.manualweb.net/javascript/) dentro del elemento [`body`](https://www.w3api.com/HTML/body/) de la [página HTML](https://www.manualweb.net/html/), más adelante veremos qué puede ponerse también dentro de la cabecera. Es decir, dentro del elemento [`head`](https://www.w3api.com/HTML/head/).
 
 
-La función que utilizaremos para realizar el Hola Mundo [JavaScript](https://www.manualweb.net/javascript/) será [`document.write`](https://www.w3api.com/DOM/Document/write/). Lo que hará la función [`document.writeln`](https://www.w3api.com/DOM/Document/write/) generará el texto dentro de la página [HTML](%7B%7Bsite.url%7D%7D/html/).
+La función que utilizaremos para realizar el Hola Mundo [JavaScript](https://www.manualweb.net/javascript/) será [`document.write`](https://www.w3api.com/DOM/Document/write/). Lo que hará la función [`document.writeln`](https://www.w3api.com/DOM/Document/write/) generará el texto dentro de la página [HTML](https://www.manualweb.net/html/).
 
 
 ```html

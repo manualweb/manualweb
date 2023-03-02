@@ -30,7 +30,7 @@ console.log (cadena1 += 'Mundo'); // Hola Mundo
 ## Operador ternario
 
 
-El **operador ternario** en [Javascript](%7B%7Bsite.url%7D%7D/javascript/) es una forma de acortar una estructura de condición. Es decir, nos permite el tomar una decisión sin utilizar un `if`.
+El **operador ternario** en [Javascript](https://www.manualweb.net/javascript/) es una forma de acortar una estructura de condición. Es decir, nos permite el tomar una decisión sin utilizar un `if`.
 
 
 El **operador ternario** tiene la siguiente estructura:
