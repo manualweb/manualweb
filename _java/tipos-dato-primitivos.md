@@ -1,6 +1,7 @@
 ---
 title: Tipos de Datos Primitivos en Java
 permalink: /java/tipos-datos-primitivos-java/
+redirect_from: /java/tipos-datos-primitivos/
 ---
 
 ## ¿Qué son los tipos de datos primitivos en Java?
