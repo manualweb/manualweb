@@ -40,7 +40,7 @@
 - title: Números
   docs:
   - numeros-javascript
-#  - objeto-number
+  - objeto-number
   - comprobar-numeros-javascript
   - conversiones-con-numeros-javascript
 #  - precision-decimales-en-javascript
