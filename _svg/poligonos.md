@@ -16,7 +16,7 @@ Así, el elemento `polygon` nos quedaría de la siguiente forma:
 Las técnicas de coloreado, bordes, opacidad,... son genéricas para todas las formas básicas (Shapes).
 
 ## Lista Puntos Polígono
-Definir la lista de puntos tiene su intríngulis ya que tenemos una gramática a aplicar. En este caso la gramática es **Backus-Naur Form (BNF)**. También [aplicable a los puntos de polyline][polilineassvg].
+Definir la lista de puntos tiene su intríngulis ya que tenemos una gramática a aplicar. En este caso la gramática es **Backus-Naur Form (BNF)**. También aplicable a los puntos de polyline.
 
 Dentro de la notación nos encontramos los siguientes elementos
 
@@ -46,5 +46,4 @@ O un triángulo, algo más sencillo que el anterior. Este de nuestra cosecha...
 [circulossvg]: {{site.baseurl}}/svg/circulos-svg/
 [lineassvg]: {{site.baseurl}}/svg/lineas-svg/
 [elipsessvg]: {{site.baseurl}}/svg/elipses-svg/
-[polilineassvg]: {{site.baseurl}}/svg/polilineas-svg/
 [polygonw3c]: http://www.w3.org/TR/SVG/shapes.html#PolygonElement
