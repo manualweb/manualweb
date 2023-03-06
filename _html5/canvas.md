@@ -690,7 +690,7 @@ Otro de los efectos que podemos realizar sobre los elementos de un `canvas` es g
 
 
 [HTML]: {{site.baseurl}}/html/
-[HTML5]: {{site.baseurl}}t/html5/
+[HTML5]: {{site.baseurl}}/html5/
 [SVG]: {{site.baseurl}}/svg/
 [Javascript]: {{site.baseurl}}/javascript/
 [ArcTo]: {{site.baseurl}}/html5/img/arcTo.jpg
