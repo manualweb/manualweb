@@ -16,6 +16,16 @@ Descargate todos los tutoriales de Manual Web de forma Digital.
           <p class="text-center">Descargar Tutorial HTML5</p>
           </a>
         </div>
+
+
+        <div class="col-md-2 col-sm-4 col-xs-6">
+          <a href="{{site.baseurl}}/javascript/descargar-manual-javascript">
+          <img src="{{site.baseurl}}/img/logos/javascript.png" alt="Descargar Manual Javascript" class="img-thumbnail img-descarga">          
+          <p class="text-center">Descargar Tutorial Javascript</p>
+          </a>
+        </div>
+
+
     </div>
 
     <div>
