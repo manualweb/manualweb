@@ -29,6 +29,6 @@ Todas las preguntas y dudas sobre Javascript las puedes consultar en el [Foro so
 
 <script id="github-bjs" src="https://buttons.github.io/buttons.js" async="" defer="defer"></script>
 
-[PDFJavaScript]: {{site.baseurl}}/html5/descargar-manual-javascript/
+[PDFJavaScript]: {{site.baseurl}}/javascript/descargar-manual-javascript/
 [ForoJavaScript]: http://dudasprogramacion.com/javascript
 [EjemplosJavaScript]: http://lineadecodigo.com/javascript/
