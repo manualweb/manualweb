@@ -2,6 +2,8 @@
 title: Manual Javascript
 permalink: /javascript/
 redirect_from: /tutorial-javascript/
+image:
+  path: /img/covers/javascript-cover.jpg
 ---
 
 {% include contenido.html items=site.data.javascript site=site.javascript name="javascript" %}
@@ -23,10 +25,10 @@ Si os gusta el contenido del material y los ejemplos os agradecemos si nos aport
 
 ### Más sobre el Manual JavaScript
 
-Todas las preguntas y dudas sobre HTML5 las puedes consultar en el [Foro sobre JavaScript][ForoJavaScript]. Y puedes echar un ojo a los [ejemplos sobre el lenguaje HTML5][EjemplosJavaScript].
+Todas las preguntas y dudas sobre Javascript las puedes consultar en el [Foro sobre JavaScript][ForoJavaScript]. Y puedes echar un ojo a los [ejemplos sobre el lenguaje Javascript][EjemplosJavaScript].
 
 <script id="github-bjs" src="https://buttons.github.io/buttons.js" async="" defer="defer"></script>
 
-[PDFJavaScript]: https://gitprint.com/victorcuervo/manualweb/blob/master/html/pdf/tutorial-html-pdf.md
+[PDFJavaScript]: {{site.baseurl}}/html5/descargar-manual-javascript/
 [ForoJavaScript]: http://dudasprogramacion.com/javascript
 [EjemplosJavaScript]: http://lineadecodigo.com/javascript/
