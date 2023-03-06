@@ -44,6 +44,7 @@
   - comprobar-numeros-javascript
   - conversiones-con-numeros-javascript
   - precision-de-decimales-en-javascript
+  - objeto-bigint
 
 #- title: Funciones
 #  docs:
