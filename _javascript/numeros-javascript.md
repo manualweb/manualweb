@@ -7,7 +7,10 @@ image:
   path: /img/covers/javascript-cover.jpg
 ---
 
-Los números [Javascript](https://www.manualweb.net/javascript/) son valores numéricos que van entre el valor +/- 2^{1022} y el valor +/- 2^{1023}. Para crear un número en [Javascript](https://www.manualweb.net/javascript/) simplemente tendremos que asignar el valor numérico a una variable.
+Los números [Javascript](https://www.manualweb.net/javascript/) son valores numéricos que van entre el valor +/- 2^{1022} y el valor +/- 2^{1023}.  [Javascript](https://www.manualweb.net/javascript/) implementa el [formato en coma flotante de doble precisión](https://es.wikipedia.org/wiki/Formato_en_coma_flotante_de_doble_precisi%C3%B3n) de 64 bits IEEE 754.
+
+
+Para crear un número en [Javascript](https://www.manualweb.net/javascript/) simplemente tendremos que asignar el valor numérico a una variable.
 
 
 ```javascript
