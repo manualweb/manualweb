@@ -13,6 +13,17 @@ Los **operadores sobre bits en** [**Javascript**](https://www.manualweb.net/java
 Tenemos los siguientes **operadores sobre bits**:
 
 
+| Operador  | Significado                                                                                                                                |
+| --------- | ------------------------------------------------------------------------------------------------------------------------------------------ |
+| `x & y`   | Realiza una operación AND binaria. Devuelve 1 en las posiciones de bit dónde las posiciones de los dos operadores tienen un 1.             |
+| `x | y`   | Realiza una operación OR binaria. Devuelve un cero en las posiciones de bit dónde las posiciones de los dos operadores tienen un 0.        |
+| `x ^ y`   | Realiza una operación XOR binaria. Devuelve un cero en las posiciones dónde el bit es el mismo y un 1 dónde las posiciones son diferentes. |
+| `~ x`     | Realiza una operación NOT binaria.                                                                                                         |
+| `x << y`  | Realiza un desplazamiento de bits a la izquierda.                                                                                          |
+| `x >> y`  | Realiza un desplazamiento de bits a la derecha.                                                                                            |
+| `x >>> y` | Realiza un desplazamiento de bits a la derecha rellenando con ceros.                                                                       |
+
+
 Así, por ejemplo, podríamos realizar la siguientes operaciones lógicas con **operadores sobre bits en** [**Javascript**](https://www.manualweb.net/javascript/):
 
 
