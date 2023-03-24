@@ -11,7 +11,6 @@
   - variables-javascript
   - tipos-variables-javascript
   - literales-javascript
-#  - numeros-javascript
 #  - fechas-javascript
 
 - title: Operadores Javascript
@@ -45,6 +44,10 @@
   - conversiones-con-numeros-javascript
   - precision-de-decimales-en-javascript
   - objeto-bigint
+  - objeto-math
+  - operaciones-avanzadas-del-objeto-math
+  - logaritmos-y-exponenciales
+  - operaciones-trigonometricas-e-hiperbolicas
 
 #- title: Funciones
 #  docs:
