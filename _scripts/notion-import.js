@@ -38,6 +38,13 @@ const n2m = new NotionToMarkdown({ notionClient: notion });
 		if (ptitle?.length > 0) {
 			title = ptitle[0]?.['plain_text']
         }
+
+		// date
+		let date = moment(r.created_time).format("YYYY-MM-DD")
+		let pdate = r.properties?.['Date']?.['date']?.['start']
+		if (pdate) {
+			date = moment(pdate).format('YYYY-MM-DD')
+        }
         
 		// tags
 		let tags = []
@@ -102,7 +109,15 @@ image:
 	    fs.mkdirSync(root, { recursive: true })
 
 		//writing to file
-		const ftitle = `${slug}.md`
+		// posts should have date previous slug
+
+		const ftitle = '';
+		if (nav == 'posts')
+			ftitle = date + '-';
+			
+		ftitle = ftitle + `${slug}.md`
+
+
 		fs.writeFile(path.join(root, ftitle), fm + md, (err) => {
 			if (err) {
 				console.log(err);
