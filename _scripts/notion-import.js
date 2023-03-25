@@ -100,7 +100,7 @@ permalink: ${permalink}
 excerpt: "${excerpt}"
 tags: ${t}
 image:
-	path: ${image}
+  path: ${image}
 ---
 `
 		} else {
@@ -112,7 +112,7 @@ author: Víctor Cuervo
 excerpt: "${excerpt}"
 tags: ${t}
 image:
-	path: ${image}
+  path: ${image}
 ---
 `
 		}
