@@ -1,12 +1,12 @@
 ---
-				title: Logaritmos y Exponenciales
-				permalink: /javascript/logaritmos-y-exponenciales/
-				excerpt: "El objeto Math nos permite calcular logaritmos en base 2, 10 y neperianos, así como realizar cálculos exponenciales."
-				tags: [math,logaritmos,exponenciales,logaritmo_neperiano]
-				image:
-  					path: /img/covers/javascript-cover.jpg
-				---
-			
+title: Logaritmos y Exponenciales
+permalink: /javascript/logaritmos-y-exponenciales/
+excerpt: "El objeto Math nos permite calcular logaritmos en base 2, 10 y neperianos, así como realizar cálculos exponenciales."
+tags: [math,logaritmos,exponenciales,logaritmo_neperiano]
+image:
+	path: /img/covers/javascript-cover.jpg
+---
+
 Otra de las cosas que podemos hacer con el objeto [`Math`](https://w3api.com/Javascript/Math/) de [Javascript](https://www.manualweb.net/javascript/) es la posibilidad de calcular logaritmos y exponenciales. Veamos qué capacidades podemos explotar de los mismos.
 
 

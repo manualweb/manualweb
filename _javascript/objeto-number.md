@@ -1,12 +1,12 @@
 ---
-				title: Objeto Number
-				permalink: /javascript/objeto-number/
-				excerpt: "El objeto Number nos permite manejar números en Javascript y poder realizar operaciones de validación y conversión sobre ellos."
-				tags: [number,valueof]
-				image:
-  					path: /img/covers/javascript-cover.jpg
-				---
-			
+title: Objeto Number
+permalink: /javascript/objeto-number/
+excerpt: "El objeto Number nos permite manejar números en Javascript y poder realizar operaciones de validación y conversión sobre ellos."
+tags: [number,valueof]
+image:
+	path: /img/covers/javascript-cover.jpg
+---
+
 Además de gestionar los números mediante valores asignados a variables, [Javascript](https://www.manualweb.net/javascript/) nos ofrece objeto [`Number`](https://www.w3api.com/Javascript/Number/). El objeto [`Number`](https://www.w3api.com/Javascript/Number/) nos ofrece un conjunto de constantes y métodos que nos facilitan ciertas operaciones con los números.
 
 

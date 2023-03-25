@@ -1,12 +1,12 @@
 ---
-				title: Semántica HTML5
-				permalink: /html5/semantica-html5/
-				excerpt: "La semántica HTML5 permite definir la estructura de la página mediante elementos article, section, nav, aside, header y footer"
-				tags: [semántica,article,nav,aside,footer,header,section,h1,h6,div,address]
-				image:
-  					path: /img/covers/html5-cover.jpg
-				---
-			
+title: Semántica HTML5
+permalink: /html5/semantica-html5/
+excerpt: "La semántica HTML5 permite definir la estructura de la página mediante elementos article, section, nav, aside, header y footer"
+tags: [semántica,article,nav,aside,footer,header,section,h1,h6,div,address]
+image:
+	path: /img/covers/html5-cover.jpg
+---
+
 La semántica [HTML5](https://www.manualweb.net/html5/) permite estructurar mucho mejor las páginas web definiendo las partes que la componen de una forma mucho más entendible. Pero vamos a analizar primero como se estructuraban las páginas en [HTML 4](https://www.manualweb.net/html/) para entender el avance semántico que hemos tenido en [HTML5](https://www.manualweb.net/html5/).
 
 
