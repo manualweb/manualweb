@@ -111,10 +111,10 @@ image:
 		//writing to file
 		// posts should have date previous slug
 
-		const ftitle = '';
+		let ftitle = '';
 		if (nav == 'posts')
 			ftitle = date + '-';
-			
+
 		ftitle = ftitle + `${slug}.md`
 
 
