@@ -4,7 +4,7 @@ permalink: /javascript/manipular-cadenas-de-texto/
 excerpt: "El objeto String nos permite manipular cadenas de texto en Javascript. Podremos concatenar cadenas, dividirlas, extraer una parte de la cadena o reemplazar contenido."
 tags: [cadena_texto,concat,fromcharcode,fromcodepoint,split,slice,substring,indexof,replace,replaceall,raw]
 image:
-	path: /img/covers/javascript-cover.jpg
+  path: /img/covers/javascript-cover.jpg
 ---
 
 Si queremos manipular cadenas de texto en [Javascript](https://www.manualweb.net/javascript/), el objeto [`String`](https://www.w3api.com/Javascript/String/) nos permite realizar una serie de operaciones:

@@ -4,7 +4,7 @@ permalink: /javascript/hola-mundo-javascript/
 excerpt: "Un editor de texto y un navegador web será lo único que necesitemos para poder crear nuestro primer Hola Mundo en Javascript."
 tags: [hola_mundo,navegador,consola,console_log]
 image:
-	path: /img/covers/javascript-cover.jpg
+  path: /img/covers/javascript-cover.jpg
 ---
 
 Para realizar nuestro primer programa **Hola Mundo JavaScript** necesitaremos de muy pocas cosas. Por necesitar no necesitamos ni de un editor de texto. Ya que podemos ejecutar nuestro código [JavaScript](https://www.manualweb.net/javascript/) directamente sobre un navegador web.

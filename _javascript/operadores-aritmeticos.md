@@ -4,7 +4,7 @@ permalink: /javascript/operadores-aritmeticos/
 excerpt: "Los operadores aritméticos en Javascript son aquellos que toman dos operandos numéricos y ejecutan la operación del operador."
 tags: [operadores,operador_aritmético,suma,resta,multiplicación,división,resto,potencia]
 image:
-	path: /img/covers/javascript-cover.jpg
+  path: /img/covers/javascript-cover.jpg
 ---
 
 Los **operadores aritméticos en** [**Javascript**](https://www.manualweb.net/javascript/) son aquellos que toman dos operandos numéricos y ejecutan la operación del operador.

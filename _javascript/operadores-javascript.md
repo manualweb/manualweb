@@ -4,7 +4,7 @@ permalink: /javascript/operadores-javascript/
 excerpt: "Los operadores Javascript se dividen en dos tipos operadores binarios y operadores unarios."
 tags: [operadores,operadores_binarios,operadores_unarios]
 image:
-	path: /img/covers/javascript-cover.jpg
+  path: /img/covers/javascript-cover.jpg
 ---
 
 Cuando hablamos de operadores [Javascript](https://www.manualweb.net/javascript/), lo primero que tenemos que saber es que en [Javascript](https://www.manualweb.net/javascript/) existen dos tipos de operadores: los **operadores binarios** y los **operadores unarios.**

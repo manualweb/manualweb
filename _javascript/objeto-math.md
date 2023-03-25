@@ -4,7 +4,7 @@ permalink: /javascript/objeto-math/
 excerpt: "El objeto Math en Javascript nos permite, entre otras cosas. calcular potencias, conocer el número PI, cambiar el valor de un número, obtener un valor absoluto o un número aleatorio."
 tags: [math,potencia,número_pi,signo,valor_absoluto,redondeo,número_aleatorio]
 image:
-	path: /img/covers/javascript-cover.jpg
+  path: /img/covers/javascript-cover.jpg
 ---
 
 El lenguaje [Javascript](https://www.manualweb.net/javascript/) nos ofrece el objeto [`Math`](https://w3api.com/Javascript/Math/) el cual nos permite realizar una serie de operaciones matemáticas con números de forma sencilla. Para ello nos ofrece un conjunto de métodos y constantes que nos facilitan dichas operaciones.

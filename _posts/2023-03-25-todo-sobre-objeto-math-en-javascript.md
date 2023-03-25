@@ -6,7 +6,7 @@ author: Víctor Cuervo
 excerpt: "Recopilación de los artículos del Manual Web que contienen todo sobre objeto Math en Javascript de forma detallada y con ejemplos."
 tags: [math,javascript]
 image:
-	path: /img/covers/blog-cover.jpg
+  path: /img/covers/blog-cover.jpg
 ---
 
 Esta semana hemos añadido más información al capítulo sobre los [números de Javascript](https://manualweb.net/javascript/numeros-javascript/), para que puedas tener una comprensión más completa de este tema.

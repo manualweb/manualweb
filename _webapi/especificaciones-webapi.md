@@ -4,7 +4,7 @@ permalink: /webapi/especificaciones-webapi/
 excerpt: "c54503f8-9ca0-4a65-b72b-db44fb1c088f"
 tags: []
 image:
-	path: c54503f8-9ca0-4a65-b72b-db44fb1c088f
+  path: c54503f8-9ca0-4a65-b72b-db44fb1c088f
 ---
 
 Una vez que en la [introducción a las WebAPI](https://www.manualweb.net/webapi/introduccion-a-las-webapi/) hemos visto qué son este tipo de [APIs](https://arquitectoit.com/api-management/que-es-una-api/), ahora vamos a ver que tipos de especificaciones WebAPI existen y cómo se organizan.
