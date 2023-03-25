@@ -1,12 +1,12 @@
 ---
-title: Conversiones con Números Javascript
-permalink: /javascript/conversiones-con-numeros-javascript/
-excerpt: "El objeto Number nos permite hacer conversiones con números Javascript y obtener enteros, decimales, exponenciales,…"
-tags: [number,parseint,parsefloat,toexponential,tofixed,toprecision,tostring]
-image:
-  path: /img/covers/javascript-cover.jpg
----
-
+				title: Conversiones con Números Javascript
+				permalink: /javascript/conversiones-con-numeros-javascript/
+				excerpt: "El objeto Number nos permite hacer conversiones con números Javascript y obtener enteros, decimales, exponenciales,…"
+				tags: [number,parseint,parsefloat,toexponential,tofixed,toprecision,tostring]
+				image:
+  					path: /img/covers/javascript-cover.jpg
+				---
+			
 Una de las utilidades del objeto [`Number`](https://www.w3api.com/Javascript/Number/) es el poder realizar conversiones com números [Javascript](https://www.manualweb.net/javascript). Entre estas conversiones encontramos:
 
 - Convertir a Número Enter

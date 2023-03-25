@@ -1,12 +1,12 @@
 ---
-title: Documento HTML5
-permalink: /html5/documento-html5/
-excerpt: "El documento HTML5 basic se define mediante el elemento DOCTYPE y utilizando un encoding utf8 como charset."
-tags: [documento,charset,utf8,head,meta]
-image:
-  path: /img/covers/html5-cover.jpg
----
-
+				title: Documento HTML5
+				permalink: /html5/documento-html5/
+				excerpt: "El documento HTML5 basic se define mediante el elemento DOCTYPE y utilizando un encoding utf8 como charset."
+				tags: [documento,charset,utf8,head,meta]
+				image:
+  					path: /img/covers/html5-cover.jpg
+				---
+			
 Cuando hablamos del documento [HTML5](https://www.manualweb.net/html5/) lo primero que tenemos que saber que aunque hasta [HTML 4.01](https://www.manualweb.net/html/) habíamos tenido diferentes tipos de documentos, los cuales diferenciábamos por el `doctype` del documento, en [HTML5](https://www.manualweb.net/html5/) solo se tiene un único tipo de documento el cual estará determinado por la cabecera:
 
 

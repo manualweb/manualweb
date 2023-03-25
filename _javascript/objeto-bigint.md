@@ -1,12 +1,12 @@
 ---
-title: Objeto BigInt
-permalink: /javascript/objeto-bigint/
-excerpt: "En Javascript disponemos del objeto BigInt para poder representar valores muy largos, mayores que los números enteros."
-tags: [bigint,number,operadores_comparación,operador_aritmético]
-image:
-  path: /img/covers/javascript-cover.jpg
----
-
+				title: Objeto BigInt
+				permalink: /javascript/objeto-bigint/
+				excerpt: "En Javascript disponemos del objeto BigInt para poder representar valores muy largos, mayores que los números enteros."
+				tags: [bigint,number,operadores_comparación,operador_aritmético]
+				image:
+  					path: /img/covers/javascript-cover.jpg
+				---
+			
 En [Javascript](https://www.manualweb.net/javascript/) disponemos del objeto [`BigInt`](https://www.w3api.com/Javascript/BigInt/) para poder representar valores muy largos, mayores que los números enteros.
 
 

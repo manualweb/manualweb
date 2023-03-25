@@ -1,12 +1,12 @@
 ---
-title: Literales Javascript
-permalink: /javascript/literales-javascript/
-excerpt: "Los literales Javascript que tenemos en el lenguaje son: arrays, booleanos, números en coma flotante, enteros, objetos, expresiones regulares y cadenas."
-tags: [literales,array,boolean,enteros,coma_flotante,orientado_objetos,expresiones_regulares,cadenas]
-image:
-  path: /img/covers/javascript-cover.jpg
----
-
+				title: Literales Javascript
+				permalink: /javascript/literales-javascript/
+				excerpt: "Los literales Javascript que tenemos en el lenguaje son: arrays, booleanos, números en coma flotante, enteros, objetos, expresiones regulares y cadenas."
+				tags: [literales,array,boolean,enteros,coma_flotante,orientado_objetos,expresiones_regulares,cadenas]
+				image:
+  					path: /img/covers/javascript-cover.jpg
+				---
+			
 Los literales [Javascript](https://www.manualweb.net/javascript/) son los valores que se les puede asignar a una variable. Dentro de [Javascript](https://www.manualweb.net/javascript/) tenemos los siguientes **tipos de literales**:
 
 - Arrays

@@ -1,12 +1,12 @@
 ---
-title: Operaciones Avanzadas del Objeto Math
-permalink: /javascript/operaciones-avanzadas-del-objeto-math/
-excerpt: "Algunas operaciones avanzadas del objeto Math en Javascript son el cálculo de raíces cuadradas, cálculo de mínimos y máximos, multiplicaciones de números de 32 bits y manejo de ceros en números binarios."
-tags: [math,máximo,mínimo,32_bits,números_binarios,raíz_cuadrada]
-image:
-  path: /img/covers/javascript-cover.jpg
----
-
+				title: Operaciones Avanzadas del Objeto Math
+				permalink: /javascript/operaciones-avanzadas-del-objeto-math/
+				excerpt: "Algunas operaciones avanzadas del objeto Math en Javascript son el cálculo de raíces cuadradas, cálculo de mínimos y máximos, multiplicaciones de números de 32 bits y manejo de ceros en números binarios."
+				tags: [math,máximo,mínimo,32_bits,números_binarios,raíz_cuadrada]
+				image:
+  					path: /img/covers/javascript-cover.jpg
+				---
+			
 Una vez visto las operaciones básicas, vamos a ver algunas operaciones avanzadas del objeto [`Math`](https://w3api.com/Javascript/Math/) en [Javascript](https://www.manualweb.net/javascript/) entre las que encontramos el cálculo de raíces cuadradas, cálculo de mínimos y máximos, multiplicaciones de números de 32 bits y manejo de ceros en números binarios.
 
 
