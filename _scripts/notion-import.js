@@ -95,26 +95,26 @@ const n2m = new NotionToMarkdown({ notionClient: notion });
         if (nav != 'posts') {
 
 			fm = fm + `---
-				title: ${title}
-				permalink: ${permalink}
-				excerpt: "${excerpt}"
-				tags: ${t}
-				image:
-  					path: ${image}
-				---
-			`
+title: ${title}
+permalink: ${permalink}
+excerpt: "${excerpt}"
+tags: ${t}
+image:
+	path: ${image}
+---
+`
 		} else {
 			fm = fm + `---
-				title: ${title}
-				layout: post
-				date: ${date}
-				author: Víctor Cuervo
-				excerpt: "${excerpt}"
-				tags: ${t}
-				image:
-  					path: ${image}
-				---
-			`
+title: ${title}
+layout: post
+date: ${date}
+author: Víctor Cuervo
+excerpt: "${excerpt}"
+tags: ${t}
+image:
+	path: ${image}
+---
+`
 		}
 
 		const mdblocks = await n2m.pageToMarkdown(id);
