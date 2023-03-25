@@ -91,16 +91,32 @@ const n2m = new NotionToMarkdown({ notionClient: notion });
 		let pslug = r.properties?.['Slug']?.['formula']
 		slug = pslug?.['string']
 
-        
-const fm = `---
-title: ${title}
-permalink: ${permalink}
-excerpt: "${excerpt}"
-tags: ${t}
-image:
-  path: ${image}
----
-`
+		let fm = '';
+        if (nav != 'posts') {
+
+			fm = fm + `---
+				title: ${title}
+				permalink: ${permalink}
+				excerpt: "${excerpt}"
+				tags: ${t}
+				image:
+  					path: ${image}
+				---
+			`
+		} else {
+			fm = fm + `---
+				title: ${title}
+				layout: post
+				date: ${date}
+				author: Víctor Cuervo
+				excerpt: "${excerpt}"
+				tags: ${t}
+				image:
+  					path: ${image}
+				---
+			`
+		}
+
 		const mdblocks = await n2m.pageToMarkdown(id);
         const md = n2m.toMarkdownString(mdblocks);
         
