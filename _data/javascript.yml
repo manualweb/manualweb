@@ -52,11 +52,15 @@
 #  docs:
 #  - fechas-javascript
 
-#- title: Funciones
-#  docs:
-#  - funciones-javascript
-#  - parametros-funciones
+- title: Funciones
+  docs:
+  - funciones-javascript
+#  - parametros-en-funciones
+#  - expresiones-de-funcion
+#  - closures-javascript
 #  - funciones-anonimas
+#  - patron-modulo
+#  - patron-currying
 
 #- title: Otros
 #  docs:
