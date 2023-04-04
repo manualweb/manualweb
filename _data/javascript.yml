@@ -55,7 +55,7 @@
 - title: Funciones
   docs:
   - funciones-javascript
-#  - parametros-en-funciones
+  - parametros-en-funciones
 #  - expresiones-de-funcion
 #  - closures-javascript
 #  - funciones-anonimas
