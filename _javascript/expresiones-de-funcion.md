@@ -7,9 +7,6 @@ image:
   path: /img/covers/javascript-cover.jpg
 ---
 
-## Expresiones de Función
-
-
 Hasta ahora hemos visto cómo [declarar una función en Javascript](https://manualweb.net/javascript/funciones-javascript/), cómo [pasarle parámetros](https://manualweb.net/javascript/parametros-en-funciones/), cómo devuelve un valor de retorno y por último cómo se puede invocar a esta función.
 
 
