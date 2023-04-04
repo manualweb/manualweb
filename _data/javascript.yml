@@ -57,8 +57,8 @@
   - funciones-javascript
   - parametros-en-funciones
   - expresiones-de-funcion
-#  - closures-javascript
-#  - funciones-anonimas
+#  - funciones-flecha
+  - closures-javascript
 #  - patron-modulo
 #  - patron-currying
 
