@@ -7,9 +7,6 @@ image:
   path: /img/covers/javascript-cover.jpg
 ---
 
-## 
-
-
 Cuando trabajamos con funciones [Javascript](https://www.manualweb.net/javascript/) es importante saber que los **parámetros de tipo de datos primitivos** que recibe la función se **reciben por valor**. Esto quiere decir que si modificamos el valor de uno de estos argumentos dentro de la función, **este no se verá reflejado en la variable de origen**.
 
 
