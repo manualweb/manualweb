@@ -16,7 +16,7 @@ Si revisamos un poco la historia de [Javascript](https://www.manualweb.net/javas
 El primer nombre que se adopto para el lenguaje fue el de **Mocha** y luego paso a llamarte **LiveScript**, pero por motivos de marketing y publicitarios pasaría a denominarse [Javascript](https://www.manualweb.net/javascript) en diciembre del mismo 1995. Lo cual dio, y quizás siga dando, más de un quebradero de cabeza por las seguidas confusiones entre [Java](https://www.manualweb.net/java/) y [Javascript](https://www.manualweb.net/javascript). Más cuando había cosas muy similares entre ellos como la sintaxis de los lenguajes.
 
 
-Poco después [Microsoft](https://www.microsoft.com) saco su propio lenguaje de script, al cual denomino **VBScript** o **Visual Basic Script**, para hacer frente a [NetScape](https://es.wikipedia.org/wiki/Netscape_Navigator) desde sus navegadores [Internet Explorer](https://www.microsoft.com/es-es/download/internet-explorer.aspx) y poder dotar de dinamismo a las páginas web.
+Poco después [Microsoft](https://www.microsoft.com/) saco su propio lenguaje de script, al cual denomino **VBScript** o **Visual Basic Script**, para hacer frente a [NetScape](https://es.wikipedia.org/wiki/Netscape_Navigator) desde sus navegadores [Internet Explorer](https://www.microsoft.com/es-es/download/internet-explorer.aspx) y poder dotar de dinamismo a las páginas web.
 
 
 Si bien es verdad que, posteriormente **el navegador de Microsoft (Explorer) pasaría a soportar** [**Javascript**](https://www.manualweb.net/javascript), pero no el [Javascript](https://www.manualweb.net/javascript) de [NetScape](https://es.wikipedia.org/wiki/Netscape_Navigator), sino que una interpretación del mismo, lo que llamaron **JScript**. Curiosamente el código de **JScript** se consigue realizando reingeniería inversa del código de [NetScape](https://es.wikipedia.org/wiki/Netscape_Navigator).
@@ -34,7 +34,7 @@ Ya, en junio de 1997, [NetScape](https://es.wikipedia.org/wiki/Netscape_Navigato
 De esta manera la especificación del lenguaje script se hace en **ECMAScript** y [Javascript](https://www.manualweb.net/javascript) es una implementación de este estándar. Esta primera estandarización es conocida como **ECMAScript First Edition.**
 
 
-El estándar **ECMA-262** es también aprobado por la [ISO (Inernational Organization for Standarization)](https://www.iso.org) mediante el estándar [**ISO-16262**](https://www.iso.org/standard/55755.html).
+El estándar **ECMA-262** es también aprobado por la [ISO (Inernational Organization for Standarization)](https://www.iso.org/) mediante el estándar [**ISO-16262**](https://www.iso.org/standard/55755.html).
 
 
 ## Crecimiento del estándar ECMA
@@ -49,7 +49,7 @@ Es por ello que en agosto de 1998 se publica **ECMA-262 Second Edition** con la 
 Ya en diciembre de 1999 se publica **ECMA-262 Third Edition** con su correspondiente **ECMAScript 3.0 (ES3)**. En esta versión se incluiría la gestión de expresiones regulares, bloques `try-catch`, sentencias `switch` o bucles `do-while`.
 
 
-Mientras se trabajaba en **ECMAScript 4.0** la popularidad del [Internet Explorer](https://www.microsoft.com/es-es/download/internet-explorer.aspx) y su cuota de mercado se disparan. Y es cuando [Microsoft](https://www.microsoft.com) decide abandonar el trabajo de ECMAScript 4.0 y es por ello que esta versión nunca ve la luz.
+Mientras se trabajaba en **ECMAScript 4.0** la popularidad del [Internet Explorer](https://www.microsoft.com/es-es/download/internet-explorer.aspx) y su cuota de mercado se disparan. Y es cuando [Microsoft](https://www.microsoft.com/) decide abandonar el trabajo de ECMAScript 4.0 y es por ello que esta versión nunca ve la luz.
 
 
 Pasan varios años en los que el estándar queda aparcado y no se realizan revisiones ni actualizaciones.

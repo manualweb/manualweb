@@ -13,7 +13,7 @@ Profundicemos un poco por la historia del [XML](https://www.manualweb.net/xml/),
 ## Nacimiento del XML
 
 
-La [W3C](https://w3.org) estaba trabajando en la [definición del estándar HTML 4.01](https://manualweb.net/html/historia-html-estandar/#html-401) el cual se basaba en un esquema definido por **SGML (Standard Generalized Markup Language).** Si bien, los trabajos con este esquema generaban conflictos en la [definición del estándar HTML 4.01](https://manualweb.net/html/historia-html-estandar/#html-401) de tal manera que no se podía definir de una forma estricta un documento [HTML](https://www.manualweb.net/html/).
+La [W3C](https://w3.org/) estaba trabajando en la [definición del estándar HTML 4.01](https://manualweb.net/html/historia-html-estandar/#html-401) el cual se basaba en un esquema definido por **SGML (Standard Generalized Markup Language).** Si bien, los trabajos con este esquema generaban conflictos en la [definición del estándar HTML 4.01](https://manualweb.net/html/historia-html-estandar/#html-401) de tal manera que no se podía definir de una forma estricta un documento [HTML](https://www.manualweb.net/html/).
 
 
 Es por ello que el 10 de febrero de 1998 se crea el lenguaje [XML 1.0](http://www.w3.org/TR/1998/REC-xml-19980210)  con el objetivo de tener un **lenguaje para poder compartir información entre dos computadoras mediante un esquema bien definido**, cerrado que diese como resultado documentos coherentes y de los que no hubiese lugar a duda de su estructura o dobles interpretaciones.
@@ -25,13 +25,13 @@ Es por ello que el 10 de febrero de 1998 se crea el lenguaje [XML 1.0](http://w
 ## XML y XHTML
 
 
-La [W3C (World Wide Web Consortium)](https://w3.org)  intenta aplicar el estándar [XML](https://www.manualweb.net/xml/) a la definición de [HTML](https://www.manualweb.net/html/) mediante lo que se definió como [XHTML 1.0](http://www.w3.org/TR/xhtml1/) (eXtensible HyperText Markup Language). Es verdad que este documento recoge la definición de un lenguaje [HTML](https://www.manualweb.net/html/) bien estructurado, que no diese lugar a interpretaciones en la que se tuviese un **documento bien formado**. Pero la realidad era que la web estaba ya inundada de documentos [HTML](https://www.manualweb.net/html/) que no seguían ninguna estructura, y para lo navegadores de la época aplicar [XHTML 1.0](http://www.w3.org/TR/xhtml1/) hubiese y era realmente imposible o una proeza solo apta para titanes.
+La [W3C (World Wide Web Consortium)](https://w3.org/)  intenta aplicar el estándar [XML](https://www.manualweb.net/xml/) a la definición de [HTML](https://www.manualweb.net/html/) mediante lo que se definió como [XHTML 1.0](http://www.w3.org/TR/xhtml1/) (eXtensible HyperText Markup Language). Es verdad que este documento recoge la definición de un lenguaje [HTML](https://www.manualweb.net/html/) bien estructurado, que no diese lugar a interpretaciones en la que se tuviese un **documento bien formado**. Pero la realidad era que la web estaba ya inundada de documentos [HTML](https://www.manualweb.net/html/) que no seguían ninguna estructura, y para lo navegadores de la época aplicar [XHTML 1.0](http://www.w3.org/TR/xhtml1/) hubiese y era realmente imposible o una proeza solo apta para titanes.
 
 
 Los esfuerzos por crear e implantar [XHTML 1.0](http://www.w3.org/TR/xhtml1/) son infructuosos y se genera una escisión de la W3C en el [WHATWG](http://www.whatwg.org/) que acaba definiendo el estándar [HTML5](https://www.manualweb.net/html5/).
 
 
-Existió, por parte de [W3C](https://w3.org), de definir una evolución hacía el estándar XHTML 2.0 que no llegó a ver la luz como especificación de facto.
+Existió, por parte de [W3C](https://w3.org/), de definir una evolución hacía el estándar XHTML 2.0 que no llegó a ver la luz como especificación de facto.
 
 
 ## XML Namespaces
@@ -70,5 +70,5 @@ Con el paso del tiempo y la aparición de otro tipo de estructuras de definició
 A día de hoy, el [XML Core Working Group del W3C](https://www.w3.org/XML/Core/) es **cerrado en 2016**. Por lo que no se prevén más avances en lo que al core del lenguaje XML se refiere. Aunque es cierto que está bastante completo en lo que a su definición se refiere.
 
 
-Y aunque la [W3C](https://www.w3.org) ha parado la actividad alrededor de la definición del lenguaje [XML](https://www.manualweb.net/xml/) podemos encontrar sitios como [XML.com](http://XML.com) en lo que podemos ver publicaciones alrededor del lenguaje [XML](https://www.manualweb.net/xml/), como evoluciones en los parsers, herramientas de transformación de [XML](https://www.manualweb.net/xml/) o definiciones más exotéricas como [Invisible XML](https://invisiblexml.org/) que busca tratar documentos que no son [XML](https://www.manualweb.net/xml/) como si fueran [XML](https://www.manualweb.net/xml/). Una especificación de 2022 promovida por el [Invisible Markup Community Group de W3C](https://www.w3.org/community/ixml/).
+Y aunque la [W3C](https://www.w3.org/) ha parado la actividad alrededor de la definición del lenguaje [XML](https://www.manualweb.net/xml/) podemos encontrar sitios como [XML.com](http://xml.com/) en lo que podemos ver publicaciones alrededor del lenguaje [XML](https://www.manualweb.net/xml/), como evoluciones en los parsers, herramientas de transformación de [XML](https://www.manualweb.net/xml/) o definiciones más exotéricas como [Invisible XML](https://invisiblexml.org/) que busca tratar documentos que no son [XML](https://www.manualweb.net/xml/) como si fueran [XML](https://www.manualweb.net/xml/). Una especificación de 2022 promovida por el [Invisible Markup Community Group de W3C](https://www.w3.org/community/ixml/).
 

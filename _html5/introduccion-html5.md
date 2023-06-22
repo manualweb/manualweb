@@ -10,7 +10,7 @@ image:
 ## ¿Qué es HTML5?
 
 
-En esta introducción [HTML5](https://www.manualweb.net/) vemos que [HTML5](https://www.manualweb.net) es un lenguaje de marcas que nos permite el desarrollo de páginas web, al cual se le han añadido un conjunto de capacidades que nos permiten explotar las capacidades de los dispositivos en temas de multimedia, rendimiento, offline, interacción con el usuario,…
+En esta introducción [HTML5](https://www.manualweb.net/) vemos que [HTML5](https://www.manualweb.net/) es un lenguaje de marcas que nos permite el desarrollo de páginas web, al cual se le han añadido un conjunto de capacidades que nos permiten explotar las capacidades de los dispositivos en temas de multimedia, rendimiento, offline, interacción con el usuario,…
 
 
 De esta manera [HTML5](https://www.manualweb.net/) se compone de un **núcleo de elementos del lenguaje** y una serie de **APIs que nos permiten gestionar las nuevas capacidades**.
