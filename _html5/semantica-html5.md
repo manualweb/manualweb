@@ -152,6 +152,9 @@ Dentro del elemento [`body`](https://www.w3api.com/HTML/article/) podremos encon
 La salida del documento [HTML 5](http://www.manualweb.net/html5/) será:
 
 1. Título Principal
+	1. Subtítulo 1
+	2. Subtítulo 2
+	3. Subtítulo 3
 
 > El [Validador de la W3C](https://validator.w3.org/) nos permite de una forma sencilla analizar el outline de un documento HTML para ver la salida que genera y las secciones de las que se compone.
 
@@ -187,6 +190,7 @@ Así podríamos encontrarnos con el siguiente código semántico en [HTML 5](htt
 La salida del documento [HTML 5](http://www.manualweb.net/html5/) será:
 
 1. Artículo Principal
+	1. Subsección
 2. Artículo Secundario
 
 Si bien es verdad que aunque esto esté permitido en [HTML 5](http://www.manualweb.net/html5/) es recomendable que cada una de las secciones se empiece utilizando el título de cabecera [`h1`](https://www.w3api.com/HTML/h1/).
@@ -217,6 +221,7 @@ Es decir, que en el siguiente código [HTML 5](http://www.manualweb.net/html5/) 
 El uso del elemento [`h2`](https://www.w3api.com/HTML/h2/) acabará generando una subsección de forma implícita. Por lo tanto la salida del documento será:
 
 1. Artículo principal
+	1. Subsección
 
 En el caso de que el elemento a utilizar sea del mismo nivel que el de la sección actual, lo que hará será crear una nueva sección.
 
@@ -267,6 +272,7 @@ Así podríamos encontrarnos una referencia utilizando un elemento [`blockquote`
 Dicho elemento [`blockquote`](https://www.w3api.com/HTML/blockquote/) no afecta para nada a la estructura, la cual seguirá siendo:
 
 1. Artículo Principal
+	1. Subsección
 
 ## Address: Autor de un artículo
 
