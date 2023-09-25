@@ -190,7 +190,6 @@ Así podríamos encontrarnos con el siguiente código semántico en [HTML 5](htt
 La salida del documento [HTML 5](http://www.manualweb.net/html5/) será:
 
 1. Artículo Principal
-	1. Subsección
 2. Artículo Secundario
 
 Si bien es verdad que aunque esto esté permitido en [HTML 5](http://www.manualweb.net/html5/) es recomendable que cada una de las secciones se empiece utilizando el título de cabecera [`h1`](https://www.w3api.com/HTML/h1/).
