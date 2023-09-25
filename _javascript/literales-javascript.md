@@ -211,17 +211,3 @@ let c2 = "Esto es una comilla doble \"";
 
 Los **caracteres especiales** que podemos utilizar son:
 
-
-| Caracter | Significado        |
-| -------- | ------------------ |
-| `\0`     | Byte Nulo          |
-| `\b`     | Backspace          |
-| `\f`     | Form feed          |
-| `\n`     | Nueva línea        |
-| `\r`     | Retorno de carro   |
-| `\t`     | Tabulador          |
-| `\v`     | Tabulador vertical |
-| `\'`     | Comilla simple     |
-| `\"`     | Comilla doble      |
-| `\\`     | Barra Invertida    |
-
