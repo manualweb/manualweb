@@ -152,9 +152,6 @@ Dentro del elemento [`body`](https://www.w3api.com/HTML/article/) podremos encon
 La salida del documento [HTML 5](http://www.manualweb.net/html5/) será:
 
 1. Título Principal
-	1. Subtítulo 1
-	2. Subtítulo 2
-	3. Subtítulo 3
 
 > El [Validador de la W3C](https://validator.w3.org/) nos permite de una forma sencilla analizar el outline de un documento HTML para ver la salida que genera y las secciones de las que se compone.
 
@@ -272,7 +269,6 @@ Así podríamos encontrarnos una referencia utilizando un elemento [`blockquote`
 Dicho elemento [`blockquote`](https://www.w3api.com/HTML/blockquote/) no afecta para nada a la estructura, la cual seguirá siendo:
 
 1. Artículo Principal
-	1. Subsección
 
 ## Address: Autor de un artículo
 
