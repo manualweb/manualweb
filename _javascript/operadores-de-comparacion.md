@@ -16,18 +16,6 @@ En el caso de que los operandos sean de tipo diferente, [Javascript](https://www
 De esta manera tenemos los siguientes operadores de comparación en [Javascript](https://www.manualweb.net/javascript/):
 
 
-| **Operador** | **Significado**                                                                                |
-| ------------ | ---------------------------------------------------------------------------------------------- |
-| `x == y`     | Devuelve `true` si los operandos son iguales                                                   |
-| `x != y`     | Devuelve `true` si los operandos son diferentes                                                |
-| `x === y`    | Devuelve `true` si los operandos son iguales y son del mismo tipo                              |
-| `x !== y`    | Devuelve `true` si los operandos son diferentes y son del mismo tipo                           |
-| `x > y`      | Devuelve `true` si el operando de la izquierda es mayor que el operando de la derecha.         |
-| `x >= y`     | Devuelve `true` si el operando de la izquierda es mayor o igual que el operando de la derecha  |
-| `x < y`      | Devuelve `true` si el operando de la izquierda es menor que el operando de la derecha.         |
-| `x <= y`     | Devuelve `true` si el operando de la izquierda es menor o igual que el operando de la derecha. |
-
-
 ## Comparaciones Estrictas
 
 
