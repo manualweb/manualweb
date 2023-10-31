@@ -1,0 +1,52 @@
+---
+layout: default
+---
+
+<div class="container">
+    <div class="row">
+
+
+      <div class="col-md-8 col-md-push-4">
+          <h1>{{ page.title }}</h1>
+          <img src="{{site.baseurl}}/img/logos/python.png" id="logo-manual" class="img-responsive">
+          <div id="markdown-content-container">{{ content }}</div>
+
+          <p class="text-center">
+            <br />
+            <a target="_blank" href="{{site.git_edit_address}}/{{ page.path }}" class="btn btn-default githubEditButton" role="button">
+              <i class="fa fa-pencil fa-lg"></i> Mejora esta página
+            </a>
+          </p>
+
+          {% include ads.html %}
+
+          <hr>
+          {% include section_nav.html items=site.data.python name="python" %}
+
+
+      </div>
+
+
+        <div class="col-md-4 col-md-pull-8">
+
+          {% include nav.html items=site.data.python site=site.python name="python" %}
+
+          <h2>Descargar</h2>
+          <a href="#"><img class="pull-right" src="{{site.baseurl}}/img/pdf.png"></a>
+          El manual se encuentra en continua revisión. Desde aquí puedes descargarte la última versión del <strong>Tutorial Python</strong>.
+
+          {% include ads.html %}
+
+          <h2>Vídeos Python</h2>
+          <!--
+          <script src="https://apis.google.com/js/platform.js"></script>
+          <div class="g-ytsubscribe" data-channel="lineadecodigo" data-layout="default" data-count="default"></div><br/>
+          <div class="embed-responsive embed-responsive-16by9">
+            <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/videoseries?list=PLLVIhySQmrVZGA6RpEkZJEH3rQOrHbi_c" allowfullscreen></iframe>
+          </div>
+          -->
+
+        </div>
+
+    </div>
+</div>

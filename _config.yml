@@ -156,6 +156,15 @@ defaults:
       type: "WebPage"
 
 - scope:
+    path: _python
+    type: python
+  values:
+    layout: python
+    sectionid: python
+    seo:
+      type: "WebPage"
+
+- scope:
     path: _svg
     type: svg
   values:
@@ -225,6 +234,8 @@ collections:
       output: true
   xml:
       output: true    
+  python:
+      output: true   
   posts:
     permalink: /blog/:year/:month/:day/:title/
     output: true

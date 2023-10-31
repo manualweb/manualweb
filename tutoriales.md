@@ -138,8 +138,8 @@ Listado de todos los tutoriales:
 -->
 
         <div class="col-md-2 col-sm-4 col-xs-6">
-          <img src="{{site.baseurl}}/img/logos/python.png" alt="Tutorial Python" class="img-thumbnail">
-          <p class="text-center">Tutorial Python</p>
+          <a href="{{site.baseurl}}/python/"><img src="{{site.baseurl}}/img/logos/python.png" alt="Tutorial Python" class="img-thumbnail">
+          <p class="text-center">Tutorial Python</p></a>
         </div>
 
 
