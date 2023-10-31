@@ -4,7 +4,7 @@ permalink: /python/
 redirect_from: /tutorial-python/
 ---
 
-{% include contenido.html items=site.data.python site=site.html name="python" %}
+{% include contenido.html items=site.data.python site=site.python name="python" %}
 
 
 ### Descargar Manual Python
