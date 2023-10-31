@@ -5,3 +5,4 @@ _site/
 Gemfile.lock
 .jekyll-cache
 img/.DS_Store
+config
