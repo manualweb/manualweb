@@ -21,9 +21,9 @@ Si os gusta el contenido del material y los ejemplos os agradecemos si nos aport
 
 <a class="github-button" href="https://github.com/manualweb/manualweb" data-icon="octicon-star" data-style="mega" aria-label="Star manualweb/manualweb on GitHub">Star</a>
 
-### Más sobre el Manual HTML
+### Más sobre el Manual Python
 
-Todas las preguntas y dudas sobre HTML las puedes consultar en el [Foro sobre Python][ForoPython]. Y puedes echar un ojo a los [ejemplos sobre el lenguaje Python][EjemplosPython].
+Todas las preguntas y dudas sobre Python las puedes consultar en el [Foro sobre Python][ForoPython]. Y puedes echar un ojo a los [ejemplos sobre el lenguaje Python][EjemplosPython].
 
 <script id="github-bjs" src="https://buttons.github.io/buttons.js" async="" defer="defer"></script>
 
