@@ -39,6 +39,11 @@ Listado de todos los tutoriales:
         </div>
 
         <div class="col-md-2 col-sm-4 col-xs-6">
+          <a href="{{site.baseurl}}/dom"><img src="{{site.baseurl}}/img/logos/dom.png" alt="Tutorial DOM" class="img-thumbnail">
+          <p class="text-center">Tutorial DOM</p></a>
+        </div>
+
+        <div class="col-md-2 col-sm-4 col-xs-6">
           <a href="{{site.baseurl}}/emberjs"><img src="{{site.baseurl}}/img/logos/emberjs.png" alt="Tutorial EmberJS" class="img-thumbnail">
           <p class="text-center">Tutorial EmberJS</p></a>
         </div>

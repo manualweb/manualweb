@@ -75,6 +75,15 @@ defaults:
       type: "WebPage"
 
 - scope:
+    path: _dom
+    type: dom
+  values:
+    layout: dom
+    sectionid: dom
+    seo:
+      type: "WebPage"
+
+- scope:
     path: _emberjs
     type: emberjs
   values:
@@ -235,6 +244,8 @@ collections:
   xml:
       output: true    
   python:
+      output: true  
+  dom: 
       output: true   
   posts:
     permalink: /blog/:year/:month/:day/:title/
