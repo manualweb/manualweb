@@ -31,7 +31,7 @@ El uso del lenguaje [Python](https://www.manualweb.net/python/) se extiende en m
 ### Desarrollo Web
 
 
-Mediante [Python](https://www.manualweb.net/python/) podremos crear aplicaciones web que pueden ser desplegadas en un servidor. Ya sean aplicaciones web tradicionales en un modelo cliente/servidor o aplicaciones web que se basen más en modelos SPA mediante la utilización de APIs REST. 
+Mediante [Python](https://www.manualweb.net/python/) podremos crear **aplicaciones web** que pueden ser desplegadas en un servidor. Ya sean aplicaciones web tradicionales en un modelo cliente/servidor o aplicaciones web que se basen más en **modelos SPA** mediante la utilización de **APIs REST**. 
 
 
 Se disponen de frameworks potentes como [Flask](https://manualweb.net/flask/) o [Django](https://www.djangoproject.com/) para poder construir las aplicaciones web con [Python](https://www.manualweb.net/python/) que nos simplifican los modelos de seguridad web, creación de rutas de URLs en el servidor o el acceso a las bases de datos, entre muchas otras cosas.
