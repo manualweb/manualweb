@@ -165,11 +165,29 @@ defaults:
       type: "WebPage"
 
 - scope:
+    path: _php
+    type: php
+  values:
+    layout: php
+    sectionid: php
+    seo:
+      type: "WebPage"
+
+- scope:
     path: _python
     type: python
   values:
     layout: python
     sectionid: python
+    seo:
+      type: "WebPage"
+
+- scope:
+    path: _sql
+    type: sql
+  values:
+    layout: sql
+    sectionid: sql
     seo:
       type: "WebPage"
 
@@ -246,6 +264,10 @@ collections:
   python:
       output: true  
   dom: 
+      output: true   
+  php: 
+      output: true   
+  sql: 
       output: true   
   posts:
     permalink: /blog/:year/:month/:day/:title/

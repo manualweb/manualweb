@@ -130,8 +130,8 @@ Listado de todos los tutoriales:
 
 
         <div class="col-md-2 col-sm-4 col-xs-6">
-          <img src="{{site.baseurl}}/img/logos/php.png" alt="Tutorial PHP" class="img-thumbnail">
-          <p class="text-center">Tutorial PHP</p>
+          <a href="{{site.baseurl}}/php/"><img src="{{site.baseurl}}/img/logos/php.png" alt="Tutorial PHP" class="img-thumbnail">
+          <p class="text-center">Tutorial PHP</p></a>
         </div>
 
 <!--
@@ -167,8 +167,8 @@ Listado de todos los tutoriales:
 -->
 
         <div class="col-md-2 col-sm-4 col-xs-6">
-          <img src="{{site.baseurl}}/img/logos/sql.png" alt="Tutorial SQL" class="img-thumbnail">
-          <p class="text-center">Tutorial SQL</p>
+          <a href="{{site.baseurl}}/sql/"><img src="{{site.baseurl}}/img/logos/sql.png" alt="Tutorial SQL" class="img-thumbnail">
+          <p class="text-center">Tutorial SQL</p></a>
         </div>
 
         <div class="col-md-2 col-sm-4 col-xs-6">
