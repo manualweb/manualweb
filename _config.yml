@@ -15,8 +15,7 @@ facebook: http://www.facebook.com/manualweb
 youtube: http://youtube.com/lineadecodigo
 
 # SEO
-author:
-  twitter: manual_web
+author: manual_web
 
 # theme options from https://bootswatch.com/
 # comment out this to use default Bootstrap
@@ -272,3 +271,5 @@ collections:
   posts:
     permalink: /blog/:year/:month/:day/:title/
     output: true
+
+lang: es_ES
