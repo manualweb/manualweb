@@ -157,7 +157,7 @@ Cada vez que insertemos esta entidad generamos un espacio en blanco.
 Los saltos de línea que insertemos dentro de la página web no tienen ningún efecto de cara a la renderización del contenido. Por lo tanto, un salto de línea en el código no genera nada.
 
 
-Si queremos insertar un salto de línea dentro de nuestra página web deberemos de utilizar el elemento [br](https://w3api.com/HTML/br/).
+Si queremos insertar un salto de línea dentro de nuestra página web deberemos de utilizar el elemento [`br`](https://w3api.com/HTML/br/).
 
 
 ```html
