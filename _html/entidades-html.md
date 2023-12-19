@@ -1,110 +1,127 @@
 ---
 title: Entidades HTML
 permalink: /html/entidades-html/
+excerpt: "Las entidades HTML nos sirven para poder insertar símbolos que se vean de forma correcta en cualquier codificación del lenguaje."
+tags: [entidades]
+image:
+  path: /img/covers/html-cover.png
 ---
 
-Cuando estemos insertando texto en nuestros documentos HTML puede darse el caso de que necesitemos insertar símbolos. Bien ya sean símbolos de la codificación que estemos utilizando o símbolos de carácter general. Esto pueden ser monedas, símbolos de puntuación,...
+Cuando estemos insertando texto en nuestros documentos [HTML](https://www.manualweb.net/html/) puede darse el caso de que necesitemos insertar símbolos. Bien ya sean símbolos de la codificación que estemos utilizando o símbolos de carácter general. Esto pueden ser monedas, símbolos de puntuación,…
 
-Para ello HTML nos ofrece las entidades. Las entidades son unas estructuras que, mediante el uso de una codificación, nos permiten representar un símbolo.
 
-La estructura de la entidad HTML es un ampersand(&) seguido del código o nombre de la entidad y terminado en un punto y coma.
+Para ello [HTML](https://www.manualweb.net/html/) nos ofrece las entidades. Las entidades son unas estructuras que, mediante el uso de una codificación, nos permiten representar un símbolo.
 
-~~~html
+
+La estructura de la entidad [HTML](https://www.manualweb.net/html/) es un **ampersand(&)** seguido del **código o nombre de la entidad** y terminado en **un punto y coma(;)**.
+
+
+```html
 &codigo;
-~~~
+```
+
 
 En el caso de que utilicemos los códigos, estos se anteponen de una almohadilla.
 
+
 Algunos de las entidades más utilizadas son los acentos:
 
-~~~html
-á	&aacute;
-é	&eacute;
-í	&iacute;
-~~~
 
-Los símbolos que utiliza el propio lenguaje HTML:
+```html
+á   &aacute;
+é   &eacute;
+í   &iacute;
+```
 
-~~~html
-&	&amp;
-<	&lt;
->	&gt;
-~~~
+
+Los símbolos que utiliza el propio lenguaje [HTML](https://www.manualweb.net/html/):
+
+
+```html
+&   &amp;
+<   &lt;
+>   &gt;
+```
+
 
 U otros comunes:
 
-~~~html
-€	&euro;
-£	&pound;
-©	&copy;
-®	&reg;
-~~~
+
+```html
+€   &euro;
+£   &pound;
+©   &copy;
+®   &reg;
+```
+
 
 ## Principales entidades HTML
 
-|  -- Carácter --  | --  Código --  |  -- Entidad --  | --  Carácter --  | --  Código --  | --  Entidad --  |
-|---|---|---|---|---|---|
-| ! | &#38;#33; | -- | " | &#38;#34; | -- |
-| # | &#38;#35; | -- | $ | &#38;#36; | -- |
-| % | &#38;#37; | -- | & | &#38;#38; | -- |
-| ' | &#38;#39; | -- | ( | &#38;#40; | -- |
-| ) | &#38;#41; | -- | * | &#38;#42; | -- |
-| + | &#38;#43; | -- | , | &#38;#44; | -- |
-| - | &#38;#45; | -- | . | &#38;#46; | -- |
-| / | &#38;#47; | -- | : | &#38;#58; | -- |
-| ; | &#38;#59; | -- | < | &#38;#60; | -- |
-| = | &#38;#61; | -- | > | &#38;#62; | -- |
-| ? | &#38;#63; | -- | @ | &#38;#64; | -- |
-| [ | &#38;#91; | -- | \ | &#38;#92; | -- |
-| ] | &#38;#93; | -- | ^ | &#38;#94; | -- |
-| _ | &#38;#95; | -- | ` | &#38;#96; | -- |
-| { | &#38;#123; | -- | &#124; | &#38;#124; | -- |
-| } | &#38;#125; | -- | ~ | &#38;#126; | -- |
-|   | &#38;#160; | nbsp | ¡ | &#38;#161; | iexcl |
-| ¢ | &#38;#162; | cent | £ | &#38;#163; | pound |
-| ¤ | &#38;#164; | curren | ¥ | &#38;#165; | yen |
-| ¦ | &#38;#166; | brvbar | § | &#38;#167; | sect |
-| ¨ | &#38;#168; | uml | © | &#38;#169; | copy |
-| ª | &#38;#170; | ordf | « | &#38;#171; | laquo |
-| ¬ | &#38;#172; | not | | &#38;#173; | shy |
-| ® | &#38;#174; | reg | ¯ | &#38;#175; | macr |
-| ° | &#38;#176; | deg | ± | &#38;#177; | plusmn |
-| ² | &#38;#178; | sup2 | ³ | &#38;#179; | sup3 |
-| ´ | &#38;#180; | acute | µ | &#38;#181; | micro |
-| ¶ | &#38;#182; | para | · | &#38;#183; | middot |
-| ¸ | &#38;#184; | cedil | ¹ | &#38;#185; | sup1 |
-| º | &#38;#186; | ordm | » | &#38;#187; | raquo |
-| ¼ | &#38;#188; | frac14 | ½ | &#38;#189; | frac12 |
-| ¾ | &#38;#190; | frac34 | ¿ | &#38;#191; | iquest |
-| À | &#38;#192; | Agrave | Á | &#38;#193; | Aacute |
-| Â | &#38;#194; | Acirc | Ã | &#38;#195; | Atilde |
-| Ä | &#38;#196; | Auml | Å | &#38;#197; | Aring |
-| Æ | &#38;#198; | AElig | Ç | &#38;#199; | Ccedil |
-| È | &#38;#200; | Egrave | É | &#38;#201; | Eacute |
-| Ê | &#38;#202; | Ecirc | Ë | &#38;#203; | Euml |
-| Ì | &#38;#204; | Igrave | Í | &#38;#205; | Iacute |
-| Î | &#38;#206; | Icirc | Ï | &#38;#207; | Iuml |
-| Ð | &#38;#208; | ETH | Ñ | &#38;#209; | Ntilde |
-| Ò | &#38;#210; | Ograve | Ó | &#38;#211; | Oacute |
-| Ô | &#38;#212; | Ocirc | Õ | &#38;#213; | Otilde |
-| Ö | &#38;#214; | Ouml | × | &#38;#215; | times |
-| Ø | &#38;#216; | Oslash | Ù | &#38;#217; | Ugrave |
-| Ú | &#38;#218; | Uacute | Û | &#38;#219; | Ucirc |
-| Ü | &#38;#220; | Uuml | Ý | &#38;#221; | Yacute |
-| Þ | &#38;#222; | THORN | ß | &#38;#223; | szlig |
-| à | &#38;#224; | agrave | á | &#38;#225; | aacute |
-| â | &#38;#226; | acirc | ã | &#38;#227; | atilde |
-| ä | &#38;#228; | auml | å | &#38;#229; | aring |
-| æ | &#38;#230; | aelig | ç | &#38;#231; | ccedil |
-| è | &#38;#232; | egrave | é | &#38;#233; | eacute |
-| ê | &#38;#234; | ecirc | ë | &#38;#235; | euml |
-| ì | &#38;#236; | igrave | í | &#38;#237; | iacute |
-| î | &#38;#238; | icirc | ï | &#38;#239; | iuml |
-| ð | &#38;#240; | eth | ñ | &#38;#241; | ntilde |
-| ò | &#38;#242; | ograve | ó | &#38;#243; | oacute |
-| ô | &#38;#244; | ocirc | õ | &#38;#245; | otilde |
-| ö | &#38;#246; | ouml | ÷ | &#38;#247; | divide |
-| ø | &#38;#248; | oslash | ù | &#38;#249; | ugrave |
-| ú | &#38;#250; | uacute | û | &#38;#251; | ucirc |
-| ü | &#38;#252; | uuml | ý | &#38;#253; | yacute |
-| þ | &#38;#254; | thorn | ÿ | &#38;#255; | yuml |
+
+| **Carácter** | **Código** | **Entidad** | **Carácter** | **Código** | **Entidad** |
+| ------------ | ---------- | ----------- | ------------ | ---------- | ----------- |
+| !            | &#33;      | –           | "            | &#34;      | –           |
+| #            | &#35;      | –           | $            | &#36;      | –           |
+| %            | &#37;      | –           | &            | &#38;      | –           |
+| ’            | &#39;      | –           | (            | &#40;      | –           |
+| )            | &#41;      | –           | *            | &#42;      | –           |
+| +            | &#43;      | –           | ,            | &#44;      | –           |
+| -            | &#45;      | –           | .            | &#46;      | –           |
+| /            | &#47;      | –           | :            | &#58;      | –           |
+| ;            | &#59;      | –           | <            | &#60;      | –           |
+| =            | &#61;      | –           | >            | &#62;      | –           |
+| ?            | &#63;      | –           | @            | &#64;      | –           |
+| [            | &#91;      | –           | \            | &#92;      | –           |
+| ]            | &#93;      | –           | ^            | &#94;      | –           |
+| _            | &#95;      | –           | `            | &#96;      | –           |
+| {            | &#123;     | –           | |            | &#124;     | –           |
+| }            | &#125;     | –           | ~            | &#126;     | –           |
+|              | &#160;     | nbsp        | ¡            | &#161;     | iexcl       |
+| ¢            | &#162;     | cent        | £            | &#163;     | pound       |
+| ¤            | &#164;     | curren      | ¥            | &#165;     | yen         |
+| ¦            | &#166;     | brvbar      | §            | &#167;     | sect        |
+| ¨            | &#168;     | uml         | ©            | &#169;     | copy        |
+| ª            | &#170;     | ordf        | «            | &#171;     | laquo       |
+| ¬            | &#172;     | not         |              | &#173;     | shy         |
+| ®            | &#174;     | reg         | ¯            | &#175;     | macr        |
+| °            | &#176;     | deg         | ±            | &#177;     | plusmn      |
+| ²            | &#178;     | sup2        | ³            | &#179;     | sup3        |
+| ´            | &#180;     | acute       | µ            | &#181;     | micro       |
+| ¶            | &#182;     | para        | ·            | &#183;     | middot      |
+| ¸            | &#184;     | cedil       | ¹            | &#185;     | sup1        |
+| º            | &#186;     | ordm        | »            | &#187;     | raquo       |
+| ¼            | &#188;     | frac14      | ½            | &#189;     | frac12      |
+| ¾            | &#190;     | frac34      | ¿            | &#191;     | iquest      |
+| À            | &#192;     | Agrave      | Á            | &#193;     | Aacute      |
+| Â            | &#194;     | Acirc       | Ã            | &#195;     | Atilde      |
+| Ä            | &#196;     | Auml        | Å            | &#197;     | Aring       |
+| Æ            | &#198;     | AElig       | Ç            | &#199;     | Ccedil      |
+| È            | &#200;     | Egrave      | É            | &#201;     | Eacute      |
+| Ê            | &#202;     | Ecirc       | Ë            | &#203;     | Euml        |
+| Ì            | &#204;     | Igrave      | Í            | &#205;     | Iacute      |
+| Î            | &#206;     | Icirc       | Ï            | &#207;     | Iuml        |
+| Ð            | &#208;     | ETH         | Ñ            | &#209;     | Ntilde      |
+| Ò            | &#210;     | Ograve      | Ó            | &#211;     | Oacute      |
+| Ô            | &#212;     | Ocirc       | Õ            | &#213;     | Otilde      |
+| Ö            | &#214;     | Ouml        | ×            | &#215;     | times       |
+| Ø            | &#216;     | Oslash      | Ù            | &#217;     | Ugrave      |
+| Ú            | &#218;     | Uacute      | Û            | &#219;     | Ucirc       |
+| Ü            | &#220;     | Uuml        | Ý            | &#221;     | Yacute      |
+| Þ            | &#222;     | THORN       | ß            | &#223;     | szlig       |
+| à            | &#224;     | agrave      | á            | &#225;     | aacute      |
+| â            | &#226;     | acirc       | ã            | &#227;     | atilde      |
+| ä            | &#228;     | auml        | å            | &#229;     | aring       |
+| æ            | &#230;     | aelig       | ç            | &#231;     | ccedil      |
+| è            | &#232;     | egrave      | é            | &#233;     | eacute      |
+| ê            | &#234;     | ecirc       | ë            | &#235;     | euml        |
+| ì            | &#236;     | igrave      | í            | &#237;     | iacute      |
+| î            | &#238;     | icirc       | ï            | &#239;     | iuml        |
+| ð            | &#240;     | eth         | ñ            | &#241;     | ntilde      |
+| ò            | &#242;     | ograve      | ó            | &#243;     | oacute      |
+| ô            | &#244;     | ocirc       | õ            | &#245;     | otilde      |
+| ö            | &#246;     | ouml        | ÷            | &#247;     | divide      |
+| ø            | &#248;     | oslash      | ù            | &#249;     | ugrave      |
+| ú            | &#250;     | uacute      | û            | &#251;     | ucirc       |
+| ü            | &#252;     | uuml        | ý            | &#253;     | yacute      |
+| þ            | &#254;     | thorn       | ÿ            | &#255;     | yuml        |
+
