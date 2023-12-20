@@ -63,5 +63,5 @@ Una vez arrancado el navegador web simplemente tiene que abrir la página creada
 Verás que el navegador carga algo parecido a lo siguiente:
 
 
-![](https://prod-files-secure.s3.us-west-2.amazonaws.com/b44a5280-94c4-4879-b28a-2a22c936909b/538505e0-6bdf-49b9-8b24-50ef4a60a1d8/Untitled.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=AKIAT73L2G45HZZMZUHI%2F20231220%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20231220T002519Z&X-Amz-Expires=3600&X-Amz-Signature=dcb06fe5c8cf16fb196806fe3e7b82ba816dc52be9f987bf71c55fcc70719d59&X-Amz-SignedHeaders=host&x-id=GetObject)
+![](https://prod-files-secure.s3.us-west-2.amazonaws.com/b44a5280-94c4-4879-b28a-2a22c936909b/538505e0-6bdf-49b9-8b24-50ef4a60a1d8/Untitled.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=AKIAT73L2G45HZZMZUHI%2F20231220%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20231220T002629Z&X-Amz-Expires=3600&X-Amz-Signature=4c758c15f15ca4b5733e71fa03e352d2d80f8db07954433c1ce65605deebf58b&X-Amz-SignedHeaders=host&x-id=GetObject)
 
