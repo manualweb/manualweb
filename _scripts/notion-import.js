@@ -119,8 +119,6 @@ image:
 
 		const mdblocks = await n2m.pageToMarkdown(id);
         const md = n2m.toMarkdownString(mdblocks);
-
-		console.log(md);
         
         // ensure directory exists
 	    const root = '_' + nav
