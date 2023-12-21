@@ -134,7 +134,7 @@ image:
 		ftitle = ftitle + `${slug}.md`
 
 
-		fs.writeFile(path.join(root, ftitle), fm + md.parent, (err) => {
+		fs.writeFile(path.join(root, ftitle), fm + md, (err) => {
 			if (err) {
 				console.log(err);
 			}
