@@ -45,6 +45,13 @@ const n2m = new NotionToMarkdown({ notionClient: notion });
 		if (pdate) {
 			date = moment(pdate).format('YYYY-MM-DD')
         }
+
+		// last date
+		let lastdate = moment(r.created_time).format("YYYY-MM-DD")
+		let plastdate = r.properties?.['Last Date']?.['date']?.['start']
+		if (plastdate) {
+			lastdate = moment(plastdate).format('YYYY-MM-DD')
+		}
         
 		// tags
 		let tags = []
@@ -96,6 +103,8 @@ const n2m = new NotionToMarkdown({ notionClient: notion });
 
 			fm = fm + `---
 title: ${title}
+date: ${date}
+last_modified_at: ${lastdate}
 permalink: ${permalink}
 excerpt: "${excerpt}"
 tags: ${t}
@@ -108,6 +117,7 @@ image:
 title: ${title}
 layout: post
 date: ${date}
+last_modified_at: ${lastdate}
 author: Víctor Cuervo
 excerpt: "${excerpt}"
 tags: ${t}
