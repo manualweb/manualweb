@@ -273,3 +273,28 @@ collections:
     output: true
 
 lang: es_ES
+
+# Feed para más colecciones
+feed:
+  collections:
+    - html
+    - html5
+    - sql
+    - java
+    - javascript
+    - php
+    - mongodb
+    - flask
+    - svg
+    - typescript
+    - asp
+    - bootstrap
+    - css
+    - emberjs
+    - googlemaps
+    - javaee
+    - webapi
+    - xml
+    - python
+    - dom
+    - sql
