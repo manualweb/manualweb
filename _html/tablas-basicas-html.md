@@ -1,5 +1,5 @@
 ---
-title: Tablas básicas HTML
+title: Tablas Básicas HTML
 date: 2023-12-29
 last_modified_at: 2023-12-29
 permalink: /html/tablas-basicas-html/
@@ -34,7 +34,6 @@ Así, el código para poner el título a la tabla sería:
     <td>Fila 1 Columna 4</td>
   </tr>
 </table>
-
 ```
 
 
@@ -63,7 +62,6 @@ El código es tan sencillo como este:
     <td>Fila 1 Columna 4</td>
   </tr>
 </table>
-
 ```
 
 
@@ -89,7 +87,6 @@ Así, la cabecera de una tabla quedará de la siguiente forma:
     <td>Fila 1 Columna 3</td>
   </tr>
 </table>
-
 ```
 
 
@@ -174,7 +171,6 @@ El código completo sería:
     <td>920€</td>
   </tr>
 </table>
-
 ```
 
 
@@ -229,6 +225,5 @@ El código completo de la tabla sería el siguiente:
     <td>920€</td>
   </tr>
 </table>
-
 ```
 

@@ -55,7 +55,6 @@ Así, si queremos tener una tabla de tres filas tendremos un código como el que
     <!-- Contenido de las celdas de la fila 3 -->
   </tr>
 </table>
-
 ```
 
 
@@ -89,7 +88,6 @@ Una tabla de tres filas por cuatro columnas quedaría de la siguiente forma:
     <td>Fila 3 Columna 4</td>
   </tr>
 </table>
-
 ```
 
 
