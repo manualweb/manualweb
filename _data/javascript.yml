@@ -62,7 +62,7 @@
 #  - patron-modulo
 #  - patron-currying
 
-- title: promesas-javascript
+- title: Promesas Javascript
   docs:
   - promesas-en-javascript
 # - concatenar-promesas
