@@ -62,11 +62,15 @@
 #  - patron-modulo
 #  - patron-currying
 
+- title: promesas-javascript
+  docs:
+  - promesas-en-javascript
+# - concatenar-promesas
+
 #- title: Otros
 #  docs:
 #  - fechas-javascript
 #  - errores-javascript
-#  - promesas-javascript
 #  - objeto-math
 
 #- title: Contenido de Apoyo
