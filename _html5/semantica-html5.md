@@ -223,6 +223,7 @@ Es decir, que en el siguiente código [HTML 5](http://www.manualweb.net/html5/) 
 El uso del elemento [`h2`](https://www.w3api.com/HTML/h2/) acabará generando una subsección de forma implícita. Por lo tanto la salida del documento será:
 
 1. Artículo principal
+	1. Subsección
 
 En el caso de que el elemento a utilizar sea del mismo nivel que el de la sección actual, lo que hará será crear una nueva sección.
 
