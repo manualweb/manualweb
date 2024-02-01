@@ -24,27 +24,27 @@ Listado de todos los tutoriales:
 -->
 
         <div class="col-md-2 col-sm-4 col-xs-6">
-          <a href="{{site.baseurl}}/asp"><img src="{{site.baseurl}}/img/logos/asp.png" alt="Tutorial ASP" class="img-thumbnail">
+          <a href="{{site.baseurl}}/asp/"><img src="{{site.baseurl}}/img/logos/asp.png" alt="Tutorial ASP" class="img-thumbnail">
           <p class="text-center">Tutorial ASP</p></a>
         </div>
 
         <div class="col-md-2 col-sm-4 col-xs-6">
-          <a href="{{site.baseurl}}/bootstrap"><img src="{{site.baseurl}}/img/logos/bootstrap.png" alt="Tutorial Bootstrap" class="img-thumbnail">
+          <a href="{{site.baseurl}}/bootstrap/"><img src="{{site.baseurl}}/img/logos/bootstrap.png" alt="Tutorial Bootstrap" class="img-thumbnail">
           <p class="text-center">Tutorial Bootstrap</p></a>
         </div>
 
         <div class="col-md-2 col-sm-4 col-xs-6">
-          <a href="{{site.baseurl}}/css"><img src="{{site.baseurl}}/img/logos/css.png" alt="Tutorial CSS" class="img-thumbnail">
+          <a href="{{site.baseurl}}/css/"><img src="{{site.baseurl}}/img/logos/css.png" alt="Tutorial CSS" class="img-thumbnail">
           <p class="text-center">Tutorial CSS</p></a>
         </div>
 
         <div class="col-md-2 col-sm-4 col-xs-6">
-          <a href="{{site.baseurl}}/dom"><img src="{{site.baseurl}}/img/logos/dom.png" alt="Tutorial DOM" class="img-thumbnail">
+          <a href="{{site.baseurl}}/dom/"><img src="{{site.baseurl}}/img/logos/dom.png" alt="Tutorial DOM" class="img-thumbnail">
           <p class="text-center">Tutorial DOM</p></a>
         </div>
 
         <div class="col-md-2 col-sm-4 col-xs-6">
-          <a href="{{site.baseurl}}/emberjs"><img src="{{site.baseurl}}/img/logos/emberjs.png" alt="Tutorial EmberJS" class="img-thumbnail">
+          <a href="{{site.baseurl}}/emberjs/"><img src="{{site.baseurl}}/img/logos/emberjs.png" alt="Tutorial EmberJS" class="img-thumbnail">
           <p class="text-center">Tutorial EmberJS</p></a>
         </div>
 
