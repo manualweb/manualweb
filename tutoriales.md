@@ -39,6 +39,11 @@ Listado de todos los tutoriales:
         </div>
 
         <div class="col-md-2 col-sm-4 col-xs-6">
+          <a href="{{site.baseurl}}/dart/"><img src="{{site.baseurl}}/img/logos/dart.webp" alt="Tutorial Dart" class="img-thumbnail">
+          <p class="text-center">Tutorial Dart</p></a>
+        </div>
+
+        <div class="col-md-2 col-sm-4 col-xs-6">
           <a href="{{site.baseurl}}/dom/"><img src="{{site.baseurl}}/img/logos/dom.png" alt="Tutorial DOM" class="img-thumbnail">
           <p class="text-center">Tutorial DOM</p></a>
         </div>

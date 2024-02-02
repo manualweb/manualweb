@@ -1,0 +1,43 @@
+---
+layout: default
+---
+
+<div class="container">
+    <div class="row">
+
+
+      <div class="col-md-8 col-md-push-4">
+          <h1>{{ page.title }}</h1>
+          <img src="{{site.baseurl}}/img/logos/dart.webp" alt="Logo Dart" id="logo-manual" class="img-responsive">
+          <div id="markdown-content-container">{{ content }}</div>
+
+          <p class="text-center">
+            <br />
+            <a target="_blank" href="{{site.git_edit_address}}/{{ page.path }}" class="btn btn-default githubEditButton" role="button">
+              <i class="fa fa-pencil fa-lg"></i> Mejora esta página
+            </a>
+          </p>
+
+          {% include ads.html %}
+
+          <hr>
+          {% include section_nav.html items=site.data.dart name="dart" %}
+
+
+      </div>
+
+
+        <div class="col-md-4 col-md-pull-8">
+
+          {% include nav.html items=site.data.dart site=site.dart name="dart" %}
+
+          <h2>Descargar</h2>
+          <a href="#"><img class="pull-right" src="{{site.baseurl}}/img/pdf.png" alt="Descargar Manual"></a>
+          El manual se encuentra en continua revisión. Desde aquí puedes descargarte la última versión del <strong>Tutorial Dart</strong>.
+
+          {% include ads.html %}
+
+        </div>
+
+    </div>
+</div>

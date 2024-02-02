@@ -74,6 +74,15 @@ defaults:
       type: "WebPage"
 
 - scope:
+    path: _dart
+    type: dart
+  values:
+    layout: dart
+    sectionid: dart
+    seo:
+      type: "WebPage"
+
+- scope:
     path: _dom
     type: dom
   values:
@@ -268,6 +277,8 @@ collections:
       output: true   
   sql: 
       output: true   
+  dart: 
+      output: true   
   posts:
     permalink: /blog/:year/:month/:day/:title/
     output: true
@@ -298,3 +309,4 @@ feed:
     - python
     - dom
     - sql
+    - dart
