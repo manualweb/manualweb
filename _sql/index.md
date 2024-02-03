@@ -2,6 +2,8 @@
 title: Manual SQL
 permalink: /sql/
 redirect_from: /tutorial-sql/
+date: 2023-12-10
+last_modified_at: 2023-12-10
 ---
 
 {% include contenido.html items=site.data.sql site=site.sql name="sql" %}
