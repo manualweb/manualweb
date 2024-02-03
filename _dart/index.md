@@ -1,6 +1,12 @@
 ---
 title: Manual Dart
 permalink: /dart/
+image:
+  path: /img/covers/dar-cover.webp
+date: 2024-02-03
+last_modified_at: 2024-02-03
+excerpt: "Manual Dart proporciona una visión general del lenguaje de programación Dart, incluyendo sintaxis básica, estructuras de control, funciones y programación orientada a objetos."
+tags: [dart,flutter,javascript]
 ---
 
 {% include contenido.html items=site.data.dart site=site.dart name="dart" %}

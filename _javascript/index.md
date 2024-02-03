@@ -8,8 +8,6 @@ date: 2023-02-18
 last_modified_at: 2024-01-26
 excerpt: "Manual Javascript que nos cuenta como podemos utilizar de forma sencilla este lenguaje de programación. Dando una visión global del mismo e incluyendo ejemplos prácticos en cada tema."
 tags: [javascript,tutorial,manual,ejemplos,'tutorial javascript','manual javascript','ejemplos javascript']
-image:
-  path: /img/covers/javascript-cover.jpg
 ---
 
 {% include contenido.html items=site.data.javascript site=site.javascript name="javascript" %}
