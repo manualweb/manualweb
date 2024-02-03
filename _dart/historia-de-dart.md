@@ -12,7 +12,7 @@ image:
 ## Historía de Dart
 
 
-Dart es un lenguaje de programación moderno desarrollado por Google. Fue [revelado al público el 10 de octubre de 2011 en la conferencia GOTO](https://gotocon.com/aarhus-2011/presentation/Opening%20Keynote:%20Dart,%20a%20new%20programming%20language%20for%20structured%20web%20programming). 
+Dart es un lenguaje de programación moderno **desarrollado por Google**. Fue [revelado al público el 10 de octubre de 2011 en la conferencia GOTO](https://gotocon.com/aarhus-2011/presentation/Opening%20Keynote:%20Dart,%20a%20new%20programming%20language%20for%20structured%20web%20programming) por los desarrolladores [Gilad Bracha](https://bracha.org/Site/Home.html) y [Lars Bak](https://en.wikipedia.org/wiki/Lars_Bak_(computer_programmer)).
 
 
 El foco inicial de [Dart](https://www.manualweb.net/dart/) era el de poder reemplazar o complementar a [Javascript](https://www.manualweb.net/javascript/) como lenguaje de desarrollo para los [navegadores web](https://www.ayudaenlaweb.com/navegadores/), ya que la gestión de grandes cantidades de código [Javascript](https://www.manualweb.net/javascript/) les eran complicadas a los equipos de Google.
@@ -24,7 +24,7 @@ Si bien, con el paso del tiempo, las capacidades del lenguaje [Dart](https://www
 ## Versiones de Dart
 
 
-El lenguaje [Dart](https://www.manualweb.net/dart/) ha ido evolucionando desde su creación en 2013 con tres versiones mayores. En la primera es el nacimiento del lenguaje y su uso por parte de aplicaciones relevantes, una recodificación en la segunda versión para enfocarlo más al mundo web y móvil, y con una tercera versión que nos ofrece un conjunto adicional de nuevas funcionalidades.
+El lenguaje [Dart](https://www.manualweb.net/dart/) ha ido evolucionando desde su creación en 2013 con **tres versiones mayores**. En la primera es el nacimiento del lenguaje y su uso por parte de aplicaciones relevantes, una recodificación en la segunda versión para enfocarlo más al mundo web y móvil, y con una tercera versión que nos ofrece un conjunto adicional de nuevas funcionalidades.
 
 
 Veamos un poco en detalle que encontramos en cada una de estas versiones mayores:
@@ -65,8 +65,8 @@ A día de hoy, febrero 2024, **la versión oficial es Dart 3.2**. Puedes estar a
 ## Futuro de Dart
 
 
-El futuro de [Dart](https://www.manualweb.net/dart/) parece ser bastante prometedor. Esta es una tecnología que está en constante evolución y mejoramiento, con [una comunidad de desarrolladores activos que continuamente trabajan en nuevas características y funcionalidades](https://dart.dev/community), mejorando así su rendimiento y eficiencia.
+El futuro de [Dart](https://www.manualweb.net/dart/) parece ser bastante prometedor. Esta es una **tecnología que está en constante evolución y mejoramiento**, con [una comunidad de desarrolladores activos que continuamente trabajan en nuevas características y funcionalidades](https://dart.dev/community), mejorando así su rendimiento y eficiencia.
 
 
-Además, su integración con Flutter para el desarrollo de aplicaciones móviles ha aumentado su popularidad y relevancia en el mundo de la programación. Por lo tanto, podemos decir que el futuro de [Dart](https://www.manualweb.net/dart/) es brillante y tiene un gran potencial para seguir creciendo y evolucionando.
+Además, **su integración con Flutter** para el desarrollo de aplicaciones móviles ha aumentado su popularidad y relevancia en el mundo de la programación. Por lo tanto, podemos decir que el futuro de [Dart](https://www.manualweb.net/dart/) es brillante y tiene un gran potencial para seguir creciendo y evolucionando.
 
