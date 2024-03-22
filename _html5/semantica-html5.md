@@ -154,6 +154,9 @@ Dentro del elemento [`body`](https://www.w3api.com/HTML/article/) podremos encon
 La salida del documento [HTML 5](http://www.manualweb.net/html5/) será:
 
 1. Título Principal
+	1. Subtítulo 1
+	2. Subtítulo 2
+	3. Subtítulo 3
 
 > El [Validador de la W3C](https://validator.w3.org/) nos permite de una forma sencilla analizar el outline de un documento HTML para ver la salida que genera y las secciones de las que se compone.
 
