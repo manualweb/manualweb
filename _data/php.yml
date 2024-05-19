@@ -1,3 +1,6 @@
 - title: Introducción PHP
   docs:
   - introduccion-php
+- title: Programación Orientada a Objetos (POO)
+  docs:
+  - programacion-orientada-a-objetos-en-php
