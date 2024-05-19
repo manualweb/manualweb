@@ -53,7 +53,7 @@ Aunque en los siguientes capítulos entraremos más en detalle sobre la programa
 En este caso vamos a definir una clase `Libro` en la cual vamos a encapsular su información como _título, autor, ISBN y editorial_. Para signar los valores de forma inicial deberemos de definir un constructor. Además, dicha información la haremos disponible mediante una serie de métodos para poder acceder a ella. Lo último que haremos será definir objetos que instancien dicha clase con valores en concreto y sobre los que accederemos a sus métodos.
 
 
-El código de nuestra clase Libro y sus objetos quedará de la siguiente forma:
+El código de nuestra clase `Libro` y sus objetos quedará de la siguiente forma:
 
 
 ```php
@@ -93,5 +93,5 @@ echo $l2->getAutor();
 ```
 
 
-Ahora pasaremos a entrar en detalle sobre todos los elementos de la programación orientada a objetos en PHP.
+Ahora pasaremos a entrar en detalle sobre todos los elementos de la programación orientada a objetos en `PHP`.
 
