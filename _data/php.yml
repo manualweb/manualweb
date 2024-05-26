@@ -4,6 +4,7 @@
 - title: Arrays en PHP
   docs:
   - arrays-en-php
+  - manejar-arrays-en-php/
 - title: Programación Orientada a Objetos (POO)
   docs:
   - programacion-orientada-a-objetos-en-php
