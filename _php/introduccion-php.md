@@ -30,7 +30,7 @@ Si bien es verdad que podemos utilizar [PHP](https://t.co/NxL06vaL6Q) desde el *
 Dentro de las características de PHP encontramos su simplicidad y facilidad de uso con una curva de aprendizaje sencilla, que es código abierto u opensource, la compatibilidad multiplaforma y de sistemas operativos, los accesos a bases de datos, su escalabilidad y flexibilidad así como una amplia comunidad de usuarios.
 
 
-### Funcionamiento de PHP
+## Funcionamiento de PHP
 
 
 El funcionamiento de [PHP](https://www.manualweb.net/php/) es que el código [PHP](https://www.manualweb.net/php/) se interpreta en el servidor por parte de un interprete [PHP](https://www.manualweb.net/php/) que suele estar dentro de un **servidor web** o en un **CGI (Common Gateway Interface)**.

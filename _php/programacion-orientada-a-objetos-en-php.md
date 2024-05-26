@@ -9,7 +9,7 @@ image:
   path: /img/covers/php-cover.webp
 ---
 
-### ¿Qué es la Programación Orientada a Objetos (POO) en PHP?
+## ¿Qué es la Programación Orientada a Objetos (POO) en PHP?
 
 
 La Programación Orientada a Objetos (POO) en [PHP](https://www.manualweb.net/php/) es una técnica de programación que permite organizar el código en **estructuras llamadas clases**, que son las definiciones generales de un concepto y en **objetos, que son las instancias de dichas clases** con unos valores concretos.
@@ -21,7 +21,7 @@ La definición de funcionalidades en clases nos permite reutilizar dicho código
 De esta manera podemos utilizar la programación orientada a objetos (POO) en [PHP](https://www.manualweb.net/php/) para definir desde elementos funcionales o de negocio como puede ser _clientes, productos, cestas de compra,…_ a elementos más técnicos como pueden ser clases y objetos para a_cceder a bases de datos, guardar información de logs, encriptar y desencriptar datos,…_
 
 
-### Principios clave de la Programación Orientada a Objetos 
+## Principios clave de la Programación Orientada a Objetos 
 
 
 En el mundo de la programación, la programación orientada a objetos (POO) es una de las técnicas más utilizadas y sus principios clave son los siguientes:
@@ -33,7 +33,7 @@ En el mundo de la programación, la programación orientada a objetos (POO) es u
 - **Abstracción:** Este principio se basa en simplificar la complejidad al ocultar detalles innecesarios y mostrar solo la funcionalidad relevante.
 - **Composición:** Este concepto se refiere a la idea de construir clases complejas a partir de clases más simples mediante la combinación y agrupación de las mismas.
 
-### Beneficios de la Programación Orientada a Objetos en PHP
+## Beneficios de la Programación Orientada a Objetos en PHP
 
 
 El proceso de [desarrollo de código fuente en PHP](https://lineadecodigo.com/categoria/php/), en particular, al hacer uso de los principios de la programación orientada a objetos (OOP) en [PHP](https://www.manualweb.net/php/), nos proporciona una gama de beneficios significativos que vale la pena destacar.
@@ -44,7 +44,7 @@ El proceso de [desarrollo de código fuente en PHP](https://lineadecodigo.com/ca
 - Además, la programación orientada a objetos **ayuda en las pruebas unitarias**. Las pruebas unitarias son más fáciles de escribir y comprender cuando el código se divide en objetos.
 - Por último, pero no menos importante, la programación orientada a objetos es **compatible con varios frameworks de desarrollo**, ya que normalmente están escritos de esta forma. Puede ser los casos de **Laravel, Symfony o CodeIgniter**. Por lo que amplía aún más las posibilidades de desarrollo y permite a los desarrolladores aprovechar una amplia gama de herramientas y funcionalidades adicionales.
 
-### Ejemplo de Programación Orientada a Objetos en PHP
+## Ejemplo de Programación Orientada a Objetos en PHP
 
 
 Aunque en los siguientes capítulos entraremos más en detalle sobre la programación orientada a objetos en [PHP](https://www.manualweb.net/php/) vamos a ver un primer ejemplo para ver cómo quedaría.

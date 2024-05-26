@@ -9,7 +9,7 @@ image:
   path: /img/covers/php-cover.webp
 ---
 
-### ¿Qué son las clases en PHP?
+## ¿Qué son las clases en PHP?
 
 
 Como hemos visto en la [introducción a la programación orientada a objetos en PHP](https://manualweb.net/php/programacion-orientada-a-objetos-en-php/) una clase en [PHP](https://www.manualweb.net/php/) nos permite definir un tipo de objeto especificando las variables y funciones que lo componen.
@@ -45,7 +45,7 @@ En una clase [PHP](https://www.manualweb.net/php/), podemos encontrar varios ele
 - **Constructores:** Son **métodos especiales que se ejecutan automáticamente cuando se crea un nuevo objeto de una clase**. Son útiles para inicializar las propiedades de un objeto.
 - **Destructores:** A diferencia de los constructores, los destructores **se ejecutan automáticamente cuando un objeto no se utiliza más**. Son útiles para liberar los recursos que el objeto puede haber consumido durante su vida útil.
 
-### Mi primera clase en PHP
+## Mi primera clase en PHP
 
 
 Con estos conceptos básicos sobre las clases en [PHP](https://www.manualweb.net/php/) vamos a ver cómo podemos [definir mi primera clase en PHP](https://lineadecodigo.com/php/crear-una-clase-en-php/).
@@ -98,7 +98,7 @@ class Circulo {
 ```
 
 
-### ¿Qué son los objetos en PHP?
+## ¿Qué son los objetos en PHP?
 
 
 Ahora que ya sabemos qué son las clases en [PHP](https://www.manualweb.net/php/) vamos a ver qué son los objetos en [PHP](https://www.manualweb.net/php/). Los objetos en [PHP](https://www.manualweb.net/php/) son instancias particulares de una clase en concreto.
@@ -121,7 +121,7 @@ Para instanciar un objeto [PHP](https://www.manualweb.net/php/) utilizamos la pa
 El objeto queda almacenado dentro de una variable dentro de nuestro [código PHP](https://www.manualweb.net/php/).
 
 
-### Mi primer objeto en PHP
+## Mi primer objeto en PHP
 
 
 Ya tenemos nuestras clases sobre _cuadrados, rectángulos, triángulos, círculos,…_ definidas y ya sabemos cómo podemos instanciar objetos en [PHP](https://www.manualweb.net/php/), por lo que vamos a ver cómo podemos ir creando diferentes objetos.
