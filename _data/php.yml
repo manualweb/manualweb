@@ -1,6 +1,9 @@
 - title: Introducción PHP
   docs:
   - introduccion-php
+- title: Arrays en PHP
+  docs:
+  - arrays-en-php
 - title: Programación Orientada a Objetos (POO)
   docs:
   - programacion-orientada-a-objetos-en-php
