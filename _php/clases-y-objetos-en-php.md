@@ -163,10 +163,7 @@ $circulo2 = new Circulo(7); // Círculo con radio 7
 ```
 
 
-Ejecutar
-
-
-> 💻 Ejecutar en el código en [https://onecompiler.com/php/42ehsakmz](https://onecompiler.com/php/42ehsakmz)
+> 💻 Ejecutar el código en [https://onecompiler.com/php/42ehsakmz](https://onecompiler.com/php/42ehsakmz)
 
 
 Vemos que en este caso no pasamos el valor del perímetro ya que este se calcula en el constructor mediante el valor del rádio.
