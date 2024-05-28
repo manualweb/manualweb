@@ -61,7 +61,7 @@ Por lo tanto podemos definir dentro de la [programación en PHP](https://lineade
 class Cuadrado {
   private $lado;
   
-  public _construct($lado) {
+  public function _construct($lado) {
     $this->$lado = $lado;
   }
 }
@@ -70,7 +70,7 @@ class Rectangulo {
   private $lado1;
   private $lado2;
   
-  public _construct($lado1, $lado2) {
+  public function _construct($lado1, $lado2) {
     $this->$lado1 = $lado1;
     $this->$lado2 = $lado2;
   }
@@ -80,7 +80,7 @@ class Triangulo {
   private $base;
   private $altura;
 
-  public _construct($base) {
+  public function _construct($base) {
     $this->$altura = $base;
     $this->$altura = $altura;
   }
@@ -90,7 +90,7 @@ class Circulo {
   private $radio;
   private $perimetro;
   
-  public _construct($radio) {
+  public function _construct($radio) {
     $this->$radio = $radio;
     $this->$perimetro = 2*M_PI*$radio;
   }
