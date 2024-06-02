@@ -27,6 +27,6 @@ Todas las preguntas y dudas sobre Bootstrap las puedes consultar en el [Foro sob
 
 <script id="github-bjs" src="https://buttons.github.io/buttons.js" async="" defer="defer"></script>
 
-[PDFBootstrap]: https://gitprint.com/victorcuervo/manualweb/blob/master/bootstrap/pdf/tutorial-bootstrap-pdf.md
+[PDFBootstrap]: #
 [ForoBootstrap]: http://www.dudasprogramacion.com/html/bootstrap
 [EjemplosBootstrap]: http://lineadecodigo.com/categoria/bootstrap/

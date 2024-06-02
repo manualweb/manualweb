@@ -28,7 +28,7 @@ Todas las preguntas y dudas sobre Java las puedes consultar en el [Foro sobre Ja
 <script id="github-bjs" src="https://buttons.github.io/buttons.js" async="" defer="defer"></script>
 
 
-[PDFJavaEE]: https://gitprint.com/victorcuervo/manualweb/blob/master/javaee/pdf/tutorial-java-pdf.md
+[PDFJavaEE]: #
 [GitJavaEE]: https://github.com/manualweb/manual-javaee
 [ForoJavaEE]: http://dudasprogramacion.com/java/java-ee
 [EjemplosJavaEE]: http://lineadecodigo.com/tag/java-ee/

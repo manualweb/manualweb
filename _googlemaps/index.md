@@ -27,6 +27,6 @@ Todas las preguntas y dudas sobre Google Maps las puedes consultar en el [Foro s
 
 <script id="github-bjs" src="https://buttons.github.io/buttons.js" async="" defer="defer"></script>
 
-[PDFGoogleMaps]: https://gitprint.com/victorcuervo/manualweb/blob/master/html/pdf/tutorial-html-pdf.md
+[PDFGoogleMaps]: #
 [ForoGoogleMaps]: http://www.dudasprogramacion.com/api/api-google
 [EjemplosGoogleMaps]: http://lineadecodigo.com/categoria/google/

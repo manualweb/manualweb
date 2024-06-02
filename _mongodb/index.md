@@ -29,7 +29,7 @@ Todas las preguntas y dudas sobre Java las puedes consultar en el [Foro sobre Mo
 
 
 [TutorialMongoDB]: {{site.baseurl}}/mongodb/
-[TutorialMongoDBPDF]: https://gitprint.com/victorcuervo/manualweb/blob/master/java/pdf/tutorial-java-pdf.md
+[TutorialMongoDBPDF]: #
 [GitMongoDB]: https://github.com/manualweb/manual-mongodb
 [ForoMongoDB]: http://dudasprogramacion.com/bases-de-datos/mongodb
 [EjemplosMongoDB]: http://lineadecodigo.com/mongodb/

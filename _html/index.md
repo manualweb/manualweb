@@ -27,6 +27,6 @@ Todas las preguntas y dudas sobre HTML las puedes consultar en el [Foro sobre HT
 
 <script id="github-bjs" src="https://buttons.github.io/buttons.js" async="" defer="defer"></script>
 
-[PDFHTML]: https://gitprint.com/victorcuervo/manualweb/blob/master/html/pdf/tutorial-html-pdf.md
+[PDFHTML]: #
 [ForoHTML]: http://dudasprogramacion.com/html
 [EjemplosHTML]: http://lineadecodigo.com/html/

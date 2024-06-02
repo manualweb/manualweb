@@ -27,7 +27,7 @@ Todas las preguntas y dudas sobre Java las puedes consultar en el [Foro sobre Ja
 <script id="github-bjs" src="https://buttons.github.io/buttons.js" async="" defer="defer"></script>
 
 
- [1]: https://gitprint.com/victorcuervo/manualweb/blob/master/java/pdf/tutorial-java-pdf.md
+ [1]: #
  [2]: https://github.com/manualweb/manual-java
  [3]: http://www.dudasprogramacion.com/java
  [4]: http://lineadecodigo.com/java/

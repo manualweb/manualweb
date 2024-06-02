@@ -27,6 +27,6 @@ Todas las preguntas y dudas sobre SVG las puedes consultar en el [Foro sobre SVG
 
 <script id="github-bjs" src="https://buttons.github.io/buttons.js" async="" defer="defer"></script>
 
-[PDFSVG]: https://gitprint.com/victorcuervo/manualweb/blob/master/svg/pdf/tutorial-svg-pdf.md
+[PDFSVG]: #
 [ForoSVG]: http://dudasprogramacion.com/html/svg
 [EjemplosSVG]: http://lineadecodigo.com/svg/
