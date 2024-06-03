@@ -27,6 +27,6 @@ Todas las preguntas y dudas sobre CSS las puedes consultar en el [Foro sobre CSS
 
 <script id="github-bjs" src="https://buttons.github.io/buttons.js" async="" defer="defer"></script>
 
-[PDFCSS]: https://gitprint.com/victorcuervo/manualweb/blob/master/html/pdf/tutorial-html-pdf.md
+[PDFCSS]: #
 [ForoCSS]: http://www.dudasprogramacion.com/html/css
 [EjemplosCSS]: http://lineadecodigo.com/categoria/css/

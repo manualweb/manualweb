@@ -27,6 +27,6 @@ Todas las preguntas y dudas sobre EmberJS las puedes consultar en el [Foro sobre
 
 <script id="github-bjs" src="https://buttons.github.io/buttons.js" async="" defer="defer"></script>
 
-[PDFEmberJS]: https://gitprint.com/victorcuervo/manualweb/blob/master/html/pdf/tutorial-html-pdf.md
+[PDFEmberJS]: #
 [ForoEmberJS]: http://dudasprogramacion.com/javascript/emberjs
 [EjemplosEmberJS]: http://lineadecodigo.com/categoria/emberjs/

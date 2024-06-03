@@ -27,6 +27,6 @@ Todas las preguntas y dudas sobre ASP las puedes consultar en el [Foro sobre ASP
 
 <script id="github-bjs" src="https://buttons.github.io/buttons.js" async="" defer="defer"></script>
 
-[PDFASP]: https://gitprint.com/victorcuervo/manualweb/blob/master/asp/pdf/tutorial-asp-pdf.md
+[PDFASP]: #
 [ForoASP]: http://www.dudasprogramacion.com/net/asp-net
 [EjemplosASP]: http://lineadecodigo.com/categoria/asp/
