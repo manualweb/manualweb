@@ -166,7 +166,7 @@ Este operador sería más utilizado si manejamos valores binarios para ejecutar 
 Así podríamos ver el siguiente código:
 
 ~~~java
-1110 0011 >>> 0011  // Desplaza tres a la izquierda dejando 0001 1100
+1110 0011 >>> 0011  // Desplaza tres a la derecha dejando 0001 1100
 ~~~
 
 [ManualJava]: http://www.manualweb.net/tutorial-java/
