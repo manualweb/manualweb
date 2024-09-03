@@ -96,6 +96,12 @@ Así, la cabecera de una tabla quedará de la siguiente forma:
 Hay celdas de cabecera que necesiten una pequeña explicación sobre si la información que representan es la de las columnas o la de las filas. Suele suceder, normalmente, con la primera celda.
 
 
+| Columna o Fila | → | → |
+| -------------- | - | - |
+| ↓              |   |   |
+| ↓              |   |   |
+
+
 Para resolver este problema tenemos el atributo [`scope`](https://w3api.com/HTML/th/scope/). El atributo [`scope`](https://w3api.com/HTML/th/scope/) solo se puede aplicar a las celdas de una cabecera. Y sus valores son: “col”, “row”, “colgroup” o “rowgroup”.
 
 
