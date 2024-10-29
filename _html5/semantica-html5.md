@@ -274,7 +274,6 @@ Así podríamos encontrarnos una referencia utilizando un elemento [`blockquote`
 Dicho elemento [`blockquote`](https://www.w3api.com/HTML/blockquote/) no afecta para nada a la estructura, la cual seguirá siendo:
 
 1. Artículo Principal
-	1. Subsección
 
 ## Address: Autor de un artículo
 

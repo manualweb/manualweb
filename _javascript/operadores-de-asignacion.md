@@ -31,6 +31,25 @@ let numero = 8;
 Esta asignación da el valor tan cual está en la parte derecha de la sentencia. Si bien disponemos de una serie de operadores de asignación que nos permiten modificar el valor antes de asignarlo. Así encontramos los siguientes **operadores de asignación en** [**Javascript**](https://www.manualweb.net/javascript/).
 
 
+| **Operador** | **Extendido**  | **Significado**                                                                                         |
+| ------------ | -------------- | ------------------------------------------------------------------------------------------------------- |
+| `x += y`     | `x = x + y`    | Suma al valor actual de `x` el valor de `y` para asignarlo a `x`.                                       |
+| `x -= y`     | `x = x - y`    | Substrae al valor actual de `x` el valor de `y` para asignarlo a `x`.                                   |
+| `x *= y`     | `x = x * y`    | Multiplica al valor actual de `x` el valor de `y` para asignarlo a `x`.                                 |
+| `x /= y`     | `x = x/y`      | Divide al valor actual de `x` el valor de `y` para asignarlo a `x`.                                     |
+| `x %= y`     | `x = x % y`    | Calcula el resto de `x` dividido entre `y` para asignarlo a `x`.                                        |
+| `x **= y`    | `x = x ** y`   | Calcula el exponente de `x` elevado a `y` para asignarlo a `x`.                                         |
+| `x <<= y`    | `x = x << y`   | Realiza un desplazamiento de bits a izquierda sobre `x` de `y` para asignarlo a `x`.                    |
+| `x >>= y`    | `x = x >> y`   | Realiza un desplazamiento de bits a derecha sobre `x` de `y` para asignarlo a `x`.                      |
+| `x >>>= y`   | `x = x >>> y`  | Realiza un desplazamiento de bits a derecha rellenando con ceros sonre `x` de `y` para asignarlo a `x`. |
+| `x &= y`     | `x = x & y`    | Realiza un AND binario de `x` con `y` para asignarlo a `x`.                                             |
+| `x ^= y`     | `x = x ^ y`    | Realiza un XOR binario de `x` con `y` para asignarlo a `x`.                                             |
+| `x |= y`     | `x = x | y`    | Realiza un OR binario de `x` con `y` para asignarlo a `x`.                                              |
+| `x &&= y`    | `x && (x = y)` | Calcula un AND lógico de `x` e `y` para asignarlo a `x`.                                                |
+| `x ||= y`    | `x || (x = y)` | Calcula un OR lógico de `x` e`y` para asignarlo a `x`.                                                  |
+| `x ??= y`    | `x ?? (x = y)` | Realiza una anulación lógica de `x` e `y` para asignarlo a `x`.                                         |
+
+
 ## Asignación por desestructuración
 
 
