@@ -96,12 +96,6 @@ Así, la cabecera de una tabla quedará de la siguiente forma:
 Hay celdas de cabecera que necesiten una pequeña explicación sobre si la información que representan es la de las columnas o la de las filas. Suele suceder, normalmente, con la primera celda.
 
 
-| Columna o Fila | → | → |
-| -------------- | - | - |
-| ↓              |   |   |
-| ↓              |   |   |
-
-
 Para resolver este problema tenemos el atributo [`scope`](https://w3api.com/HTML/th/scope/). El atributo [`scope`](https://w3api.com/HTML/th/scope/) solo se puede aplicar a las celdas de una cabecera. Y sus valores son: “col”, “row”, “colgroup” o “rowgroup”.
 
 
@@ -123,6 +117,13 @@ Imaginemos una tabla que nos saca los ingresos y gastos por meses. Existirá una
 
 
 Algo como lo siguiente:
+
+
+| Enero    |        | Febrero  |        |
+| -------- | ------ | -------- | ------ |
+| Ingresos | Gastos | Ingresos | Gastos |
+| 1.000€   | 700€   | 1.100€   | 580€   |
+| 1.800€   | 920€   | 1.750€   | 920€   |
 
 
 En este caso lo que estamos diciendo es que una celda ocupa dos espacios. Para ello vamos a utilizar el atributo [`colspan`](https://w3api.com/HTML/th/colspan/) sobre el elemento [`td`](https://w3api.com/HTML/td/) de la celda.
@@ -171,13 +172,6 @@ De igual manera nos puede suceder en sentido horizontal. Es decir, que queramos 
 
 
 Si lo vemos sobre nuestro ejemplo veremos que podemos añadir una columna que simplemente ponga que los valores numéricos tengan el literal “Datos Económicos”. En este caso tendremos que indicar que esa celda ocupa dos filas.
-
-
-|                  | Enero    |        | Febrero  |        |
-| ---------------- | -------- | ------ | -------- | ------ |
-| Datos Económicos | Ingresos | Gastos | Ingresos | Gastos |
-|                  | 1.000€   | 700€   | 1.100€   | 580€   |
-|                  | 1.800€   | 920€   | 1.750€   | 920€   |
 
 
 Para la agrupación de filas tenemos otro atributo que es [`rowspan`](https://w3api.com/HTML/td/rowspan/). Este atributo, al igual que [`colspan`](https://w3api.com/HTML/td/colspan/) se aplica sobre la celda [`td`](https://w3api.com/HTML/td/).
