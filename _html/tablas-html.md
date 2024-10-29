@@ -96,9 +96,3 @@ Así con los tres elementos [`table`](https://w3api.com/HTML/table/), [`tr`](htt
 
 Visualmente tendríamos algo así:
 
-
-| Fila 1 Columna 1 | Fila 1 Columna 2 | Fila 1 Columna 3 | Fila 1 Columna 4 |
-| ---------------- | ---------------- | ---------------- | ---------------- |
-| Fila 2 Columna 1 | Fila 2 Columna 2 | Fila 2 Columna 3 | Fila 2 Columna 4 |
-| Fila 3 Columna 1 | Fila 3 Columna 2 | Fila 3 Columna 3 | Fila 3 Columna 4 |
-
