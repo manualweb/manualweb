@@ -180,13 +180,6 @@ De igual manera nos puede suceder en sentido horizontal. Es decir, que queramos 
 Si lo vemos sobre nuestro ejemplo veremos que podemos añadir una columna que simplemente ponga que los valores numéricos tengan el literal “Datos Económicos”. En este caso tendremos que indicar que esa celda ocupa dos filas.
 
 
-|                  | Enero    |        | Febrero  |        |
-| ---------------- | -------- | ------ | -------- | ------ |
-| Datos Económicos | Ingresos | Gastos | Ingresos | Gastos |
-|                  | 1.000€   | 700€   | 1.100€   | 580€   |
-|                  | 1.800€   | 920€   | 1.750€   | 920€   |
-
-
 Para la agrupación de filas tenemos otro atributo que es [`rowspan`](https://w3api.com/HTML/td/rowspan/). Este atributo, al igual que [`colspan`](https://w3api.com/HTML/td/colspan/) se aplica sobre la celda [`td`](https://w3api.com/HTML/td/).
 
 
