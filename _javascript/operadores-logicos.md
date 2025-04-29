@@ -15,6 +15,13 @@ Los **operadores lógicos en** [**Javascript**](https://www.manualweb.net/javasc
 Los **operadores lógicos** **en** [**Javascript**](https://www.manualweb.net/javascript/) que podemos encontrar son:
 
 
+| Operador | Significado                                                                                                            |
+| -------- | ---------------------------------------------------------------------------------------------------------------------- |
+| `x && y` | Operador AND, el cual devuelve `true` si ambos operandos son `true`. Si no son valores booleanos devolverá `y`.        |
+| `x || y` | Operador OR, el cual devuelve `true` si alguno de los operandos son `true`. Si no son valores booleanos devolverá `x`. |
+| `! x`    | Operador NOT, el cual invierte el valor del operando de `true` a `false` y de `false` a `true`.                        |
+
+
 Así podemos tener las siguiente evaluaciones con **operadores lógicos** sobre valores booleanos de `true` y `false`:
 
 
